@@ -1,0 +1,61 @@
+<div style="background-color: #f9f9f9; border: 1px solid #88a; padding: 5px;">
+<center><big>Welcome to '''Agent Equinox's''' user page</big></center>
+<center><small>'''''(Note: Please do not edit this page. Direct all comments to my [[User talk:Equinox|User talk]] page.)'''''</small></center></div>
+<center>• '''[[Special:Recentchanges|Recent changes]]''' • '''[[:Category:Candidates_for_speedy_deletion|CSD]]''' • '''[[Whirled:Wishlist|Wishlist]]''' •  '''[[Sandbox]]''' • '''[[:Category:Accuracy disputes|Accuracy disputes]]''' • '''[[Whirled:List of administrators|Admins]]''' • '''[[Whirled:Style guide|Style guide]]''' • '''[[Special:Wantedpages|Wanted pages]]''' • '''[[Special:Imagelist|Imagelist]]''' • '''[[:Category:Potentially unused items|Potentially unused items]]'''</center>
+
+<div style="float: left; margin-top: 0; background-color: transparent; border: 1px solid transparent; padding: 10px; padding-left: 4px; width: 246px; clear: both;">
+
+<div style="margin-left: -5px; margin-bottom: 5px; margin-top: -5px; margin-right: -5px; padding: 5px; padding-top: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; margin-bottom: 2px; background: #eee; border: 1px solid #88a;">''':: Statistics'''</div>
+<center>'''{{CURRENTTIME}} UTC, {{CURRENTDAY}} {{CURRENTMONTHNAME}} {{CURRENTYEAR}}'''<br>'''Currently {{NUMBEROFARTICLES}} articles'''</center></div>
+
+<div style="margin-left: -5px; margin-bottom: 5px; margin-top: 5px; margin-right: -5px; padding: 5px; padding-top: 0; padding-bottom: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; background: #eee; border: 1px solid #88a;">''':: Contact'''</div>
+* [http://www.whirled.com/#people-16444 Whirled Profile]
+* [http://www.whirled.com/#mail-w_m_16444 Whirled Mail]</div>
+
+<div style="margin-left: -5px; margin-right: -5px; margin-top: 5px; margin-bottom: 5px; padding: 5px; padding-top: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; background: #eee; border: 1px solid #88a;">''':: To do'''</div>
+* Improve article content
+* Create additional articles helpful to new users and creators
+* Improve the organization of the wiki
+</div>
+
+<div style="margin-left: -5px; margin-right: -5px; margin-top: 5px; margin-bottom: 5px; padding: 5px; padding-top: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; background: #eee; border: 1px solid #88a;">''':: Boilerplates'''</div>
+*Currently none
+</div>
+
+<div style="margin-left: -5px; margin-bottom: 5px; margin-top: 5px; margin-right: -5px; padding: 5px; padding-top: 0; padding-bottom: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; background: #eee; border: 1px solid #88a;">''':: Languages'''</div>
+{{user en}}
+<center><small> See [[Help:Language]] for information about adding language tags to your user page.</small></center></div>
+
+<div style="margin-left: -5px; margin-right: -5px; margin-bottom: -4px; margin-top: 5px; padding: 5px; padding-top: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; background: #eee; border: 1px solid #88a;">''':: Licensing'''</div>
+I release all of my contributions to the [[Whirled:About|Whiki]], including everything on this user page and all of its subpages, into the '''[[Wikipedia:public domain|public domain]]'''.  Hence, if you want to use this page's design, or even just the links header design at the top, you are very welcome to do so.</div></div>
+
+<div style="background-color: #f9f9f9; border: 1px solid #88a; padding: 7px; padding-top: 5px; margin-top: 6px; margin-left: 263px;">
+
+==About Me==
+
+I'm Agent Equinox, one of the Whirled [[Agent|Agents]].
+
+{| style="background-color:#F9F9F9"
+|width=50%|<h3>Wiki Contributions</h3>
+----
+
+:''For a full list, see [[Special:Contributions/Equinox|this page]].
+* [[Report]]
+* [[Bleep]]
+* [[Boot]]
+<br><br>
+|valign=top|
+
+<h3>Current projects</h3>
+----
+
+*Working on the wiki and trying to keep it updated Whirled changes
+|}
+
+<div style="margin-left: -5px; margin-bottom: -4px; margin-top: 5px; margin-right: -5px; padding: 10px; padding-top: 5px; padding-bottom: 5px; background: #f9f9f9; border: 1px solid #8888aa; border-right-width:2px; border-bottom-width:2px; text-align: center;">''Both the page framework and layout courtesy of [[Wikipedia:User:Blankfaze|Blankfaze]], via Guppymomma. Quite excitingly complex!</div></div>

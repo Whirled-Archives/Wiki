@@ -1,0 +1,18 @@
+{{Infobox game
+|name=Fantastic Contraption
+|genre=puzzle
+|description=Build amazing contraptions to cross mind-bending levels in this brain-stretching puzzle game. Use simple urls to share your fantastic creations with your friends.
+|forumlink=http://www.whirled.com/#groups-f_2005
+|linknumber=934
+|singleplayer=yes
+|multiplayer=no
+|version=
+|testing=no
+|testingspot=
+|development=yes
+|devteam=[http://www.whirled.com/#people-1956 Pacifist]
+|screenshot=yes
+}}
+Play '''Fantastic Contraption''' and build amazing contraptions to cross mind-bending levels in this brain-stretching puzzle game. Use simple urls to share your fantastic creations with your friends.
+
+{{stub}}

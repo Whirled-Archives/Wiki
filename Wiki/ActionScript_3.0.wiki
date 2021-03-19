@@ -1,0 +1,31 @@
+'''[[File:Bold text]]<nowiki>
+----
+Insert non-formatted text here</nowiki>'''[[Image:Icon-Programming.png|left]]'''ActionScript 3.0''', also known as AS3, is the programming language put out by Adobe to create Flash content.  You can use AS3 both as standalone, or inside [[Adobe Flash CS3]].  You can learn more about it [http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html here].  
+
+{{clear}}
+Here are some examples of what AS3 looks like 
+
+<actionscript>
+   protected function handleEnterFrame (... ignored) :void
+    {
+        var now :Number = getTimer();
+        var elapsed :Number = now - _bounceBase;
+        while (elapsed > BOUNCE_FREQUENCY) {
+            elapsed -= BOUNCE_FREQUENCY;
+            _bounceBase += BOUNCE_FREQUENCY; // give us less math to do next time..
+        }
+
+        var val :Number = elapsed * Math.PI / BOUNCE_FREQUENCY;
+        _image.y = BOUNCE - (Math.sin(val) * BOUNCE);
+    }
+
+</actionscript>
+
+Files with just stand alone AS3 will usually be called *.as files before you compile them, while AS3 being used in [[Adobe Flash CS3]] are usually part of the *.fla file.  Both of these will compile to *.swf.  
+
+{{clear}}
+
+== See Also ==
+*[[List of useful programs]]
+
+[[Category:Terminology]]

@@ -1,0 +1,68 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Medium
+|description=Create a simple mulitplayer game.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=[[Simple text game| Simple text game, part 1]]
+}}
+
+
+==== Using text services ====
+
+The current version blindly accepts all words. That's not good. Instead, let's use the server-side dictionary service to validate them. You may wish to reference [http://www.whirled.com/code/asdocs/com/whirled/game/GameControl.html GameControl] and [http://www.whirled.com/code/asdocs/com/whirled/game/ServicesSubControl.html ServicesSubControl] for more info on the services we will use.
+
+Let's change the keystroke handler as follows:
+
+<actionscript>
+    /** Called when the user presses a key inside the inputField control. */
+    protected function keyEventHandler (event :KeyboardEvent) :void
+    {
+        if (event.keyCode == 13) {  // user hit Enter
+            if (_control.isConnected()) {
+                _control.services.checkDictionaryWord ("en-us", null, _inputField.text, processWord);
+            } else {
+                _responseField.text = "Error: disconnected.";            
+            }
+            _inputField.text = "";
+        } else {
+            // any other key just clears the message box
+            _responseField.text = "";
+        }
+    }
+</actionscript>
+
+You may notice several interesting things here. First, the game now checks for server connection before making the service request (if we try to do this without checking, it'll cause an exception). But it also means that the game no longer runs stand-alone. We'll deal with that below.
+
+Second, we specify the locale as "en-us" to check against the American English dictionary. That's the only one we have right now. Sorry. :-)
+
+Third, when calling checkDictionaryWord, we don't get a return value from that function call. It calls the server to do the check, which is not instantaneous - we will get a result later, but we can't be sure when, and we certainly shouldn't pause the game while we wait for this result. :-)  So instead, we pass in ''processWord'', a callback function closure, which will be called with the results once they become available.
+
+==== Uploading ====
+{{main|Uploading games}}
+Since we need a server connection, we can't just run the game locally anymore. I mean, we ''can'', but because of the ''isConnected'' check, the game will just print out an error message. (Go ahead, try it. :-) (Actually, the game will work fine; apparently the sdk has changed behavior since this tutorial was originally written. However, you wanted to learn how to upload your game, didn't you?)
+
+To test this game, upload it to the server. Log into Whirled, select the ''Stuff'' tab in the top row, and then click on ''Games''. You should see a ''How do I get stuff?'' section at the bottom of the page, with a button that says, ''Upload...'' to the right. Click that button, and a new ''Create Game'' form will open. 
+
+[[Image:Stuff-Create_game-Configuration.png|none|425px|thumb|The game uploading interface.]]
+
+* Under ''Name'', type the name of your game.
+* Select an appropriate ''Genre'' and set the minimum and maximum number of players for your game.
+* Under ''Game Media'' tab, hit ''Browse...'', and select your '''.swf''' file in the file system browser that appears. When the file has finished uploading, you should see a preview of your game in the window.
+* Optionally upload a ''Screenshot'' of the game for other players to get a preview of the game.
+* Optionally upload ''Furniture Media'' and 'Thumbnail Media''. The former determines what the clickable game looks like when a player encounters it in Whirled. The latter is used to represent the game in e.g. the Shop.
+* Finally, hit ''Save'' at the bottom. Your game should show up in your inventory!
+
+See [[uploading games]] and [[options for games]] for more complete directions.
+
+To test play your game to make sure the upload worked, click on it, and then click on ''Play''.  It should give you different messages based on the words you enter. 
+
+By the way, if you make changes and rebuild the game, you don't need to delete the old game and re-upload everything. Instead, just edit the existing game, reupload the updated game media and click on Save. 
+
+Next: we will add scoring, and discuss multiplayer testing.
+
+= Next Steps =
+
+* [[Simple text game, part 3]]
+* [[Create games|Back to Creating Games]]
+
+[[Category:Tutorials]][[Category:Code tutorials]]

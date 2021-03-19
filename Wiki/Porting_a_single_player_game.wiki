@@ -1,0 +1,121 @@
+[[Image:Icon-Programming.png|left]]This tutorial presents a starting point for converting a pre-existing, single player [[game]] into a game that will run on [[Whirled]]. 
+{{clearleft}}
+==Setting Up==
+To begin with, [[Setting up your programming environment|set up your development environment]].  We recommend you also build and test the Hello Whirled program if possible.  Set up a new game folder with the build files per those instructions.
+
+'''Please make sure you are working in AS3, as the whirled APIs requires this. '''
+
+==Adding imports==
+We assume your game already comes with one or more ActionScript classes.  Add these to your new game folder, making sure that none of them have exactly the same name as the files in the new game folder.  Add the following imports to your ActionScript classes.
+
+<actionscript>
+  import com.whirled.game.CoinsAwardedEvent;
+  import com.whirled.game.GameControl;
+  import com.whirled.game.StateChangedEvent;
+  import com.whirled.net.MessageReceivedEvent;
+</actionscript>
+
+==Create a GameControl==
+The GameControl is the main class you use to communicate with the Whirled API. So the first thing you want to do is create a GameControl, like so:
+
+<actionscript>
+    // create our connection to Whirled
+    _control = new GameControl(this, false);
+</actionscript>
+
+Notice that we instantiated the GameControl object with the second argument set to FALSE.  This tells Whirled to not start the game until _control.game.playerReady() is called.  If you set the second argument to TRUE, then Whirled will autostart your game automatically once all the players have arrived.
+
+==Coordinate Game Start and End==
+The next thing you need to do to integrate with Whirled is to coordinate when your game is going to start and when it ends. Normally you would start your game when the player clicks a button in your menus to start playing or selects a level from a menu. When their game ends or they reach the end of a level, you would end your game (which will result in the player being paid out coins, more on that later) and then you can start your game again when they start the next level or choose to play again.
+
+Coordinating the starting of your game requires listening for StateChangedEvent.GAME_START and calling GameControl.game.playerReady(). The reason it's called playerReady() is because the game doesn't start until all of the players in a multiplayer game call playerReady(). For a single player game, there's only one player who needs to be ready.
+
+<actionscript>
+public class MyGame extends Sprite
+{
+    public function MyGame () {
+        // create our connection to the Whirled and add some event listeners
+        _control = new GameControl(this, false);
+        _control.game.addEventListener(StateChangedEvent.GAME_STARTED, gameDidStart);
+    }
+
+    public function startGame () :void {
+        if (_control.isConnected()) {
+            // we'll get a callback from Whirled when all players have reported as ready
+            _control.game.playerReady();
+        } else {
+            // we're not being played on Whirled, so we just call the callback ourselves
+            gameDidStart();
+        }
+    }
+
+    protected function gameDidStart () :void {
+        // start the actual gameplay when this method is called
+    }
+
+    protected var _control :GameControl;
+}
+</actionscript>
+
+Then later, when the level or game is over, you end the game and tell Whirled how well the player did:
+
+<actionscript>
+    public function endGame (score :int) :void {
+        if (_control.isConnected()) {
+            _control.game.endGameWithScore(score);
+        }
+        // we can immediately end the gameplay here, no need to wait for a callback
+    }
+</actionscript>
+
+Whirled will then award coins to the player based on how good their score was compared to the scores posted by all other players of your game.
+
+You can then call playerReady() again to start the game up again on a new level or if the player requested to play again.
+
+More details about awarding coins and the various ways you can report scores are available in the [[awarding coins]] tutorial.
+
+==Detecting Whether You're On Whirled==
+If you want your game to work both in and out of Whirled, you can do some conditional switching.
+
+<actionscript>
+    //create a main instance of the gameController class
+    _control = new GameControl(this, false);
+
+    // register for events on the GameControl if we're on Whirled
+    if (_control.isConnected()) {
+        _control.game.addEventListener(StateChangedEvent.GAME_STARTED, gameDidStart);
+        _control.local.addEventListener(KeyboardEvent.KEY_DOWN, handleKeyDown, false, 0, true);
+    } else {
+        // register your events outside of whirled
+    }
+</actionscript>
+
+==Removing Calls to the Flash Stage==
+Due to the security reasons, Whirled games do not have full access to the [[accessing the Flash stage in a game|Flash stage]].  If you have calls in your code that refer to the stage, please remove them.
+
+Most listeners can be added to your top-level game Sprite class. Keyboard events must be handled specially, which is described below.
+
+== Move Keyboard Events ==
+
+Due to our security model, Keyboard Events should be registered on the LocalSubControl Object.  All other events can be handled as usual.
+
+<actionscript>
+    _control.local.addEventListener(KeyboardEvent.KEY_DOWN,handleKeyDown, false, 0, true);
+    ......
+    _control.local.removeEventListener(KeyboardEvent.KEY_DOWN,handleKeyDown);
+</actionscript>
+
+==Awarding Coins==
+You can follow the instructions [[awarding coins|here]] to award coins in your game.
+
+==Add Trophies==
+You can follow the instructions [[awarding trophies|here]] to add trophies to your game.
+
+==Persist Private Data==
+You can follow the instructions [[persisting data|here]] to store player data.
+
+==Upload and Test==
+{{main|Uploading games}}
+You can build and test your new game using the ant build files in your new Games folder. If your game works for one round offline, then [[uploading games|upload]] it as a "Parlor" game.
+
+[[Category:ActionScript tutorials]][[Category:Code tutorials]][[Category:Game tutorials]]

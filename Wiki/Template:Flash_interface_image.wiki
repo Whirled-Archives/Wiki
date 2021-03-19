@@ -1,0 +1,7 @@
+<br style="clear:both" />
+{| class="boilerplate" id="pd" style="margin: 0 auto; background-color:#FEF1B5; border:2px solid #B8860B; padding:5px;" cellpadding="4" cellspacing="4"
+| [[Image:Icon-Flash.png|35px|Tutorial zip]]
+| <center>''The above image is a Flash interface image for use in [[Whirled]] tutorials''</center>
+|}
+<includeonly>[[Category:Flash interface images|{{PAGENAME}}]]</includeonly><noinclude>
+{{usage|This is an [[Whirled:Image_tags|file tag]], and should only be used in image summaries. Specifically, this template should only be used on Flash interface images.}}[[Category:Image tags]]</noinclude>

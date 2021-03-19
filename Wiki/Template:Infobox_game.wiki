@@ -1,0 +1,60 @@
+{| class="toccolours" style="float:right; margin:0 0 0.5em 1em; width:21em; clear:right; font-size:90%"
+|-
+! colspan="2" style="background-color:#4995c6; color:white;" |{{{name}}}
+|-
+|colspan=2 align="center"|{{Infobox game/{{{genre|}}}}}
+|-
+! colspan="2" style="background-color:#4995c6; color:white;" |Description
+|-
+|width=100 align="center" valign="top"|{{Infobox game/players/{{{singleplayer|no}}}{{{multiplayer|no}}}}}{{{description}}}<br>
+{{ifdef|{{{linknumber|}}}|2={{Infobox game/instructionlink|linknumber={{{linknumber}}} }} }} {{ifdef|{{{forumlink|}}}|2={{Infobox game/forumlink|forumlink={{{forumlink}}} }} }}
+|-
+! colspan="2" style="background-color:#4995c6; color:white;" |Other Info
+|-
+|valign="top" align="center"| 
+'''Current version:''' {{{version}}}{{Infobox game/testing/{{{testing|no}}}|testingspot={{{testingspot}}}}}{{Infobox game/development/{{{development|no}}}|devteam={{{devteam}}}}}{{Infobox game/screenshot/{{{screenshot|no}}}|name={{{name}}}}}
+{{Infobox game/players/play{{ifdef|{{{whirlednumber|}}}|whirled}}|linknumber={{{linknumber}}}|whirlednumber={{{whirlednumber}}}}}
+{{ifdef|{{{awards|}}}|2={{Infobox game/awards|awardstext={{{awardstext}}}|GDC={{{GDC}}}|GDCdate={{{GDCdate}}} }} }}
+|}<includeonly>[[Category:Games]]{{ifdef|{{{gamepacks|}}}|2={{Infobox game/gamepacks}} }}</includeonly><noinclude>
+
+{{usage|1=
+Blank template for copy & paste usage:
+
+<nowiki>{{</nowiki>Infobox game<br>
+<nowiki>|</nowiki>name=<br>
+<nowiki>|</nowiki>genre=<br>
+<nowiki>|</nowiki>description=<br>
+<nowiki>|</nowiki>forumlink=<br>
+<nowiki>|</nowiki>linknumber=<br>
+<nowiki>|</nowiki>singleplayer=<br>
+<nowiki>|</nowiki>multiplayer=<br>
+<nowiki>|</nowiki>whirlednumber=<br>
+<nowiki>|</nowiki>version=<br>
+<nowiki>|</nowiki>testing=no<br>
+<nowiki>|</nowiki>testingspot=<br>
+<nowiki>|</nowiki>development=no<br>
+<nowiki>|</nowiki>devteam=<br>
+<nowiki>|</nowiki>screenshot=<br>
+<nowiki>|</nowiki>gamepacks=<br>
+<nowiki>}}</nowiki>
+
+Required fields:
+* name
+* description
+* version
+
+Optional fields:
+* genre: Use one of the following: action, adventure, arcade, board, card, other, puzzle, racing, rpg, sports, strategy, word, mmo, or whirled.
+* forumlink: The full URL for the forum or discussion thread for your game. 
+* linknumber: If your game is listed and available in the Games tab, use the number that is used in its link.
+* singleplayer: Use yes if the game is listed & has the option for single player mode. Use whirled if it is a whirled room based game.
+* multiplayer: Use yes if the game is listed & has the option for multiple players mode. Use whirled if it is a whirled room based game.
+* whirlednumber: Use this if you used whirled for singleplayer and multiplayer.  Otherwise, leave it blank.
+* testing: Use yes if the game is still in testing/development. If no, the next parameter is ignored. The default is no.
+* testingspot: The number from the location (everything after the <nowiki>http://www.whirled.com/</nowiki> part) where the current testing version can be found. Defaults to blank.
+* development: If a list of the development team members is provided, put yes. If no, the next parameter is ignored. Default is no.
+* devteam: List of people who are/have working/worked on the game. Defaults to blank.
+* screenshot: Use yes if you have a general screenshot of the game uploaded under the name Game-''Name''.png.  The default is no.
+* screenshot: Use yes if the game has level or item packs. If it doesn't have game packs, leave this blank.
+}}[[Category:Infobox game templates]]
+</noinclude>

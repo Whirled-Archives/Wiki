@@ -1,0 +1,39 @@
+'''[http://www.whirled.com/code/asdocs/com/whirled/game/NetSubControl.html NetSubControl]''' is a subcontrol, it provides a way for game clients to communicate shared state to each other and to server agents.  All games have access to an automatically shared state in the form of a hash table (also known as a mapping or associative array) that is synchronized among the game's players (clients), with notifications whenever a property is added or modified.
+
+== Initialization ==
+
+You should always access netSubControl via the gameControl, don't try to instantiate the object directly.  
+
+<actionscript>
+public class MyGame extends Sprite {
+    public MyGame () {
+        _ctrl = new GameControl(this);
+
+        //you can either access the NetSubControl via a handle
+        //like this
+        _net = _ctrl.net; 
+        _net.get("myProperty"); 
+
+
+        //or like this directly via the control object.
+        _ctrl.net.get("myProperty");
+        
+
+    }
+
+    protected _ctrl :GameControl;
+    protected _net : NetSubControl; 
+}
+</actionscript>
+
+== Setting Properties ==
+
+When you set a property it is immediately distributed to the other clients in the game. Reading a property is immediate, you are reading the properties that have already been distributed. When a client connects to an already-running game, any properties already set will be available. 
+
+== Other Links ==
+*[[GameControl]]
+*[http://www.whirled.com/code/asdocs/com/whirled/game/NetSubControl.html Whirled API Documentation for NetSubControl]
+
+{{stub}}
+
+[[Category:Subcontrols]][[Category:Coding terminology]]

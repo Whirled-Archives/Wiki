@@ -1,0 +1,14 @@
+'''Tutorials''' can help you learn how to bring your ideas to life in Whirled.  Use these links to get started:
+
+
+=== How to Play ===
+{{playnav}}
+
+=== How to Make Things ===
+{{createnav}}
+
+== Other links ==
+*[[Testing and selling|Test & Sell Your Work]]
+*[[:Category:Tutorials|Full list of tutorials]]
+
+[[Category:Tutorials|*]]

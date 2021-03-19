@@ -1,0 +1,41 @@
+{{third-party tool}}
+The '''Community SVN''' is a community repository of example code and art for various [[Whirled]] [[game|games]] and items.  It uses Subversion software.  The main site is at http://code.google.com/p/whirled-community/.
+
+==What is the Community SVN for?==
+The code and art on the Community SVN are made available so that creators have examples to refer to when they are learning more about how to create their own games and items for Whirled.  
+
+==Can I take content from the Community SVN and use it in Whirled?==
+Sure!  But there are some restrictions:
+* Creators may [[list]] content ''derived from'' the examples on the Community SVN, but they '''may not''' list content that is an exact copy of, or is barely distinguishable from, the examples on the Community SVN. 
+* Creators listing content derived from the Community SVN '''must''' attribute the original creator in the listing description.  Whether you're using art or code from Three Rings or another source, you should always acknowledge your sources by saying what you used, and where you got it.
+
+===Exactly how different does my Community SVN-derived item need to be from the original Community SVN item for me to list it?===
+Significantly different.  Obviously there's no exact measure for this, so please use your best judgment.  Merely changing a couple of pixels around, or a simple change of tint, or changing the name of the item, ''is not sufficient''.  You must have put your own original work and time into the item, and in a way that is clear to the Whirled community.
+
+Decisions regarding what items are and are not significantly different enough from the Community SVN items from which they are derived are at the sole discretion of the original creator.
+
+===Can I get the original creator to pre-approve my item?===
+In every folder there should be a ReadMe.txt or a License.txt; the original creator will usually tell you what you need to do or how to contact/credit them. If they don't then it is assumed they '''do not''' want you contacting them and your use of the content in question follows the License.txt found in the Trunk folder on the Community SVN.
+
+===What if I list something from the Community SVN that does not have significant original content?===
+Community SVN contributors will [[report]] those items to the [[Agent]]s of Whirled. 
+
+If the item is found to violate the [[Terms of Service]]:<br>
+"It will be removed from Whirled.  If listing copies or near-copies of SVN content becomes a habit for you, disciplinary action will be taken up to and including the permanent banning of your account.  You will not be reimbursed or compensated for any deletion.  So please, err on the side of caution here!"
+
+==Can I add to the Community SVN?==
+YES! To contribute to the Community SVN you must have a [http://www.google.com Google] Account. Once you have one, you can [http://www.whirled.com/#mail-w_m_20260 mail Conrad500] your Google account Screenname/Email to be given access.
+
+''This is not needed to download from the SVN; it is only if you want to contribute.''
+
+==Where is this Community SVN?==
+The Community SVN can be found [http://whirled-community.googlecode.com/svn/trunk/ here].  Enjoy!
+
+== Is there an easier way to download the SVN? ==
+Yes, there are programs called Subversion clients out there that provide easier to use user interfaces for Subversion.  Try one of these:
+* [http://svnkit.com/ SVNKit]
+* [http://tortoisesvn.net/ TortoiseSVN]
+* A longer list of available Subversion clients can be found on [[Wikipedia:Comparison of Subversion clients|Wikipedia]].
+
+== See Also ==
+*[[SVN FAQ|Official Whirled SVN]]

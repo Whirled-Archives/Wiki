@@ -1,0 +1,191 @@
+A ScoreAnimation is a Sprite that displays text that gradually floats up 30 pixels.  For Java programs on [[Game Gardens]] you can use [http://www.threerings.net/code/vilya/docs/api/com/threerings/parlor/media/ScoreAnimation.html ScoreAnimation.java], but there currently is no similar utility for Whirled.
+
+Here is an example ScoreAnimation.as that was written for '''Free the Balloons!''' on Whirled.  Please note that you will also need [[EventHandlers]].
+
+=Code=
+
+  package {
+  
+  import flash.display.Sprite;
+  import flash.display.Graphics;
+  import flash.display.DisplayObject;
+  import flash.events.Event;
+  import flash.geom.Rectangle;
+  import flash.geom.ColorTransform;
+  import flash.text.TextFormat;
+  import flash.text.TextFormatAlign;
+  import flash.text.TextField;
+  import flash.text.TextFieldType;
+  import flash.text.TextFieldAutoSize;
+  import flash.filters.DropShadowFilter;
+  import flash.utils.getTimer;
+  
+  /**
+   * Text that floats slowly up 
+   */
+  public class ScoreAnimation extends Sprite
+  {
+      /**
+       * Creates a score animation with the supplied text.  
+       *
+       * @param text The text to display.
+       *
+       * @param size The fontsize of the text.  Minimum is 12 (default).
+       *
+       * @param randomColors If true, the text color will change   randomly.  
+       * False uses white text, with a black DropShadow.  Default is   false.
+       *
+       * @param isCentered If true (default), the text will be centered.
+       * False left justifies the text.
+       *
+       * @param numSeconds The number of seconds to show the animation.
+       * Default is 1 second.  If negative, then animation is not removed.
+       */
+      public function ScoreAnimation (text : String, size : int = 12, 
+  		randomColors : Boolean = false, 
+                 isCentered : Boolean =   true, 
+                 numSeconds : int = 1) : void
+      {
+  	_size = Math.max(size, 12);
+  	_randomizeColor = randomColors;
+  	_numSeconds = numSeconds;
+  	if (_randomizeColor)
+  		randomizeColor();
+  	makeLabel(text, _size, isCentered);
+  	this.width = _label.width;
+  	this.height = _label.height;
+  	this.mouseEnabled = false;
+  	_label.mouseEnabled = false;
+  	_toY = -30;
+  	EventHandlers.registerEventListener(this, Event.ENTER_FRAME, onEnterFrame);
+         _stamp = getTimer();
+      }
+  
+      /**
+       * Should be called when the ScoreAnimation object is no longer needed.
+       */
+     public function handleUnload() : void {
+  	EventHandlers.unregisterEventListener(this, Event.ENTER_FRAME, onEnterFrame);
+     }
+  
+      /**
+       * Creates a label with the supplied text, with a drop shadow. 
+       *
+       * @param text The text to display.
+       *
+       * @param size The fontsize of the text.  Minimum is 12 (default).
+       *
+       * @param randomColors If true, the text color will change randomly.  
+       * False uses white text, with a black DropShadow.  Default is false.
+       *
+       * @param isCentered If true (default), the text will be centered.
+       * False left justifies the text.
+       */
+     protected function makeLabel(text : String, fontsize : int = 12, isCentered : Boolean = true) : void {
+  	  _label = new TextField();
+          _label.text = text;	
+          _label.selectable = false;
+          _label.border = false;
+  	  if (isCentered)
+  		  _label.autoSize = TextFieldAutoSize.CENTER;
+  	  else
+  		  _label.autoSize = TextFieldAutoSize.LEFT;
+  
+          _label.defaultTextFormat = Resources.makeFormatForScoreAnimation(fontsize);
+  	  addChild(_label);
+          _label.setTextFormat( Resources.makeFormatForScoreAnimation(fontsize));
+  	 _label.filters = [new DropShadowFilter()];
+     }
+  
+      /**
+       * Controls the movement of the label created.  Text moves slowly up to _toY.
+       */
+     protected function onEnterFrame (event :Event) :void {
+         var elapsed :Number;
+         if (_numSeconds <= 0) 
+            elapsed = _numSeconds;
+   	 else
+            elapsed = (getTimer() - _stamp) / (_numSeconds * 1000);
+  
+        if (_randomizeColor)
+  		transformColor();
+  	var dy : int = _toY - y;
+  	if ((dy == 0) || (elapsed >= 1 )) { 
+            handleUnload();
+            this.parent.removeChild(this);
+            return; 
+  	}
+  
+  	if (Math.random() < .1) randomizeColor();
+  
+  	if (_toY > 0) {
+  		if (Math.random() > .125) dy = 0;
+  	}
+  
+  	if (dy == 0) return;
+  
+  	if (dy < 0) dy = -1;
+  	else if (dy > 0) dy = 1;
+  
+  	y += dy;
+     }
+  
+      /**
+       * Randomizes the target color for the text.
+       */
+     protected function randomizeColor() : void {
+  	_red2 = Math.random();
+  	_green2 = Math.random();
+  	_blue2 = Math.random();
+     }
+  
+      /**
+       * Applies the color transformation partially, based on the   _easingSpeed.
+       */
+     protected function transformColor() : void {
+  	_red1 += (_red2 - _red1) * _easingSpeed;
+  	_green1 += (_green2 - _green1) * _easingSpeed;
+  	_blue1 += (_blue2 - _blue1) * _easingSpeed;
+  	this.transform.colorTransform = new ColorTransform(_red1, _green1, _blue1);
+     }
+    
+     // VARIABLES
+  
+     protected var _toY	           : int;
+     protected var _label           : TextField;
+     protected var _numSeconds  : int = 1;
+  
+     protected var _red1 	   : Number = 1;
+     protected var _green1 	   : Number = 0;
+     protected var _blue1 	   : Number = 0;
+     protected var _red2 	   : Number;
+     protected var _green2 	   : Number;
+     protected var _blue2 	   : Number;
+     protected var _easingSpeed     : Number = 0.05;
+  
+     protected var _size            : int;
+     protected var _randomizeColor  : Boolean;
+   }
+   }
+
+=Example of Usage=
+You may create new ScoreAnimation objects directly, or use a local function in the class that needs to display a ScoreAnimation.  The ScoreAnimations will remove themselves automatically.  Here is how '''Free the Balloons!''' uses a local class.
+
+      public function startScoreAnimation(x : int, y : int, text : String, 
+  		size : int = 12, useRandomColors : Boolean = true, 
+  		centerText : Boolean = true) : void
+      {
+  	if (text.length < 1) return;
+  	
+  	var newScoreAnimation : ScoreAnimation = new ScoreAnimation(text, size, useRandomColors, 
+  		centerText, 2);
+  	newScoreAnimation.x = x;
+  	newScoreAnimation.y = y;
+  	addChild(newScoreAnimation);
+      }
+  
+Anywhere you wish to trigger a ScoreAnimation, call startScoreAnimation with appropriate arguments.  For example: 
+ 	 startScoreAnimation(90, 90, "Free the Balloons!", 30);
+
+
+[[Category:Game tutorials]][[Category:Code tutorials]][[Category:Coding terminology]]

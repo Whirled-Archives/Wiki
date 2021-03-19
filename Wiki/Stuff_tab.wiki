@@ -1,0 +1,27 @@
+[[Image:Stuff.png|right|250px|thumb|The Stuff tab.]]
+The '''Stuff tab''' contains information about items in your inventory.
+
+== Stuff ==
+[[Image:Stuff-my stuff.png|left]]
+
+The Stuff tab is navigated using a menu with the different types of items that you can own.
+
+From top to bottom:<br>
+{{bul}} [[Avatar]]s - visual representations of players used when they are in rooms<br>
+{{bul}} [[Furniture]] - objects used to decorate rooms<br>
+{{bul}} [[Backdrop]]s - backgrounds for rooms<br>
+{{bul}} [[Toy]]s - interactive objects<br>
+{{bul}} [[Pet]]s - interactive roaming objects<br>
+{{bul}} [[Game]]s - for playing and adding to rooms; there are subcategories for [[level pack]]s & [[item pack]]s which are used to expand gameplay<br>
+{{bul}} [[Image]]s - for using in Whirled posts, [[remixable items]], and for decorating rooms<br>
+{{bul}} [[Music]] - for adding to rooms for background music<br>
+{{bul}} [[Video]]s - for adding to rooms
+{{clearleft}}
+
+== Sending Stuff to Friends ==
+:''Main article: [[Mail#Sending_Items_in_Mail|Mail]]''
+You can send items to friends by clicking on "Send as Gift" while viewing the item.
+
+== See Also ==
+{{createnav}}
+[[Category:Terminology]]

@@ -1,0 +1,26 @@
+Here is the list of requirements to '''license your [[game]] on a [http://www.flashgamelicense.com/view_library.php?page=license-terms non-exclusive] basis''' to [[Whirled]]:
+
+* Flash 9, ActionScript 3 compliant
+* Game file hosted at ***.whirled.com
+* Uses Whirled APIs to [[awarding coins | store scores and award coins]]
+* Uses Whirled APIs to [[awarding trophies|award trophies]] (unique trophy art required)
+* Standard Whirled game ending 
+* No advertising
+* Sponsor logo display OK, link outs not allowed
+* Developer logo display OK, link outs (to dev own site only) allowed
+* "More games" links (if present) directed to Whirled games catalog
+* Subject to final [[Three Rings]] quality review
+* Licensor/creator guarantees that they own the rights to all content and IP in the game including art, code, music/sound, characters, environments, story line, etc. and need no 3rd party approval to license the game to Three Rings
+* Site-locking is optional (at developer's discretion)
+* Graphical game instructions are not required but are strongly encouraged ([http://www.whirled.com/#games-d_10_i example])
+* Graphical icon for game, PNG/JPG.
+* Media to represent game as Furniture.  PNG/JPG okay, SWF preferred. 
+
+
+To get started, we suggest you read our [[Single player game|porting to Whirled]] page, [[Whirled game creation FAQ|games FAQ page]] and [[create games]] page.
+
+When you have tested your game in Whirled and are ready for us to look at it, please leave a copy of the game in your room and email your contact at Whirled.
+
+'''Please note: This only applies to games seeking an up-front license fee in order to bring their game to Whirled. It does not apply to any games uploaded to Whirled directly in the usual Whirled way, which are free to include advertising and link outs, and do not require nor should expect any approval from Three Rings.'''
+
+[[Category:Policy]]

@@ -1,0 +1,120 @@
+{{Infobox tutorial
+|type=Code
+|difficulty=Beginner
+|description=Create a smiple Wyvern monster.
+|requirements=[[Image:Icon-Programming.png|20px]] Whirled SDK
+|other=
+}}
+
+[[Image:Icon-highlighted-avatar.png|left]]This tutorial uses AS3 indirectly to build a [[Wyvern]] monster ([[pet]]) for Whirled.  For this tutorial, we are basically going to be re-creating a monster from the [[Whirled-Wyvern SVN]] original monster template created by [http://www.whirled.com/#people-878 Aduros].
+{{clearleft}}
+
+== Prerequisites ==
+# [[Setting up your programming environment]] - be sure to install Apache Ant even if you have Windows.
+# [[Hello Whirled]] - use this to check that you've set up your environment correctly.
+# Download the Whirled-Wyvern SVN from the [[Whirled-Wyvern SVN]].
+# This tutorial assumes that you can learn by example.
+
+=== Set WHIRLED_HOME ===
+You will need to make sure there is a correctly set WHIRLED_HOME environment variable.
+
+# Get to your Environment Variables by going to Control Panel &rarr; System &rarr; Advanced &rarr; Environment Variables.
+# Make a new SYSTEM Variable (not user variable)
+# Name it WHIRLED_HOME, and put its value as your folder location (so in my example, it could be c:\code\whirled)
+# Hit OK (your computer may 'pause' for a moment to update)
+
+== Test Building a Monster ==
+If you do not already have Imagemagick installed, you'll need to remove some code before you can do a test build of the monster files.  Use a text editor to edit build.xml in the monster directory and remove the following lines of code:
+
+<actionscript>
+    <echo message="Rendering thumbnail..." />
+    <exec executable="./thumb.sh">
+        <arg value="rsrc/${monster.name}.png" />
+        <arg value="Thumb_${monster.name}.png" />
+        <arg value="${monster.level}" />
+    </exec>
+</actionscript>
+
+=== Windows ===
+Go to your command line via Start &rarr; Run... &rarr; cmd and then go to your monster directory (i.e. cd c:\code\whirled\wyvern\monster).  Then run ant.
+
+<actionscript>
+C:\Documents and Settings\XXXX>cd c:\code\whirled\wyvern\monster
+
+C:\code\whirled\wyvern\monster>ant
+Buildfile: build.xml
+
+build-all:
+Trying to override old definition of task for
+
+build-monster:
+     [echo] Building Anaconda (Level 45)
+     [copy] Copying 1 file to C:\code\whirled\wyvern\monster
+
+prepare-flex:
+     [copy] Copying 1 file to C:\whirled\etc
+     [copy] Copying 1 file to C:\whirled\etc
+
+build:
+     [java] Loading configuration file C:\whirled\etc\whirled-config.xml
+     [java] C:\code\whirled\wyvern\monster\Monster_Anaconda.swf (74904 bytes)
+   [delete] Deleting: C:\code\whirled\wyvern\monster\Monster_Anaconda.as
+</actionscript>
+
+This will continue for a bunch of monsters until it's done:
+
+<actionscript>
+BUILD SUCCESSFUL
+Total time: 1 minute 59 seconds
+C:\code\whirled\wyvern\monster>
+</actionscript>
+
+=== Linux & Mac ===
+The process should be similar to the Windows one above.  Simply run ant in the monster directory.
+
+== Create Your Own Customized Monster ==
+Now that you have verified that building monsters works, you can customize the monsters.properties file to create your own.  Before you edit the file, figure out the traits of the monsters that you want to make.  This includes:
+
+*Name - Don't use spaces in your names here, you'll be able to add spaces when you upload your pet to Whirled.
+*Level (Name.level) - The template allows levels 1-500.
+*Find appropriate mp3 files for:
+**Attack sound* (Name.sound_attack)
+**Counter sound* (Name.sound_counter)
+**Heal sound* (Name.sound_heal)
+*Death sound* (Name.sound_death)
+*Range of attack* (Name.range)
+
+''<nowiki>*</nowiki> - optional''
+
+There are two parts to monsters.properties, the list of monster names and then the configuration for those monsters.  In this example 3 monsters are being created and they are named MyMonster1, MyMonster2, and MyMonster3.
+
+<actionscript>
+monsters.list = \
+MyMonster1,\
+MyMonster2,\
+MyMonster3
+#monsters.list = MyMonster3
+
+MyMonster1.level = 1
+
+MyMonster2.level = 20
+MyMonster2.sound_attack = MyMonster2_attack.mp3
+MyMonster2.sound_death = MyMonster2_death.mp3
+
+MyMonster3.level = 150
+MyMonster2.range = 2
+MyMonster3.sound_attack = MyMonster3_attack.mp3
+MyMonster3.sound_death = MyMonster3_death.mp3
+</actionscript>
+
+In this example: MyMonster1 is a simple level 1 monster.  MyMonster2 is level 20 and has a sound for attacking and dying.  MyMonster3 is level 150 with an attack range of 2 and a sound for attacking and dying.
+
+Each monster will need at minimum a PNG image to use; it should be named MonsterName.png and should be placed in the monster/rsrc/ directory.  If you are using sounds for your monster, those mp3 files should be correctly named (MonsterName_attack.mp3, MonsterName_death.mp3, MonsterName_heal.mp3, and MonsterName_counter.mp3) and should also be placed in the monster/rsrc/ directory. Properly naming your resource files allows you to easily know which one is used by which monster so you can make changes.
+
+After you have edited monsters.properties to your liking and put the needed resource files in the rsrc directory, just like in the test build above, run ant in the monsters directory to create the SWF files for your customized monsters.  You can then upload your monsters as [[pet]]s in your [[stuff tab]].
+
+== See Also ==
+* [http://www.whirled.com/#groups-t_9915 Newb's Guide to Wyvern Pet Creation discussion thread]
+* [http://wiki.whirled.com/Wyvern_items_%28code_tutorial%29 More in-depth Version of Wyvern Item Creation]
+
+[[Category:Wyvern]]

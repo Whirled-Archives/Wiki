@@ -1,0 +1,10 @@
+:''If you are looking for help with Whirled, see the article about [[support]].''
+
+Some of the following links may be of help.
+
+* [[:Category:Tutorials|Tutorial type documents on the wiki]]
+* [http://www.whirled.com/#whirleds-d_19 Brave New Whirled for posting questions about Whirled]
+* [http://www.whirled.com/#whirleds-d_146 Wiki Whirled for posting questions about the wiki]
+* [[Whirled:Administrators|Administrator assistance]]
+
+If you're looking to lend a hand on the wiki, look at the [[Whirled:Wishlist|article wishlist]].

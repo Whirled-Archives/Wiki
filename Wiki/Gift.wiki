@@ -1,0 +1,36 @@
+You can '''gift''' any item in your [[Stuff tab]] or one of your rooms to a person in your [[friend|friends list]] by [[mail|mailing]] it to them.  [[Image:Stuff-My_Avatars-Avatar_viewer.png|400px|right]]
+__FORCETOC__
+== Important Notes about Sending Items and Rooms ==
+* Once you hit the "Send" button on the mail with the item, you cannot undo it.  Sending an item removes it from your Stuff and you will not be able to use it any more.
+* You cannot send items that are currently in use--that is, already added to a room, or being worn as an avatar.  If you try sending an item that is in use, you will get an error message saying "In use items cannot be sent as gifts."
+* You cannot send the room that you have set as your home.  If you try sending a room that is set as your home, you will get an error message saying "Sorry, but you may not give your home room as a gift."
+* When gifting a room, any items that have been added to the room that are owned by you will also be transferred to the receiver.
+* You can only send gifts to players that are your Friends.
+* Be careful:  If you send the original version of an item instead of a copy that you purchased in the [[Shop]], the receiver will be able to [[list]] that item for sale.  You can tell if an item is an original:
+**In your Stuff tab when browsing pages of items, the names of originals have italic text.  
+**In the item details of originals, there is a line that says "You can list this item in the shop: List Item" above the gifting information.
+* When receiving an item as a gift, viewing the mail multiple times will not add more than one of the item to your Stuff.
+
+== How to Send an Item ==
+To send an item:
+# Click on the item in your Stuff tab.  
+# Click on the ''Send as Gift'' link.
+# Select the Friend to whom you want to send your gift.  
+# Add a subject line and a message to your gift mail!
+# Click the "Send" button.
+# Click on a button to answer the question: NOTE: You are sending this item to Guppymomma as a gift. Whirled does not support trades or loans between players. Please do not give away any item that you would regret losing permanently. Do you want to continue?
+
+Your gift will then be sent to your friend as mail, and when they open it, the item you sent will be added to their Stuff tab.
+
+'''Whirled does not support trades or loans between players.  Do not give away any item that you would regret losing permanently.'''
+
+{{clearright}}<gallery widths="300px">
+Image:Stuff-original_and_copy.png|Original uploaded item on the left and purchased copy of an item on the right. Original items in your Stuff thumbnail pages will have the item name in italics.
+Image:Mail-sending item.png|Sending an item as a gift adds it as an attachment to a mail.
+Image:Mail-received item.png|Receiving an item as a gift through a mail. Viewing the mail multiple times does not add more copies of the item to your stuff.
+</gallery>
+{{clear}}
+== How to Send a Room ==
+{{:Gift/Room}}
+
+[[Category:Terminology]]

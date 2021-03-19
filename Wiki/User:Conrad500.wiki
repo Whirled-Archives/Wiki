@@ -1,0 +1,52 @@
+<div style="background-color: #f9f9f9; border: 1px solid #88a; padding: 5px;">
+<center><big>Welcome to '''Conrad500's''' user page</big></center>
+<center><small>'''''(Note: Please do not edit this page. Direct all comments to my [[User talk:Conrad500|User talk]] page.)'''''</small></center></div>
+<center>'''[[User talk:Conrad500|Talk]]''' • '''[[Whirled|Whirled]]''' • '''[[Whirled:about|Whiki]]'''</center>
+
+<div style="float: left; margin-top: 0; background-color: transparent; border: 1px solid transparent; padding: 10px; padding-left: 4px; width: 246px; clear: both;">
+
+<div style="margin-left: -5px; margin-bottom: 5px; margin-top: -5px; margin-right: -5px; padding: 5px; padding-top: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; margin-bottom: 2px; background: #eee; border: 1px solid #88a;">''':: News'''</div>
+*[http://www.whirled.com/#groups-d_2783 Kirby Contest is over!]</div>
+
+<div style="margin-left: -5px; margin-bottom: 5px; margin-top: 5px; margin-right: -5px; padding: 5px; padding-top: 0; padding-bottom: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; background: #eee; border: 1px solid #88a;">''':: Contact'''</div>
+* [http://www.whirled.com/#people-20260 Profile]
+* [http://www.conrad500.blogspot.com Blog]
+* [http://www.whirled.com/#mail-w_m_20260 Mail Me!]</div>
+
+<div style="margin-left: -5px; margin-right: -5px; margin-top: 5px; margin-bottom: 5px; padding: 5px; padding-top: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; background: #eee; border: 1px solid #88a;">''':: Current Projects'''</div>
+* Getting this page done.
+* [http://www.whirled.com/#groups-d_2783 Kirby Contest!(Completed!)]
+* [http://www.whirled.com/#games-d_-874 Area Flash]
+* The Quiet Game (WIP)
+</div>
+
+<div style="margin-left: -5px; margin-bottom: 5px; margin-top: 5px; margin-right: -5px; padding: 5px; padding-top: 0; padding-bottom: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; background: #eee; border: 1px solid #88a;">''':: Languages'''</div>
+{{user en}}
+<center><small> See [[Help:Language]] for information about adding language tags to your user page.</small></center></div>
+
+<div style="margin-left: -5px; margin-right: -5px; margin-bottom: -4px; margin-top: 5px; padding: 5px; padding-top: 0; background: #f9f9f9; border: 1px solid #88a; border-right-width:2px; border-bottom-width:2px;">
+<div style="width: 101.5%; margin-top: -1px; margin-left: -6px; padding: 3px; background: #eee; border: 1px solid #88a;">''':: Licensing'''</div>
+I release all of my contributions to the [[Whirled:About|Whiki]], including everything on this user page and all of its subpages, into the '''[[Wikipedia:public domain|public domain]]'''.  Hence, if you want to use this page's design, or even just the links header design at the top, you are very welcome to do so.</div></div>
+
+<div style="background-color: #f9f9f9; border: 1px solid #88a; padding: 7px; padding-top: 5px; margin-top: 6px; margin-left: 263px;">
+
+=Information=
+===About Conrad500===
+'''Conrad500''' (born '''Conrad Stiller''' on November 6, 1988) is member of the [[Whirled:About|Whiki]] community. Born and raised in Louisiana, Conrad moved to Houston, Texas after Hurricane Katrina destroyed everything in his life. Even though he sometimes comes off as rude or mean, he is a very nice person and will help you with any non idiotic problems.
+
+===Conrad's Merchandise===
+* [http://www.whirled.com/#shop-l_5_5198 Kirby-tar].
+* [http://www.whirled.com/#shop-5_7_c20260 Conrad's Entire Shop].
+
+===Conrad's Groups===
+*{{groups|Kirby Group|2783}}.
+*{{groups|Nintendo Wifi Group|5362}}.
+*{{groups|Pokemon Group|10599}}
+*{{groups|Pixel Whirled|754}}.
+*{{groups|Wyvern|3464}}.
+
+<div style="margin-left: -5px; margin-bottom: -4px; margin-top: 5px; margin-right: -5px; padding: 10px; padding-top: 5px; padding-bottom: 5px; background: #f9f9f9; border: 1px solid #8888aa; border-right-width:2px; border-bottom-width:2px; text-align: center;">''Both the page framework and layout courtesy of [[Wikipedia:User:Blankfaze|Blankfaze]], via Guppymomma. Quite excitingly complex!</div></div>

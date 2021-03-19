@@ -1,0 +1,11 @@
+[[Image:Flash CS3-ui screenshot.png|thumb|300px|The Adobe Flash CS3 user interface.]]
+[[Image:Icon-Flash.png|left]]'''Adobe Flash CS3''' is the Adobe's Flash development environment. The program is not free, but there is a 30-day free trial and students & teachers may qualify for education pricing.  You can learn more about it on [http://www.adobe.com/products/flash Adobe's site]. Note that this is just a development environment, you can use Adobe Flash CS3 and still use [[AS3]] code.  You will also see it occasionally referred to as FAT, which stands for Flash Authoring Tool.
+
+Files you create in Adobe Flash CS3 will mostly be called *.fla before you compile them and *.swf after you compile them. 
+
+== See Also ==
+*[http://www.adobe.com/products/flash Adobe Flash CS3 website]
+*[http://www.adobe.com/education/purchasing/qualify.html Information on who qualifies for Adobe's education pricing]
+*[[List of useful programs]]
+
+[[Category:Terminology]]

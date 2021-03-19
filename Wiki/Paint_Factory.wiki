@@ -1,0 +1,33 @@
+{{Infobox game
+|name=Paint Factory
+|genre=puzzle
+|description=Mix them colors!
+|forumlink=http://www.whirled.com/#whirleds-d_549
+|linknumber=157
+|singleplayer=yes
+|multiplayer=no
+|version=1.67
+|testing=no
+|testingspot=#world-s1065
+|development=yes
+|devteam=[http://first.whirled.com/#people-70 Jdnx429]
+|screenshot=no
+}}
+ 
+
+
+
+== Instructions ==
+
+Paint Factory is a game of matching colors. Match the required color shown in the vats by mixing drops of color from the supply tubes. Click on a color-drop and drop it in a vat below.
+
+Vats can either require 3 or 4 color-drops to fill. The dotted lines indicate how many drops of color it will take to fill a vat. 
+
+[[Image:Game-paintfactory-instructions.png]]
+ 
+
+=== Scoring ===
+
+Each level in Paint Factory consists of 10 vats. Each vat is worth a maximum of 100 points. The score is dependent on how closely the desired color matches the mixed color.  A score higher than the goal score is required to pass to the next level.
+ 
+The score that is briefly displayed at the bottom of the vat changes color depending on performance. A green score indicates that the score is above the average required to pass the level. Example: If the goal score is 750 then the average vat score required to pass the level is 75. The score will display green if it is 75 or higher. The score will display red if it’s less than 75.

@@ -1,0 +1,46 @@
+'''Agents''' are customer support operatives that will help you have a better [[Whirled]] experience.  Agents take their names from weather patterns and other natural phenomena.
+
+Only official [[Three Rings]] Agents have "Agent" in their display names; regular Whirled players are not able to use that word in a display name.
+
+==Pioneer Agents==
+*[[User:Vortex|Agent Vortex]]
+*Agent Cirrus
+*Agent Nimbus
+*Agent Sirocco
+*Agent Coriolis
+*[http://www.whirled.com/#people-14134 Agent Sunshine]
+*[[user:Equinox|Agent Equinox]]
+
+==Duties==
+Agents' duties include:
+* Handling [[report|reports]]
+* Enforcing Whirled's [[Terms of Service]] and [[Community Standards]]
+* Responding to questions from players
+* Running official events and contests
+* Advising content creators
+* Taking note of feedback from the Whirled community
+
+==How can I become an Agent?==
+'''Three Rings is not currently taking applications for new Agents.'''  The job of Agent is a hired, paid, real-life job that you have to apply and interview for.  If and when the call goes out for more applicants, the job opening will be announced prominently on Whirled. 
+
+To apply to be an Agent, you '''must''' be 18 years of age or older at the time of your application.  This is non-negotiable, as U.S. contract law regards any contract signed by a person under the age of 18 as non-binding.  Three Rings also considers factors including, but not limited to:
+* the applicant's disciplinary history in Whirled
+* knowledge of Whirled's features and community
+* communication skills
+
+Sorry, Three Rings cannot accept volunteers in this capacity.
+
+==How do I Contact an Agent?==
+That depends!
+* If you wish to report a violation of Whirled's Terms of Service, you should not contact an Agent directly, but instead use the [[report|reporting system]].  Using the reporting system guarantees that your report will get seen by whichever Agent is on duty, and will generate a record with proof of the offense at the time that it happened.
+* If you have a question, using the [http://www.whirled.com/#support Contact Us] form will get your question seen by the Agent on duty.
+* Whirled [[mail]] is '''not''' an official support channel, so if you submit support requests or questions via mail to an Agent, you may be directed to another venue, or it may take a while for you to receive a response.
+* If you see Agents around and just want to say hello, feel free!  Agents are happy to meet you!  However, ''please'' do not take it personally if the Agent is working and cannot talk for very long, or has to move to another room without much of a goodbye, to take care of an issue.
+
+==See Also==
+*[[Account security]]
+*[[Ban]]
+*[[Report]]
+*[[Support]]
+*Brave New Whirled thread announcing Agents on [http://www.whirled.com/#groups-t_1031 May 1st, 2008]
+[[Category:Agents]]

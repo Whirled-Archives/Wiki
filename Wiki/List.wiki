@@ -1,0 +1,48 @@
+You can sell items that you have created to other [[Whirled]] players by [[upload|uploading]] them to your [[Stuff tab]] and then '''listing''' them for sale in Whirled's [[Shop]].  See the [[guide to selling]] for some tips on selling your items.
+
+==List an Item for Sale==
+[[Image:Stuff-Images.png|right|thumb|300px|Find the item you wish to list on the Shop.]]
+[[Image:Imagedetail.png|right|thumb|300px|Click the item in your Stuff tab to bring up its detail page.]]Before you list one of your creations for sale, you should check a few things about it:
+* Does it have a useful description, thumbnail and furniture media, item name, and other details that will interest buyers?
+* What do other sellers charge for an item like yours?  You don't have to conform to pricing norms if you don't want to, but looking at prices for similar items could give you an idea of what the Whirled community is willing to pay.  You will also have to obey the minimum [[pricing]] as determined by your initial rating of the item as its Creator.
+* Does your item comply with Whirled's [[Community Standards]] and [[Terms of Service]]?  If not, it will be reported by other players and is subject to removal.
+
+To list an item you have created and uploaded into your Stuff tab, go to the Stuff tab and find it there, then click on it to get to the item's detail page.  Once there, use the "List item" link to get to the listing options.
+{{clear}}
+===Listing Options===
+[[Image:Pricingstrategies.png|right|thumb|300px|A list of pricing options.]][[Image:Listeditemprivate.png|right|thumb|300px|The Stuff tab detail page of a listed item.]][[Image:Shoplisting.png|right|thumb|300px|An item listing in the Shop.]]
+The first thing you need to do is give your item an initial rating.  Depending on the type of item and the rating you give it, your item will have a specific minimum price and a listing fee that must be paid when you initially list the item.  The community's rating of your item can affect the minimum pricing if you wish to reprice the item.  Read about pricing in detail [[pricing|here]].
+
+In your listing options, you can choose from some different pricing strategies:
+* '''Hidden''' - Use this for trophies, content packs or other items that are not directly for sale or to disable your shop listing temporarily without deleting it.
+* '''Manual''' - You configure the pricing to start and may update it at any time.
+* '''Escalate''' - When the number of sales reaches the sales target you set here, Whirled will automatically increase the price by 25%. When it reaches it again, the price will increase by another 25% and so on.  '''NOTE:  This option does not currently function.'''
+* '''Limited Edition''' - When the number of sales reaches the sales target you set here, the listing will be set to Hidden (see above).
+
+You can also decide whether you want to list your creation in [[currency#Coins|coins]] or [[currency#Bars|bars]].  
+* '''Coins''' - If you choose to list in coins, you will earn coins when Whirled players buy your creation in the Shop.  
+* '''Bars''' - If you choose to list in bars, you will earn [[currency#Bling|bling]] from your sales ({{profit}} of the bar sale price in bling), and you can [[currency#Cashing_Out|cash out]]--that is, receive U.S. Dollars via PayPal--when you have accumulated 500 bling in sales profits.  
+
+Coin-listed items may be purchased with coins or bars. Bar-listed items can only be purchased with bars. 
+
+Last, you can set a price here.  Once you have all the settings the way you want them, click the "List it!" button.  Your item will then be placed in the Shop for all the Whirled to see (and hopefully, buy)!  You can see the item's public Shop listing by clicking the "View in Shop" link.
+
+For all types of items, you can [[brand]] them in order to share profits with a group of creators.
+
+For some types of items, you can give [[attribution]] to the source item that you derived yours from in order to share the profits with the original creator.
+
+Once all this is done, you may wish to [[tag]] your item so that it comes up in relevant Whirled players' searches.  In addition to purchasing your creation, players will now be able to tag, [[rating|rate]], [[comment]] on, and [[favorites|favorite]] it.
+{{clear}}
+
+==Editing an Existing Shop Listing==
+[[Image:Itemedit.png|right|thumb|300px|You can edit your item and its Shop listing from its entry in your Stuff tab.]]Once your creation is listed in the Shop, you can still change the listing settings or the item itself.
+* '''Delete Item''' - This deletes the item completely from your Stuff and from the Shop.  It does not remove copies that others may have purchased while your item was listed on the Shop.  If you just want to delist the item from the Shop, not delete it entirely from your Stuff, see "Delisting an Item" below.
+* '''Edit Item''' - This allows you to change any of the settings you saw initially during the upload process.  For more information on those settings, see [[Upload]].
+* '''Update''' - Updating your shop listing will replace the current listing with a new version of the item as it is right now.  Note: people who have already purchased your item will automatically switch to this version. If you don't want to change the item everyone is using, you should create and list a new item and delist this item (which can be done from this item's Shop page).  You can also update your item's shop description with information on any changes you've made for this update.
+* '''Update Pricing''' - Here you can change the pricing strategy, currency options, and price for your item.  More information on these options can be found above under "Listing Options."
+{{clear}}
+
+==Delisting an Item==
+[[Image:Delist.png|right|thumb|300px|To delist an item, use the "Delist" link on its page in the Shop.]]At some point you may have an item listed for sale in the Shop that you no longer wish to sell.  You can delist the item, which removes it from the Shop but does not delete it from your Stuff.  To delist, find the item in your Stuff and click the "View in Shop" link.  You may relist it whenever you like.
+
+[[Category:Tutorials]][[Category:Terminology]]

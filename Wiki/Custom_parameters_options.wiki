@@ -1,0 +1,96 @@
+'''Custom Parameters''' are specified by a small bit of XML that tell the game lobby what option(s) you wish people creating tables to specify.  The option(s) they chose will then be passed on to the game instance when it is started up, and the game can react accordingly.
+
+They are used when [[uploading games]] in the [[options for games]] section.
+
+=== Setting Custom Parameters ===
+
+The Custom Parameters box is currently very simple, and accepts xml text input: (used to be called Game configuration)
+
+[[Image:Game_definition.png]]
+
+=== Custom Parameters types ===
+
+All parameters have the <code>ident</code> attribute - this attribute gives it a name which can be used to identify it in your game code, as well as on the Custom Parameters screen.
+
+There are three types of parameters:
+* <code><range></code> is implemented as a drop down list, and contains an integer value.  Attributes are:
+** minimum: The smallest value in the drop down list
+** maximum: The largest value in the drop down list
+** start: The default value
+* <code><toggle></code> is implemented as a check box.  Attributes are:
+** start: The beginning boolean value to use - valid values are "true" or "false"
+* <code><choice></code> is implemented as a drop-down box.  Attributes are:
+** choices: A comma-separated list of drop-down options.
+** start: The default option - it must exist in the "choices" list.
+
+Example:
+<actionscript>
+<range ident="boardSize" minimum="4" maximum="16" start="12"/>
+<toggle ident="allow cheaters" start="false"/>
+<choice ident="rules" choices="standard,wacky,super wacky" start="standard"/>
+</actionscript>
+
+=== Custom Parameters in the Lobby ===
+
+The example shown above will cause these options to be added to the configuration options when creating a table:
+
+[[Image:Table_config.png]]
+
+Note that if you specify a multiplayer game, that option will also show up in this window.
+
+[[Image:multiplayer_table_config.png]]
+
+=== Retrieving configuration options in game code ===
+
+What use are configurable parameters without the ability to get them in your game code? Fortunately, GameControl provides a method to quickly get all the options that were set when the game was created.  GameControl.game.getConfig() :Object returns an object with attributes equal to each ident provided in the XML game configuration.
+
+The example provided above (with the default options chosen) will return an object encoded like this:
+
+<actionscript>
+{ 
+    boardSize: 8,
+    allow cheaters: false,
+    rules: "standard"
+}
+</actionscript>
+
+This code will fetch all three options and display them as local chat (assuming you have a member variable named _control :GameControl)
+
+<actionscript>
+_control = new GameControl(this);
+if (_control.net.isConnected()) {
+    var config :Object = _control.game.getConfig();
+    _control.local.feedback("boardSize: " + config.boardSize);
+    _control.local.feedback("allow cheaters: " + config["allow cheaters"]);
+    _control.local.feedback("rules: " + config.rules);
+}
+</actionscript>
+
+As can be seen above, if you want to use spaces in your configuration options (which looks best in the game lobby), thats perfectly fine - you just have to access the property as an array element, rather than as a static property.  If this is how you chose to format your options, it is best to use this type of access for all options, for consistency: 
+
+<actionscript>
+_control = new GameControl(this);
+if (_control.net.isConnected()) {
+    var config :Object = _control.game.getConfig();
+    // change "boardSize" -> "board size" in the XML config!
+    _control.local.feedback("boardSize: " + config["board size"]); 
+    _control.local.feedback("allow cheaters: " + config["allow cheaters"]);
+    _control.local.feedback("rules: " + config["rules"]);
+}
+</actionscript>
+
+=== Optional Attributes ===
+
+There are currently two optional attributes available for all game configuration:
+
+* name: This attribute is useful you'd like to have the something other than the "ident" displayed in the game lobby
+* tip: This is a tooltip that will appear when you hover over the option in the game lobby
+
+Example:
+
+<actionscript>
+<range ident="boardsize" minimum="4" maximum="8" start="6"
+    name="Board size" tip="Sets the size of the board"/>
+</actionscript>
+
+[[Category:Tutorials]][[Category:Code tutorials]][[Category:Coding terminology]]

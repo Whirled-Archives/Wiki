@@ -1,0 +1,130 @@
+{{Infobox tutorial
+|type=Flash
+|difficulty=Intermediate
+|description=Turn an example Flash game into one that works with Whirled.
+|requirements=[[Image:Icon-Flash.png|20px]] [[Adobe Flash CS3]], Flex SDK, Whirled SDK
+|other=Go back to [[create games]].
+|item=game
+}}
+[[Image:Icon-highlighted-game.png|left]]This tutorial shows how to take a simple game created in [[Adobe Flash CS3]] and add code so that it can works as a game in Whirled!  This tutorial assumes that you have a working knowledge of Flash CS3 and ActionScript. Currently, this tutorial only applies to single-player games.  The steps are similar to the [[create games]] tutorial but some steps are simplified. 
+<br clear=left/>
+
+==Setting up your programming environment==
+
+===Download and install the SDKs===
+
+The first step is to download and install the required Software Development Kits. Java or ANT is not needed to compile Whirled games straight from Flash CS3. The only requirements are the Flex SDK and the Whirled SDK. Follow the links below to download and set them up:
+
+*[[Setting_up_your_programming_environment#Get_Flex| Flex SDK]]
+*[[Setting_up_your_programming_environment#Get_the_Whirled_SDK| Whirled SDK]]
+
+===Set-up Flash CS3===
+
+Once the Flex SDK and the Whirled SDK have been properly installed, the next step is to add the paths to the ActionScript files in Flash CS3:
+
+*In Flash CS3, select the Edit menu and then Preferences or hit CTRL+U. This will open the Preferences dialog box. 
+*Select the 'ActionScript' Line and then click on the button labeled 'ActionScript 3.0 Settings'. 
+*Add the paths for the Flex SDK and the Whirled SDK. The paths are generally as follows:
+'''''(Location Installed)'''\flex_sdk_3\frameworks\projects\framework\src\mx''<br>
+'''''(Location Installed)'''\whirled\src\as''
+
+If you want to use items in the contrib directory, you will also need add the path for that also, which is '''''(Location Installed)'''\whirled\contrib\src\as''
+
+See the image below for an example: 
+
+[[Image:Flashcs3_actionscript_paths.png]]
+
+===Testing the Example Game===
+
+To make sure that everything has been downloaded and pathed correctly, download the finished game [http://jdnx429.com/whirled/simplegameCS3_finished.fla here].
+
+*This game is very simple, it only consists of clicking on colored circles which give varying amount of points.
+
+*Test the Game by entering CTRL+ENTER or by selecting "Test Movie" from the Debug Menu. If everything is working correctly there should be no compiling errors. 
+
+*Once the game ends, the message below will appear. This just means that the game is not connected to Whirled at the moment. That error will not appear once the game is uploaded. 
+<actionscript>
+"Error: The game is not connected to The Whirled, please check isConnected(). 
+If false, your game is being viewed standalone and should adjust."
+</actionscript>
+
+*If you wish, you can [[uploading games|upload]] the Test Game to make sure that it is awarding Coins. 
+
+*To test games off-line, it can be useful to place the Whirled code inside an '''if''' statement as such:
+<actionscript>if (isConnected) {
+Code that only runs when uploaded to Whirled such as awarding of trophies, checking cookies, etc. 
+}</actionscript>
+
+==Making the Game==
+[[Image:From-flashcs3-gamescreen.png|right|frame|The Game Screen]]
+
+[[Image:From-flashcs3-gameover.png|right|frame|The Game Over Screen]]
+
+===Editing the Game===
+
+Now that we have verified that everything is working properly, download the stand-alone version of the game [http://jdnx429.com/whirled/simplegameCS3_start.fla here]. The file is called '''FromFlashCS3_start.fla'''.
+
+This version is has no connectivity to the Whirled environment. We are going to be adding code so that it interacts with Whirled. 
+
+The current game consists of two phases:
+
+*The game which is 5 frames long 
+*The game over screen which is 1 frame long.
+
+First we need to add a few frames at the beginning of the game to add the initialization code for Whirled. Make sure to insert new Keyframes at Frame 5. The timeline should look as follows:
+
+[[Image:Flashcs3_timeline.png]]
+
+===Adding the initialization code===
+
+On the 'Script' layer we will add the following code:
+
+This imports the minimum required classes from the Whirled SDK. 
+<actionscript>import com.whirled.game.GameControl;
+</actionscript> 
+
+The following section will connect the game to Whirled and add a listener. 
+
+This listener is called when the game is unloaded and will be used to terminate any timers or listeners we add in the game. It's important to remove these listeners when the game is unloaded to avoid memory leaks. 
+
+<actionscript>//WHIRLED GAME CONTROL
+var _control:GameControl = new GameControl(this);
+
+//UNLOAD LISTENER
+root.loaderInfo.addEventListener(Event.UNLOAD, handleUnload);
+</actionscript>
+
+===Awarding Coins===
+Players like it when they get coins for playing games.  A game that is a single person game should use '''[http://www.whirled.com/code/asdocs/com/whirled/game/GameSubControl.html#endGameWithScore() endGameWithScore (score)]''' call to payout coins. This and other endGame functions send scores to the whirled server, as well as award coins, to be ranked unless the "Rated" checkbox is unchecked at the beginning of the game.
+
+<actionscript>
+//Awarding Coins
+var pointsWhirled:int = int(points);
+_control.game.endGameWithScore(pointsWhirled);</actionscript>
+
+2Call this method at the end of a level or at the end of a game.  You can read more about coin payout options on the [[Awarding coins| coins award page]].  
+
+Once the coins are awarded, Whirled needs to know that the player is ready to start a new game or a new level. The '''[http://www.whirled.com/code/asdocs/com/whirled/game/GameSubControl.html#playerReady() playerReady()]''' method tells Whirled that the current game is over and a new one is starting. If this code is omitted the game would only award coins the first time/level it is played and the player would have to leave the game and come back again to earn more coins. 
+ 
+<actionscript>function restartOrStartNewLevel(mouseclick:MouseEvent) 
+{
+	_control.game.playerReady(); //THIS LINE HAS BEEN ADDED
+	gotoAndPlay("game");
+}
+</actionscript>
+
+===Unloading The Resources===
+
+Now we just a bit of code to remove the event listeners we added throughout the game. This game is fairly simple so this is not extensive. 
+
+<actionscript>function handleUnload(event :Event):void 
+{
+	restart_btn.removeEventListener(MouseEvent.CLICK, restart);
+}
+</actionscript>
+
+===Compiling and Uploading the Game===
+
+Once all the code has been added, test the game by hitting 'Alt+Enter'. It should behave exactly like the finished version of the game that was downloaded in the 'Testing the Example Game' section. 
+
+Publish the game by pressing Shift+F12 or selecting File>>Publish. Upload the generated SWF file as detailed in [[uploading games]]. If everything works correctly, the game should be playable and award Coins!

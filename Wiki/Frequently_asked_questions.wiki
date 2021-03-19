@@ -1,0 +1,141 @@
+{{FAQS}}
+{{TOCright}}
+If these questions don't give you the answers you need, try the more specific FAQs listed in the menu above.
+
+==Getting Started==
+{{main|Starting out}}
+
+===What is Whirled?===
+{{main|Whirled}}
+* [[Whirled]] is a games website combined with a virtual world.
+* Each player gets one free [[room]] of their own to decorate, in which they can hang out with friends and chat, host parties, hold meetings, and so on. You can buy additional rooms. 
+* Any player can easily [[upload]] their own creations and begin playing with [[avatar]]s, room [[backdrop]]s, [[music]], [[pet]]s and [[game]]s, music, and more.  Or, they can purchase other players' creations from the [[Shop]].
+* Creators can [[list]] their offerings in the Shop where they are [[rating|rated]], [[tag|tagged]], and offered for sale to the global ''Whirled'' audience.  Creators earn {{profit}} of the item cost for sales.
+* Players can join and/or create [[group]]s with shared group rooms, and built-in discussion forums, which allow collaboration with others around their common interests.  Groups can act as [[brand]]s, allowing more than one player to share in the profit from sales of brand items listed in the shop.
+* Players can [[embed]] Whirled content such as Shop items, their rooms, and games, on their own websites and blogs.
+
+===How do I get to my room?===
+To get to your [[room]], go to your Me tab and click on the Rooms link to see a list of your rooms.  Click on the room thumbnail or name to go to that room. You can also click on the [[Image:Icon-go.png]] Go... icon in the control bar at the bottom of your screen and click on "Go home."
+
+You can go to other rooms by clicking on [[door]]ways, or objects that glow green when touched by your mouse cursor, in a room.  You can find other players' rooms via the [[Rooms tab]] or by clicking the "View Rooms" link on another player's [[profile]].  Each group also has at least one room, and you can find those via each group's entry on the [[Groups tab]].
+
+===How can I see a list of my rooms?===
+You can find a list of your rooms by going to the [[Me tab]] and clicking on the '''[[Room]]s''' link. 
+
+===How can I lock my room?===
+You can click on the Room icon [[Image:Icon-room_control.png]] in the control bar and select the [[edit your room|Decorate Room]] button [[Image:Icon-edit_room.png]] in a room you own to lock it.
+
+[[Image:Decorating_room_button_locking.png]] - This set of buttons allows you to set who can come into your room.  From left to right: Unlocked room where anyone can enter, [[friend]]s locked room where only your friends can enter, and locked room where only you can enter.  [[Agent]]s and other Whirled staff can enter all rooms including locked ones.
+
+===What is an avatar? ===
+{{main|Avatar}}
+Avatars are the visual representation of players in [[Whirled]].  The default avatar for players is a smiling block of tofu.  Additional avatars can be created with the appropriate software or purchased with [[currency#Coins|coins]] or [[currency#Bars|bars]] in the [[shop]].  Some games, such as [[Brawler Whirled]], award avatars as prizes.
+
+==Games and Coins==
+
+===How can I get coins?===
+{{main|Currency}}
+Coins are earned by playing [[games]], earning [[passport|Passport stamps]], selling items for coins in the [[Shop]], and through the [[Affiliate Program]] on Whirled. Most coins are earned by playing games.
+
+=== What is the Affiliate Program? ===
+{{main|Affiliate Program}}
+The Affiliate Program allows players to earn coins by referring new players to the game.
+
+===Do some games give out more coins than others?===
+
+We intend that a well-written game should give out a standard rate of coins according to a bell-curve distribution, most likely based on player performance. Games that don't do this, e.g. a game that says 'Maximum Coins for Everyone!' will tend to give out fewer coins.
+
+===What about bars?===
+{{main|Currency}}
+[[currency#Bars|Bars]] are purchased for real money, similar to Doubloons in [[Puzzle Pirates]] or Gold Coins in Bang! Howdy.  They may be used to purchase various things.
+
+===What is Bling?===
+{{main|Currency}}
+[[currency#Bling|Bling]] is earned when players purchase an item that a creator lists for bars in the [[Shop]].
+
+===How does the Whirled Charity Initiative work?===
+{{main|Charity}}
+Charities registered with Whirled may receive 10% of purchase prices by players who have designated that charity as the recipient in their [[profile|account]].  Only United States IRS-recognized 501(c)3 charities can register.
+
+== Goods and Money ==
+
+===Why can't I use everything in my Stuff tab?===
+If you are in a [[Whirled (themed)|themed Whirled]], you can only use items in your inventory that have been marked for use in that particular whirled.  Click on the Me tab and use the [[Image:Icon-home.png]] home icon to return to your home room to exit the themed whirled and you'll be able to use all of your stuff again.
+
+In some cases, an item may be deleted because the item has been found to break Whirled's [[Terms of Service]] or [[Community Standards]]. When this happens you receive a Whirled mail about the item deletion.  Read more about it at [[item deletion]].
+
+===As the creator of an item, what is my share of the sale price?===
+{{main|Currency}}
+This is currently {{profit}} of the sale price of items. If an item is listed in coins, the creator receives coins.  If an item is listed in bars, the creator receives bling.
+
+===How will a successful creator in Whirled cash out in-game currency?===
+When an account has 500 bling or more, the account holder can cash out.  To do so, go to the bling transaction page, and in the "Cash Out Your Bling!" section, specify an amount of bling that you would like to convert to cash.  Bling can only be cashed out in whole numbers.  Fill out the cash out form, then submit your request.
+
+===Do I have to pay for 'land'?===
+New rooms currently cost {{roomcost}}, but you get your first room free.  There is no rent.
+
+===How much will things cost in the shop?===
+{{main|Pricing}}
+Whirled has some pricing procedures and automatic price minimums, as well as a small listing fee.  Beyond the price minimums, the item creator decides how much an item costs in coins or bars.
+
+===Can you return items?===
+There is currently no system for returning items.
+
+===Can you trade items, or gift them?===
+You can [[gift]] items via [[mail]] in Whirled. Whirled support staff do '''not''' enforce trades or retrieve items for players in failed trades, but scamming should still be [[report]]ed. We are also considering a way to resell items, but this is only really relevant for rare or limited edition items whose price has risen since purchase. How this will work is still under debate.
+
+== Whirled Accounts ==
+
+=== How do I keep my account safe? ===
+{{main|Account security}}
+The best way to keep your account safe is to follow good [[account security]] practices.  Check the main article link to read more about it.
+
+=== I've forgotten my password, what do I do? ===
+If you have forgotten your password, Whirled can help you reset it.  First, make sure you are not logged in on any accounts.  Next, go to http://www.whirled.com/ and click on the "Forgot password?" link, fill in the email address associated with the account and click on the "Send" button to receive instructions on how to reset your password at that email address.
+
+=== I've been banned, what can I do? ===
+{{main|Ban}}
+If you cannot log on to Whirled due to being banned, please read the article about [[ban]]s.
+
+== Whirled Business ==
+
+===Is there a genre?===
+No. Part of the point of Whirled is that it's no particular genre or theme. We want to support a crazy mix-up of themes and genres, whilst giving individuals and groups the tools to make strongly-themed areas.
+
+===What is the target audience?===
+We hope that Whirled will appeal to a very wide demographic. We suspect that young people will create a lot of stuff, but we're designing the system to allow people to focus on what they are interested in and form and find 'micro-communities', for example 'Groups' with different themes. You do have to be over 13 to play Whirled and the entire experience should be considered PG-13.
+
+===What are your plans for distribution, marketing, etc.?===
+We are hoping that Whirled will be inherently 'viral'. We are hoping to create distribution partnerships in due course.
+
+== Content and problems thereof ==
+
+===How do you handle mature content?===
+Whirled should be considered an entirely PG-13-rated experience. We may someday develop features that will allow older players to enjoy more mature content without compromising the PG-13 rating of the overall Whirled experience, but these features are presently not in place.  Players should not wear Mature avatars in any publicly-accessible space (i.e. any room that is not locked from all visitors), nor should they [[upload]] mature content. 
+
+We have implemented a [[report]] system to allow you to complain about content, or a player that exposes you to such content, that you deem objectionable.  We will be banning players who cause complaints by displaying Mature or offensive content.
+
+We may someday implement a 'Mature content badge' that allows you to view mature content in the Shop and rooms. 
+
+=== What about copyright violation===
+{{main|DMCA Policy}}
+We will respond to any DMCA requests to remove content from Whirled.
+
+=== What about badly written or malicious content? ===
+Avatars and other content that attempt crash browsers and/or do other bad things are likely to be a problem. We are taking whatever steps we can to reduce these issues. We do not believe that there are major security issues, in that the security model we are using means that nobody should be able to do bad things to your computer, web browser data, or Whirled data with malicious content. There are bad things that they could do, however, such as causing your browser to hang temporarily. We will do what we can both to prevent this in software and to empower players to overcome such idiots.
+
+=== What about music causing a room to not load or causing my virus scanner to warn me? ===
+
+If there are issues with a room due to the music, all you need to do is to mute your Whirled browser's volume.  With the volume muted, the browser does not load the mp3 at all.  You can then go into the room and remove the music if you can edit the room or you can get the room URL to send along with a description of the issue to the [[Agent]]s via the Help link's Contact Us option.
+
+== See Also ==
+*[[Avatar creation FAQ]]
+*[[AVRG FAQ]]
+*[[Billing FAQ]]
+*[[Community Standards]]
+*[[Terms of Service]]
+*[[Whirled game creation FAQ]]
+*[[Guide for Whirled Parents]]
+*[[:Category:Policy|Policy documents on the Whirled Wiki]]
+
+[[Category:Frequently asked questions]]

@@ -1,0 +1,78 @@
+{{Infobox tutorial
+|type=Code
+|difficulty=Beginner
+|description=Create items for [[Wyvern]].
+|requirements=[[Image:Icon-Programming.png|20px]] Whirled SDK
+|other=See also: [[Simple Wyvern pet (code tutorial)]]
+|item=toy
+}}
+Here you will learn how to make Wyvern Items!
+
+== Getting Started ==
+
+Right. First read [http://wiki.whirled.com/Setting_up_your_programming_environment Setting up your programming environent] and Download [http://ant.apache.org/bindownload.cgi Apache Ant], [http://www.adobe.com/cfusion/entitlement/index.cfm?e=flex3sdk Flex SDK], [http://wiki.whirled.com/Whirled_SDK Whirled SDK] and [http://java.sun.com/javase/downloads/index.jsp Java JDK]! Unzip the folders and save them with a shorter name! Make sure you write down the File Paths as you will need to know them!
+
+You will also want to download [http://tortoisesvn.net/downloads Tortoise SVN] which makes downloading the [http://whirled-wyvern.googlecode.com/svn/trunk Wyvern Source Code] Pips!
+
+== Setting Up Environment Variables ==
+
+Im guessing you are thinking right now what the heck is Tom on about! Well all you do to sort them out is: 
+
+#Go to "Control Panel"
+#Select "System" (It may be under System and Maintenance) 
+#Click "Advanced System Settings" (On the left side of the window in Vista)
+#Click Environment Variables at the bottom of the screen. - Caution:'''DO NOT CHANGE USER VARIABLES'''! - 
+#Add a new System Variable and name it ANT_HOME and make the Variable Value the File Path to the Ant Folder. So if my Ant folder was in the root of the Hard Drive My Value would be C:\Ant_Folder.
+#Now make another new System Variable and Name it WHIRLED_HOME and make the Variable Value the file path to the Whirled SDK folder! 
+#Make one last new System Variable and name it  JAVA_HOME and set the Variable Value the File Path to your Java SDK folder! Now find the Path variable and edit it. Now add %ANT_HOME%/bin onto the end of the Variable Value! DO NOT DELETE THE WHOLE VALUE! 
+#Save, then click "Ok".
+
+There, Now on to the next bit!
+
+== Getting the Sorce Code ==
+
+Now after you have downloaded Tortoise SVN, Install it. Once it has been installed (Tortoise may ask you to restart you computer) Open up the folder where you want the Code to be saved, right click on any white space and choose Tortoise SVN then click Repo-Browser! Tortoise will then ask you for a URL. This is where you enter the [http://whirled-wyvern.googlecode.com/svn/trunk Wyvern Source Code] URL. Just copy and paste the links address. You will then come up with a load of folders. Select all the ones on the right hand side and right click and press Checkout! Now Tortoise will ask you where you want the folders to be saved. Put them anywhere and remember to write down the File Path! Click OK and There you go! Your computer might take a minute or two to load! Once it is finished, Move on to the next part!
+
+== Sorting out your Code ==
+
+Now open up your monster folder that you saved from Tortoise! Open the build.xml file and delete these lines:
+
+<actionscript>
+    <echo message="Rendering thumbnail..." />
+    <exec executable="./thumb.sh">
+        <arg value="rsrc/${monster.name}.png" />
+        <arg value="Thumb_${monster.name}.png" />
+        <arg value="${monster.level}" />
+    </exec>
+</actionscript>
+
+Save your file and close it! Now open the monsters.properties. You will see that there are all the monsters that appear on Wyvern by Aduros. Now what you do is you delete all the names of monsters and add your own such as:
+
+<actionscript>
+Leviathon.level = 500
+Leviathon.sound_attack = Leviathon_attack.mp3
+Leviathon.sound_attack = Leviathon_death.mp3
+</actionscript>
+
+Now make sure that all the pictures and sounds are inside the rsrc folder. So to make the Leviathon I would have to have a picture called Leviathon and it has to be in PNG format and be facing left, A sound called Leviathon_attack which is in the mp3 format and a sound called Leviathon_death which is also a mp3.
+
+Save this and move on to the next part!
+
+== Running Ant ==
+
+Now so Open up Command Prompt (type cmd into run) and direct ant towards your monsters file. To do this you have to write ''cd'' then the next folder you want to got to then press ''enter''. Or you can write the whole file path in at once. So I would write ''cd my documents\wyvern\monster'' then press ''enter''. After you've got to that type ''ant'' into Command Prompt and of it goes! It may ask you where your standalone flash player is and direct it to it. The flash player is normally in the Flex SDK!
+
+== Uploading to Whirled ==
+
+What Ant should of done is convert your files in to a Shock Wave Object and this is what you will be uploading to Whirled!
+
+=== Different Types ===
+
+#If you upload your monster as a pet It will become a Monster for the game!
+#If you upload your monster as an avatar It will become an Avatar like my Leviathon one!
+#If you upload it as a toy then it will become a Tower!
+
+== See Also ==
+* [http://www.whirled.com/#groups-t_9915 Wyvern Pet Creation (Windows) discussion thread]
+
+[[Category:Wyvern]][[Category:Pet tutorials]][[Category:Avatar tutorials]]

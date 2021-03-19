@@ -1,0 +1,98 @@
+A '''comment''' is a remark that you can leave for another [[Whirled]] player on their [[profile]] page, in their [[room]], or on an item that they have listed in the [[Shop]].  Because comments are viewable by all players, comments should conform to some guidelines ''in addition to'' Whirled's [[Community Standards]] and [[Terms of Service]].  Comments that do not follow these guidelines may be subject to removal without notice by an [[Agent]], and their posters may be subject to further [[ban|penalty]]. 
+
+==Guidelines==
+'''Do:'''
+* Post thoughtfully and constructively.
+* Be polite.
+* Keep your comments on-topic; if commenting on a Shop item, make sure your comment is about that item rather than about the person who created it or their other items.
+* Be concise.
+* [[Report]] comments that break these guidelines.
+
+'''Do Not:'''
+* Post profanity, obscenities, or spiteful remarks.
+* Make personal attacks.
+* Post spam, advertisements, blank comments, or disruptive text.
+* Post personal information such as email addresses, phone numbers, real names, postal addresses.
+* Comment on the same item, person, or room using multiple accounts (also called [http://en.wikipedia.org/wiki/Wikipedia:Sockpuppet sockpuppeting]).
+* Discuss or encourage any illegal activity.
+* Discuss issues such as legal/copyright actions and support actions/appeals that are best resolved directly with [[Three Rings]].  
+* Repost something that was deleted.
+
+==Etiquette==
+Comments and voting are useful tools for both the creators and the purchasers to see both what is being done well and what could use improvement.  When commenting, offer suggestions politely, provide constructive criticism, and be open to response.  To avoid undermining the message of your comment, care should be taken not to make excessive use of ALL CAPS or overly long posts.  Private mail can also be used for more in-depth conversations.
+
+* Requesting a price change:
+**{{green|Good}}
+::<nowiki>"While the artwork is nice, you have not included the variety of actions
+and states other avatars in this price range offer. You may wish to reconsider your
+price."</nowiki>
+:*{{red|Bad}}
+::"'''''LOWER YOUR PRICES!!!!111'''''"
+* Requesting changes to the item:
+**{{green|Good}}
+::<nowiki>"I really enjoy the design, but I would love to see some transitions added between the dance and standing states.  A shimmy action would be great!"</nowiki>
+:*{{red|Bad}}
+::"BOOOORING MAKE IT DO MORE"
+*Requesting comments and votes:
+**{{green|Good}}
+::<nowiki>"I really love this pet!  The art is nice, it moves well, and lots of different actions.  You get a 5 star from me!"</nowiki>
+:*{{red|Bad}}
+::"My friend made this so give it all five stars!!!!"
+:*{{green|Good}}
+::<nowiki>"I purchased this but wasn't too happy with how it worked once I placed it in my room.  It makes a weird beeping sound that annoys me and won't stop."</nowiki>
+:*{{red|Bad}}
+::"AWFUL Everyone should give it 1 star because it sucks!"
+
+*Responding to comments (creators):
+**{{green|Good}}
+::<nowiki>"I understand you didn't like that aspect; what would you suggest?"</nowiki>
+:*{{red|Bad}}
+::"WHATEVER, go make your own!"
+:*{{green|Good}}
+::<nowiki>"Please read the guideline and etiquette page on the wiki.  You can find it here:  http://wiki.whirled.com/Comment"</nowiki>
+:*{{red|Bad}}
+::"no u, jerk!"
+
+==How to Post a Shop Comment==
+To leave a comment for the creator of an item in the Shop:
+*Use the "Post Comment..." button on that item's Shop page.  
+*Then in the text box that appears, enter the text of your comment and use the "Send" button.  
+*Your comment will then be displayed on the item's page.
+{{clear}}
+[[Image:Comment post button.png|thumb|225px|left|The Shop's "Post Comment..." button.]]
+{{clear}}
+[[Image:Comment enter text.png|thumb|225px|left|Enter and send your comment.]]
+{{clear}}
+[[Image:Comment posted.png|thumb|225px|left|A posted comment.]]
+{{clear}}
+
+==How to Post a Profile Comment==
+[[Image:Profile comment.png|thumb|left|frame|A profile's "Post Comment..." link, on the lefthand side of the Comment Wall section.]]
+{{clear}}
+To leave a comment on another Whirled player's [[profile]] page:
+*Use the "Post Comment..." link in the Comment Wall section of their profile.
+*Enter the text of your comment in the text box that appears, then use the "Send" button.
+*Your comment will appear on the player's profile.
+{{clear}}
+[[Image:Profile comment enter text.png|thumb|225px|left|Enter and send your comment.]]
+{{clear}}
+[[Image:Profile comment posted.png|thumb|225px|left|A posted comment.]]
+{{clear}}
+
+==How to Post a Room Comment==
+
+To leave a comment on another Whirled player's [[room]] page:
+*Click on the Room icon [[Image:Icon-room_control.png]] in the control bar (the row of icons to the left of your chat entry on bottom of your Whirled browser) and select the [[Image:Icon-room_comment.png]] Comment or rate option.
+*Use the "Post Comment..." button and enter the text of your comment in the text box that appears, then use the "Send" button.
+*Your comment will appear on the room's page.
+{{clear}}
+[[Image:Room comment.png|thumb|400px|left|Enter and send your comment with posted comment shown above.]]
+{{clear}}
+
+==See Also==
+* [http://www.whirled.com/#groups-t_1625 Comment policy discussion thread]
+* [[Favorites]]
+* [[Rating]]
+* [[Tag]]
+
+[[Category:Policy]][[Category:Terminology]]

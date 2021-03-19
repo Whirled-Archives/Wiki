@@ -1,0 +1,20 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Advanced
+|description=Create an advanced avatar using AS3.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=Previous tutorial: [[Simple avatar (ActionScript tutorial)]]
+|item=avatar
+}}
+(Back to [[create avatars]] main page)
+
+[[Image:Icon-highlighted-avatar.png|left]]This tutorial expands on the chicken avatar we built in the [[simple avatar (ActionScript tutorial)]] and shows techniques such as adding custom actions. 
+{{clearleft}}
+
+== Prerequisites ==
+# [[Setting up your programming environment]]
+# [[Hello Whirled]]
+# [[simple avatar (ActionScript tutorial)]]
+# This tutorial currently assumes you are familiar with programming and that you can learn by example.
+
+{{stub}}

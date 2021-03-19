@@ -1,0 +1,46 @@
+[[Image:Icon-Flex.png|left]]
+This is part of the [[setting up your programming environment]] tutorial.
+{{clear}}
+
+== Get the Flex SDK ==
+You can get it directly from Adobe's site: http://www.adobe.com/products/flex/  - you only need the '''[http://www.adobe.com/products/flex/flexdownloads/#sdk free Flex SDK]''', or you can try the free trial of Flex Builder(the adobe IDE for flex) if that's your style. You'll want '''Flex 3.3'''. Note that "Flex" is the name of a component toolkit and framework for building applications, but we mostly use the compiler can be to build simple flash SWFs that don't make use of the flex framework. (In fact, the flex framework does not work inside whirled due to security issues. This may be fixed in flex 4.)
+
+=== Windows ===
+Unzip the contents of the SDK file into a new folder named '''flex_sdk_3.3'''. In Windows XP, you can right-click on the file, select '''Extract All...''' from the menu, and follow the prompts.
+
+After this, your directory should look as follows:
+
+  C:\Documents and Settings\Rob\Desktop\code>dir /b
+  flex_sdk_3.3
+
+Remember where this directory is, you will need this information later.
+
+=== Unix and Mac OS X ===
+Create a new a '''flex_sdk_3.2''' subdirectory under your chosen directory, and unzip the SDK there:
+  robert@localhost:~/code$ ls
+  flex_sdk_3.zip 
+  robert@localhost:~/code$ mkdir flex_sdk_3.2
+  robert@localhost:~/code$ cd flex_sdk_3.2/
+  robert@localhost:~/code/flex_sdk_3$ unzip ../flex_sdk_3.zip
+  [ files... ]
+
+== Get the Standalone Flash Player ==
+
+When testing games and other Whirled projects, you will use the standalone Flash Player (debug version). This should be bundled in with the Flex SDK or Flex Builder, but you can also get it from Adobe's web site: http://www.adobe.com/support/flashplayer/downloads.html
+
+===== Inside the Flex SDK directory =====
+
+In the folder flex_sdk_3.3/runtimes/player/ you should find 3 directories: lnx, mac, win. Inside these directories are the flash player executables and installers for the browser plugins. You may need to uncompress the executable.  If you download your player, make sure you download the Project content debugger and not the plugin.
+
+===== Mac OS X =====
+
+Setting the player to "/usr/bin/open" works to get the test system going in mac. Unfortunately I can only get it working through default file associations ( a shell script wrapping open -a /Applications/Flash\ Player.app isn't working for me ) so it opens in browser.
+
+== Turn on Logging in the Standalone Flash Player ==
+If you are using the debugger version of the Flash player, you will be able to log from your Flash applications.
+
+There are instructions [http://livedocs.adobe.com/flex/201/html/wwhelp/wwhimpl/common/html/wwhelp.htm?context=LiveDocs_Book_Parts&file=logging_125_04.html here] which describe how to turn on logging for the debugger version of the Flash player.  Once it is turned on, you will be able to see trace() output in the logging file.  This can help a lot with simple debugging tasks.  However, it is not strictly necessary, and this step can be skipped.  If skipped now, you can still do it later.
+
+== Next Step ==
+Now move on to [[test the Whirled SDK]].
+[[Category:Tutorials]]

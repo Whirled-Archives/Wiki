@@ -1,0 +1,31 @@
+{{TOCright}}
+[[Image:Icon-highlighted-pet.png|left]] Whirled pets are animated characters that wander rooms, change moods, and engage in simple interactions with players.  Custom pets are easy to make with the right tools, and let you create a truly unique pet for yourself, or sell your creations to the eager masses.  Follow the tutorials below for both step-by-step guides to the basics of pet creation and helpful techniques for more advanced creators.
+
+==Create!==
+To create a pet, artists use <i>Flash</i> and engineers use <i>Flex</i>.  We are currently developing internal methods that don't require either and automate many of the processes.
+
+===[[Image:Icon-Flash.png]] Adobe Flash CS3===
+Flash is the tool our art department uses to make pets.  You can work from our pre-coded templates or create entire pets from scratch. ([http://www.adobe.com/products/flash/ Adobe's Flash page])
+
+{| border=0 cellpadding=4 cellspacing=4 style="border-collapse:collapse; margin:5em 5em 1em 1em" style="font-size:100%; text-align:center"
+|-
+|{{extnavimg|xsize=60|ysize=60|image=pet_tutorial_icon.png|link=http://wiki.whirled.com/FAT_Pet_Tutorial}} [[FAT Pet Tutorial | Simple<br>Tutorial]]
+|{{extnavimg|xsize=60|ysize=60|image=pet_advanced_icon.png|link=http://wiki.whirled.com/FAT_Pet_Advanced}} [[FAT Pet Advanced | Advanced<br>Techniques]]
+|}
+
+===[[Image:Icon-Programming.png]] AS3===
+You can also create Pets in straight AS3.   You can start with our tutorials for [[setting up your programming environment]] and then browsing through our [http://code.threerings.net/viewvc/whirled/trunk/projects/pets/ pet examples on our SVN server].
+*[[Simple pet (ActionScript tutorial)|Simple Tutorial]]
+*[[Advanced pet (ActionScript tutorial)|Advanced Techniques]]
+*[[Entity Communication]]
+
+==Upload!==
+{{:Upload/Pet}}
+
+==Sell!==
+{{listing|pet|pets|Pets|attribute}}
+
+== See Also ==
+*[[:Category:Pet tutorials|Pet creation tutorials]]
+
+[[Category:Tutorials]][[Category:Pet tutorials|*]]

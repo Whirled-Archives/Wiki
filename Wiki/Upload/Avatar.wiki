@@ -1,0 +1,10 @@
+#Choose '''[[Stuff tab|Stuff]] &rarr; Avatars''' to see the avatars you own.
+#Scroll down to the "How do I get stuff?" section. [[Image:Stuff-Avatars-How_do_I_get_stuff.png|none|thumb|400px| Click "Upload" to bring up the interface.]]
+#Click the '''Upload...''' button to get the avatar uploading interface. [[Image:Stuff-Create_avatar.png|none|thumb|400px|Avatar uploading interface.]]
+##Click on the '''Name''' field and enter a name for your avatar.
+##Click '''Browse''' in Avatar Media and find the SWF file for your avatar or image file to be converted into a bouncing image avatar.
+##Click '''Browse''' in Thumbnail Media and find the bitmap (png, jpg or gif) file for your avatar's icon. (max. 80x60)
+##Click on the '''Description''' field and enter a description of your avatar.  This is only required if you plan to sell it in the shop.
+##Confirm that you own the copyrights to the item or have authorization to upload it. 
+#After the avatar media has finished uploading, an icon will show up.  You can then click on '''Save''' to put your avatar in your inventory for use.
+<noinclude>[[Category:Subpages]]</noinclude>

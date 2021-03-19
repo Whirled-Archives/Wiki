@@ -1,0 +1,72 @@
+[[Image:Games.png|right|200px]][[Image:Icon-highlighted-game.png|left]]'''Games''' can be played by clicking on game furniture in a room, or by browsing the Games tab and hitting the 'Play' button on the game page. This will bring you to a lobby interface where you can create or join a table.  Many games award [[currency#Coins|coins]], [[trophy|trophies]], and other awards for playing them.  There are also some [[Passport]] stamps related to playing games.
+
+Games can be [[favorites|favorited]] by using the favorite heart on the game info page in the games tab.
+{{clearleft}}
+
+''Note: the version of a game listed in the shop may not necessarily be the same version as the one in a room. For example, [[Underwhirled Drift]] in the shop's 'browse games' is not the latest version, which can be found from the Underwhirled group room. Different versions may lead to different game lobbies, if you are looking for a particular friend's game just start your game using the same play button as they did, either via the games tab or a particular room.''
+{{clearright}}
+
+== Play Games ==
+[[Image:Games-tab.png|frame|You can play games by clicking on the game tab.|none]]
+
+[[Image:Loading.png|thumb|right|150px|If the game is large, it may take a few moments to load.]]Click on a game to read more about it and click on the "PLAY" button to play a quick game.  If the game only has a single player option, the game will start immediately.  If the game only has multiplayer option, you will see the multiplayer game lobby where you can join an already created game or create a game.  If it has both single player and multiplayer options, you will be taken to the game where you will be able to select which option you want.
+
+Clicking on PLAY for Whirled based games will take you to the room where you can play the game.  Once in the room, there should be a clickable object that you use to join the game.  For instance, in the [[Bella Bingo]] room it's the large tote bag filled with items.
+{{clearleft}}
+=== Multiplayer Games ===
+
+Multiplayer games require more than one person to play it.  Upon entering the multiplayer game lobby by clicking on MULTIPLAYER or selecting a multiplayer only game, you will see what games are currently waiting for more players.  A game with an open spot will show a Join button.  Click on it to join the table and play with other players. If there are no multiplayer games waiting for players, you can start one by clicking on the blue "Create Game" button. The create game window will show the various options available.
+
+{|cellpadding="0" cellspacing="0" align="none" style="width:600px; border-width:0px;"
+|-
+|valign="top"|[[Image:Game-multiplayer lobby.png|thumb|none|200px|A multiplayer game lobby with some multiplayer games waiting for more players to join.]]
+|valign="top"|[[Image:Game-create a game.png|thumb|none|200px|Choose the maximum number of players and whether or not the game is rated.  You may select which friends to send a game invite to.  If you click on the table name, you can edit it. When you've selected all the options you like, click on the blue "Create Game" button.]]
+|valign="top"|[[Image:Game-multiplayer-waiting.png|thumb|none|200px|When you join a table, it will wait until the desired number of players have joined unless the table creator decides to use the "Start now" button visible in the table creator's window. If you change your mind and don't want to play, just click on the Leave button to leave the table.]]
+|}
+After the multiplayer game starts, it may take a few moments for the game to load on all the players' computers.  The player names will be shown in the upper left corner of your game window. Any names in italics are still loading the game.  Grey names have either left the game or not yet started loading the game.  If your computer has loaded the game, but is waiting for other players to do so, a message saying "Waiting for other players" will appear.
+
+At the end of a game, you can exit the table by clicking on the red X square button in the upper right hand corner of the screen.
+
+=== Game Awards ===
+Most games award coins which can be used in the [[shop]] for purchases such as a copy of the game to keep in your room.  You may also earn [[trophy|trophies]], which you can view under your Game tab and other players can view on your [[profile]] page. Some games, such as [[Brawler Whirled]] and [[Tree House Defense]], also reward performance with prizes of game-based [[avatar]]s, [[pet]]s, and [[backdrop]]s added to players' inventories.
+
+== Genres of Games ==
+* [[Image:Icon-game-actionarcade.png]] Action / Arcade
+* [[Image:Icon-game-adventurerpg.png]] Adventure / RPG
+* [[Image:Icon-game-cardboard.png]] Card / Board
+* MMO / Whirled
+* [[Image:Icon-game-other.png]] Other
+* [[Image:Icon-game-puzzle.png]] Puzzle
+* [[Image:Icon-game-sportsracing.png]] Sports / Racing
+* [[Image:Icon-game-strategy.png]] Strategy
+* [[Image:Icon-game-word.png]] Word
+
+== Favorite and Share Games ==
+[[Image:Games-tab-details.png|300px|left|thumb|The favorite heart and Share link are right above the game information tabs.]]When you view the details of a game, you can also click on the heart to [[favorites|favorite]] it or use the "Share" link to share your discovery of a great game with others on Facebook, MySpace, and digg!
+{{clearleft}}
+[[Image:Games-tab-share_this_game.png|300px|left|thumb|Share this game allows you to share on Facebook, MySpace, and digg.]]
+{{clearleft}}
+
+== Other Links ==
+
+Not all games have wiki pages, but you can find those that do in the following categories:
+
+* [[:Category:Games|All games with wiki pages]]
+** [[:Category:Action and arcade games|Action and arcade games]]
+** [[:Category:Adventure and RPG games|Adventure and RPG games]]
+** [[:Category:Card and board games|Card and board games]]
+** [[:Category:MMO and Whirled games|MMO and Whirled games]]
+** [[:Category:Other games|Other games]]
+** [[:Category:Puzzle games|Puzzle games]]
+** [[:Category:Sports and racing games|Sports and racing games]]
+** [[:Category:Strategy games|Strategy games]]
+** [[:Category:Three Rings games|Games created by Three Rings' staff]]
+** [[:Category:Word games|Word games]]
+** [[:Category:Single player games|Single player games]]
+** [[:Category:Multiplayer games|Multiplayer games]]
+
+You can also browse various games by entering the {{groups|Whirled Arcade|10}} rooms or join in discussions about games.  Some games have their own [[Groups tab|Whirled Group]] which is listed in the game's information.
+
+For information on how to code games, see [[create games]].
+
+[[Category:Terminology]]

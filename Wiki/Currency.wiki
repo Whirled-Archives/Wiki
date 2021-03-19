@@ -1,0 +1,103 @@
+[[Image:Coins_bars_level_mail_logout_bar.png|right|thumb|325px|Your currency totals can be found in the upper right-hand corner of your Whirled window.]]'''Currency''' refers to the different types of money in Whirled -- coins, bars, and bling -- which can be used to purchase goods within Whirled and, in the case of bling, can be cashed out for U.S. dollars.
+
+All currency is tracked in the Whirled system in hundredths.  However, you cannot list something for a fraction of a coin or bar and bling cashing out is only allowed as integers.
+[[Image:Currencychart.png|left|frame|A chart showing the relationships between currencies in Whirled.]]
+{{clear}}
+==Coins [[Image:Icon-coins.png]]==
+[[Image:shopwithcoins.png|right|thumb|325px|Click the button with the Coin picture to purchase the item with coins.]]Coins are earned by playing [[games]], earning [[passport|Passport stamps]], selling items for coins in the [[Shop]], and through the [[Affiliate Program]] on Whirled.  They cannot be traded for bars or for bling, but they can be used to purchase coin-listed items in the Shop.
+
+If you list an item for sale in the Shop, and you opt to sell in coins, your profit will come in the form of {{profit}} of the list price in coins each time someone purchases your item.  So for example, when you list an item for 1,000 coins, you will be credited with 300 coins for each purchase.  These credits will be logged for you to see on your transactions page.  Users will be able to purchase your coin-listed item in both coins and bars.  Bars are worth {{barworth}}.
+{{clear}}
+==Bars [[Image:Icon-bars.png]]==
+[[Image:Coins bars level mail logout bar.png|right|thumb|325px|Click the coins or bars icons to see your transactions.]]
+''Please note: as of March 31st, 2013, bars are no longer available for purchase or use within Whirled, and all currency has been transfered to coins. Please see [http://www.whirled.com/#groups-t_123673 this discussion] for more information.''
+
+Bars were available for purchase from Three Rings, or received from a full subscription to [[Club Whirled]], exchanged for with bling earned from Shop profits, or earned through the [[Affiliate Program]].  They were used, as an alternative to coins, to purchase items in the Whirled Shop.  '''For more information Whirled currency, please see the [[Billing FAQ]].'''
+
+If you list an item for sale in the Shop and you opt to sell in bars, your profit will come in the number of bling equal to {{profit}} of the bar list price each time someone purchases your item.  So for example, when you list an item for ten bars, you will be credited with three ''bling'' for each purchase.  Or if you list an item for 1 bar, you will be credited with .30 ''bling'' for each purchase. These credits will be logged for you to see on your transactions page.  Remember, bling is the currency that you can cash out, so listing in bars is a good thing!  See "bling" below for more information.  Users will be able to purchase your bar-listed item only with bars.
+
+Currently, a bar is worth about 10 cents.  
+
+{|
+|- valign="top"
+|[[Image:transactions.png|right|thumb|325px|The bar version of the transaction page, with "Get Bars!" button.]]
+|[[Image:shopwithbars.png|right|thumb|325px|Click the button with the Bar picture to purchase the item with bars.]]
+|}
+{{clear}}
+
+==Bling [[Image:Icon-bling.png]]==
+[[Image:bling transactions.png|right|thumb|325px|From the bling transaction page, you can purchase bars with the bling you've earned, or cash out.]]
+
+''Please note: as of March 31st, 2013, bling is no longer available in Whirled, and all currency has been transfered to coins. Please see [http://www.whirled.com/#groups-t_123673 this discussion] for more information.''
+
+Bling was Whirled's "cash out" currency.  It was earned by listing an item for bars in the Shop.  When someone purchases that item, the item's lister earnt bling.
+{{clear}}
+===Exchanging Bling for Bars===
+Bling can be exchanged for bars on a one-to-one basis via the transaction page.  In the "Exchange Bling for Bars" section, specify the number of bling you wish to convert to bars.  Because bars and bling are both only transacted in whole numbers, you must enter a whole number here.
+
+===Cashing Out===
+When an account has 500 bling or more, the account holder can cash out and receive money in exchange for their bling.  Cashing out is a two step process outlined below.
+
+==== Step 1 ====
+To do so, go to the bling transaction page, and in the "Cash Out Your Bling!" section, specify an amount of bling that you would like to convert to cash.  Bling can only be cashed out in whole numbers.  Fill out the cash out form, then submit your request.
+
+You must have sent in your cash out request by '''midnight PST Sunday''' in order for it to be processed the following week.  
+
+'''Cash outs are limited to once every 30 days''', and the Cash Out Your Bling! section will show a countdown until you are allowed to cash out again if you have cashed out within the previous 30 days.  
+
+==== Step 2 ====
+In addition, if you have not already done so in the current year:
+
+* If you reside in the United States of America, and have been issued a U.S. Social Security Number, you must also fill out and send us a [http://www.irs.gov/pub/irs-pdf/fw9.pdf?portlet=103 W-9 tax form with instructions].
+* Or, if you are an international player, you must complete and send us a [http://www.irs.gov/pub/irs-pdf/fw8ben.pdf W-8BEN] tax form. The instructions for the form can be found [http://www.irs.gov/pub/irs-pdf/iw8ben.pdf here].
+
+If you have questions about these forms, please email them to billing@whirled.com.
+
+Please complete your form fully and sign, then email a scanned copy as an attachment to billing@whirled.com, or mail a signed printout by postal mail to:
+
+  Three Rings Design
+  P.O. Box 482
+  San Francisco 
+  CA 94104-0482
+  USA
+
+'''We can only remit payment to you once we have your completed form on file''', so it's very important to follow the above steps!
+
+==== Payment ====
+
+When a cash out request is submitted, the request is sent to and reviewed by Three Rings.  If all is well, a check will be sent via postal mail to the address you've supplied us.  Please allow several days for delivery within the U.S., and up to two weeks if you are outside of the U.S., depending on your location.  
+
+Examples of situations that might hold up a cash out request are such things as the possibility of the requesting account being "hacked" or compromised, or the account holder appearing to have used an exploit to have gained bling.
+
+'''PLEASE NOTE''':  Each cashout request is reviewed by Whirled staff.  Any player found attempting to cash out bling that was generated fraudulently will be permanently [[ban|banned]] from Whirled.
+
+{|
+|- valign="top"
+|[[Image:CashOut.png|none|thumb|300px|Complete the form to cash out your bling.]]
+|[[Image:BeforeFulfillment.png|none|thumb|300px|While you have a cash out pending, you can see it in green on your transaction page, with an option to cancel the cash out.]]
+|[[Image:AfterCashOutFulfillment.png|none|thumb|300px|After the cash out request is fulfilled, it will be logged on your bling transaction page.]]
+|-
+|colspan="3"|[[Image:Cash_out-time_until_next_cash_out.png|frame|none|The Cash Out Your Bling! section will show a countdown until you are allowed to cash out again if you have cashed out within the previous 30 days.]]
+|}
+{{clear}}
+
+==Viewing Your Transactions==
+[[Image:Shop-tab.png]]
+
+To view your transactions, click the Transactions link in your Shop tab or on the currency symbols in the upper right-hand corner of your Whirled page.  Once there, you can filter on a the transactions for the currency you wish to view by using the dropdown box, or use the dropdown box's "Creator" option to view your recent earnings from any items you have listed on the Shop.  Records of coin transactions are kept for 10 days, while bar and bling transactions are kept forever.
+
+{|
+|- valign="top"
+|[[Image:transaction dropdown.png|right|thumb|325px|Use the dropdown box on your transactions page to select which currency transactions you want to view, or select the "Creator" option to see your earnings from listed Shop items.]]
+|[[Image:creator transactions.png|right|thumb|325px|The "Creator" transaction page, where you can see the transaction logs of items you have sold in the Shop.]]
+|}
+{{clear}}
+
+==See Also==
+* [[Account security]]
+* [[Billing FAQ]]
+* [[Charity]]
+* [[Club Whirled]]
+* [[Item deletion]]
+
+[[Category:Policy]][[Category:Tutorials]][[Category:Terminology]]

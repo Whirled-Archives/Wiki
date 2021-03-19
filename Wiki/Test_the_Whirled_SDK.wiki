@@ -1,0 +1,74 @@
+This is part of the [[Setting up your programming environment]] tutorial.
+
+== Download/Test the SDK ==
+
+Download the latest [[Whirled SDK]].
+
+Unzip the SDK you downloaded in your chosen directory.  This should create a '''whirled''' directory with a few subdirectories.
+
+In Windows:
+
+ C:\whirled>dir /w
+  Volume in drive C has no label.
+  Volume Serial Number is XXXX-XXXX
+ 
+  Directory of C:\whirled
+ 
+ [.]              [..]             build.xml        [contrib]
+ [dist]           [docs]           [etc]            [examples]
+ fatserver.bat    [lib]            newproject.bat   README.html
+ [src]            [templates]
+                4 File(s)          4,036 bytes
+               10 Dir(s)  XXX bytes free
+
+In UNIX:
+  robert@localhost:~/code$ unzip whirled_sdk.zip 
+  [ files... ]
+  robert@localhost:~/code$ ls whirled
+  README.html	dist		examples	newproject.bat
+  build.xml	docs		fatserver.bat	src
+  contrib	etc		lib		templates
+
+== Run One of the Example Games ==
+
+Now that you have your SDK all set up, you can make sure everything is working by running one of the example games.
+
+=== Windows ===
+Navigate to the '''whirled\examples\games\reversi''' folder and double click the '''build.bat''' file to build and run the sample game.
+
+=== Unix and Mac OS X ===
+Build and run the game from the command line:
+  robert@localhost:~/code$ cd whirled/examples/games/reversi
+  robert@localhost:reversi$ ant -Dplayers=2 test
+
+== Configuration ==
+When you run the example game reversi, it will ask you to configure the location of Flex SDK and the standalone Flash player.
+
+=== Configure SDK Location ===
+This will first pop up a dialog asking you to tell the Whirled SDK where to find your '''flex_sdk_3''' directory.  It really means whatever the current Flex SDK version is (currently 3.3).
+{|
+|-
+|valign="top"|[[Image:FlexSDK Location.png|350px|none|thumb|Click on OK and you will be able to browse to the correct location.]]
+|valign="top"|[[Image:FlexSDK_dir.png|350px|none|thumb|Select the directory where your flex SDK 3 is installed, likely it's flex_sdk_3.3 in some directory. Navigate to the directory and click on the OK button.]]
+|}
+After you have configured this once, you will not need to do it again.
+
+=== Configure Standalone Player Location ===
+On Linux and Windows platforms, you will have to select the location of your debug flash player executable.  Note you will not have to do this for a Mac installation.
+{|
+|-
+|valign="top"|[[Image:Need player info.png|350px|none|thumb|Click on OK and you will be able to browse to the correct location.]]
+|valign="top"|[[Image:Need player chooser.png|350px|none|thumb|In most cases, this was installed when you installed the Flex SDK.  Browse to the location of your Flex SDK install and look for flex_sdk_3.3/runtimes/player/ then select the directory with your OS name (win, lnx, mac, 10). Select the FlashPlayer and click on the OK button.]]
+|}
+After you have configured this once, you will not need to do it again.
+
+=== Compile and Run the Game ===
+You should then see it compile the game, then run a test server.  In Windows, two Flash player popups will display the game client (representing the two players in reversi - black & white).  In Linux and Mac, a single Flash player popup will display the game client with two tabs.
+
+[[Image:Reversi screenShot.png|500px]]
+
+If you see the game client then everything is fully operational. Otherwise look at the output on the command line for any error messages which might indicate that something is misconfigured.
+
+== Next Step ==
+Now you can move on to the [[Hello Whirled|Hello Whirled Tutorial]].
+[[Category:Tutorials]]

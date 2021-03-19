@@ -1,0 +1,41 @@
+'''Land Sea Animals''' are specialized avatars that can duel due to special code that allows them to interact with each other in a room.
+
+{{stub}}
+
+== What are Land Sea Animals? ==
+Land Sea Animals were inspired by a few different influences. The biggest influence was the wish for a system that would allow avatars to fight each other in an easy and fun way. The original Avatar Combat system was created by [http://www.whirled.com/#people-1855 Nordenx] and [http://www.whirled.com/#people-20260 Conrad500] and further developed and refined by [http://www.whirled.com/#people-1358 The Cosmic Cheese].
+
+The other influence was from [http://www.whirled.com/#people-3383 Version2.0] who created the original Land Sea Animal, the [http://www.whirled.com/#shop-l_5_2949 LAND WHAAALE]. The Whale was originally just an ordinary "Gun Whale" avatar (a whale with a cannon on its head) until Version2.0 asked Nordenx to add his Dueling Cowboy's code into it so that players can shoot each other with its cannon. But the idea of sea animals on land with stretched out names in battle was far too appealing to pass up. Nordenx then created the dueling  [http://www.whirled.com/#shop-l_5_2956 LAND SHAAARK] avatar (a shark with a laser in its head) and soon this concept inspired several more creators to make their own dueling land sea animals with a stretched name sporting odd & silly weapon or attack combinations.
+
+LAAAAAAAAND SEAAAAAAAAAAAA ANIMAAAAAAAAAAAAAAAAAAAALS! (or just Land Sea Animals for short... or LSA for shorter) Later on, the new system developed by The Cosmic Cheese made it easier for creators use the LSA code on other kinds of dueling avatars.
+
+== LSA Dueling Code ==
+First download the class file:
+http://thecosmiccheese.googlepages.com/DuelingLandSeaAnimal.as
+
+'''Save it either in the same directory as your avatar, or to make it available to any avatars, save it in whirled/examples/avatars/uravatar/src'''
+
+There are two ways to make an avatar LSA compatible:
+
+If you want an avatar with only one of each state, in the main scene of your avatar put the following line of code anywhere after _ctrl has been created:
+<actionscript>
+var dlsa:DuelingLandSeaAnimal = new DuelingLandSeaAnimal(_ctrl, "duel state name", "duel action name", "dead state name");
+</actionscript>
+
+If you want an avatar with more than one of each state, in the main scene of your avatar put the following line of code anywhere after _ctrl has been created:
+<actionscript>
+var dlsa:DuelingLandSeaAnimal = new DuelingLandSeaAnimal(_ctrl, ["duel state 1","duel state 2",...], 
+   ["duel action 1","duel action 2",...], ["dead state 1","dead state 2",...]);
+</actionscript>
+
+Put the names of your dueling state/action and dead state name where provided, and you should be good to go.
+
+[[Advanced avatar (Flash tutorial)| Transitions]] to the dead state usually contains the unique or interesting animation for the death scene sequence, while the death state itself just contains either an empty scene or a representation of the dead avatar's corpse or carcass or spirit.
+
+== Honors ==
+LSA was honored to have Cleaver mention it in [http://www.youtube.com/watch?v=ztl8eBwq24k VGS2008].
+
+== See Also ==
+*{{groups|Land Sea Animals Whirled|2309}}
+*[http://www.whirled.com/#groups-t_2554 List of LSA Compatible Avatars]
+*[[List of AVRG Avatar States]]

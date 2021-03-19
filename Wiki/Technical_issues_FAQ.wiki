@@ -1,0 +1,113 @@
+{{FAQS}}
+
+== Whirled won't load, what should I do? ==
+===Entering from Whirled.com===
+There are several things to try if the Flash portion of [[Whirled]] (that is, [[room|rooms]], [[game|games]], and item previews in the [[Shop]]) does not load:
+* '''Do a [[#How_do_I_clear_my_browser_cache_or_do_a_hard_refresh_of_a_page?|hard refresh and/or clear your browser cache]]''' to get Whirled to work right. This is something you should try first when encountering almost any Whirled issue, especially right after a new release.
+* '''Turn on JavaScript'''.  JavaScript must be turned on in your browser for Whirled to be able to work properly.
+* '''Set any script blockers you have to allow Whirled.com'''.  Script blockers such as NoScript can cause Whirled not to load, if they aren't set to allow it.
+* '''Allow cookies from whirled.com'''.  Whirled cannot function without the ability to set cookies in your browser.
+* '''Check your firewall'''.  Whirled requires a firewall that is open on port 80 for http and on ports 843, 4010, 47624, and 47625 for world and game communications.  Also make sure Whirled.com is specifically allowed by the firewall.  If the ports are not unblocked or your firewall does not allow Whirled, and you try to go into a room or game in Whirled, you will get a big black screen with the error message, "We are experiencing technical difficulties.  Please try again later." 
+* '''Check your Flash Player settings'''.  Make sure that the local storage settings in your Flash Player allow Whirled to store information on your computer.
+** Right-click on any room/game/preview that isn't loading properly.
+** Select "Settings..."
+** In the "Local Storage" tab on the dialog box that pops up, set the storage slider to "100k" if it is set at "None".
+* '''Make sure your Flash is up to date'''.  [http://www.macromedia.com/software/flash/about/ This page] will tell you what version of Flash you have, and what the newest version is.  Whirled requires at least Flash 9 to function, but it is best to have the latest version installed.
+
+===Entering from another site via embedded room/game===
+In addition to advice above, if you are trying to access Whirled from an embedded room or game on another website such as a blog, MySpace, or deviantART try these tips:
+* '''[[Lock#Room_settings|Unlock]] the room''', if you own or manage it.
+* '''Make sure embedding is allowed on the site'''.  Sites such as deviantART don't allow embedding, but they do allow uploading of SWF files like the one you can get from your "[[Share this room|Share This Room]] options."
+
+'''NOTE''':  Many schools and businesses disallow outbound browser traffic, so some users may simply not be able to access Whirled from those locations.  Sometimes Whirled will run fine initially from a location, and then stop working when a sysadmin notices and decides to block Whirled.
+
+===I tried everything above, and Whirled still will not load!===
+If you tried ''all'' of the tricks above, and you are ''sure'' that your network firewall is not blocking Whirled, you can post to the [http://www.whirled.com/#groups-f_72 Bug Hunters] discussion so that people can help you.  Include in your post:
+* Your operating system name and version (MacOS Leopard, Windows Vista, etc.)
+* The name and version number of your web browser (Firefox 3, Internet Explorer 7, etc.)
+* Your [http://www.macromedia.com/software/flash/about/ Flash version number]
+* A screenshot, or a detailed description of, the error that is happening--the text of any error messages, what exactly happens and in what order, etc.  No one can help you if you just post, "It isn't working!"
+** If you are using Internet Explorer, you can sometimes find the error by clicking on the [[Image:Ieierror.png]] in the lower lefthand corner of your browser.  This will bring up a dialog box containing error text, which you should then add to your Bug Hunters post.  Make sure to add the whole error message, not just the bits you can first see in the dialog box!
+
+== One or more of the tabs in Whirled only shows a blank white page, what should I do? ==
+This is a bug that is being worked on.  In the meantime, you can see your tab again by [[#How_do_I_clear_my_browser_cache_or_do_a_hard_refresh_of_a_page?|clearing your browser cache]]. Use the method where you go into Tools rather than the refreshing/reloading the currently viewed page method.
+
+== How do I clear my browser cache or do a hard refresh of a page? ==
+The instructions vary depending on what browser and which version you use.
+
+=== Firefox 3.6 ===
+# Go to Tools and select Clear Recent History.
+# Click on the arrow by Details to see the full list of types with their checkboxes.  Remove checks from everything except "cache." Only "cache" should be checked.
+# Click on the "Clear Now" button.
+
+You can also clear your cache for the currently viewed page by using Ctrl-Shift-R (Cmd-Shift-R on a Mac).
+
+=== Firefox 3.0-3.5 ===
+# Go to Tools and select Clear Private Data.
+# Remove checks from everything except "cache." Only "cache" should be checked.
+# Click on the "Clear Private Data Now" button.
+
+You can also clear your cache for the currently viewed page by using Ctrl-Shift-R (Cmd-Shift-R on a Mac).
+
+=== Internet Explorer 7 ===
+# Go to Tools and select Internet Options.
+# Make sure the General tab is selected.
+# Under the "Browsing history" section click on the "Delete" button.
+# A new window will popup, under the "Temporary Internet Files" section click on the "Delete Files" button.
+# Click on the "Yes" button when it asks you if you want to delete the files.
+# Click on the "Close" button, and then click on the "OK" button to exit.
+
+You can also clear your cache for the currently viewed page by using Ctrl-F5 (Cmd-F5 on a Mac).
+
+=== Internet Explorer 6 ===
+# Go to Tools and select Internet Options.
+# Make sure the General tab is selected.
+# Under the "Temporary Internet Files" section click on the "Delete Files" button.
+# Click on the "OK" button.
+
+You can also clear your cache for the currently viewed page by using Ctrl-F5 (Cmd-F5 on a Mac).
+
+== What web browsers are supported by Whirled? ==
+The latest version of [http://www.firefox.com Firefox] is highly recommended. Internet Explorer (IE) is supported, but not especially recommended. 
+
+Safari, Chrome, and Opera are not officially supported; they have some issues running Whirled.
+
+Mobile phone browsing of Whirled also is not supported.
+
+== Where is my Friendly Person checkbox on My Profile? ==
+If the [[friendly person|Friendly Person checkbox]] does not show up after Location when you edit your [[profile]], one of two things is happening:
+* You do not meet the requirements to be a Friendly Person.  You must be at least [[level]] 10 and have at least 20 [[friend|friends]].  OR
+* You have lost the privilege of being a Friendly Person due to bad behavior.
+
+== Something is wrong with the music in my room or a room that I'm trying to visit, what do I do? ==
+If there are issues with a room due to the [[music]], you can mute your Whirled browser's [[Room#Room_Buttons|volume]].  With the volume muted, the browser does not load any mp3 at all, in any room.  You can then go into the room and remove the music if you can edit the room, or you can copy the room URL to send along with a description of the issue to the [[Agent|Agents]] via the Help link's Contact Us option.
+
+== I can't see all of the game screen when playing games, what do I do? ==
+In Whirled, games need at least 1024x768 resolution to see the whole game screen.  If your view of the game is being cut off and your browser window is maximized, you may be running at a low display resolution.  Check your computer's display resolution to make sure you are running at something that is at least 1024x768 pixels: ([http://www.microsoft.com/enable/training/windowsxp/screenresolution.aspx Windows] and [http://support.apple.com/kb/TA21610?viewlocale=en_US Mac]).
+
+If you used to be able to see the whole thing, check and make sure that your browser is not zoomed in.  For Firefox, look in View &rarr; Zoom.  In Internet Explorer, click on the lower right corner to make sure it is at 100%.
+
+== The left side of my screen keeps blinking or flashing black when I view any of the tabs, is something wrong? ==
+This is just an issue with Flash when using Firefox 3.5 browser.  There is nothing that Whirled can do about it.
+
+== I can't broadcast, is something wrong? ==
+If you are unable to broadcast, you have lost the privilege of being able to broadcast due to bad behavior. 
+
+== I'm using Linux and sometimes parts of Whirled float on top of where I need to click or type in text like when I'm trying to list an item in the shop, what should I do? ==
+There is a known issue with Flash on Linux where Z-ordering does not work properly. Popups get centered in the display, so try making your browser window taller. The header for the popup should appear, allowing you to drag it around.
+
+== I can't seem to get bleep/report when right click on items in a room, what do I do? ==
+If a room is using a backdrop that is an animated SWF file, it can get in the way of being able to get the bleep and report menu items when right clicking on an item.  There is currently no way to get those menu options back in that room unless the SWF backdrop is removed.  Avatars in these rooms can still be bleeped and reported by left-clicking on them.  Pets in these rooms can still be bleeped by left-clicking on them.
+
+== I'm seeing red error boxes instead of avatars and other items in Whirled, what do I do? ==
+[[Image:Media loading error.png|left]]If you are seeing red error boxes, first try reloading/refreshing Whirled in your browser. If there are a lot of red error boxes, it may be that the Whirled media server is having issues or your part of the world is having trouble reaching the server.  The Whirled media server is hosted and run by Amazon.  If it is down or unreachable, there is nothing that the Agents or Developers can do except for wait for Amazon to fix it.  To check if Amazon is having issues, look at the status of Amazon Simple Storage Service (US) on their [http://status.aws.amazon.com/ Status Page].
+{{clear}}
+
+== See Also ==
+*[[Avatar creation FAQ]]
+*[[AVRG FAQ]]
+*[[Billing FAQ]]
+*[[Community Standards]]
+*[[Frequently asked questions]]
+*[[Terms of Service]]
+*[[Whirled game creation FAQ]]

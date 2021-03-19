@@ -1,0 +1,387 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Medium
+|description=Create a simple mulitplayer game.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=[[Simple text game, part 2]]
+}}
+
+
+Let's add another level of complexity. We need to share game scores over the network. At the same time, we don't want just anybody going in and modifying the shared score table - this could very easily lead to people overwriting each other's modifications. So instead, we will go through a ''controlling host''.
+
+A ''host'' is just one of the client machines, elected automatically, which will act as an arbiter of changes to the shared game data structure. All clients will send their updates to the host, the host will modify the shared game state, and this will get automatically sent back to the clients. The host role is like a token that gets passed between the player machines - GameControl guarantees that exactly one of the players will be the controlling host at any time, and if the current host logs off, the server will pass the token to another machine. This also means that any client can become the host at any time. 
+
+The score update logic will proceed as follows:
+# The client checks the dictionary, and if the word is okay, it computes the score and sends an ADD_SCORE message to the host.
+# The host receives ADD_SCORE messages from the client, and overwrites the shared property.
+# Property set change will be sent to all clients, causing them to update their score display.
+
+So, let's do it. First, change the following declarations:
+
+<actionscript>
+import com.whirled.net.MessageReceivedEvent; 
+import com.whirled.net.PropertyChangedEvent; 
+import com.whirled.game.GameControl;
+
+[SWF(width="350", height="200")]
+public class HelloWhirled extends Sprite
+{
+
+    /** Label for a score update message that will be sent to the controller. */
+    public static const ADD_SCORE :String = "Add Score";
+
+    /** Name of the shared property that will hold everyone's scores. */
+    public static const SCORE_TABLE :String = "Score Table";
+</actionscript>
+
+Whenever a message such as ADD_SCORE gets sent out, it results in a MessageReceivedEvent being dispatched. We may listen for this event and act on it. Similarly, the PropertyChangedEvent is used to notify us of updates to the shared property set. 
+
+Now, let's change the loading/unloading routines to add ourselves as listeners for these events.
+
+<actionscript>
+    /** Called from the game constructor. */
+    protected function load () :void
+    {
+        createUI();
+
+        // register for keypresses in the text box
+        _inputField.addEventListener(KeyboardEvent.KEY_DOWN, keyEventHandler);
+
+        // send property change notifications to the propertyChanged() method
+        _control.net.addEventListener(PropertyChangedEvent.PROPERTY_CHANGED, propertyChanged);
+
+        // send incoming message notifications to the messageReceived() method
+        _control.net.addEventListener(MessageReceivedEvent.MESSAGE_RECEIVED, messageReceived);
+    }
+</actionscript>
+
+Note that we listen for these particular events on the NetSubControl, not on the GameControl itself.
+
+Next, let's change what happens when the user types in a word:
+<actionscript>
+    /** Record the score and share with others. */
+    protected function addScore (points :int) :void
+    {
+        // create a score array: [playerId, points]
+        var msg :Object = new Object;
+        msg[0] = _control.game.getMyId();
+        msg[1] = points;
+        _control.net.sendMessage (ADD_SCORE, msg);
+    }
+</actionscript>
+
+Here's what's going on: we create a temporary object, and use it as an array of two elements: first holds the ID of the player who just scored, and the second is the number of points to be added to their score. Once we have the object, we broadcast it to other clients using a message named ADD_SCORE. 
+
+All clients will receive this message, as a MessageReceivedEvent. So next, we add a message handler:
+
+<actionscript>
+    /** Respond to messages from other clients. */
+    protected function messageReceived (event :MessageReceivedEvent) :void
+    {
+        if (event.name == ADD_SCORE &&  // This is the only event we should care about, and
+            _control.game.amInControl())     //   only the controller cares about it
+        {
+            // Convert the event value back to an object, and pop the info
+            var id :int = int(event.value[0]);
+            var points :Number = Number(event.value[1]);
+
+            _control.local.feedback("Got message: occupant #" + id + ", " + points + " points.");
+            
+            // Get the current score object. We store all scores as a property set
+            // on this object. They map from player ID to current score.
+            var table :Object = _control.net.get(SCORE_TABLE);
+            if (table == null) {  // Nobody scored anything yet - create an empty table.
+                table = new Object();
+            }
+            
+            // Get the player's old score (if available), and add the new number of points
+            var oldScore :Number = table.hasOwnProperty(id) ? table[id] : 0;
+            table[id] = oldScore + points;
+            
+            // Now update the score object - this will also update everyone else's score boards
+            _control.net.set(SCORE_TABLE, table);
+        }
+    }
+</actionscript>
+
+There's a lot going on here. This handler will be running on all clients, but we only want the host to update shared data. So the first thing we do is a check - is this the ADD_SCORE message, and am I the controlling host?
+
+Second, the host will pull out player ID and point value from the temporary object. 
+
+Third, we read the player's current score. Score is stored in a property named SCORE_TABLE, and its value is an object instance, which serves as a score table (since in ActionScript all objects are also associative tables :-). So we get the table, read the old score, and add the specified number of points.
+
+Finally, we update the property to give it the new value. This will update the property set on all other clients, and send a PropertyChangedEvent, which we intercept as follows:
+
+<actionscript>
+    /** Responds to property changes. */
+    protected function propertyChanged (event :PropertyChangedEvent) :void
+    {
+        _control.local.feedback("Got property change: property " + event.name);
+        if (event.name == SCORE_TABLE) {
+            // The scores have changed - update the message field!
+            _scoreField.text = "";
+            var table :Object = event.newValue;
+            for (var key :String in table) {
+                // convert each string ID into a number
+                var id :Number = Number(key);   
+                if (id != 0) {
+                    var score :Number = Number(table[key]);  // get the score
+                    var name :String = _control.game.getOccupantName(id);
+                    _control.local.feedback("-> occupant #" + id + ", total score: " + score);
+                    _scoreField.appendText(name + ": " + score + " points\n");
+                }
+            }
+        }
+    }                    
+</actionscript>
+
+This event handler does the display update. When it notices that the SCORE_TABLE property was updated, it reads the table, and iterates over all entries, displaying them in the text box.
+
+==== Complete listing ====
+
+The new HelloWhirled.as file should now look as follows. Please note that it includes a number of '''_control.local.feedback()''' lines, which display debug information about what goes on in the code. Please feel free to remove them. :-)
+
+<actionscript>
+package {
+
+import flash.display.Graphics;
+import flash.display.Sprite;
+import flash.events.Event;
+import flash.events.KeyboardEvent;
+import flash.text.TextField;
+import flash.text.TextFieldAutoSize;
+import flash.text.TextFieldType;
+import flash.text.TextFormat;
+
+import com.whirled.net.MessageReceivedEvent; 
+import com.whirled.net.PropertyChangedEvent; 
+import com.whirled.game.GameControl;
+
+[SWF(width="350", height="200")]
+public class HelloWhirled extends Sprite
+{
+    /** Label for a score update message that will be sent to the controller. */
+    public static const ADD_SCORE :String = "Add Score";
+
+    /** Name of the shared property that will hold everyone's scores. */
+    public static const SCORE_TABLE :String = "Score Table";
+
+
+    public function HelloWhirled ()
+    {
+        // listen for an unload event
+        root.loaderInfo.addEventListener(Event.UNLOAD, handleUnload);
+
+        _control = new GameControl(this);
+
+        load();
+    }
+
+    /** Called from the game constructor. */
+    protected function load () :void
+    {
+        createUI();
+
+        // register for keypresses in the text box
+        _inputField.addEventListener(KeyboardEvent.KEY_DOWN, keyEventHandler);
+
+        // send property change notifications to the propertyChanged() method
+        _control.net.addEventListener(PropertyChangedEvent.PROPERTY_CHANGED, propertyChanged);
+
+        // send incoming message notifications to the messageReceived() method
+        _control.net.addEventListener(MessageReceivedEvent.MESSAGE_RECEIVED, messageReceived);
+    }
+
+    /** This is called when your game is unloaded. */
+    protected function handleUnload (event :Event) :void
+    {
+        _inputField.removeEventListener(KeyboardEvent.KEY_DOWN, keyEventHandler);
+    }
+
+    /** Called when the user presses a key inside the inputField control. */
+    protected function keyEventHandler (event :KeyboardEvent) :void
+    {
+        if (event.keyCode == 13) {  // user hit Enter
+            if (_control.services.isConnected()) {
+                _control.services.checkDictionaryWord(
+                    "en-us", null, _inputField.text, processWord);
+            } else {
+                _responseField.text = "Error: disconnected.";            
+            }
+            _inputField.text = "";
+        } else {
+            // any other key just clears the message box
+            _responseField.text = "";
+        }
+    }
+    
+    /** Processes results from the dictionary service, once they arrive. */
+    protected function processWord (word :String, isValid :Boolean) :void
+    {
+        // if it's a valid word, let's score it.
+        if (isValid) {
+            var points :int = word.length;
+            addScore(points);
+            _responseField.text = "Valid word! You earn " + points + " points!";
+        } else {
+            _responseField.text = "Not a valid word. Sorry.";
+        }
+    }
+
+    /** Record the score and share with others. */
+    protected function addScore (points :int) :void
+    {
+        // create a score array: [playerId, points]
+        var msg :Object = new Object;
+        msg[0] = _control.game.getMyId();
+        msg[1] = points;
+        _control.net.sendMessage(ADD_SCORE, msg);
+    }
+
+    // from MessageReceivedListener 
+    public function messageReceived (event :MessageReceivedEvent) :void
+    {
+        if (event.name == ADD_SCORE &&  // This is the only event we should care about, and
+            _control.game.amInControl())     //   only the controller cares about it
+        {
+            // Convert the event value back to an object, and pop the info
+            var id :int = int(event.value[0]);
+            var points :Number = Number(event.value[1]);
+
+            _control.local.feedback("Got message: occupant #" + id + ", " + points + " points.");
+            
+            // Get the current score object. We store all scores as a property set
+            // on this object. They map from player ID to current score.
+            var table :Object = _control.net.get(SCORE_TABLE);
+            if (table == null) {  // Nobody scored anything yet - create an empty table.
+                table = new Object();
+            }
+            
+            // Get the player's old score (if available), and add the new number of points
+            var oldScore :Number = table.hasOwnProperty(id) ? table[id] : 0;
+            table[id] = oldScore + points;
+            
+            // Now update the score object - this will also update everyone else's score boards
+            _control.net.set(SCORE_TABLE, table);
+        }
+    }
+
+    /** Responds to property changes. */
+    protected function propertyChanged (event :PropertyChangedEvent) :void
+    {
+        _control.local.feedback("Got property change: property " + event.name);
+        if (event.name == SCORE_TABLE) {
+            // The scores have changed - update the message field!
+            _scoreField.text = "";
+            var table :Object = event.newValue;
+            for (var key :String in table) {
+                // convert each string ID into a number
+                var id :Number = Number(key);   
+                if (id != 0) {
+                    var score :Number = Number(table[key]);  // get the score
+                    var name :String = _control.game.getOccupantName(id);
+                    _control.local.feedback("-> occupant #" + id + ", total score: " + score);
+                    _scoreField.appendText(name + ": " + score + " points\n");
+                }
+            }
+        }
+    }                    
+
+    /** Creates and lays out UI elements. */
+    protected function createUI () :void
+    {
+        // Create a background.
+        var bg :Sprite = new Sprite();
+        bg = new Sprite();
+        addChild(bg);
+
+        // Fill the new background with color, and add to display list
+        var g :Graphics = this.graphics;
+        g.beginFill(0xffeedd);
+        g.drawRoundRect(0, 0, 350, 200, 25);
+        g.endFill();
+
+        // Text format
+        var format :TextFormat = new TextFormat();
+        format.font = "Arial";
+        format.size = 12;
+        
+        // Input field
+        _inputField = new TextField();
+        _inputField.defaultTextFormat = format;
+        _inputField.text = "< type here >";
+        _inputField.x = 50;
+        _inputField.y = 50;
+        _inputField.width = 100;
+        _inputField.height = _inputField.textHeight + 2;
+        _inputField.type = TextFieldType.INPUT;
+        _inputField.border = true;
+        addChild(_inputField);
+
+        // Feedback field
+        _responseField = new TextField();
+        _responseField.defaultTextFormat = format;
+        _responseField.wordWrap = true;
+        _responseField.x = 50;
+        _responseField.y = 100;
+        _responseField.width = 100;
+        _responseField.height = 50;
+        _responseField.text = "Type your word above, and hit Enter!";
+        addChild(_responseField);
+
+        // Score field
+        _scoreField = new TextField();
+        _scoreField.defaultTextFormat = format;
+        _scoreField.multiline = true;
+        _scoreField.x = 200;
+        _scoreField.y = 50;
+        _scoreField.width = 150;
+        _scoreField.height = 200;
+        addChild(_scoreField);
+    }
+
+    /** Game control. */
+    protected var _control :GameControl;
+
+    /** Input field for typing. */
+    protected var _inputField :TextField;
+
+    /** Message field with system responses. */
+    protected var _responseField :TextField;
+
+    /** Score field. */
+    protected var _scoreField :TextField;
+}
+}
+</actionscript>
+
+The result should look as follows:
+[[Image:Hellowhirled-4.png]]
+
+
+== Debugging a Multiplayer Game ==
+
+One problem remains: sure, we can see that it works for a single player, but how about multiple players? For this, we will need to log in as multiple guest users.
+
+If you're on a unix system, run the following:
+
+  ant test -Dplayers=2
+
+Or if you're on Windows, open '''build.bat''' in a text editor, and change the following line:
+
+  set PLAYERS=1
+
+to be:
+
+  set PLAYERS=2
+
+and rerun '''build.bat'''.
+
+This will start up the server along with two flash clients, and let you play a pre-matched game. Feel free to adjust the number of players as appropriate.
+
+= Next Steps =
+
+* [[Simple text game, part 4]]
+* [[Create games|Back to Creating Games]]
+
+[[Category:Tutorials]][[Category:Code tutorials]]

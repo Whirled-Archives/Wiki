@@ -1,0 +1,11 @@
+<small>&larr; [[Porting a single player game|Back to porting a single player game]]</small>
+
+Every object in Flash has the "stage" property set. 
+
+Due to security reasons, the Whirled platform does not allow full access to the stage. Currently, the platform does not allow you to do the following to the stage:
+
+* Add listeners
+* Check stageWidth, stageHeight
+* If the object that currently has the focus is in an inaccessible security boundary it will look like null to you.
+
+[[Category:Code tutorials]]

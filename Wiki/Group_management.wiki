@@ -1,0 +1,97 @@
+[[Image:Group-manager-view group.png|250px|right|thumb|This is what a group page looks like when viewed by a manager.]][[Group]]s have managers that have special '''group management''' access.  If you [[groups tab# Create a New Group|create a group]], you are automatically added as a manager.
+
+
+__TOC__
+{{clearright}}
+== Managing the Group ==
+[[Image:Group-manager-edit group.png|350px|right|thumb|The group editing screen.]]To manage the group, click on the "Edit this group" link.  Please note that group names cannot be changed.
+
+From here you can change:
+*Policy
+**Public* - the group will be visible in the [[Groups tab]] and anyone will be able to become a member
+**Invitation Only - the group will be visible in the Groups tab, but membership is by manager invitation only (through the member management interface)
+**Exclusive - the group will not be visible in the Groups tab unless the viewer is a member of the group and membership is by manager invitation only (through the member management interface)
+*Who can start a party connected with the group
+**Members*
+**Managers
+*Who can start a discussion thread
+**Anyone
+**Members*
+**Managers
+*Who can post replies to threads
+**Anyone*
+**Members
+**Managers
+*Upload or select a logo
+*Headline - A short motto or phrase that appears under the group name on its page
+*Homepage URL
+*Charter - A longer description where you can discuss the purpose and/or membership of the group
+*Shop Browse Type - The type of item that your group's shop will initially view when opened
+*Shop tag - The item tag that is related to your group, used as a search term to create your group's shop
+*Group tags - Add tags or remove them (click on the tag to get the removal menu). This box is not present if your group is Exclusive.
+
+<nowiki>*</nowiki> = ''These are the default options when creating a new group.''
+{{clearright}}
+
+== Managing Group Rooms ==
+[[Image:Group-manager-rooms.png|350px|right|thumb|The room management screen.]]To manage the group's rooms, click on the "Manage Rooms" link.  From this screen you will be able to see what rooms belong to the group and also use the dropdown menu to select a room to give to the group.  Transferring your room to a group will allow any manager of that group to edit the room. The room will be removed for your rooms list and added to the group. You cannot transfer your current home room. 
+
+'''Remember that giving a room to a group cannot be undone.'''
+
+If you wish to make a different group room the group hall, go to that room, edit the room and set it as home.
+{{clearright}}
+
+== Managing Group Members ==
+[[Image:Group-manager-members.png|350px|right|thumb|The member management screen.]]To manage the members of a group, click on the "see all" link at the end of the Members bar of the group page.  The main area of the page will then show a list of the members in descending order of who was logged on most recently.  Next to each member's name and picture there are links that allow you to promote/demote managers and remove members of the group.
+
+'''Make sure you trust the players you promote as managers''' because they will be able to edit the group, delete posts, manage the medals, create other managers and remove members from the group. 
+
+You cannot demote or remove managers that joined the group earlier than you. '''If you leave and rejoin the group, you lose your seniority''' and will not have the power to demote or remove managers who have an earlier group join date than yours.  There is currently no way to find out a member's group joining date.
+
+From this screen, you can also use the "Invite Someone to Join" button to send an invitation to join the group.  Invitations can only be sent to players that are on your friends list.
+
+Group managers can also create a brand by giving shares to group members, who are then considered to be brand shareholders.  Read more about brands [[brand|here]].
+{{clearright}}
+
+== Managing Medals ==
+{{:Medal/Managing}}
+
+== Managing Posts ==
+Managers are able to delete individual posts from threads.  Managers cannot edit posts other than their own.
+
+Managers can also use the "Edit Thread" button at the bottom of a thread to edit the subject/title and select whether the thread is an Announcement (thread shows up in the Announcements section of the Me tab for group members), a Sticky (thread stays at the top of the discussions list) or is Locked (no new posts allowed).
+{|
+|- valign="top"
+||[[Image:Group-manager-posts.png|400px|right|thumb|What Agent Equinox would see as a manager when viewing posts if Agent Vortex were just a member.]]
+||[[Image:Group-manager-edit thread.png|250px|thumb|Edit Thread options.]]
+|}
+
+{| class="toccolours" style="margin:0 0 0.5em 1em; clear:right; font-size:95%"
+|-style="background-color:#4995c6; color:white;" 
+!|Icon ||Function
+|-style="vertical-align:top"
+|[[Image:Groups-discussion-back arrow.png]]||Located at the top of threads, the back arrow will take you back to the previous page that you were viewing.
+|-style="background-color:#ddd;vertical-align:top"
+|[[Image:Groups-discussion-complain post.png]]||Located at the top of posts you did not create, this icon allows you to [[Report#Reporting_a_discussion_post|complain about inappropriate posts]] that break the [[Terms of Service]].
+|-style="vertical-align:top"
+|[[Image:Groups-discussion-delete post.png]]||Located at the top of posts you created, this icon allows you to delete your post.
+|-style="background-color:#ddd;vertical-align:top"
+|[[Image:Groups-discussion-edit post.png]]||Located at the top of posts you created, this icon allows you to edit your post. A note will automatically be added at the bottom of the post stating on which date & time it was edited.
+|-style="vertical-align:top"
+|[[Image:Groups-discussion-reply to post.png]]||Located at the top of posts, this icon allows you to post a reply at the end of the thread.
+|-style="background-color:#ddd;vertical-align:top"
+|[[Image:Groups-discussion-reply with quote.png]]||Located at the top of posts, this icon allows you to post a reply at the end of the thread with the post text quoted.
+|}
+{{clearright}}
+
+== Managing a Group's Whirled ==
+{{main|Create Whirleds}}
+
+A Whirled is a themed group that allows the group managers to control what content (avatars, pets, etc.) is allowed in that group, what appears in the group's shop, and also allows some parts of the Whirled user interface to be changed.  This is done by marking items. If you are the [[group management|manager]] of a [[group]], you can [[create Whirleds|create & edit a themed Whirled]] for that group.  
+
+== Managing a Group's Brand to Share Shop Profits ==
+{{main|Brand}}
+
+Groups can also be used to share creator profits by [[list]]ing items and [[brand]]ing them with profits being divided among shareholders.
+
+[[Category:Tutorials]]

@@ -1,0 +1,107 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Beginner
+|description=Create animated furniture using AS3.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=
+}}
+
+[[Image:Icon-highlighted-furniture.png|left]]This tutorial details how to create animated [[furniture]] from a series of images using ActionScript.
+{{clearleft}}
+
+== Prerequisites ==
+# [[Setting up your programming environment]]
+# [[Hello Whirled]]
+# This tutorial currently assumes you are familiar with programming and that you can learn by example.
+
+== Assets ==
+# A set of images we want to alternate between (same size might be a good idea):
+[[Image:Yng_Fire1.png]] [[Image:Yng_Fire2.png]] [[Image:Yng_Fire3.png]] [[Image:Fire4.png]]
+
+== Bonfire ==
+We use a Timer to change images every 300 milliseconds.
+<code><pre>
+// bonfire - a furniture for Whirled
+
+package {
+
+import flash.display.Sprite;
+import flash.display.DisplayObject;
+import flash.utils.Timer;
+
+import flash.events.Event;
+import flash.events.TimerEvent;
+
+[SWF(width="184", height="381")]
+public class bonfire extends Sprite
+{
+    // constructor
+    public function bonfire ()
+    {
+        // interval to call the function in milliseconds
+        _timer = new Timer(300, 0);
+        _timer.addEventListener(TimerEvent.TIMER, appearanceChanged);
+        _timer.start();
+
+        // listen for an unload event
+        root.loaderInfo.addEventListener(Event.UNLOAD, handleUnload);
+
+        // load up our four images and put them into an array
+        _view0 = (new IMAGE1() as DisplayObject);
+        _view1 = (new IMAGE2() as DisplayObject);
+        _view2 = (new IMAGE3() as DisplayObject);
+        _view3 = (new IMAGE4() as DisplayObject);
+        _array = new Array(_view0, _view1, _view2, _view3);
+        addChild(_view0);
+        which_img = 0;
+    }
+
+    /**
+     * This is called from setInterval
+     */
+    protected function appearanceChanged (event: Event) :void
+    {
+        Old_img = _array[which_img];
+        which_img++;
+        if (which_img == 4) which_img = 0;
+        removeChild(Old_img);
+        addChild(_array[which_img]);
+    }
+
+    /**
+     * This is called when your furniture is unloaded.
+     */
+    protected function handleUnload (event :Event) :void
+    {
+        // stop any sounds, clean up any resources that need it.
+        // In our case, clear the timer.
+        _timer.stop();
+
+        // And remove all of the event listeners.
+        root.loaderInfo.removeEventListener(Event.UNLOAD, handleUnload);
+        _timer.removeEventListener(TimerEvent.TIMER, appearanceChanged);
+    }
+
+    protected var _view0 : DisplayObject;
+    protected var _view1 : DisplayObject;
+    protected var _view2 : DisplayObject;
+    protected var _view3 : DisplayObject;
+    protected var _array : Array;
+    protected var which_img :int;
+    protected var Old_img :DisplayObject;
+    protected var _timer : Timer;
+
+/** The embedded image class. */
+    [Embed(source="fire1.png")]
+    protected static const IMAGE1 :Class;
+    [Embed(source="fire2.png")]
+    protected static const IMAGE2 :Class;
+    [Embed(source="fire3.png")]
+    protected static const IMAGE3 :Class;
+    [Embed(source="fire4.png")]
+    protected static const IMAGE4 :Class;
+}
+}
+</pre></code>
+
+[[Category:Tutorials]][[Category:Code tutorials]]

@@ -1,0 +1,44 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Beginner
+|description=Create a smiple avatar using AS3.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=Next tutorial: [[Advanced avatar (ActionScript tutorial)]]
+|item=avatar
+}}
+(Back to [[create avatars]] main page)
+
+[[Image:Icon-highlighted-avatar.png|left]]This tutorial helps those using AS3 to build an [[avatar]] for Whirled.  If you are interested in a less code oriented method using the Flash CS3 check out [[Advanced avatar (Flash tutorial)]].  In this tutorial, we will be looking at numerous notes on avatars.
+{{clearleft}}
+
+== How to add a state to the list of states ==
+
+<actionscript>
+_control.addEventListener(ControlEvent.STATE_CHANGED,stateChanged);
+_control.registerStates(["State1","State2","State3", "..."]);
+</actionscript>
+
+== How to add code to the state ==
+
+<actionscript>
+protected function stateChanged(event:ControlEvent):void
+{
+    if(_control.getState()=="State1")
+        {
+        // Insert code here.
+        }
+    else if (_control.getState()=="State2")
+        {
+        // Insert code here.
+        }
+
+    else if (_control.getState()=="State3")
+        {
+        // Insert code here.
+        }
+    else 
+        {
+        throw new Error("State not found!");
+        }
+}
+</actionscript>

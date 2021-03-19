@@ -1,0 +1,12 @@
+#Choose '''[[Stuff tab|Stuff]] &rarr; Videos''' to see the videos you own.
+#Scroll down to the "How do I get stuff?" section. [[Image:Stuff-Videos-How_do_I_get_stuff.png|none|thumb|400px| Click "Upload" to bring up the interface.]]
+#Click the '''Upload...''' button to get the video uploading interface. [[Image:Stuff-Create_video.png|none|thumb|400px|The video uploading interface's Main tab.]]
+##Click on the '''YouTube video ID''' field and enter a video ID such as [http://www.youtube.com/watch?v=cMO8Pyi3UpY cMO8Pyi3UpY].  You only need to do this for YouTube videos.  It will not work if the YouTube video has embedding disabled.
+##Click on the '''Name''' field and enter a name to identify your video.
+##Click '''Browse''' in Video Media and find the FLV file for your video. Once the video is uploaded an icon will appear in the Video Media rectangle.  You will not be able to Save your video until it is done uploading.  You only need to do this for FLV files, not for YouTube videos.
+##Click on the '''Description''' field and enter a description of your video. ''(optional)''
+##Confirm that you own the copyrights to the item or have authorization to upload it. 
+##Click on the Extras tab.[[Image:Stuff-Create_video-Extras.png|none|thumb|400px|The video uploading interface's Extras tab.]]
+##Click '''Browse''' in Thumbnail Media and find the bitmap (png, jpg or gif) file for your video's icon. (max. 80x60) ''(optional)''
+#Click '''Save''' to put your video in your inventory for use.
+<noinclude>[[Category:Subpages]]</noinclude>

@@ -1,0 +1,78 @@
+[[Image:Groups.png|right|300px]]'''Groups''' allow people with common interests to have united areas to gather, share and socialize.  Each Group contains a discussion forum and associated room(s) for members to chat in.
+
+Groups can also be used to share creator profits by [[list]]ing items and [[brand]]ing them.
+{{clearleft}}
+== Navigating in a Group ==
+[[Image:Groups-Brave New Whirled.png|thumb|450px|The main Group page for each Group contains links to everything including: Discussion forum, the Group's main room, recent discussion posts, list of members including managers, and other information.|left]]
+{{clear}}
+
+== Posting in a Group Discussion Forum ==
+{| class="toccolours" style="margin:0 0 0.5em 1em; clear:right; font-size:95%"
+|-style="background-color:#4995c6; color:white;" 
+!|Icon ||Function
+|-style="vertical-align:top"
+|[[Image:Groups-discussion-back arrow.png]]||Located at the top of threads, the back arrow will take you back to the previous page that you were viewing.
+|-style="background-color:#ddd;vertical-align:top"
+|[[Image:Groups-discussion-permalink.png]]||Located at the top of posts in front of the poster's name, the permalink icon may be clicked to generate a permalink to that post.
+|-style="vertical-align:top"
+|[[Image:Groups-discussion-complain post.png]]||Located at the top of posts you did not create, this icon allows you to [[Report#Reporting_a_discussion_post|complain about inappropriate posts]] that break the [[Terms of Service]].
+|-style="background-color:#ddd;vertical-align:top"
+|[[Image:Groups-discussion-delete post.png]]||Located at the top of posts you created, this icon allows you to delete your post.
+|-style="vertical-align:top"
+|[[Image:Groups-discussion-edit post.png]]||Located at the top of posts you created, this icon allows you to edit your post. A note will automatically be added at the bottom of the post stating on which date & time it was edited.
+|-style="background-color:#ddd;vertical-align:top"
+|[[Image:Groups-discussion-reply to post.png]]||Located at the top of posts, this icon allows you to post a reply at the end of the thread.
+|-style="vertical-align:top"
+|[[Image:Groups-discussion-reply with quote.png]]||Located at the top of posts, this icon allows you to post a reply at the end of the thread with the post text quoted.
+|}
+
+=== Post Editor ===
+[[Image:Groups-discussion-post_editor.png|left|thumb|300px|The Whirled post editor.]]When creating or editing a post, you will use the Whirled post editor.
+
+[[Image:Groups-discussion-post editor icons.png]]
+
+The formatting options are done using the icons at the top of the editing window as explained by the mouseover tool tips.  
+
+For text formatting, you can either click the icons first to format the text you are about to type or you can select the text you want to format and then click on the icons.
+
+Images can be added into a post if they are already uploaded in Your Stuff or you can select an image to upload for the post.
+
+For the URL linking, first type in and select the text that you would like to have as the link text, then click on the "Create Link" button.
+{{clear}}
+==== Experiment ====
+There is now an "Experiment" button to the left of the "Cancel" button that will allow you to use a different, experimental post editor.  If you would like to go back to the standard post editor, use the same button (now labeled "Take Me Back").
+
+The new editor has fewer bugs than the old one, but is a little fiddly when quoting posts that were created with the old editor. It also does not directly support links to images in your inventory, only URLs. For the curious, the editor is adapted from the open source [http://tinymce.moxiecode.com/ TinyMCE code base]. Please post problems to [http://www.whirled.com/#groups-f_72 Bug Hunters] with something like "New Editor" in the subject.
+
+==== Posting Whirled Rooms and Shop Items ====
+You can post Whirled rooms and shop items as thumbnails with the room or item names below them. Simply paste URLs for Whirled rooms and shop items into your post and Whirled will convert them into thumbnails with names.  You do not need to use the "Create Link" button.
+
+Each URL should be on its own line.  If you have a blank line above and below the URL, the room or item thumbnail will show up on its own line without anything else.  If you have multiple room URLs without any blank lines between them, the room thumbnails will show up 2 per line.  If you have multiple shop item URLs without any blank lines between them, the item thumbnails will show up 4 per line.
+{|
+|- valign="top"
+|[[Image:Posting Whirled links.png|thumb|none|325px|Simply paste URLs for Whirled rooms and shop items into your post.  You do not need to use the "Create Link" button. (In Internet Explorer, the URLs will appear underlined.)]]
+|[[Image:Posted Whirled links.png|thumb|none|325px|This is what the URLs to the left will look like when posted.]]
+|}
+
+=== Searching ===
+The search bar in the upper right corner of the Groups discussion area will search at the level of the page.  If it is on the main discussions page showing all the threads, the search will be conducted on all the threads.  If the page is showing a single thread, search will be conducted only on the posts in that thread.
+
+== Joining Groups ==
+To join a Group, click the [[Groups tab]]. You will see a list of Groups. Click on the Group you want to join. From there, you should be on the main page of the Group you're planning to join. You will see two big orange buttons, one of which is 'Enter hall', under that you should be able to see a link labeled "Join this group." Click on that, you will see a pop-up asking you if you want to join. Click Yes. Congratulations! You are now a member of that Group!
+
+Some groups have their policy set to "invitation only" and on those groups, there will not be a "Join this group" link.
+
+== Group Medals ==
+{{main|Medal}}
+
+Medals can be created and given out by Whirled group managers.  They can be viewed on a player's [[profile]] page with the medals' details shown in a section of the player's [[Passport]].
+
+== See also ==
+*[[Group management]]
+*[[Groups tab]] - includes information on how to create a new Group
+*[[Brand]] - share shop profits with certain members of a Group
+*[[Whirled (themed)]]
+*[[Report]]
+*[[Support]]
+
+[[Category:Terminology]]

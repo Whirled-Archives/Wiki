@@ -1,0 +1,252 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Advanced
+|description=Create a multiplayer server based game.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=Working example: [http://code.threerings.net/viewvc/whirled/trunk/projects/games/tictactoe/ TicTacToe]
+|item=game
+}}
+Server games have a component (aka server agents) that runs on the server.  Although server agents can be used for both single player and multiplayer games, they add the most value to multiplayer games, so we will focus on a mutliplayer game here.  The example we will be working through is based on the TicTacToe game.  You can find a final working copy of it [http://code.threerings.net/viewvc/whirled/trunk/projects/games/tictactoe/ here].   (Note: We are using Linux for this tutorial, we assume that if you have gotten along this far in the API, you will be able to figure out how to the same in any other platform).
+
+== The Anatomy of a Server Game == 
+
+A server game usually consists of a server side class and one or many client side classes. The server side class runs on a Whirled server and client side classes gets downloaded to the player's browser.
+
+For TicTacToe, we will end up with the following files:
+
+<pre>
+Board.as
+Record.as
+Server.as
+TicTacToe.as
+</pre>
+
+The server side class here is Server.as.  The rest of the files are client side.
+
+With your game partly running on the server, Whirled also provides access to the logs you generate on the server (more on how to generate logs below).  You can find this on the detail tab of your game.  For in development games, the logs are kept around for 2 days and for games listed in the shop, the logs are kept around for 7 days.
+
+[[Image:tictactoeLogs.png|300px|thumb|Logs for tic tac toe|none]]
+
+Lastly, when you build your classes using the Whirled ant tasks, you will end up with a file named XXX.abc.  This file is similar to a zip file and contains the client and server code for your game.  This is also the file you use when you [[Uploading games|upload your game]].
+
+== Generating the Skeleton of the Game ==
+
+If you used the Whirled scripts to create the skeleton for your game, you should end up with an actionscript class named Server.as.  Let's do this now. 
+
+<pre>
+bash-3.2$ pwd
+/WhirledSDKs/0.37/0.38/whirled
+bash-3.2$ 
+bash-3.2$ ant newgame
+Buildfile: build.xml
+
+prepare-flex:
+     [copy] Copying 1 file to /WhirledSDKs/0.37/0.38/whirled/etc
+     [copy] Copying 1 file to /WhirledSDKs/0.37/0.38/whirled/etc
+
+newgame:
+[newproject] Whirled games can optionally employ a server agent. This is
+[newproject] recommended for multi-player games, but is more complicated to 
+[newproject] write. For more information, see:
+[newproject] 
+[newproject]    http://wiki.whirled.com/Server_Agents
+[newproject] 
+[newproject] Do you want your game to employ a server agent?
+[newproject] Enter [y/n]:
+y
+[newproject] Please enter the name of your Game project.
+[newproject] For example, BestGameEver:
+tictactoe
+[newproject] Your main class will be called:
+[newproject]   tictactoe.as
+[newproject] Is this OK? [y/n]
+y
+[newproject]   Creating 'tictactoe/build.xml'.
+[newproject]   Creating 'tictactoe/build.bat'.
+[newproject]   Creating 'tictactoe/tictactoe.as'.
+[newproject]   Creating 'tictactoe/Server.as'.
+[newproject] Done! Your new project has been created in 'tictactoe'.
+
+BUILD SUCCESSFUL
+Total time: 25 seconds
+</pre>
+
+The files that got created are: 
+* tictactoe/build.xml 
+* tictactoe/build.bat 
+* tictactoe/tictactoe.as
+* tictactoe/Server.as
+
+Things that are different from generating a regular game are: 
+
+* we answered "Y" for "Do you want your game to employ a server agent?"
+* a new file Server.as is generated in addition to all the regular game files.
+
+
+Server.as is the default name for your server agent file, you can change this by editing the build.xml of your game.    
+
+<pre>
+Change the XML file from 
+
+  <!-- if you wish to name your server agent class something besides "Server", uncomment and edit this line -->
+  <!--<property name="app.server-agent" value="subpackage/Server"/>-->
+
+to 
+
+  <!-- if you wish to name your server agent class something besides "Server", uncomment and edit this line -->
+  <property name="app.server-agent" value="subpackage/MyNewName"/>
+
+
+</pre>
+
+== The Dissection ==
+
+Most of the logic for TicTacToe is in Server.as and TicTacToe.as. 
+
+The general breakdown of the game is as follows:
+
+The client (TicTacToe.as) is in charge of drawing the UI and responding to player actions.  Whenever a user player a move, it checks the state of the board using the [[NetSubControl]] to make sure the square the player wants to move to is empty.  If the move is valid, the client then sends a message to the Server about the new move it is about to make.   Only after those two things does the board get updated with the move.
+
+The bulk of the server's work (Server.as) is to validate the move requets sent by the client. It also determines when there is a winner and awards coins to players. 
+
+We will not be walking through Board.as and Record.as as they strictly handle the UI and are beyond the scope of this tutorial.  For this tutorial, simply copy the Board.as and Record.as files from the ../../whirled/examples/games/tictactoe/ directory to the new game project directory you just created.
+
+== TicTacToe.as Start-Up== 
+Let's start with the TicTacToe.as file first.  This should be what the default constructor that was created for you by the ant task looks like
+
+<actionscript>
+ 
+public function tictactoe ()
+    {
+        _control = new GameControl(this);
+
+        // listen for an unload event
+        _control.addEventListener(Event.UNLOAD, handleUnload);
+    }
+</actionscript>
+
+The [[GameControl]] object is the essential object that connects your game to the Whirled API.  We have also created a default method for unloading all the games resources when the game unloads.  '''Please make sure to fill this method out.'''
+
+Let's add some event listeners
+<actionscript>
+ 
+public function tictactoe ()
+    {
+        _control = new GameControl(this);
+
+        // listen for events
+        _control.net.addEventListener(PropertyChangedEvent.PROPERTY_CHANGED, propertyChanged);
+        _control.net.addEventListener(ElementChangedEvent.ELEMENT_CHANGED, elementChanged);
+        _control.net.addEventListener(MessageReceivedEvent.MESSAGE_RECEIVED, messageReceived);  
+        _control.game.addEventListener(StateChangedEvent.TURN_CHANGED, turnChanged);
+        _control.game.addEventListener(StateChangedEvent.GAME_STARTED, gameStarted);
+        _control.game.addEventListener(StateChangedEvent.GAME_ENDED, gameEnded);
+
+        _control.addEventListener(Event.UNLOAD, handleUnload);
+    }
+</actionscript>
+
+Notice that we are adding event listeners onto the different subControls, 
+ 
+
+Next we will fill it out with the UI elements:
+<actionscript>
+public function tictactoe ()
+    {
+        _control = new GameControl(this);
+
+        // listen for events
+        _control.net.addEventListener(PropertyChangedEvent.PROPERTY_CHANGED, propertyChanged);
+        _control.net.addEventListener(ElementChangedEvent.ELEMENT_CHANGED, elementChanged);
+        _control.game.addEventListener(StateChangedEvent.TURN_CHANGED, turnChanged);
+        _control.game.addEventListener(StateChangedEvent.GAME_STARTED, gameStarted);
+        _control.game.addEventListener(StateChangedEvent.GAME_ENDED, gameEnded);
+        _control.net.addEventListener(MessageReceivedEvent.MESSAGE_RECEIVED, messageReceived);
+        _control.addEventListener(Event.UNLOAD, handleUnload);
+
+        //This creates a new instance of the Board class
+        //and then uses addChild to that to the displaylist 
+        _board = new Board(this);
+        addChild(_board);
+
+        //This creates a new instance of the record class
+        //and then uses addChild to that to the displaylist 
+        //and positions the record with x & y coordinates
+        _record = new Record();
+        addChild(_record);
+        _record.y = 20 + Board.BOXSIZE * 3;
+
+        if (_gameCtrl.isConnected()) {
+            updateRecord();
+            updateAll();
+
+        } else {
+            _board.updateAll(null);
+        }
+
+    }
+
+And add in the methods the constructor calls.
+
+    /**
+     * Repopulates the board with the contents of the BOARD property.
+     */
+    protected function updateAll () :void
+    {
+        _board.updateAll(_gameCtrl.net.get(Server.BOARD) as Array);
+    }
+
+
+    /**
+     * Repopulates the win/loss record text.
+     */
+    protected function updateRecord () :void
+    {
+        if (_gameCtrl.game.seating.getMyPosition() >= 0) {
+            _gameCtrl.player.getCookie(
+                function (cookie :Object, ...unused) :void {
+                    _record.update(cookie);
+            });
+        }
+    }
+
+
+</actionscript>
+
+The first couple of lines is simply creating a new Board and Record object and adding them to the display list.  The record object will display the scores for the games play.  
+
+The updateAll method uses the [[NetSubControl]] object to get the shared state of the board, and uses the Board class to render that.  
+
+The updateRecord method gets a cookie for the player using the [[PlayerSubControl]] to display the player's win records.  Notice that the method checks to make sure the seating position is great than zero first.  This is good practice.
+
+== Server.as Start-Up ==
+This is the default Server.as that is created by the ant scripts.
+<actionscript>
+/**
+ * The server agent for tictactoe. Automatically created by the
+ * whirled server whenever a new game is started.
+ */
+public class Server extends ServerObject
+{
+    /**
+     * Constructs a new server agent.
+     */
+    public function Server ()
+    {
+        _control = new GameControl(this);
+    }
+
+    protected var _control :GameControl;
+}
+</actionscript>
+
+The server will need to know when the game has started, so let's add an event handler for that.  Add this to the constructor method of the Server:
+
+<actionscript>
+        _gameCtrl.game.addEventListener(StateChangedEvent.GAME_STARTED, gameStarted);
+</actionscript>
+
+== See Also ==
+*[[Server agent]]
+
+{{stub}}

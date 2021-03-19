@@ -1,0 +1,61 @@
+{{TOCright}}
+A '''ban''' is a disciplinary action by an [[Agent]] when a player is found to have broken one or more rules laid out in [[Whirled|Whirled's]] [[Terms of Service]] or [[Community Standards]].  It results in a player's account not being able to log on to Whirled.
+
+== Types of Bans ==
+There are two kinds of bans:  temporary and permanent.  The Agents decide which kind to issue depending the magnitude of the rules violation, whether the player has been issued a warning before, and whether the player is a repeat offender.  When a banned player attempts to log in to Whirled, they receive a message box explaining that they are banned, and the reason for it.
+
+=== Temporary Bans ===
+A temporary ban, or suspension, lasts a set number of days, after which the player is welcome to log back in to Whirled and play normally.  Temporary bans usually last from one to seven days.  Longer suspension periods may be issued, though usually in cases where a player has been found to be under the legal age limit of 13 years.  In those cases, the player's account is suspended until the year they would turn 13.
+[[Image:Banned_account_(temp).png|frame|none|If you are temporarily banned, when you try to log on a popup window will appear showing the time left on your ban and the reason for your ban.]]
+
+=== Permanent Bans ===
+Permanent bans are, well, forever.  These are given out sparingly, usually to players who have established a pattern of Terms of Service violations.  Permanent bans may also be issued to players who commit offenses of such magnitude that it is judged they should not be allowed to return to Whirled.
+[[Image:Banned_account.png|frame|none|If you are permanently banned, when you try to logon a popup window will appear saying "Your account is banned." and the reason for your ban]]
+
+== Activities that can Result in a Ban ==
+Any behavior that violates the [[Terms of Service]] and [[Community Standards]] can result in a banned account, and Whirled's player community actively [[report|reports]] such violations.  Some examples include, ''but are not limited to'':
+
+=== Harassment ===
+Harassment can be defined as ''repeated'' actions that target an individual or group for the purpose of bringing about feelings of discomfort or distress. 
+
+Harassment is not allowed and may result in an account being banned from Whirled. 
+
+=== Foul and Abusive Language ===
+Using vulgar, obscene, or offensive language is against the rules. This includes racial, sexual, or religious slurs or other deliberately offensive remarks directed at another player or group of players. 
+
+While there is a [[chat]] filter present in the game, this does not excuse offensive language or behavior. Misspelling or mis-spacing words to get around the filter will be treated as swearing and dealt with accordingly. 
+
+Foul language used outside the chat, for example in [[room]] names, item names, and [[comment|comments]], is likewise not acceptable. 
+
+=== Spamming ===
+The chat client and [[group]] discussion forums exist so that players may communicate with each other. Spamming is repeatedly sending letters, messages, or nonsense, in a way that makes it difficult for other players to communicate. Spamming annoys other players and is considered bad behavior. 
+
+=== Content Theft ===
+Stealing, or "ripping" the work of other creators and distributing it as your own, or without the permission of the original creator is not allowed on Whirled.  Please see Whirled's [[content copying and derivation]] policy for more detail.
+
+== How do I Appeal my Ban? ==
+'''The ''only'' way to appeal a ban is for the owner of the banned account to email banned@whirled.com.  Below are some tips for making the best appeal possible:
+
+'''DO''':
+* Write your appeal email from the email address registered to the banned account.  This is required so that your account can be looked up, and to prove that you are truly the owner of the account in question.
+* Feel free to request information on the reason for your ban, if you are not sure and the message you see when you try to log in to your banned account (see pictures above) does not clarify enough.
+* Provide any information you think is relevant to your case.
+* Remember that even if your little brother did it, you are responsible for your account.  See our [[account security]] page for more information on this.
+
+'''DO NOT''':  
+* Use Group discussion posts, Shop/Room/Profile comments, Whirled mail, or in-Whirled chat to try to appeal your ban.  Appeals must be submitted via the above email address so that Three Rings has an official record of them.
+* Urge others try to appeal your ban on your behalf--Three Rings can only discuss account information with the owner of an account, for privacy reasons. 
+* Create a new account in order to ask about a ban--this is called ban evasion, and is in itself a bannable offense.
+* Spam your appeal over and over.  One email is enough to get your appeal into the review queue.  If you have additional information for the reviewer or want to make sure your mail got through, you may of course send a follow-up email.
+
+Appeal mails are answered in the order they are received.  It may take a few business days for an Agent to thoroughly review your case and reply to your email.
+
+== See Also ==
+*[[Account security]]
+*[[Agent]]
+*[[Content copying and derivation]] policy
+*[[Item deletion]] policy
+*[[Report]]
+*[[Support]]
+
+[[Category:Terminology]][[Category:Policy]]

@@ -1,0 +1,68 @@
+'''[http://www.osflash.org/flashdevelop FlashDevelop]''' is an open source ActionScript editor with code completion, syntax hilighting and a variety of other development features.
+
+== Prerequisites ==
+
+You need the JDK, the Flex 3 SDK and the Whirled SDK.
+Follow these instructions for acquiring and installing these resources: [[Setting up your programming environment]].
+
+== Downloading and Installing FlashDevelop ==
+Download the latest version of Flash Develop from the [http://www.flashdevelop.org/community/viewforum.php?f=11 FlashDevelop Releases] page.
+
+Run the installer and follow the instructions.
+
+== Setting Up Whirled SDK ==
+
+=== Introducing the Whirled SDK to FlashDevelop ===
+Choose Tools &rarr; Global Classpaths (Ctrl-F9).
+Add your Whirled SDK's ActionScript directory.  If you installed the Whirled SDK in <code>c:\whirled</code>,
+this will be <code>c:\whirled\src\as</code>.
+
+[[Image:Flash_Develop_Project_Global_Classpath.png|Global Classpath Settings]]
+
+=== Introducing the Flex SDK to FlashDevelop ===
+Choose Tools &rarr; Program Settings (F10).
+
+In the "Plugins" section, choose "AS3Context".
+
+Set Language &rarr; AS3 Classpath to your Flex 3 SDK's lib directory.
+If you installed the Flex SDK in <code>c:\flex_sdk_3</code>, this will be <code>c:\flex_sdk_3\lib</code>
+
+Set Language &rarr; Flex SDK Location to the directory in which you installed the Flex SDK.
+
+[[Image:Flash_Develop_Classpath_Settings.png|Classpath Settings]]
+
+== Running the Reversi Example Game ==
+
+    Project->New Project
+    Flex 3 Project
+        Name: Reversi
+        Location: c:\whirled\examples\games\reversi
+        Package: (leave blank)
+        Unchecked "Create directory for project"
+        OK -- Allow FlashDevelop to copy template files
+
+[[Image:Flash_Develop_New_Project.png|New Project]]
+
+    Project->Properties
+        Output:
+            Output file: Reversi.swf (remove \bin)
+            Test Movie: Run custom command...
+                Edit...
+                    Command: build.bat
+
+[[Image:Flash_Develop_Properties_Output.png|Output Properties]]
+[[Image:Flash_Develop_Properties_Command.png|Test Movie Command]]
+
+        Classpaths:
+            Remove 'src'
+            Add project directory (c:\whirled\examples\games\reversi)
+
+[[Image:Flash_Develop_Project_Classpath.png|Project Classpath]]
+
+    Project->Test Movie*
+
+== Troubleshooting ==
+* You may need to run "build.bat" once from the command line to get the Whirled SDK set up if you have not already done so.
+* You also may need to grant your user id execute privileges on build.bat if you get an "Access denied" message.
+
+[[Category:Terminology]]

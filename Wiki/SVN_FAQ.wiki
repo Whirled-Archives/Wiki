@@ -1,0 +1,29 @@
+'''The SVN server has moved. Please update your bookmarks to the new link below and see [http://www.whirled.com/#groups-t_85691_0_601562 this thread] for further details!'''
+{{FAQS}}{{TOCright}}
+The '''SVN''' is [[Three Rings]]' repository of example code and art for various [[Whirled]] [[game|games]] and items.  It uses Subversion software.
+
+==What is the SVN for?==
+The code and art on the SVN are made available so that creators have examples to refer to when they are learning more about how to create their own games and items for Whirled.  
+
+==Can I take content from the SVN and use it in Whirled?==
+Sure!  But your usage of this content ''must'' comply with the [[Content copying and derivation|Content Copying and Derivation]] policy or it will be subject to [[attribution]] or [[item deletion|deletion]] by an [[Agent]].
+
+===Can I get a Three Rings staff member to pre-approve my item?===
+Sorry, but we can't do that--it isn't feasible, given the number of requests we would receive.  Three Rings has a policy of not actively monitoring uploads, but instead responding to player [[report|reports]] and [[DMCA Policy|DMCA takedown notices]].
+
+===What if I list something from the SVN that does not have significant original content?===
+It will be removed from Whirled.  If listing copies or near-copies of SVN content becomes a habit for you, disciplinary action will be taken up to and including the permanent banning of your account.  You will not be reimbursed or compensated for any deletion.  So please, err on the side of caution here!
+
+==Where is this SVN?==
+The SVN can be found [http://code.google.com/p/whirled/ here].  Enjoy!
+
+== Is there an easier way to download the SVN? ==
+Yes, there are programs called Subversion clients out there that provide easier to use user interfaces for Subversion.  Try one of these:
+* [http://svnkit.com/ SVNKit]
+* [http://tortoisesvn.net/ TortoiseSVN]
+* A longer list of available Subversion clients can be found on [[Wikipedia:Comparison of Subversion clients|Wikipedia]].
+
+==Can I contribute code to the SVN?==
+No, the official Whirled SVN is only added to by Three Rings staff.  However, there is now a [[Community SVN]] run by some players that may take contributions.
+
+[[Category:Policy]][[Category:Terminology]][[Category:Game tutorials|*]][[Category:Avatar tutorials|*]]

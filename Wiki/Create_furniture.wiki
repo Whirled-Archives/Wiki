@@ -1,0 +1,30 @@
+[[Image:Icon-highlighted-furniture.png|left]] [[Furniture]] is any kind of object you can put in your room to decorate it.  From chairs and tables to fireflies and planets, furniture comes in a limitless variety, from static images to the furniture that shows photos, movies, and are interactive.  
+
+Follow the tutorials below for both step-by-step guides to the basics of Furniture creation and helpful techniques for more advanced creators.
+
+To arrange the furniture in your room, [[edit your room]].
+
+== Getting Started == 
+The simplest way to make your own unique furniture is to buy a '''[[remixable item|remixable]]''' piece of furniture. Another method is to upload an simple image as a piece of funiture (tutorial below).  If you want to try your hand at some programming, you can make also make interactive furniture (known as [[create toys|toys]]) either in [[Adobe Flash CS3]] or in standalone [[AS3]].
+
+== Upload! ==
+To make a simple furniture object for your room:
+# Create an image of the object*, with transparency (24-bit pngs are usually best). If working in Photoshop, use File > Save for Web and choose PNG 24-bit with transparency. Make sure that you have cropped the object closely to the edges.
+{{:Upload/Furniture}}
+
+This will allow you to use the furniture item. If you want to make changes for the item, click on the item in Stuff and select 'Edit'. When your changes are complete click "Update Listing" to update all copies of the object including in the shop if it is listed.
+
+<nowiki>*</nowiki>See the [[List_of_useful_programs#Raster_Graphics|list of useful programs]] for some suggestions for image editors if you don't already have one.
+
+== Sell! ==
+{{listing|furniture|furniture|Furniture|attribute}}
+
+== Advanced Furniture ==
+* Furniture can be all kinds of things, including photos, movies, and animated files. 
+* Furniture can be animated with Flex or Flash, here's a [[Furniture (ActionScript tutorial)|Flex example]].
+* Whirled puts interactive furniture under a separate category called "'''[[create toys|Toys]]'''".
+* [[Furniture links]]
+* [[Remixable furniture (Flash tutorial)]]
+* [[:Category:Furniture tutorials|Furniture tutorials]]
+
+[[Category:Tutorials]]

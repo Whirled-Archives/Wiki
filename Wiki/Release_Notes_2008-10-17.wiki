@@ -1,0 +1,13 @@
+{{Release notes/start}}
+A few small updates today:
+
+* Fixed an issue when selecting a filter for items displayed in the [[Stuff tab|Stuff]] page.
+* The current [[currency|bling]] worth is displayed on the Transactions page.
+* New [[backdrop]] type: [[create backdrops|bird's eye view]].
+* Room [[snapshot]]s can be downloaded directly to your computer.
+* [[remixable item|Remixing]] fixed in Flash Player 10.
+* Snapshots still broken in Flash Player 10.
+* Other tweaks and bug fixes.
+
+Enjoy!
+{{Release notes/end}}

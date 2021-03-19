@@ -1,0 +1,16 @@
+=Basic Avatar Series=
+Started by [[User:Conrad500]] as a way to create the simplest of example avatars to show off advanced coding methods.
+
+==List of Tutorials==
+''To download from the Community SVN click on the file then click "view source"''
+
+[http://code.google.com/p/whirled-community/source/browse/trunk/Avatar/Basic%20Tutorial%20Series/Basic%20Base/Basic%20Avatar%20Tutorial.fla Base Avatar]
+
+[http://code.google.com/p/whirled-community/source/browse/#svn/trunk/Avatar/Basic%20Tutorial%20Series/Basic%20LSA LSA]-needs Instructions
+
+Color Remix
+*[http://code.google.com/p/whirled-community/source/browse/#svn/trunk/Avatar/Basic%20Tutorial%20Series/Basic%20Color%20Remix/Color%20Transform Color Transform]-needs Instructions
+*[http://code.google.com/p/whirled-community/source/browse/#svn/trunk/Avatar/Basic%20Tutorial%20Series/Basic%20Color%20Remix/Color%20Matrix Color Matrix]-needs Instructions
+
+==How do I submit one?==
+Just download the base, upload to the SVN, Wiki (as a zip), send to me to put it on the SVN, or host it elsewhere then update the page!

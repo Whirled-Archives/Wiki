@@ -1,0 +1,164 @@
+[[Image:Whirled-initial screen.png|right|300px]]
+This is a tutorial for '''starting out''' in Whirled.  If you want to look around Whirled before starting out with your own account, try it out as a [[guest]].
+
+== What is Whirled? ==
+{|
+|-
+|[[Image:Whirled logo.png|350px]]
+|
+* Whirled is a web-based social network combined with a virtual world, in which you, the player, can contribute and sell new [[avatar]]s, room decor, music, pets and games.
+* Each player has a room of their own to decorate and hang out chatting with [[friend]]s. You can build out additional rooms. Most web content can be embedded in your room, including video and music.
+* ‘Groups’ allow collaboration with other players around shared interests, with shared group rooms, and built-in Discussion forums. 
+* Any player can easily upload and begin playing with avatars, furniture, games, music and more. 
+* Creators can post their offerings to the Shop where it is rated and tagged, then offered for sale to the global ''Whirled'' audience.
+|}
+
+== Creating your Account ==
+Just click on "Join now!" or the [[Me tab]] and fill in the information.
+
+After you create an account, you can change following information by going to the Me tab and clicking on the "Account" link.  
+
+* Permaname - This is a name that will be permanently associated with your account.  Friends will always be able to find your profile by searching for your permaname if they know what it is.  Choose carefully because once you select a permaname, you cannot change it.  Your permaname is also used to log into the wiki to edit pages.
+* Email Address - Update your email address.  Friends will always be able to find your profile by searching for your email address if they know what it is.
+* Email Preferences - This is for email about in Whirled mail and Whirled announcements.  The messages will come from Whirled Mailbot <peas@whirled.com>.
+* Real Name - Friends will be able to find your profile by searching for your name if you have filled it in.  It will never be displayed publicly.
+* Password - Change your password.
+* [[Charity|Charities]] - Whenever you make a purchase in Whirled, a donation will be made to the charity of your choice. You can select the charity below. Selecting Random Charity will automatically select from one of these charities at random.
+
+== All about you! ==
+[[Image:Me-tab.png]]
+
+Besides your account information, the Me tab has other useful things.
+
+=== Your Profile ===
+[[Image:Me.png|right|300px]]Go to the Me tab and click on "My Profile."
+
+==== View & edit your profile ====
+
+Your [[profile]] is publicly visible to everyone wishing to browse it.  Besides your [[level]], links to mail you & view your items, your profile includes information that you can customize:
+
+* Whirled Name - This is different than your permaname.  Your Whirled Name can be changed at any time and is displayed above your avatar when you are in rooms and is listed when you are in a game or a chat.  Friends will be able to find your profile by searching for your Whirled name.
+* Photo* - A thumbnail image shown next to your name in your profile.  It is also used in the lists of players present in chats and in games, as well as the profiles of people who have you listed as a friend.
+* Status* - Whatever you type in here will be shown below your Whirled Name in your profile.  When you change your status, a message with the new status is sent out to any Friends that are online.
+* Home Page URL*
+* Sex*
+* Birthday - This information was filled in when you created your account because You must be 13 years of age or older to access Whirled.
+* Show age - The default for this option is no (unchecked).
+* Location
+* Friendly* - You can be a [[Me tab#Friendly People|friendly person]].
+* Award* - You can select one trophy or medal to be shown on your profile.
+<nowiki>*</nowiki> = optional
+
+==== View & edit your information ====
+You can also add other information for old and new friends to find you with.  Adding this information is optional.  Use commas to separate phrases.
+
+* Activities
+* Interests
+* Favorite Games
+* Favorite Music
+* Favorite Movies
+* Favorite Shows
+* Favorite Books
+* About Me
+
+When viewing information in a profile, except for the information in "About Me," all the terms can be searched for by clicking on them.  Currently for multiple word phrases, the search will find any instances of any of the words in the phrase.
+
+==== Other info ====
+Also listed in your profile are:
+
+* A link to Your [[Room]]s - A list of your unlocked, public rooms.
+* Player News - Your recent accomplishments that will show up on friends' "My News" sections in their Me tabs.
+* Your [[gallery|Galleries]] - Any image galleries that you have created.
+* Your [[Friend]]s - Anyone that has accepted a friend request from you will be listed.
+* Your [[Game]] Trophies - Any trophies that you have earned while playing games in Whirled will be listed.
+* Your Group [[Medal]]s - Any medals that you have received.
+* Your [[Passport]] Stamps - Any Passport stamps that you have earned.
+* Game Ratings - Your rating for any games that you have played in Whirled will be listed.  The higher the number, the higher your ranking.
+* [[Group]]s - Any publicly viewable Groups that you are a member of will be listed.  Exclusive Groups that you are a member of will only be seen by you when viewing your own profile.
+* Recent [[Favorites]] - Any shop items that you have recently favorited.
+* Your [[Comment]] Wall - Other players can leave public comments for you here.  You can delete or [[report]] a comment from your wall if it is not to your liking.
+
+=== Your Stuff ===
+[[Image:Stuff-my stuff.png|left]]If you click on the Stuff tab, "Your Stuff" will show up below it.  Click on each item type to see what you own in that category.
+
+From top to bottom:<br>
+{{bul}} [[Avatar]]s - visual representations of players used when they are in rooms<br>
+{{bul}} [[Furniture]] - objects used to decorate rooms<br>
+{{bul}} [[Backdrop]]s - backgrounds for rooms<br>
+{{bul}} [[Toy]]s - interactive objects<br>
+{{bul}} [[Pet]]s - interactive roaming objects<br>
+{{bul}} [[Game]]s - for playing and adding to rooms; there are subcategories for [[level pack]]s & [[item pack]]s which are used to expand gameplay<br>
+{{bul}} [[Image]]s - for using in Whirled posts, [[remixable item]]s, and for decorating rooms<br>
+{{bul}} [[Music]] - for adding to rooms for background music<br>
+{{bul}} [[Video]]s - for adding to rooms
+
+You can make stuff and you can buy stuff from the [[shop]] using [[currency#Coins|coins]] and [[currency#Bars|bars]].  We'll talk about this more below.
+{{clearleft}}
+==== Your First Avatar ====
+[[Image:Avatar-default tofu.png|left]]At first you will be represented by the default avatar, a block of tofu.  You can buy other avatars from the shop and use them instead.
+{{clearleft}}
+
+== Connect with your friends and meet new ones! ==
+[[Image:Invite to be your friend.png|left|frame|You can click on the avatar of someone in the same room to invite them to be your friend.]]
+Now that you've filled out some information, you can take a look at finding some friends.  Click on the Friends tab.
+
+If you already know someone that has a Whirled account or you think someone you know has one, you can try searching for them with their permaname, email address, Whirled name, or real name.  Then click on "Add as Friend" and a popup will let you customize the message they receive from you.
+
+If you don't know anyone that plays Whirled, you can search for people with the same interests as you and invite them to be your friend by clicking on "Add as Friend."  Also, you can meet other players in rooms, through discussions in [[Group]]s, and by playing games with others.  When you find a new friend this way, either look up their profile or click on their avatar (the visual representation of a player in a room) and select "Invite to be your friend."  Adding a friend by the avatar clicking route does not allow you to customize your message and you simply get a notice that "Your friend request was successfully mailed."
+
+When your friend request is accepted, that person will be listed on your profile as a friend and you will be listed on their profile as a friend.  Being friends also makes it easier for you to invite each other to play multiplayer games together and find & join them in a room when they are online.
+{{clear}}
+
+== Play games for coins, trophies and prizes! ==
+[[currency#Coins|Coins]] are used to buy things in the store and there are only two ways to get coins:
+* playing games
+* [[#What_next.3F|creating things and selling them in the store]]
+
+Playing games is the easiest way to get coins.  Click on the Games tab and browse the games.  There are single player and multiplayer games of different genres:
+
+* [[Image:Icon-game-actionarcade.png]] Action / Arcade 
+* [[Image:Icon-game-adventurerpg.png]] Adventure / RPG 
+* [[Image:Icon-game-cardboard.png]] Card / Board
+* MMO / Whirled
+* [[Image:Icon-game-other.png]] Other
+* [[Image:Icon-game-puzzle.png]] Puzzle
+* [[Image:Icon-game-sportsracing.png]] Sports / Racing
+* [[Image:Icon-game-strategy.png]] Strategy
+* [[Image:Icon-game-word.png]] Word
+
+Click on the thumbnail image or name of a game to see information about that game including instructions, user comments, trophies, your rankings (along with your friends' rankings), and the top rankings of all players.  Then if the game looks interesting, click on the Play! button.  The better you do in a game, the more Coins you get.
+
+Not all the games have trophies or give out coins.  You can see if a game has trophies by clicking on the trophy tab while viewing a game's information.  Currently there is no easy way to see if a game does not give out Coins.
+
+== Let's go shopping! ==
+[[Image:Coins_bars_level_mail_logout_bar.png|right|frame|Agent Equinox has 2 mail, 27,368 Coins, 0 Bars and Level 48.]]
+Now that you've earned some Coins, you can use them to buy things in the shop by clicking on the [[Shop]] tab.
+
+Browse the desired category and find something you'd like to purchase that you can afford.  Your current Coins and Bars balance is shown next to your name in the upper right hand corner of the screen.
+
+When you're ready to purchase an item, just click on the Buy! button and the item will be added to your stuff to use.  Play more games to earn enough Coins or [[Currency#Bars|use real money to buy enough Bars]] for the item you want to buy.
+
+== Exploring the rooms in Whirled ==
+Wander around the Whirled by joining friends in rooms by clicking on "Join them!" in your Friends tab, visiting rooms shown in the Rooms tab by clicking on room thumbnail, and checking out "Your rooms" in the Me tab by clicking on the room thumbnail.
+
+You can move your avatar around the room by clicking whenever your mouse shows a white outlined circle.  How much space there is to move avatars around in a room depends on the [[backdrop]].  To fly or float your avatar above ground level, move your mouse to the standable spot your would like to fly above, hold down the Shift key, move, and click when the circle is at the desired height.
+
+When an object in a room can do something, moving your mouse arrow over it will make it glow with an outline in different colors:
+
+* Green - clicking takes you to another room
+* Orange - clicking opens another web page in a new tab
+* White - clicking lets you play a game
+* Blue - means it's a player's avatar and clicking will give you a variety of options to choose from
+* Grey - means it's a pet and clicking will give its owner a variety of options to choose from
+
+While in a room, you can [[chat]] with any other players present by typing your message into the chat input box on the bottom left corner of your room screen and clicking the Send button or hitting enter.
+
+== What next? ==
+Learn more about your stuff with these links:
+{{playnav}}
+
+Once you've gotten familiar with how the Whirled works, you can [[Portal:Creators|become a creator]] and [[testing and selling|sell things]] in the shop!
+
+Check out these pages for more information:
+{{createnav}}
+[[Category:Tutorials]]

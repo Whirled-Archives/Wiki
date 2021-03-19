@@ -1,0 +1,3 @@
+Q: Why do we set a Hotspot?  What is it?  What does it do? --[[User:Martin|martin]]
+
+A:  The Hotspot is the point (x,y,z) where the whirled object exists.  Setting it at what would be the avatar's center on the floor (as if it were a 3-D object) makes perspective and layering in the whirled much more convincing.  Setting it at the bottom edge of the image makes your avatar appear to float when it comes in front of or behind other objects. Of course, I am not a Ringer, so feel free to "booch" me if I'm wrong.  --[[User:sadiekate|sadiekate]]

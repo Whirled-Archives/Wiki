@@ -1,0 +1,51 @@
+This tutorial covers some methods that you can use to '''prevent cheats''' from abusing your [[create games|game]].
+
+If you notice that a player has been egregiously cheating in your game, please report the player by notifying an Agent via [http://www.whirled.com/#support Contact Us] so that their behavior may be investigated.
+
+== How Players Cheat ==
+
+Most flash games run on the client (the player's computer) and this makes them vulnerable to basic cheating tools.  A well-known tool for cheating is [http://www.cheatengine.org/ CheatEngine] (the Mac version is [http://sourceforge.net/projects/ihaxgamez/ iHaxGamez]). This program will scan for variables in-memory, and allow the player to change the exact int in memory that holds the score.  
+
+This is a lot easier than it sounds. Ragbeard was able to hack his own game (with [http://sourceforge.net/projects/ihaxgamez/ iHaxGamez]) by changing the high score reported to the server in less than two minutes, having never previously used the program before.
+
+Because this is very, very easy to do, expect that your players will do it, and ruin high scores, multiplayer balancing, and other things unless you take some basic measures.
+
+== Preventing Uneducated Memory Hacking ==
+
+A Google search revealed a very basic and effective obfuscation method, suggested by Michael Tartre.  It involves obfuscating ints as Strings.  An example demonstrates this: 
+
+<actionscript>
+public static function obfuscateInt (value :int) :String
+{
+    return Math.round(Math.random()*1000) + ";" + value;
+}
+public static function deobfuscateInt (value :String) :int
+{
+    if (value == null) {
+        return 0;
+    }
+    return int(value.split(";")[1]);
+}
+</actionscript>
+
+You can use get/set methods to make this transparent to your program:
+
+<actionscript> 
+protected var _highScoreObfuscated :String;
+
+public function get highScore () :int
+{
+    return deobfuscateInt(_highScoreObfuscated);
+}
+public function set highScore (value :int) :void
+{
+    _highScoreObfuscated = obfuscateInt(value);
+}
+</actionscript>
+
+Thus your high score is stored as an obfuscated String that is very difficult for casual cheaters to detect, but at the same time obfuscation is transparent to your game so it can continue to function.
+
+== See Also ==
+*[http://www.whirled.com/#groups-t_15263 Discussion in Whirled Coders]
+
+[[Category:Tutorials]][[Category:Code tutorials]]

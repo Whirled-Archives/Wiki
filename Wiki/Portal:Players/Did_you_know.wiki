@@ -1,0 +1,5 @@
+{{Portal:Players/box-header|Did you know|Portal:Players/Did you know|}}
+{{Portal:Players/Did you know/1}}
+<hr>
+{{Portal:Players/Did you know/2}}
+{{Portal:Players/box-footer|}}

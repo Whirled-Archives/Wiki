@@ -1,0 +1,89 @@
+{{FAQS}}
+{{TOCright}}
+== How can I make money from my game? ==
+Yay!  We have a real currency system, that means you as a game developer can make money.
+
+# Selling your launchers, [[Create and sell game packs|game packs]], [[Create avatars| avatars]], etc. [[Game Shop| in your game shop]]. Whenever a player purchases one of your items, you get 30% of the purchase.  If the item is listed in Coins, you receive Coins; if the item is listed in Bars, you receive Bling.  
+# [[Game Developer Bonus Bling Pool]].  Each month, Three Rings sets aside a pool of $10,000. Then, on a daily basis, each game developer gets a cut of the 10K based on the playtime of their game.
+# [[Affiliate Program]].  Embed your Whirled game/room out on another site.  If a player creates a Whirled account via your embed, then anytime that player makes a purchase you get 30% of their purchase.  If the item is listed in Coins, you receive Coins; if the item is listed in Bars, you receive Bling.
+
+== How big can my game be? ==
+
+Whirled guarantees a 700 wide X 500 tall area for your game, starting with the upper left corner as (0,0).   The game area could be bigger depending on how the player is viewing whirled (such as full height mode, or standalone client).  If your game needs to dynamically change size based on the player's size, it can query the system for the [http://www.whirled.com/code/asdocs/com/whirled/game/LocalSubControl.html#getSize() size].
+
+== How can I make it so my game isn't positioned on with the 0,0 as the upper left. ==
+
+You can create another sprite, and position your game within that.  [http://code.threerings.net/svn/whirled/trunk/projects/games/captions/ LOL captions (LOL.as) ] has an example of this.
+
+== How do I manage the stage quality since I can't access the stage? ==
+
+You can use [http://www.whirled.com/code/asdocs/com/whirled/game/LocalSubControl.html#setStageQuality() setStageQuality] on the localSubControl (gameControl.local.setStageQuality())
+
+== How do I save data on the server? ==
+
+You can [[Persisting data | persist data]] using the UserCookie Object.
+
+== How do I do sitelocking? ==
+
+You can put a [http://www.whirled.com/code/asdocs/com/whirled/game/GameControl.html#isConnected() isConnected()] check on the game control object in your code.
+
+== How do I do get the numbers/IDs of players in a game? ==
+
+[http://www.whirled.com/code/asdocs/com/whirled/game/SeatingSubControl.html#getPlayerIds() GameControl.game.seating.getPlayerIds()] for seated games.  For non-seated (party) games, you can use [http://www.whirled.com/code/asdocs/com/whirled/game/GameSubControl.html#getOccupantIds() GameControl.game.getOccupantIds()]
+
+== How do I test my game? ==
+You should start by testing your game on your local machine using the "ant test" command (or build.bat for Windows).  Once that is working, you can [[Uploading games|upload your game]] to the Whirled.  Once there, the game is ''NOT'' published.  That game only exists in your games.  If you'd like to play with other people, you can [[edit your room]] and add your game's launcher.  Once it's in your room, anybody that visits your room and clicks on the game furniture will be able to play the game!  If you only want to play test with your friends, lock the [[Edit_your_room#Room_Settings|room to be friends only]].
+
+'''If you are testing a multiplayer game, make sure that your avatar stays in a private room as there will be an icon over the avatar saying 'join my game' and anyone can click on that.'''
+
+== How do I know when players/observers enter or leave the game? ==
+
+<actionscript>GameControl.game.addEventListener(OccupantChangedEvent.OCCUPANT_LEFT, occupantChanged);</actionscript>
+
+== How do I turn on debug tracing for my code? ==
+In your AS3/CS3 code put in the lines 
+<actionscript>
+    trace("blah blah my log blah blah blah");
+</actionscript>
+
+'''Linux''':  create a file called ~/mm.cfg containing the line
+<actionscript>
+TraceOutputFileEnable=1
+</actionscript>
+Your log will show up in ~/.macromedia/Flash_Player/Logs/flashlog.txt
+
+'''Mac OS X''': create a file called /Library/Application Support/Macromedia/mm.cfg containing the line
+<actionscript>
+TraceOutputFileEnable=1
+</actionscript>
+Your log will show up in ~/Library/Preferences/Macromedia/Flash Player/Logs/flashlog.txt
+
+'''Windows''': Create a file called C:\Documents and Settings\<LoginName>\mm.cfg containing:
+<actionscript>
+ErrorReportingEnable=1
+TraceOutputFileEnable=1
+TraceOutputFileName=<filename>
+</actionscript>
+Your log will show up in C:\Documents and Settings\username\Application Data\Macromedia\Flash Player\Logs\<filename> for Windows XP; and C:\Users\user_name\AppData\Roaming\Macromedia\Flash Player\Logs\flashlog.txt for Windows Vista.
+
+'''More information can be found on [http://livedocs.adobe.com/flex/201/html/wwhelp/wwhimpl/common/html/wwhelp.htm?context=LiveDocs_Book_Parts&file=logging_125_04.html Adobe's site]'''
+
+== How can I build my game outside of the Whirled game directory? ==
+
+In the build.xml of the Whirled game directory, you can set the app.source-dir to point to your game.  You can also define a namespace constant in the whirled-config.xml file to be checked for at a later point
+<actionscript>
+<define>
+    <name>CONFIG::whirledApi</name>
+    <value>true</value>
+</define> 
+</actionscript>
+
+== How do I debug my AVRG? ==
+
+You can use the [[How to use the AVRG probe|AVRG probe]].
+
+== This is all great, but it doesn't answer my question.  What now? ==
+
+You can try posting a question on the forums in {{groups|Whirled Builders|11}} and/or {{groups|Whirled Coders|79}}.  When you post, be specific about your question and include any error messages you are trying to figure out.  Barring that, you can also try to track down one of the [[List of helpful experts|helpful experts]].
+
+[[Category:Game tutorials|*]]

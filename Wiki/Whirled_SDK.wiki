@@ -1,0 +1,107 @@
+{{TOCright}}
+Herein you will find the latest version of the '''Whirled Software Development Kit''' as well as release notes.
+
+== Download ==
+This is the latest version of the SDK:
+
+http://www.whirled.com/whirled_sdk_0.67.zip
+
+== Documentation ==
+* [[GameControl|Whirled Game API Overview]]
+* [[Setting_up_your_programming_environment|Installing the Whirled SDK for programming games]]
+* [http://www.whirled.com/code/asdocs/index.html?package-summary.html&all-classes.html Whirled API Documentation]
+* [http://www.whirled.com/code/contrib/asdocs Contrib Code Documentation]
+
+== Install and Set-up the Whirled SDK in Flash CS3 ==
+
+# Download the latest SDK using the link above.
+# Unzip the SDK you downloaded in your chosen location.  This should create a '''whirled''' folder with a few folders in it.
+#Once the Whirled SDK has been properly installed, the next step is to add the classpaths to the ActionScript files used in Flash CS3 as shown below.
+
+=== Setting Classpaths to Import Whirled's Server Code ===
+{{:Whirled SDK/Classpaths}}
+
+== Install and Set-up the Whirled SDK in Flash CS4 ==
+
+# Download the latest SDK using the link above.
+# Unzip the SDK you downloaded in your chosen location.  This should create a '''whirled''' folder with a few folders in it.
+#Once the Whirled SDK has been properly installed, the next step is to add the source paths to the ActionScript files used in Flash CS4 as shown below.
+
+=== Setting Source Paths to Import Whirled's Server Code ===
+{{:Whirled SDK/Classpaths CS4}}
+
+== Release Notes ==
+
+==== Version 0.67 (March 26th, 2010) ====
+* Add the ability to place custom client-side decorations on avatars, like the ones that already exist for MOBs.
+
+==== Version 0.66 (November 6th, 2009) ====
+
+* Unused class EffectControl was removed
+* The showPage method was moved to FurniControl
+* New build of thane for Win32. Parlor games with server agents should now be testable again on Windows.
+
+==== Version 0.65 (October 23, 2009) ====
+
+* Simple game contrib library has been factored out into a new public library called flashbang, hosted on google code [http://code.google.com/p/flashbang/ here].
+* Fix for testing parlor games with server agents, there was a missing library in the build script
+* Various other contrib code refactoring, including some moves to the flash-utils library 
+
+==== Version 0.64 (September 3, 2009) ====
+* Removed the old HashMap class, it was causing the flash authoring tool to get confused because there is a class of the same name in a different package.
+* More cleanup in com.threerings.util:
+** Fixed a bug with weak-value maps.
+** ExpiringSet is gone, Sets and Maps can now both be made expiring using the factory methods.
+** Changed around the Predicates functions.
+** Logging is now turned off by default in non-debug players. If you add your own LogTargets, you may want to ensure that the global level is set to debug.
+
+==== Version 0.63 (August 27, 2009) ====
+* No new SDK functionality.
+* Lots of cleanup to the com.threerings.util package:
+** new Map and Set builders that allow for more functionality
+** many new Comparators
+** lots of improved documentation
+
+==== Version 0.62 (August 6, 2009) ====
+* Fixed for Windows.
+* Added descriptions for the new packages
+
+==== Version 0.61 (July 31st, 2009) ====
+* A lot of our com.threerings flash utility code was moved around. Things previously in com.threerings.flash can now be found in com.threerings.display, com.threerings.geom, com.threerings.media, com.threerings.text, or com.threerings.ui. See the class documentation for details. (http://www.whirled.com/code/asdocs/)
+* Experimental method setShowChrome in avrg.LocalSubControl. This will probably change but currently turns off all the Whirled user interface elements, just as if the "chromelss" tick box were used on the game configuration.
+* New method setRoomViewBounds in avrg.LocalSubControl to allow a game to limit the area in which the room is drawn. This can be used for example to show user interface elements that do not overlap the room.
+* New method for Facebook integrated games getFacebookInfo in avrg.PlayerSubControlClient. This will allow you to access Facebook things like friends list and profile info. (Please note the SDK does not directly support these activities).
+* Some documentation fixes
+* A couple of healthy handfuls of contrib code changes
+
+==== Version 0.60 (June 3rd, 2009) ====
+* Some documentation improvements
+* Updates to the contrib library
+** Keith Irwin's hack-proofing support code
+** XmlReader
+** simplegame updates
+
+==== Version 0.59 (May 1st, 2009) ====
+
+* Parlor games now identify players with their permanent whirled memberIds, instead of ids that change each time they play your game. This is a completely under-the-hood change and works with all your old games, and nothing really changed in the API to enable this.
+* PartySubControl is now shared by AVRGs and parlor games. As such, a few changes were made: party events now use ControlEvents, and the constants are defined in PartySubControl, which now lives in com.whirled.party. If you previously had an AVRG that used the party stuff, you will have to make a few simple import and rename changes.
+* PartySubControl now has getLeaderId() and a PARTY_LEADER_CHANGED event.
+* GameSubContol has getPartyIds() and getParty(), two new events, and PlayerSubControl has a getPartyId() method.
+* GameSubControl.takeOverPlayer() has been added, which will only work for server agents. It's intended to be used when a player leaves a seated multiplayer game and you want to let the other players keep going.
+* showPage() was added to LocalSubControl for both AVRGs and parlor games, to take the user to a whirled page.
+* com.whirled.game.NetSubControl.players now sends to all players, but not the server agent (if any). Previously it acted the same as the sendMessage() method in that class. Sorry for any inconvenience. Old games will not be affected by this change unless you recompile with the new API.
+* a new LoopbackGameControl has been added for use if you have a game that supports both single and multiplayer modes. In the single-player mode you can use the LoopbackGameControl and no data is sent over the network, improving efficiency.
+* doBatch() was added to the PropertySubControl interface.
+* XML objects may be sent over the wire in properties and messages.
+* Various improvements to method documentations.
+
+==== Version 0.58 (April 17th, 2009) ====
+* Fixed creating a new project, was broken in 0.57.
+* The AVRG Party API is here! Check out GameSubControl.getPartyIds() and getParty(), which returns the new PartySubControl. Also PlayerSubControl.getPartyId(). There will be a few more additions coming, as well as integration with non-AVRG games.
+* Added getMusicOwnerId() to EntityControl and AVRG's RoomSubControl. You can find out if music is currently playing and the playerId of the person that added it to the playlist.
+* Some behind-the-scenes bugfixes. If you've used some of the new music features of 0.57, try again now.
+
+== History ==
+*[[Whirled SDK/archive|See release notes from earlier versions]]
+
+[[Category:Releases]][[Category:Coding terminology]]

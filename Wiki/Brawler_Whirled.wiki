@@ -1,0 +1,55 @@
+{{Infobox game
+|name=Brawler Whirled
+|genre=adventure
+|description=A side scrolling crawl-n-brawl game involving swords, gnolls, and cuteness. Still under construction, see info for controls.
+|forumlink=http://www.whirled.com/#groups-d_8
+|linknumber=10
+|singleplayer=yes
+|multiplayer=yes
+|version=
+|testing=no
+|testingspot=
+|development=yes
+|devteam=[http://www.whirled.com/#people-10 Cherub]
+|screenshot=yes
+}}
+'''Brawler Whirled''' is a side scrolling adventure game made by Cherub.
+
+Choosing the "Play, just me" option takes you to Normal mode. To change difficulties, select the "Play with friends" option and start a new game. There is no pause button, so consider that when you play Hard and Inferno difficulties.
+
+Tip: scroll up when you play, or resize the window, so that you don't click the "Lobby" or "Leave" buttons. There's no "Are you sure" pop-up, and it's annoying to have to start all over.
+
+== Gameplay ==
+
+Movement is controlled with the mouse. Click to walk, or double-click to sprint. The latter drains energy. Light attacks are weak, but fast. They aren't as powerful as heavy attacks though. Heavy attacks are slow, but strong. They leave you open to the enemy, however. Blocking will protect you from damage, but will also drain energy.
+
+The Health Bar contains 1500 health, and will deplete upon being hit. It can be refilled by picking up Health dropped from enemies. Your character will die when it reaches zero, but there are unlimited lives.
+
+The Energy Bar shows the amount of stamina you have. It decreases with attacks, sprints, or blocks, but will regenerate over time. When it reaches zero, your character will need to rest.
+
+The Radar shows where characters are in the area. Yellow bars represent you and your allies. The red bars show enemies.
+
+See also: [[Brawler Whirled/Instructions|Graphical instructions from the game]].
+
+== Items ==
+
+Coins are dropped by enemies when hit. They add 1000 to your score.
+
+Health is sometimes dropped by slain enemies. It'll restore your health to max.
+
+Weapons are frequently dropped by slain enemies. Picking up a weapon that you already have will increase its weapon level. You can only hold one at a time, though you can also swap weapons with the block key.
+
+There are currently three kinds of Weapons in Brawler Whirled. The Cinna-Sword is the weapon you start with. It is dropped by Gnoll Soldiers. Mint Bows are dropped by Gnoll Archers. Sour Sledges are dropped by Gnoll Brutes. Note the naming scheme, which uses spices.
+
+If the weapon you are holding breaks, you will have to use your fists, unless you find another weapon.
+
+== Unlockables ==
+A different gender is unlocked whenever you add or subtract a letter.
+
+Aside from trophies, there are four difficulties in Brawler, with their own unlockables. Easy mode takes about 10 minutes, and gives you Kawaii Knight (M). Normal mode takes about 30 minutes, and gives you Kawaii Royal Guard. Hard mode takes about 1 hour, and gives you Kawaii Cleric. Inferno mode takes about 3 hours, and gives you Kawaii Maiden.
+
+Kawaii Knight (M) is the only unlockable that is also available in the shop. In the Normal, Hard, and Inferno modes only, there's a chance for a slain Gnoll to drop a "Pet bag". Pick it up with the Block button to earn a free pet. S ranks will earn you a trophy for that stage, as well as give you a free backdrop for your rooms (only once per stage).
+
+There's also a "Hax" trophy, also known as "CT4HOLY". Nobody's gotten that so far except for a few people.
+
+[[Category:Three Rings games]]

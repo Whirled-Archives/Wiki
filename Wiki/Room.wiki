@@ -1,0 +1,70 @@
+{{TOCright}}
+[[Image:Icon-room.png|left]]A '''room''' is a location in [[Whirled]] where player [[avatar]]s can walk around.  All rooms have [[backdrop]]s and room owners can edit the room to add items such as [[pet]]s, [[toy]]s, and [[furniture]].  
+
+Rooms are linked to other rooms by [[door]]s.  Doors can be created from furniture by editing the room and selecting the furniture to be used as a door.  During this process, a new room can be created.  Currently new rooms cost {{roomcost}}. Rooms cannot be deleted at this time.
+
+You can find a list of your rooms by going to the [[Me tab]] and clicking on the ''Rooms'' link.
+{{clearleft}}
+== Room Buttons ==
+In a room, there are various buttons along the bottom of the screen in a control bar that allows you to do different things.
+
+*[[Image:Icon-chat options.png]] Chat options. See the [[chat]] article for detailed information.
+*[[Image:Icon-volume.png]] Volume. A slider bar for adjusting the sound volume will appear if you click on this button.
+*[[Image:Icon-go.png]] Go... Clicking on this will show a menu with options to visit friends or groups, go to recently visited rooms, view a list of games, go on the [[Whirled Tour]] and go home.
+*[[Image:Icon-friend_list.png]] Friends list. Clicking on this will show a popup of friends online.  Clicking on their names will allow you to [[chat]] with them, go to the room they are in, or view their profile.
+*[[Image:Icon-parties.png]] Parties! Create or join a [[party]].
+*[[Image:Icon-share_or_embed.png]] Share or embed the room on a web page.  Different options will be available in a popup if you click this button.  See the [[share this room]] article for detailed information.
+*[[Image:Icon-room_control.png]] Room.  Clicking on this will show a menu with options involving the room.
+**[[Image:Icon-edit room.png]] Edit room. If you are the room owner or are a manager of the Whirled that owns the room, you can edit the room.  This is also where you can lock your room.  See the [[edit your room]] article for detailed information.
+**[[Image:Icon-room comment.png]] View and add comments about the room.
+**[[Image:Icon-snapshot.png]] Take a snapshot of the room. After you click the icon, you will get a popup window with a snapshot preview and various options.
+**[[Image:Icon-song.png]] View the song playlist of the room you are in if there are songs in the room.
+**[[Image:Icon-zoom.png]] Zoom room view. A slider bar for zooming in & out on the room view will appear if you click this button. Zooming only works for rooms that scroll because they are larger than your screen.
+*[[Image:Icon-clickable_furniture.png]] Clickable furniture.  Holding your mouse over this button shows all the clickable, glowing furniture in the room. A green glow means the furniture will take you to another room. An orange glow means the furniture will take you to an in-Whirled link such as the shop or a discussion thread. A white glow means the furniture will take you to a game.
+
+If you are playing a Whirled room based game, there may also be an icon to view the game options.
+
+== Creating a New Room ==
+{{:Room/Create}}
+
+== Things in a Room ==
+[[Image:Room-starter room parts.png|400px|thumb|right|This is a basic starting room that Whirled players get when they create an account. To find out more about how these and other items can be changed in a room, read the [[edit your room]] article. You can explore this room [http://www.whirled.com/#world-s94816 here].]]
+You can find the following things in a room:
+*A [[backdrop]]
+*[[Furniture]]
+**Some furniture has animation actions that happen when you click on it.
+**Some furniture has the ability to change color if you click on it.
+**Some furniture glows when your mouse is over it, showing that you can click on it to go somewhere or see something. A green glow means the furniture is a [[door]] that will take you to another room. An orange glow means the furniture will open a new browser tab with a link such as the wiki or an outside website.
+*[[Game]]s
+**All games glow white when your mouse is over it and will allow you to play a game if you click on it.
+*Players with [[avatar]]s
+*[[Pet]]s
+*[[Toy]]s
+**Some toys are activated by clicking on them.
+**Some toys work when you move your mouse over them.
+**Some toys allow you to type messages on them.
+*[[Music]]
+**Music is not visible in a room, it is only heard and plays repeatedly in a room.
+*[[Video]]s and [[image]]s
+{{clearright}}
+
+=== Name Colors ===
+[[Image:Name colors.png|left]]Player names come in three colors:
+{{bul}} Blue - normal player name color<br>
+{{bul}} Yellow - player has set their /away message to show that they may be busy away from the keyboard<br>
+{{bul}} Grey with Zzz's - player is idle
+
+White names are always pets.
+{{clear}}
+
+== Previously Visited Rooms ==
+[[Image:Room-back menu.png|right|The ''Recent scenes'' menu.]]Use the small green arrow in the upper left of your screen or the [[Image:Icon-go.png]] Go... icon in the control bar at the bottom of your screen to go back to rooms you visited recently, go home, go to group halls or to visit friends that are currently online.
+{{clear}}
+
+== Other Links ==
+* [[Boot]]
+* [[Door]]
+* [[Edit your room]]
+* [[Create backdrops]]
+
+[[Category:Terminology]]

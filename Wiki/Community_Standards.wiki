@@ -1,0 +1,31 @@
+[[Whirled]] is a new service and we will be evolving these Community Standards in cooperation with the player and creator community.
+
+= Unacceptable Behavior =
+
+There are certain behaviors that are unacceptable and will lead to being banned from the service. They are as follows;
+
+* Intolerance: offensive or aggressive behavior towards individuals or groups based on their race, sexual orientation, sex, political or religious beliefs. Whirled is a place for radical inclusion and tolerance of others.
+* Harassment: there is no place in Whirled for deliberately harassing other players, either by being offensive or by 'stalking' them, sending repeated requests or chat messages, etc.
+* Spamming: repeated text of any kind is unacceptable, including demands to 'Be my friend' or 'Play this game'. 
+* Scamming: attempting to trick people into revealing their account information or personal information (i.e., phishing, collecting information for illegal purposes, etc.) is unacceptable.
+* Indecency: offensive language and uploading offensive content (see below) is not supported in Whirled. You must exercise good judgement about what the people with you find offensive, and if in doubt, err on the side of caution.
+* Griefing: deliberately interfering with other players' Whirled experience, through technical or other methods.
+
+= Three Rings does not monitor or censor uploaded content =
+
+Players of Whirled should note that [[Three Rings]] as a matter of policy ''does not'' monitor or censor content uploaded to the service. We do, however, react to [[report|reports]] from players with respect to offensive content and behaviour, and follow requests from copyright owners according to our [[DMCA Policy]] to remove content that infringes copyright.
+
+= Whirled is rated PG-13 and Mature Content is Unsupported =
+
+Three Rings is investigating how we might support Mature content and limit access to it appropriately, but at present such features are not in place. Whirled and all its public areas should be considered to have a PG-13 [http://www.mpaa.org/FlmRat_Ratings.asp 'Parental Guidance'] rating. 
+
+* Listing of Mature content in the [[Shop]] is not supported and if reported, such a listing will be removed.  Penalties for listing such material can range from warnings up to and including permanent account bans.
+* Displaying uploaded Mature content in any public area of the Whirled, including your private rooms, is not supported.
+
+= See also = 
+* Whirled's [[Terms of Service]]
+* [[Account security]]
+* [[Agent]]
+* [[Report]]
+
+[[Category:Policy]]

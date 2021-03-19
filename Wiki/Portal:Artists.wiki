@@ -1,0 +1,42 @@
+{|cellpadding="0" cellspacing="0" align="center" style="width:800px;background:#zzzzzz; border-width:0px;"
+|-
+| colspan="3"| {{browsebar}}
+|-
+| width="10px" valign="top" style="padding: 0; margin:0;"|[[Image:Portal_header_left.png]]
+| width="780px"|<div style="position: relative">[[Image:Portal_header_artists_tile.png]]<div style="position: absolute; left: 90px; top: 0px;">[[Image:Portal-{{PAGENAME}}.png]]</div></div>
+| width="10px" valign="top" style="padding: 0; margin:0;" |[[Image:Portal_header_right.png]]
+|- 
+| colspan="3" width="100%" valign="top" style="padding: 0; margin:0;" |
+<div style="clear:both; width:800px">
+{{:{{FULLPAGENAME}}/Style|{{:{{FULLPAGENAME}}/Intro}}}}
+</div>
+<center>{{purge|'''''Show new selected article...'''''}}</center>
+<div style="float:left; width:397px;">
+{{Random portal component|max=5|header=Selected Article|footer=More articles...| subpage=Selected article}}
+
+{{/box-header|1=In The News|2=}}
+{{{{FULLPAGENAME}}/In_the_news}}
+{{/box-footer}}
+
+{{Random portal component|max=2|header=Did You Know?|footer=More facts...| subpage=Did you know}}
+</div>
+
+<div style="width:397px; float:right;">
+
+{{/box-header|1=Selected Picture|2=}}
+{{{{FULLPAGENAME}}/Selected_picture}}
+{{/box-footer}}
+
+{{/box-header|1=Categories|2=}}
+{{{{FULLPAGENAME}}/Categories}}
+{{/box-footer}}
+
+{{/box-header|1=Related Groups|2=}}
+{{{{FULLPAGENAME}}/Related_groups}}
+{{/box-footer}}
+
+</div>
+|-
+| colspan="3"| {{portalbar}}
+|}
+__NOTOC__

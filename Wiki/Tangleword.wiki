@@ -1,0 +1,38 @@
+{{Infobox game
+|name=Tangleword
+|genre=word
+|description=Word game.
+|forumlink=http://www.whirled.com/#groups-d_82
+|linknumber=24
+|singleplayer=yes
+|multiplayer=yes
+|version=1.2 (2.0 beta in testing)
+|testing=yes
+|testingspot=#groups-f_355
+|development=yes
+|devteam=Robert; Artwork by [http://www.whirled.com/#people-13 Brittney]
+|screenshot=yes
+}}
+
+'''Tangleword''' is a word game where you use the jumbled letters on the game board to create words and earn points! The player with the most points at the end of each 2 minute round is the winner!
+
+==Some Basics==
+
+*In Tangleword, you are given a 5x5 game board that is full of letters that you use to make words. Each word must be at least 3 letters long and each consecutive letter must touch the previous letter either horizontally, vertically, or diagonally on the board. 
+
+[[Image:Tangleword_tutorial2.jpg|left]] 
+
+For example, in this block of letters the words "sit", "set", "tis", "site","rite","tie","tier" and "rest" can  all be constructed. The word "rise", however, would not be considered a valid word. While the R and I are consecutively connected, as are the S and E, the I of "rise" is not adjacent to the S. If the I was next to the S, "rise" would then be a valid word.
+
+Also, proper nouns do not count as valid entries in Tangleword. In this case, the word "Teri" would not be acceptable because it is a proper noun. 
+
+* Each player is playing against everyone else in the room, and the quicker you are the better! Once a word has been claimed, other players may still claim it, but it will be worth one less point. All the words that you claim are displayed in the box on the right of the game board, while the points you receive will be listed in the players box in the upper right corner of the screen.
+[[Image:OK_Button_Over.png|left]]
+* Words can be claimed by either typing in the text box below the game board (marked at the start of the game with "type here")or by mousing over and clicking the letters on the game board itself. Once you have entered all of the letters in your word, you can either hit the ENTER key or click the "OK" button next to the text box to claim your word. 
+
+*During the game, you can watch your own progress as well as that of everyone else in the scoreboard in the top right corner of the screen. The names of every player and their current scores are displayed here.
+
+*Each round lasts for 2 minutes with a 10 second break between rounds. At the end of each round, the winner is announced and the game board is cleared and new letters appear for the next round.
+
+If you have any comments,questions, or concerns about Tangleword, please post a message on the Whirled forums! Enjoy!
+[[Category:Three Rings games]]

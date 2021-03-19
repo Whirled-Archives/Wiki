@@ -1,0 +1,54 @@
+[[Image:Icon-highlighted-avatar.png|left]]'''Avatars''' are the visual representation of players in [[Whirled]].  The default avatar for players is a piece of tofu.  Additional avatars can be created with the appropriate software or purchased with [[currency#Coins|coins]] or [[currency#Bars|bars]] in the [[shop]].  Some games, such as [[Brawler Whirled]], award avatars as prizes.
+{{clearleft}}
+== Changing Avatars ==
+
+[[Image:Stuff-My Avatars.png|right|400px]]
+When you have more than one avatar, you can change the avatar you are wearing.
+
+# Go to the [[Stuff tab]] and select Avatars.
+# Pick the avatar that you would like to use and click the the little happy face next to "Wear avatar."
+# Close your inventory and you should be in the room using your newly selected avatar.
+
+You can also change avatars by clicking on your avatar in a room and selecting "Change avatar..."  You can select from the five most recently used avatars, the default tofu avatar, or if you click on "View full list..." it will take you to the Avatars section of your Stuff.
+
+If you want more than your default avatar, you can [[shop]] for one or [[create avatars|create]] your very own.  You can also buy a [[remixable item|remixable avatar]] and create one that way.
+{{clear}}
+
+== Avatar States ==
+
+[[Image:Avatar-basic options.png|left|frame|Various options can be seen for your avatar by clicking on yourself.]]
+Some avatars have different states coded into them, such as different dances.  To check the actions available for an avatar, click on the avatar in the shop/your inventory or when you are using it.  A small menu will pop up with some options.  Click on "Change state" to see the available states and select one.  When you have selected a state, the avatar will continue to be in that state until you select another one.
+{{clear}}
+== Avatar Actions ==
+
+[[Image:Avatar-custom action.png|left|frame]]
+Some avatars have different actions coded into them.  To check and see if actions are available for an avatar, click on the avatar in the shop/your inventory or when you are using it.  A small menu will pop up with some options.  If there are custom actions available, there will be an entry labeled "Play custom action" which can be clicked to view the list of actions.  When you select an action, the avatar will do that action once and then return to the selected state.
+{{clear}}
+
+== Avatar Movement ==
+[[Image:Avatar-shift flying.png|left]]You can move your avatar around the room by clicking whenever your mouse shows a white outlined circle.  How much space there is to move avatars around in a room depends on the [[backdrop]].  To fly or float your avatar above ground level, move your mouse to the standable spot your would like to fly above, hold down the Shift key, move, and click when the winged circle is at the desired height.
+
+You can go to other rooms by clicking on doorways, or objects that glow green when touched by your mouse cursor, in a room.  Or you can go to other rooms by clicking on their names on [[Profile]] pages or by entering Groups while browsing the [[Groups tab]].
+{{clear}}
+
+== Name Colors ==
+[[Image:Name colors.png|left]]Player names come in three colors:
+{{bul}} Blue - normal player name color <br>
+{{bul}} Yellow - player has set their /away message to show that they may be busy away from the keyboard <br>
+{{bul}} Grey with Zzz's - player is idle
+
+White names are always [[pet]]s.
+{{clear}}
+
+== Avatar Size ==
+[[Image:Stuff-My Avatars-Avatar viewer.png|right]]The size of your avatar can be affected by three things:
+*size setting of the room's backdrop
+*where you are in the room (front or back)
+*size set while viewing the avatar in your stuff tab; using the diagonal arrow button allowing you to use a sliding scale bar
+
+== See Also ==
+*[[Bleep]]
+*[[Remixable item]]s
+*[[Create avatars]]
+
+[[Category:Terminology]]

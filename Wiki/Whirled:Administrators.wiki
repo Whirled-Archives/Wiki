@@ -1,0 +1,3 @@
+Until a policy on administrators is created, if you need help with something only an administrator can do (deleting pages, deleting images, blocking users that are vandalizing the wiki, and protecting pages from edits to prevent vandalism), leave a note for Agent Equinox on her [[User talk:Equinox|talk page]].
+
+See [[Whirled:List of administrators|list of administrators]].

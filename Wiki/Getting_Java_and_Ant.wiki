@@ -1,0 +1,58 @@
+[[Image:Icon-Flex.png|left]] This is part of the [[Setting up your programming environment]] tutorial.
+{{clear}}
+
+=== Windows ===
+
+# Install the [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java SE Development Kit (JDK)] (not the bundled versions).
+# On Windows you '''will not need to install Ant''' as you can use the batch files to build and test your game.  However, if you are building other types of items that do not have a batch file, you will need to follow the directions [http://wiki.apache.org/ant/AntOnWindows here] for installing Apache Ant.
+# After your JDK installation, you should be able to go to your command line via Start &rarr; Run... &rarr; cmd, type "java -version", and get an output that looks similar to 
+
+<actionscript>
+c:\Documents and Settings\xxx>java -version
+java version "1.6.0_13"
+Java(TM) SE Runtime Environment (build 1.6.0_13-b03)
+Java HotSpot(TM) Client VM (build 11.3-b02, mixed mode, sharing)
+</actionscript>
+
+If you are installing ant,  you should be able to go to your command line via Start &rarr; Run... &rarr; cmd, type "ant -version", and get an output that looks similar to 
+<actionscript> 
+C:\Documents and Settings\XXXX>ant -version
+Apache Ant version 1.7.0 compiled on December 13 2006
+</actionscript>
+
+=== Linux / Unix ===
+
+# Install the Java JDK (this example is being tested with [http://java.sun.com/javase/downloads/index_jdk5.jsp JDK 5]) and set your JAVA_HOME environment variable to the directory in which you installed the JDK.
+# Get and install the [http://ant.apache.org/ Ant build environment]. You may have it installed already. If you do, you'll receive the version of ant if you type this into the terminal:
+  
+ ant -version
+  Apache Ant version 1.7.0 compiled on September 23 2007
+
+If so, you're ready to advance to the '''Get Flex''' section. But if you don't get that message, you'll need to download and install Ant:
+
+Under Ubuntu or Debian, type the following to install Ant:
+
+ sudo apt-get install ant
+
+If you're running another Unix dialect, you can download an appropriate distribution from: http://ant.apache.org/
+
+=== Mac OS X ===
+Depending on the Mac operating system you have installed, you might already have both Java and ant installed.  Try typing the following on a command line.
+
+  bash-3.2$ java -version
+  java version "1.5.0_13"
+  Java(TM) 2 Runtime Environment, Standard Edition (build 1.5.0_13-b05-237)
+  Java HotSpot(TM) Client VM (build 1.5.0_13-119, mixed mode, sharing)
+
+  bash-3.2$ ant -version
+  Apache Ant version 1.7.0 compiled on September 23 2007
+
+
+If one or both of them is not installed, then you will need to 
+# Install the Java JDK (this example is being tested with JDK 5) and set your JAVA_HOME environment variable to the directory in which you installed the JDK.
+# Install [http://trac.macosforge.org/projects/macports/wiki/InstallingMacPorts MacPorts], and then run
+  % sudo port install apache-ant
+
+=== Next Step ===
+* Now move on to [[Getting the Flex SDK]]
+[[Category:Tutorials]]

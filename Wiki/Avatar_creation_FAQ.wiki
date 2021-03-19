@@ -1,0 +1,152 @@
+{{FAQS}}
+{{TOCright}}
+
+== How do I set my hotspot? ==
+The Hotspot is the point (x,y,z) where the Whirled object exists. Setting it at what would be the avatar's center on the floor (as if it were a 3-D object) makes perspective and layering in the Whirled much more convincing. Setting it at the bottom edge of the image makes your avatar appear to float when it comes in front of or behind other objects.
+
+You can set your hotspot by changing its coordinates. Do this by placing your cursor at the bottom of the screen, at your character's center of gravity. (Somewhere between its legs...if it has legs.) Now look at the "Info" tab and write down the X and Y coordinates listed. Pop these into the right place in the script above and you are good to go. (Remember that avatars max out at 450 pixels high, so neither value should be above that.)
+
+<actionscript>_control.setHotSpot(x,y,z);</actionscript>
+
+== How can I change the placement of my avatar's name? ==
+
+You can call [http://www.whirled.com/code/asdocs/com/whirled/EntityControl.html#setHotSpot() setHotSpot].  
+
+The third argument to setHotSpot() will specify the height above the bottom of the avatar where your Avatar's name will be placed.
+
+=== How can I make my avatar's name invisible? ===
+<actionscript>_control.setHotSpot(x,y,reallyBigNumber);</actionscript>
+
+== Why does my avatar keep cycling through all of its scenes? ==
+
+Most likely there is a bug in your code.  When you compile a SWF with [[Adobe Flash CS3]], if there are any major bugs, it will just create a movie that loops through all the scenes.  Try to look for a window named "Compiler Errors" in CS3; this should tell you what you need to fix.
+
+If you are getting the error "Type was not found or was not a compile-time constant: AvatarControl." then make sure that you have downloaded the [[Whirled SDK]].  Flash must also be  [[Whirled_SDK#Setting_Classpaths_to_Import_Whirled.27s_Server_Code|configured]] to know where the Whirled SDK is.
+
+== Why is my avatar being cut off when I turn to the right? ==
+If you are using the [[Advanced avatar (Flash tutorial)]] template, the Body class is automatically flipping your avatar to face the right direction, but will flip improperly if the Body is not set correctly in your code.  On this line:
+<actionscript>_body = new Body(_ctrl, this, w);</actionscript>
+Make sure to replace the w with the width of your scene.  
+
+== How big can my avatar be? ==
+600 pixels wide by 450 pixels tall.  Bigger avatars can be uploaded, but they are cropped to 600x400 on viewing.
+
+== How do you make an invert element in an avatar? ==
+In Flash, set the Blend mode of your movieClip to Invert.  In Actionscript, set a DisplayObject's blendMode property to flash.display.BlendMode.INVERT.
+
+== How do I stop an animation from looping? ==
+#Go to the last frame of the animation.
+#Hit F9.
+#Type the following:
+<actionscript>stop();</actionscript>
+
+Note: If that isn't working, make sure 'script assist' is not clicked.
+
+== How do I randomly trigger an effect? ==
+For this example we'll make randomly blinking eyes:
+
+1. Make the eyes a movieclip symbol, and animate a blink (which may well be one frame).
+
+2. Add about five frames between the first frame and the blink animation.
+
+[[image:blink_frames.png]]
+
+3. Put this script in a keyframe at the last frame before the blink: 
+    
+<actionscript>
+var blink:Number= Math.random()*100; // creates a random number, 'blink', from 1 to 100
+if(blink > 5){ // if 'blink' is greater than 5, or, with the above line, 'there is a 95% chance to...'
+gotoAndPlay(1); // ...loop back to the first frame
+}
+</actionscript>
+
+This creates a cycle over the first five frames (where the eyes stay open).  At the end of each cycle, it has a 95% chance of continuing the cycle (keeping the eyes open).  We chose 'blink > 5' rather than 'blink < 95' because what you really want to say is that it has a 5% chance of blinking (not a 95% chance of <i>not</i> blinking).  So, in the 5% chance the 'gotoAndPlay' event doesn't run, the playhead moves along the rest of the movieclip, where we have the blinking animation.  At the end of the movieclip (as with any movieclip) it automatically loops back to the first frame, which conveniently drops it into the cycle again.
+
+=== Notes ===
+* You can adjust the probability of your random event three ways:
+** Add or remove frames before the code.  The event can only be triggered on the code frame, so adding frames before it makes it test for the event less frequently.
+** Change the 'if' statement's number.  Assigning 'blink' from 1 to 100 means the 'if (blink >' number is a handy percentage.  Change it to 'if (blink > 20)' for a 20% chance of blinking, or any number you like.
+** Change your variable's upper limit.  'Blink' could be a random number from 1 to 5, or 1 to 10,000.  More often than not, however, you're better off using the previous method.
+* You can name your variable any words that Flash isn't already using for code.  Flash's scripting panel will highlight words you type if they have a code meaning already.
+* If you want multiple random events in the same scene, you have to use different names for each random variable.
+
+== How do I create a cycle? ==
+
+# Locate  the first frame of your cycle and put a keyframe on the actions layer.
+# Label it something like "dance01cycle". Now locate the last frame of the cycle and put a keyframe there. In the actions palette, type:
+   
+<actionscript>gotoAndPlay("dance01cycle");</actionscript>
+
+== How do I make my avatar move faster or slower across a room? ==
+The move speed is the rate at which your avatar will traverse a room at full size, in pixels per second.  The default move speed is 500.  Lower numbers are slower and higher numbers are faster.
+<actionscript>	_ctrl.setMoveSpeed(n);</actionscript>
+#Add this line of ActionScript directly under your existing "_ctrl..." lines.
+#Replace the '''n''' in the script with the speed you want for your avatar.
+Upload to Whirled and check your walk speed in action.  Then go back to your source file and adjust up or down. The number "n" may not be less than 50.
+
+== How do I get a .swf file of my avatar? ==
+If you don't have a .swf file of you avatar, just open the .fla file and press Ctrl-Enter (or File &rarr; Publish) to publish a .swf file. After that, you can [[Create_avatars#Upload.21|upload your avatar]].
+
+If your avatar was made from scratch, you may need to add the code mentioned in the [[avatar creation FAQ#How do I publish my avatar?|question below]].
+
+== How do I publish my avatar? ==
+If you are using a base with the code already contained, you can just do File &rarr; Publish.
+
+If you have created your avatar from scratch and it is ready to be published, create a single keyframe in your "main" scene. Add this ActionScript:
+
+<actionscript>
+import com.whirled.AvatarControl;
+import com.whirled.ControlEvent;
+var _ctrl :AvatarControl = new AvatarControl(this);
+_ctrl.addEventListener(ControlEvent.APPEARANCE_CHANGED, updateLook);
+_ctrl.addEventListener(ControlEvent.STATE_CHANGED, updateLook);
+_ctrl.setHotSpot(150, 320); // Set these as the X, Y coordinates of the centerpoint of the "floor" between your avatar's feet
+_ctrl.registerStates("Default", "Dance 1", "Dance 2"); // Assuming you have dances, or other states to swap in
+updateLook();
+function updateLook (o :Object = null) :void
+{
+    var isMoving :Boolean = _ctrl.isMoving();
+    var orient :Number = _ctrl.getOrientation();
+    var scene :String = null;
+    if (!isMoving) {
+        var state :String = _ctrl.getState();
+        if (state == "Dance 1") {
+            scene = "dance_01" + "_" + (orient < 180 ? "right" : "left");
+        } else if (state == "Dance 2") {
+            scene = "dance_02" + "_" + (orient < 180 ? "right" : "left");
+        }
+    }
+    if (scene == null) {  // if none of the above (not dancing, or is walking)
+            scene = (isMoving ? "walk" : "face") + "_" + (orient < 180 ? "right" : "left");
+    }
+    gotoAndPlay(1, scene);
+}
+</actionscript>
+
+This is a very important script. It lets Whirled know exactly what your character is capable of doing. If you have any actions other than "default," "walk" or "Dance" you will want to add them here in the "_ctrl.registerStates" line, and then add another "else if" statement further down for that specific action.
+
+=== I get errors when I try to publish my avatar, what should I do? ===
+If you get errors while publishing your avatar, you should first make sure that you have the classpaths set.  You can find instructions on how to do that [[Whirled_SDK#Setting_Classpaths_to_Import_Whirled.27s_Server_Code|here]].
+
+If that wasn't the problem, you can try asking for debugging help in {{groups|Whirled Builders|11}} and/or {{groups|Whirled Coders|79}}.  When you post asking for help, include information on what errors you get when you try to publish.
+
+== How do I make an avatar compatible with certain AVR games? ==
+Some AVR games require the use of avatars with certain states and/or actions.  Check the [[list of AVRG Avatar States]] for information on what states or actions the various games need.
+
+== How do I make remixable or configurable avatars? ==
+For remixable avatars, check the information in these wiki pages or groups:
+* [[Color remixable avatar (Flash tutorial)]]
+* [[Remixable avatar (Flash tutorial)]]
+* [[Remix avatar (code tutorial)]]
+* {{groups|Remix!|491}} Group
+
+For configurable avatars, check the information links in [[configurable item]]s.
+
+== See Also ==
+*[[Billing FAQ]]
+*[[Community Standards]]
+*[[Frequently asked questions]]
+*[[Terms of Service]]
+*[[Whirled game creation FAQ]]
+
+[[Category:Frequently asked questions]][[Category:Avatar tutorials|*]]

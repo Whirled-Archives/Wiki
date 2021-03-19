@@ -1,0 +1,8 @@
+The plant [[toy]] begins as a seed and grows to a full plant. It demonstrates persistent memory, changes over time, and simple interactivity.
+
+Prerequisites:
+* Flash CS3
+* [[Whirled SDK]]
+
+Get the example source here: [[Image:Plant_example.zip]]
+{{stub}}

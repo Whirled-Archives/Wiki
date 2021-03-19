@@ -1,0 +1,193 @@
+{{Infobox tutorial
+|type=Flash
+|difficulty=Advanced
+|description=Learn how to add actions to the avatar created from the previous tutorial.
+|requirements=[[Image:Icon-Flash.png|20px]] [[Adobe Flash CS3]], Whirled SDK
+|other=Previous tutorial: [[Simple avatar (Flash tutorial)]]<br>
+Next tutorials: [[Remixable avatar (Flash tutorial)]], [[Color remixable avatar (Flash tutorial)]]
+|item=avatar
+}}
+[[Image:Icon-highlighted-avatar.png|left]]If you have never created an avatar for Whirled, you probably want to look into our [[Simple avatar (Flash tutorial)]]. If you feel sufficiently experienced, feel free to move forward with the more advanced steps below.  After becoming familiar with this tutorial, move on to the [[Remixable avatar (Flash tutorial)]].
+{{clearleft}}
+
+== Basic Settings ==
+You can configure your basic document properties under '''Modify &rarr; Document...'''.
+*'''Dimensions''': An avatar may be any size under the maximum of 600(wide)x450(tall) pixels.
+*'''Frame rate''': All Whirled avatars must be 30 frames per second.
+*'''Background color''': You can use any background color you like, but it won't appear in Whirled.
+
+== Avatar Scenes ==
+An avatar's actions and states are all controlled by scenes and the names you give them.  There's no code involved - just use the right naming convention, and Whirled will automatically incorporate your scenes into the avatar's menu of options.  Look at the examples in each category to see how scene naming defines what a scene does.
+*All scenes should depict the avatar '''facing left'''.  Whirled will handle flipping the avatar if it faces the other way.
+*All scenes run exactly their frame duration.  If you're bringing over an avatar from the '''old method''', you'll have to either break your movieclips out into the scene, or just make your scenes as long as the movieclips they hold.
+
+=== States ===
+States are avatar behaviors that persist until you change them.  If you walk or play an action, the avatar will return to the selected state.  If someone else enters the room, she will see your avatar in the same state that you see.
+*State names are case-sensitive and '''must be capitalized'''.
+*States automatically loop.
+
+Some example states:
+*state_Default
+*state_Dancing
+*state_Sitting
+*state_Fighting
+
+=== Walking ===
+Walking scenes are triggered whenever your avatar traverses space in the room.  Walking scenes can be associated with specific states, in order to have unique walks for various states.  If you have a state with no associated walk, Whirled will just move your avatar without the walk.
+
+Some example walks:
+*state_Default_walking
+*state_Dancing_walking
+*state_Fighting_walking
+
+=== Idle ===
+Idle scenes are triggered when you are not active for several minutes in a row.  Idle scenes can be associated with specific states and should be named state_StateName_sleeping (where StateName is the name of the associated state).  If you have a state with no associated idle state, Whirled will show the avatar's current state.  In either case, animated ZZZs will be shown coming out of the top of the avatar.  
+
+Some example idles:
+*state_Default_sleeping
+*state_Sitting_sleeping
+
+=== Actions ===
+Actions are avatar behaviors that play once and then return to the current state.  Actions are once-off animations that don't persist.  Whirled assumes that actions should be run from the Default state.  If you want an action to run straight from a non-default state, it will need its own transition.
+
+Some example actions:
+*action_Laugh
+*action_Attack
+*action_Gasp
+
+[[Image:transitions_example.gif|right|frame|The upper chimp jumps from standing to walking.  The lower chimp uses transitions to blend the change.]]
+
+=== Transitions ===
+Transitions are special scenes that smooth the change from one scene (state, walk, or action) to another.  They will be played through once before beginning the scene called.  For example, if the player decides to start dancing, Whirled will play Default_to_Dancing once through before beginning state_Dancing.
+
+You don't need transitions for all or even any of your states.  Just transition the ones you want.  However, note that the naming convention is different for walking transitions than it is for state or action transitions.
+
+Some example transitions:
+*Transitioning to and from a walk:
+**state_Default_towalking
+**state_Default_fromwalking
+*Transitioning between two states:
+**Default_to_Dancing
+**Dancing_to_Default
+*Transitioning to and from an action:
+**Default_to_Attack
+**Attack_to_Default
+**Dancing_to_Attack
+**Attack_to_Dancing
+*Transitioning to and from idle
+**state_Default_tosleeping
+**state_Default_fromsleeping
+
+=== Incidentals ===
+Sometimes you want a state to run normally most of the time, but sometimes to play an alternate animation.  For instance, in an idle animation, you want the avatar to yawn every so often.  Or you may want your dance state to mix up three different looping moves.  These are called incidentals, and can be handled with scene naming, just like other animations.  Essentially, you split up the state into multiple numbered versions (01, 02, 03...) and then assign each numbered version a percent probability (:05, :80, :66...) so that the versions' probabilities add up to 100.  When a given scene is finished, Whirled will randomly choose the next version of the state to be played, based on these probabilities.
+
+Some example incidentals:
+*A standard Default with an occasional variation:
+**state_Default_01:95
+**state_Default_02:05
+*A Dance that mixes three different moves:
+**state_Dance_01:34
+**state_Dance_02:33
+**state_Dance_03:33
+
+== Avatar Code ==
+Just as a typical Whirled avatar is built in [[Adobe Flash CS3]], the code to handle avatar events is written in Flash's ActionScript.  Moving beyond the basic avatar template doesn't require complex code writing.  Setting up new actions for your avatar is usually as easy as cut and paste.
+#If you haven't yet, download the [[Whirled SDK]].
+
+[[Image:AS3_preferences.png|right|frame|Choose '''ActionScript''', then '''ActionScript 3.0 Settings...''']] 
+
+=== Required ActionScripts ===
+Whirled avatars require some ActionScript to communicate with Whirled's servers and let each other know what's going on.  The basic code tells the avatar which way it's facing and whether or not it's walking.  This avatar foundation code is a combination of imported scripts from the [[Whirled SDK]] and a few lines of ActionScript in the main scene.  In the template we already did this for you.  If you make an avatar from scratch, or open the source file for someone else's avatar, you'll need a basic understanding of how to set it up yourself.
+
+==== Classpaths to Import Whirled's Server Code ====
+Setting a classpath in Flash's preferences means it will automatically import this code for all your future avatars.  Once it's set up, all your avatars will export with the server code.
+
+#In Flash, choose '''Edit &rarr; Preferences'''.
+#Under '''Category''', choose '''ActionScript'''.
+#Click the button labeled '''"ActionScript 3.0 Settings..."'''.
+#Add the base Whirled classpath:
+##Click the plus to add a new classpath.
+##Click the crosshairs to browse to your SDK folders.
+##Find and set the path to "...\whirled\src\as".
+#Add the avatar classpath:
+##Click the plus to add a new classpath.
+##Click the crosshairs to browse to your SDK folders.
+##Find and set the path to "...\whirled\examples\avatars\uravatar\src".
+
+[[Image:AS3_settings.png|none|frame|Set the classpaths to your local Whirled SDK directories.]]
+
+==== Basic ActionScript for the Main Scene ====
+The Main scene of your avatar file should contain all the code for handling avatar behavior in Whirled.  For a basic avatar, this is a simple copy and paste.
+
+#Select the scene '''"main"'''.  If this is a new file, double-click "Scene 1" to rename it "main".
+#Open the '''Actions''' window (F9).
+#Paste in this code:
+<actionscript>import flash.events.Event;
+import com.whirled.AvatarControl;
+
+if (_ctrl == null) {
+	_ctrl = new AvatarControl(this);
+	_body = new Body(_ctrl, this, w);
+	_ctrl.addEventListener(Event.UNLOAD, handleUnload);
+	function handleUnload (... ignored) :void {
+		_body.shutdown();
+	}
+}
+
+var _ctrl :AvatarControl;
+var _body :Body;</actionscript>
+#Replace '''w''' with the width of your scene.
+
+[[Image:hotspot_info.png|right|frame|This avatar's hotspot is at (100, 390).]]
+
+=== Hotspot ===
+The hotspot determines where the avatar sits on the floor of a room.  The default hotspot is the center of the lowest point on the avatar.
+<actionscript>	_ctrl.setHotSpot(x, y);</actionscript>
+#Add this line of ActionScript directly under your existing "_ctrl..." lines.
+#Click the '''Info''' tab.
+#Move your cursor over the point on the "floor" directly below your avatar's center of gravity.
+#Note the coordinates of your cursor in the '''Info''' tab.
+#Replace the '''x''' and '''y''' in the script with the x and y coordinates of your newfound hotspot.
+
+=== Move Speed ===
+The move speed is the rate at which your avatar will traverse a room at full size, in pixels per second.  The default move speed is 1000.  Lower numbers are slower and higher numbers are faster.
+<actionscript>	_ctrl.setMoveSpeed(n);</actionscript>
+#Add this line of ActionScript directly under your existing "_ctrl..." lines.
+#Replace the '''n''' in the script with the speed you want for your avatar.
+Upload to Whirled and check your walk speed in action.  Then go back to your source file and adjust up or down. The number "n" may not be less than 50.
+
+=== State-Specific Actions ===
+You can set up an avatar so that certain actions are only available during certain states. This is useful if you would like to create sets of actions that only appear during suitable states (for example, a "Blow Bubbles" action that can only be used in the "Scuba Gear" state.)
+
+Using this example, lets assume the avatar has no other actions. To set this up correctly, your state_Default scene would contain
+<actionscript>_ctrl.registerActions();</actionscript>
+This unregisters '''all''' actions whenever your Default scene is triggered, removing "Blow Bubbles" (and any other actions) from the user's selection.
+
+After this, you would add the following to your "Scuba Gear" scene:
+<actionscript>_ctrl.registerActions("Blow Bubbles");</actionscript>
+This makes those actions available again.
+
+Actions must be enclosed in quotation marks, and multiple actions are seperated by commas.
+
+You can also use this method to lock out states, using '''registerStates''' instead.
+
+=== Non-flipping Scenes ===
+The default Body.as file automatically flips all scenes when an avatar faces right.  If you'd like a specific scene to always face the same direction, the following code will reverse the flipping.  That scene will always look exactly as drawn no matter how a player walks around.
+<actionscript>
+//Don't Flip
+if (_ctrl.getOrientation() < 180) {
+ this.x = 0;
+ this.scaleX = 1;
+}
+</actionscript>
+
+== See Also ==
+
+* [[Avatar creation FAQ]]
+* {{groups|Whirled Builders|11}}
+* {{groups|Whirled Coders|79}}
+* [[Remixable avatar (Flash tutorial)]]
+* [[Custom Animation]]
+* [http://bbs.coldhardflash.com/viewtopic.php?t=459 Tutorials From All Over courtesy of coldhardflash.com]
+* [http://www.phptr.com/articles/article.asp?p=30164&rl=1 Introduction to ActionScript by Dan Livingston]
+* [http://www.sitepoint.com/article/actionscript-animation-flash Introduction to ActionScript Animation by James Rice]

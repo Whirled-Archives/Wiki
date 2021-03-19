@@ -1,0 +1,54 @@
+[[Image:Profile.png|350px|thumb|right|Agent Equinox's profile. The edit links for the profile information only show up if you are viewing your own profile.  The title bar will also say "My Profile" instead when viewing your own profile.]]All players in [[Whirled]] have a '''profile'''.  It contains customizable information about the player in and out of Whirled.  To access your profile, go to the [[Me tab]] and click on "My Profile."  
+
+You can also add or change the Passport stamp or Group [[medal]] shown in your profile in the options in your [[Passport]].
+
+== View & edit your profile ==
+
+Your profile is publicly visible everyone wishing to browse it.  Besides your level, links to mail you & view your items, your profile includes information that you can customize:
+
+* Whirled Name - This is different than your permaname.  Your Whirled Name can be changed at any time and is displayed above your avatar when you are in rooms and is listed when you are in a game or a chat.  Friends will be able to find your profile by searching for your Whirled name.
+* Photo* - A thumbnail image shown next to your name in your profile.  It is also used in the lists of players present in chats and in games, as well as the profiles of people who have you listed as a friend.
+* Status* - Whatever you type in here will be shown below your Whirled Name in your profile.  When you change your status, a message with the new status is sent out to any Friends that are online and shows up in their [[notification bar]].
+* Home Page URL*
+* Sex*
+* Birthday - This information was filled in when you created your account because You must be 13 years of age or older to access Whirled.
+* Show age - The default for this option is no (unchecked).
+* Location
+* Friendly - If you are [[level]] 10 and have at least 20 [[friend|friends]], tick here to become a Whirled Friendly Person. Your name will be displayed to new players and you will automatically accept all friend requests.
+
+<nowiki>*</nowiki> = optional
+
+== View & edit your information ==
+You can also add other information for old and new friends to find you with.  Adding this information is optional.  Use commas to separate phrases.
+
+* Activities
+* Interests
+* Favorite Games
+* Favorite Music
+* Favorite Movies
+* Favorite Shows
+* Favorite Books
+* About Me
+
+When viewing information in a profile, except for the information in "About Me," all the terms can be searched for by clicking on them.  Currently for multiple word phrases, the search will find any instances of any of the words in the phrase.
+
+== Other info ==
+Also listed in your profile are:
+
+* A link to Your [[Room]]s - A list of your unlocked, public rooms.
+* Player News - Your recent accomplishments that will show up on friends' "My News" sections in their Me tabs.
+* Your [[gallery|Galleries]] - Any image galleries that you have created.
+* Your [[Friend]]s - Anyone that has accepted a friend request from you will be listed.
+* Your [[Game]] Trophies - Any trophies that you have earned while playing games in Whirled will be listed.
+* Your Group [[Medal]]s - Any medals that you have received.
+* Your [[Passport]] Stamps - Any Passport stamps that you have earned.
+* Game Ratings - Your rating for any games that you have played in Whirled will be listed.  The higher the number, the higher your ranking.
+* [[Group]]s - Any publicly viewable Groups that you are a member of will be listed.  Exclusive Groups that you are a member of will only be seen by you when viewing your own profile.
+* Recent [[Favorites]] - Any shop items that you have recently favorited.
+* Your [[Comment]] Wall - Other players can leave public comments for you here.  You can delete a comment from your wall if it is not to your liking.
+
+== Other links ==
+* [[Starting out]]
+* [[Friend]]s
+
+[[Category:Terminology]]

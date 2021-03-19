@@ -1,0 +1,21 @@
+[[Whirled]] requires '''JavaScript''' to operate. The following sections explain how to turn it on in various browsers.
+
+== Enabling JavaScript in Browsers ==
+
+=== Internet Explorer 7 ===
+
+# Open the '''Tools > Internet Options''' menu
+# Switch over to the '''Security''' tab
+# Under the ''Security level for this zone'' section, your level should be either Medium-High or Medium. 
+:[[Image:Javascript-IE7.png]]
+
+=== Firefox 2 ===
+
+# Open the '''Tools > Options''' menu
+# Switch over to the '''Content''' tab
+# Make sure the "Enable JavaScript" check box is set
+:[[Image:Javascript-Firefox.png]]
+
+:'''Please note:''' ad blocking or JavaScript blocking add-ons may prevent our scripts from running. If you have trouble displaying the game, try disabling all installed add-ons, to see if one of them was blocking the game.
+
+[[Category:Terminology]]

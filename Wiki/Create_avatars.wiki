@@ -1,0 +1,62 @@
+{{TOCright}}
+[[Image:Icon-highlighted-avatar.png|left]] Whirled avatars are animated characters that represent the personality, mood or style of the owner to the Whirled at large.  Custom avatars are easy to make with the right tools, and let you create a truly unique appearance for yourself, or sell your creations to the eager masses.  Follow the tutorials below for both step-by-step guides to the basics of avatar creation and helpful techniques for more advanced creators. Some avatars have "actions" and "states" that make chatting more fun!
+{{clearleft}}
+
+== Getting Started ==
+The simplest way to make your own unique avatar is to buy a [[remixable items|remixable avatar]].  If you want to try your hand at some programming, you can make Avatars either in  [[Adobe Flash CS3]] or in standalone [[AS3]].
+
+===[[Image:Icon-Flash.png]]  Adobe Flash CS3===
+[[Adobe Flash CS3]] is the tool our art department uses to make avatars.  You can work from our pre-coded templates or create entire avatars from scratch. ([http://www.adobe.com/products/flash/ Adobe's Flash page])
+
+{| border=0 cellpadding=4 cellspacing=4 style="border-collapse:collapse; margin:5em 5em 1em 1em" style="font-size:100%; text-align:center"
+|-
+|{{extnavimg|xsize=60|ysize=60|image=avatar_tutorial_icon.png|link=http://wiki.whirled.com/Simple_avatar_(Flash_tutorial)}} [[Simple avatar (Flash tutorial)| Simple<br>Tutorial]]
+|{{extnavimg|xsize=60|ysize=60|image=avatar_advanced_icon.png|link=http://wiki.whirled.com/Advanced_avatar_(Flash_tutorial)}} [[Advanced avatar (Flash tutorial)| Advanced<br>Techniques]]
+|}
+
+===[[Image:Icon-Programming.png]] AS3===
+
+Standalone [[AS3]] is targeted more at programmers.  But don't be scared, just follow our tutorial! (A major plus of AS3 is that it's FREE!)
+
+{{extnavimg|xsize=60|ysize=60|image=icon_rooster.png|link=http://wiki.whirled.com/Simple_avatar_(ActionScript_tutorial)}}[[simple avatar (ActionScript tutorial)| Simple AS3 Avatar Tutorial]]
+
+== Code Examples ==
+Learning by example is the easiest way, so make sure to check out our many game examples on our [http://code.threerings.net/viewvc/whirled/trunk/projects/avatars/ SVN server].  Some of these are created in [[Adobe Flash CS3]] and some of these are created with standalone [[AS3]].  
+
+<table><tr><td valign="top" width="50%" style="padding-right: 10px">
+== Documentation ==
+<b>Whirled APIs</b>
+* [http://www.whirled.com/code/asdocs/ Whirled ASdocs] which contains the all important [http://www.whirled.com/code/asdocs/com/whirled/AvatarControl.html AvatarControl]
+* 
+* [[Avatar creation FAQ | Avatar creation FAQ ]]
+
+<b>AS3 References</b>
+* http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/
+* http://labs.adobe.com/wiki/index.php/ActionScript_3
+
+There are also [http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=actionscript&x=0&y=0 numerous paper books] available on the subject.
+
+</td><td valign="top">
+
+== Tutorials ==
+
+* [[Simple game (Flash tutorial)|Using Adobe Flash CS3 to build games]]
+* [[Setting up your programming environment]]
+* [[Hello Whirled|Hello Whirled: making your first program in AS3]]
+
+== Other Useful Information ==
+* [[List of AVRG Avatar States]]
+* {{groups|Whirled Builders|11}}
+* {{groups|Whirled Coders|79}}
+
+</td></tr></table>
+
+==Upload!==
+Once you are done creating an Avatar, you should upload it to Whirled!
+
+{{:Upload/Avatar}}
+
+==Sell!==
+{{listing|avatar|avatars|Avatars}}
+
+[[Category:Tutorials]]

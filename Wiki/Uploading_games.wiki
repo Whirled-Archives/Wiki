@@ -1,0 +1,55 @@
+== Uploading your game to the Whirled ==
+
+{{:Upload/Game}}
+
+== Playing/Testing with other people ==
+
+After you have uploaded your game, it only exists in your inventory, and you're the only one who has access to it.  If you'd like to play with other people (why else would you make a multi-player game?), then you need to create a launcher (see the [[uploading games#Selling your game|selling section below]]) and put it somewhere that other people have access to. This is where your room comes into play.
+
+If you go and [[edit your room]], you can add your game launcher as a piece of furniture.  Once it's in your room, anybody that visits your room and clicks on the launcher will be able to play the game!  If you only want to play test with your friends, lock the [[Lock#Room Settings|room to be friends only]].
+
+'''If you are secretly testing a multiplayer game, make sure that your avatar stays in a private room because there will be an icon over the avatar saying 'join my game' and anyone can click on that.'''
+
+== Setting your creation loose ==
+
+Once you've confirmed that your game works, there is one last step to publish it on Whirled.  
+#Choose '''Games &rarr; My Games''' to see the Games you own.
+#Click the name or icon of the game you want to allow the public to play.
+#Select the "Publish" tab.  Click on the "Publish" button.[[Image:Games-Edit_Game-Publish-Published.png|none|thumb|400px|The Publish tab of a published game.]]
+#Select the "Info" tab. Change the genre from "Hidden" to the appropriate genre.[[Image:Games-Edit_Game-Info.png|none|400px]]
+#Click on the Save button.
+
+Once it's fully published, as long as you have incorporated the high-scores API, you should be able to see your game in the [[Game]]s tab.
+
+After you publish a game, be sure to check back to read the comments on your game and watch discussions if you have associated a Group with your game.  Whirled players will often give you extremely valuable feedback on how to improve your game and better take advantage of all of Whirled's unique features.
+
+== Selling your game ==
+After you've added your game to the Games tab, you may want to create a launcher so that people can buy it in the [[shop]] and play your game from their own room.
+
+#Choose '''Games &rarr; My Games''' to see the Games you own.
+#Click the name or icon of the game you want to make a launcher for.
+#Select the "Launchers" tab.
+#Click on the "Create" button to get the launcher creation interface. [[Image:Stuff-Create_launcher.png|none|thumb|400px|Launcher interface.]]
+##Click on the '''Name''' field and enter a name for your launcher. The name should be something that players can easily recognize as being for your game.
+##Click '''Upload a new file''' in Furniture Media and find the image or SWF file for your launcher. This is what will be seen in the room when a player adds it there.
+##Click '''Upload a new file''' in Thumbnail Media and find the bitmap (png, jpg or gif; max. 80x60) file for your launcher's icon. This will be shown in the shop and in the Stuff tab of players who have the launcher.
+##Click on the '''Description''' field and enter a description of your launcher.  This is only required if you plan to sell it in the shop.
+##Confirm that you own the copyrights to the item or have authorization to upload it. 
+#You can then click on '''Save''' to put your launcher in your inventory for use.
+
+When you've finished creating your launcher, you can list it for sale in the shop:
+
+{{listing|launcher|launchers|Launchers}}
+
+== Updating your game ==
+
+Nobody gets everything right the first time.  In the course of developing your game, you're likely to have many version for fixing bugs and introducing new features.  Fortunately, updating your game is very simple.
+
+* Choose '''Games &rarr; My Games''' to see the Games you own.
+* Simply click on ''Edit'' for the game you want to edit.
+* Click on the "Code" tab, ''Browse'' in the Client Code section, and locate the swf file on your local computer.  
+* Click on ''Save'' and your new game version will be ready for testing in as the development version.
+
+If you've listed your game in the [[shop]], updates of this nature will not affect it there.  The game that is in the shop is a completely separate copy.  In order to update the public playable version, edit your game, go to the "Publish" tab and click on the Publish button.
+
+[[Category:Game tutorials]]

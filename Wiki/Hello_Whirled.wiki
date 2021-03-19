@@ -1,0 +1,173 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Beginner
+|description=Create a simple hello whirled game.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=
+}}
+
+== Set Up Your New Game ==
+
+=== Windows ===
+To create a new game, go to the Whirled SDK directory and double click on the the '''newproject.bat''' file to run it.
+
+If this is the first time you are using the SDK, it will ask you to configure the directory of your Flex SDK and your Flash Standalone Player. A dialog box will pop up allowing you to specify that information and then you will proceed to creating your new project.
+
+<actionscript>Unable to locate tools.jar. Expected to find it in C:\Program Files\Java\jre6\lib\tools.jar
+Buildfile: build.xml
+
+prepare-flex:
+     [copy] Copying 1 file to C:\whirled\etc
+     [copy] Copying 1 file to C:\whirled\etc
+
+newproject:
+[newproject] What type of project would you like to create?
+[newproject] 1 - Avatar
+[newproject] 2 - Game
+[newproject] 3 - Pet
+[newproject] 4 - Furni
+[newproject] 5 - Toy
+[newproject] 6 - Backdrop
+[newproject] 7 - AVRG
+[newproject] Enter the number [1-7]?
+2
+</actionscript>
+
+Don't worry if you get that tools.jar error, it does not affect anything.
+
+Next, you will be asked if you want to employ a server agent for your game (you can read more about how to use server agents [[server agent|here]]):
+<actionscript>[newproject] Whirled games can optionally employ a server agent. This is
+[newproject] recommended for multi-player games, but is more complicated to
+[newproject] write. For more information, see:
+[newproject]
+[newproject]    http://wiki.whirled.com/Server_Agents
+[newproject]
+[newproject] Do you want your game to employ a server agent?
+[newproject] Enter [y/n]:
+n</actionscript>
+Next, you will be asked to name your project:
+
+<actionscript>[newproject] Please enter the name of your Game project.
+[newproject] For example, BestGameEver:
+HelloWhirled</actionscript>
+
+Then you will confirm the new project name:
+<actionscript>[newproject] Your main class will be called:
+[newproject]   HelloWhirled.as
+[newproject] Is this OK? [y/n]
+y
+</actionscript>
+
+and the tool will do the rest for you:
+<actionscript>[newproject]   Creating 'hellowhirled\build.xml'.
+[newproject]   Creating 'hellowhirled\build.bat'.
+[newproject]   Creating 'hellowhirled\HelloWhirled.as'.
+[newproject] Done! Your new project has been created in 'hellowhirled'.
+
+BUILD SUCCESSFUL
+Total time: 2 minutes 29 seconds
+Press any key to continue . . .
+</actionscript>
+
+Your new project will have been created in the Whirled SDK directory in a subdirectory named hellowhirled.  You will find the file HelloWhirled.as in that directory.
+
+=== UNIX and Mac ===
+To create a new game, change to the whirled directory and run the ant newgame task:
+
+   % cd whirled
+   % ant newgame
+
+If this is the first time you are using the SDK, it will ask you to configure the directory of your Flex SDK and your Flash Standalone Player. A dialog box will pop up allowing you to specify that information and then you will proceed to creating your new project.
+
+Next, you will be asked if you want to employ a server agent for your game (the url it provides is to [[server agent|here]] and explains how to use server agents):
+<actionscript>newgame:
+[newproject] Whirled games can optionally employ a server agent. This is
+[newproject] recommended for multi-player games, but is more complicated to 
+[newproject] write. For more information, see:
+[newproject] 
+[newproject]    http://wiki.whirled.com/Server_agent
+[newproject] 
+[newproject] Do you want your game to employ a server agent?
+[newproject] Enter [y/n]:
+n</actionscript>
+Next, you will be asked to name your project:
+
+<actionscript>[newproject] Please enter the name of your Game project.
+[newproject] For example, BestGameEver:
+HelloWhirled
+
+[newproject] Your main class will be called:
+[newproject]   HelloWhirled.as
+[newproject] Is this OK? [y/n]
+y</actionscript>
+
+and the tool will do the rest for you:
+<actionscript>[newproject]   Creating 'hellowhirled/build.xml'.
+[newproject]   Creating 'hellowhirled/HelloWhirled.as'.
+[newproject] Done! Your new project has been created in 'HelloWhirled'.
+</actionscript>
+
+Your new project will have been created in the directory hellowhirled.  You will find the file HelloWhirled.as in that directory.
+
+== Hello Whirled ==
+
+A game that doesn't talk over the network is just a simple Flash file. Open the file 'HelloWhirled.as' in a file editor program. Delete the current content and add the following content to 'HelloWhirled.as':
+
+<actionscript>
+package {
+
+import flash.display.Sprite;
+import flash.events.Event;
+import flash.text.TextField;
+
+import com.whirled.game.GameControl;
+
+[SWF(width="400", height="400")]
+public class HelloWhirled extends Sprite
+{
+    public function HelloWhirled ()
+    {
+        // listen for an unload event
+        root.loaderInfo.addEventListener(Event.UNLOAD, handleUnload);
+
+        _control = new GameControl(this);
+
+        var label :TextField = new TextField();
+        label.x = 0;
+        label.y = 0;
+        label.htmlText = "<b>Hello, Whirled!</b>";
+        addChild(label);
+    }
+
+    /**
+     * This is called when your game is unloaded.
+     */
+    protected function handleUnload (event :Event) :void
+    {
+        // stop any sounds, clean up any resources that need it
+    }
+
+    protected var _control :GameControl;
+}
+}
+
+</actionscript>
+
+== Compile & Test ==
+
+To compile it in UNIX or Mac, run ant at the command prompt:
+
+  % ant test
+
+For windows, simply double click '''build.bat'''.
+
+This will produce an output file called '''HelloWhirled.swf''' in the same directory and it will load your game in the test environment.
+
+[[Image:Hello_whirled_shot.png]]
+
+= Next Steps =
+
+* [[Simple text game (ActionScript tutorial)]]
+* [[Create games|Back to Creating Games]]
+
+[[Category:Tutorials]][[Category:Code tutorials]]

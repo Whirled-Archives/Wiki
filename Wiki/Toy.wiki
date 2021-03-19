@@ -1,0 +1,17 @@
+[[Image:Icon-highlighted-toy.png|left]]'''Toys''' are interactive items you can put in [[room]]s to play with.  They can be purchased from the [[shop]] for [[currency#Coins|coins]] or [[currency#Bars|bars]].
+{{clearleft}}
+== How to Get and Use a Toy ==
+
+# [[Image:Toy-options.png|thumb|350px|Depending on where your toy is, there are different options: Add to room, Take from room, and Move to room.]]Choose '''[[Shop]] → Toy''' to see a list of all the toys available.
+# Click on the toys to take a closer look and read the descriptions of toys. Look around until you find one you like and buy it! If you don't have enough coins yet, play some [[game]]s to earn enough.
+# To play with your new toy, choose '''Stuff → Toy''' and click the the little house to put it in your room. You can only put toys in rooms that you can edit.
+# Click the close box to close your inventory and return to your room.
+# The room will be in editing mode. Learn how to resize and rearrange your new toy [[edit your room|here]].
+
+If you don't have enough to buy the toy you want in the shop, you can purchase bars or play [[game]]s for coins until you have enough.
+{{clear}}
+== See Also ==
+*[[Create toys]]
+*[[Bleep]]
+
+[[Category:Terminology]]

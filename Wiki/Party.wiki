@@ -1,0 +1,44 @@
+[[Image:Party.png|right|400px|thumb|Players attending a party with the party's icon above their names.]]You can create and join '''parties''' of people roaming the Whirled.  All the players in the party will automatically follow the party leader as the leader moves from room to room.  This is especially fun when playing [[AVR game]]s like [[Ghosthunters]] or [[Psychic Challenge]]. Parties are a beta feature currently under development.
+
+Parties cost {{partycost}} coins to create and are free to join. 
+__TOC__
+{{clear}}
+== Joining a Party ==
+[[Image:Party-party board.png|left|thumb|350|The list of parties. Click on a party name to see information about the party. If the party's leader is on your friends list, the party name will be in bold.]][[Image:Party-party_info.png|150px|right|thumb|Information about a party.]]Click on the [[Image:Icon-parties.png]] Parties icon in the bar at the bottom of the room.  This will show a list of parties currently in progress including the icon of the associated Group, name of the party, number of players currently in the party, and the room where the party is currently located.
+
+Pick out the party that you'd like to join and click on its associated Join button either on the Party Board or in the party information window.
+
+You can also join parties by clicking on the party name when an invitation appears in the status/news feed at the bottom right of your room browser.
+
+If you are already in a party, clicking on the parties icon will show you a list of participants in that party.
+{{clear}}
+[[Image:Party-joined_party.png|left|150px|thumb|A list of party participants.]][[Image:Party-avatar_with_party_and_game_icons.png|right|100px|thumb|Party & game indicators.]]When you join a party, the list of party participants will pop up in a small window and a tiny shrunk down icon of the group associated with the party will show up above your avatar's name. If you play an AVR game, that icon will show up above the party icon.
+
+On the list of players, the player at the top, highlighted in dark blue, is the party leader.  The names show up in the order that they joined the party.  If you are the party leader, you can use this window to change the party options (open, group, closed).  If you are not the leader, this option will be greyed out.
+
+{{bul}} Open - Anyone may join your party.<br>
+{{bul}} Group - Only members of the associated group may join your party.<br>
+{{bul}} Closed - No additional players may join your party.
+{{clear}}
+
+== Leaving a Party ==
+You can simply click on the orange "Leave" button in the party participants list to leave a party.
+
+If you closed the party participants list, simply click on the [[Image:Icon-parties.png]] Parties icon in the bar at the bottom of the room to view it and the Leave button again.
+
+If you are not the party leader and you leave the room where the party is currently located, you will leave the party.
+
+If the party leader leaves the party, the next name down on the list will become the new party leader by default.
+{{clearleft}}
+== Creating a Party ==
+[[Image:Party-create_a_new_party.png|left|200px]]Click on the [[Image:Icon-parties.png]] Parties icon in the bar at the bottom of the room.  This will show a list of parties currently in progress including the icon of the associated Group, name of the party, number of players currently in the party, and the room where the party is currently located. At the bottom right, there is a "Create party" button to click.
+
+The default party name uses your Whirled display name, but you can click on this field and rename your party. 
+
+For the host group, you can select any group that you are a member of.  If you are a group manager, that group name will be in bold.
+
+If you leave "Invite all friends" checked, logged on friends will receive a message inviting them to your party in the status/news feed at the bottom right of their room browser.
+
+Parties cost {{partycost}} coins to create. However, if you play an in-Whirled game with people in a party, you will get a coin bonus based on the size of the party.  Larger parties playing together will earn more coins. Everybody in the party receives the coin bonus, not just the party leader.
+
+[[Category:Terminology]]

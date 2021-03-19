@@ -1,0 +1,53 @@
+{{FAQS}}
+{{TOCright}}
+
+== What do I do if I'm having problems with putting furniture in a room? ==
+Sometimes furniture becomes stuck in a room or says it is in a room, but can't be found when you try to arrange the room using the [[Image:Icon-edit_room.png]] option in the room menu or the options in your [[stuff tab|Stuff]].  Occasionally this is due to a furniture glitch and other times it is because the furniture is hidden behind another piece of furniture.  Try the steps listed below if this is happening.
+
+# Check to make sure your items appear on the dropdown list when you edit your room.  If they do, go to step 2.  If not, do the Limbo Shuffle (below).
+# Select the item that should be in front from the drop down list (such as a book).  Click the advanced editing options button on the room editor.
+# Click the + Next to object properties.
+# Note the middle number under Location of your object. (If you're putting things at the back of the room, you may want to set it to 1).
+# Select the item that you want behind the item in step 2 from the drop down (such as a shelf).  Change the middle number to something higher than the number you noted in step four (I recommend 1.01 for the back wall).
+# Rescale as needed.
+# Repeat steps 2-6 for any items that should be in front of the shelf.
+
+Sometimes things switch order after you place them due to rounding of their location number.  Trying to put a lot of things on the back wall will usually trigger this.  Instead, stack things "outside" the room so Whirled always knows what order they should be in.
+
+Also, Whirled sometimes forgets room edits; if both your inventory and the room editor say an item is not in your room, then just re-place it. 
+
+=== How to do the Limbo Shuffle ===
+
+If your inventory says your items are in a room and they do not appear on the "Select an item..." drop down in the room editor, add them to another room to make everything unstick.
+
+== How can I lock my room? ==
+You can click on the Room icon [[Image:Icon-room_control.png]] in the control bar and select the [[edit your room|Arrange Room]] button [[Image:Icon-edit_room.png]] in a room you own to lock it.
+
+[[Image:Arranging_room_button_locking.png]] - This set of buttons allows you to set who can come into your room.  From left to right: Unlocked room where anyone can enter, [[friend]]s locked room where only your friends can enter, and locked room where only you can enter.  [[Agent]]s can enter all rooms including locked ones.
+
+== What about music causing a room to not load or causing my virus scanner to warn me? ==
+
+If there are issues with a room due to the music, all you need to do is to mute your Whirled browser's volume.  With the volume muted, the browser does not load the mp3 at all.  You can then go into the room and remove the music if you can edit the room or you can get the room URL to send along with a description of the issue to the [[Agent]]s via the Help link's Contact Us option.
+
+== How do I get a new room? ==
+{{main|Room}}
+{{:Room/Create}}
+
+== How do I place a rug or dance floor in my room? ==
+Once you've bought your dance floor, just placing it in your room will make people unable to stand on it. To make objects like dance floors or rugs part of the floor:
+# Place the object against the back wall above where you want it to end up, like you would a poster.
+# Turn on advanced editing settings, and a button to the left of the object should appear, with an arrow pointing up and down. Drag that down to move the object straight down, onto the floor where it has the same depth as the back of the room.
+# Still with advanced editing settings, open "Object Actions" and check "Ignore Mouse Events."
+
+Your dance floor / rug / etc should be ready for walking on now!
+
+== See Also ==
+*[[Avatar creation FAQ]]
+*[[AVRG FAQ]]
+*[[Billing FAQ]]
+*[[Community Standards]]
+*[[Frequently asked questions|General FAQ]]
+*[[Terms of Service]]
+*[[Whirled game creation FAQ]]
+
+[[Category:Frequently asked questions]]

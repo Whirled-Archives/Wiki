@@ -1,0 +1,14 @@
+'''A Little Out Of Time But I Don't Mind'''
+{{release notes/start}}
+Howdy folks, once again the Whirled has been updated. For your Whirling pleasure, I thus declare:
+
+* Fixed bugs with chat and roomless [[AVR game]]s
+* [[Avatar]] activation buttons ("Wear Avatar" and "Remove Avatar") once again update when your avatar is changed in the Whirled
+* When the server is experiencing an unusually high load, such as after a restart, you may see a "Server is busy" message when you try to login. This should help to address slowness as reported in this bug
+* Some other small UI fixes
+* A fair few internal changes behind ye olde kurtin
+
+NOTE: the [[chat]] system has been partially torn down and rebuilt, please be on the lookout for bugs. (We are currently investigating missing chat during AVRG play, a good old-fashioned "howler")
+
+Adieu and Whirl away
+{{release notes/end}}

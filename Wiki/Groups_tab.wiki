@@ -1,0 +1,22 @@
+[[Image:Whirled logo.png|left‎|60px]] The '''Groups tab''' allows people with common interests to have a united area to gather, share and socialize in their own [[Groups]]. [[Group management]] is done by a group's managers.  The cost to create a new group is {{groupcost}}.
+{{clear}}
+
+== Create a New Group ==
+[[Image:Groups.png|425px|thumb|right]]Go to the Groups tab and click on the "Make your own Group!" link in the text above the group lists. The cost to create a new group is {{groupcost}}.
+{{clearright}}
+
+[[Image:Groups-New_Group_Options.png|400px|thumb|right]]Fill in the options as you desire and click on either the bar or coin payment button to create your Group.  The Group name must be unique, you cannot choose a name of an already existing Group. All options, except for the Group name, can be edited after creation of the Group via the "Edit this Group" link seen when viewing the Group.  For more information, read [[group management]].
+{{clearright}}
+
+== Join Group Chat for a Group ==
+[[Image:Icon-chat options.png]] Click on the chat options button to the left of your chat input on the bottom of your screen.
+
+[[Image:Chat options-popup.png|frame|left]] When the popup appears, move your mouse over the "Groups" selection to get a list of your Groups. Click on the Group's name to join that Group's group chat. 
+{{clear}}
+
+== Find Your Groups ==
+A list of the Groups you have joined can be found via the My Groups link in the Groups tab and in your [[Me tab]] [[profile]].
+
+== Historical Notes ==
+This tab was initially called the Groups tab and then was changed to Whirleds.  The term changed back to Groups with {{release|2008-11-07}}.
+[[Category:Tutorials]]

@@ -1,0 +1,82 @@
+[[Image:Icon-highlighted-backdrop.png|left]][[Image:Room-starter room parts.png|400px|thumb|right|This is a basic starting room that Whirled players get when they create an account. This article is about how these and other items can be changed in a room. You can explore this room [http://www.whirled.com/#world-s94816 here].]]
+Your [[room]]s are the easiest place to start customizing your [[Whirled]].  Rooms are made up of a full-scene background file called a [[backdrop]] and any number of movable items called [[furniture]].  You can even add background [[music]].  [[Shop]] or [[upload]], and arrange them to suit your mood of the moment.  Whirled's '''room editing''' panel makes furniture arrangement click-and-drag easy.
+
+== [[Image:Icon-backdrop.png|40px]] Room Settings and Backdrops ==
+A "backdrop" is a single file that contains both a full-size background image for the room and room dimensions like width, depth and angles.  The backdrop comes packaged with the proper dimensions, configured by the backdrop's creator.
+
+''See '''[[create backdrops]]''' for more information about room settings and how to make your own backdrop.''
+
+=== Room Settings ===
+You can click on the Room icon [[Image:Icon-room_control.png]] in the control bar and select the Arrange Room button [[Image:Icon-edit_room.png]] in a room you own to change the following room settings:
+*The name of the room.  Just click on the text box and change it to what you want.  Changing the name of the room will not change the named used in already created doors that lead to the room.
+*[[Image:Arranging_room_button_set_home.png]] - This button allows you to set a room as your Home.  If a room is already set as your home, the button will be dark gray.
+*[[Image:Arranging_room_button_locking.png]] - This set of buttons allows you to set who can come into your room.  From left to right: Unlocked room where anyone can enter, [[friend]]s locked room where only your friends can enter, and locked room where only you can enter.  [[Agent]]s can enter all rooms including locked ones.
+
+=== Changing the Backdrop in a Room ===
+#[[Image:Me-backdrop item.png|right]] Choose '''Stuff &rarr; Backdrops'''.
+#Check the '''Add to room''' box next to any backdrop you want to use in the room.
+
+You can also click on the Room icon [[Image:Icon-room_control.png]] in the control bar and select the Arrange Room button [[Image:Icon-edit_room.png]] in a room you own and use the Change button to switch backdrops.
+{{clearright}}
+
+== [[Image:Icon-furniture.png|40px]] Furniture and Toys ==
+[[Furniture]] is a simple media file that can be placed inside a room.  Shop for furniture under '''Shop &rarr; Furniture''', or [[create furniture|make your own]]!<br>
+
+[[Toys]] are essentially just fancy furniture.  All the following information on arranging furniture works exactly the same way for toys.  Shop for toys under '''Shop -> Toys''' or [[create toys|make your own]]!
+
+[[Image:Me-furniture item.png|frame|Check the box to add the item.]] 
+
+=== Adding Furniture to a Room ===
+#Choose '''Stuff &rarr; Furniture'''.
+#Check the '''Add to room''' box next to any item you want to add to the room.
+
+=== Arranging Existing Furniture in a Room ===
+[[Image:Arranging room window.png|right|thumb|The Arrange Room Panel]]
+#You can click on the Room icon [[Image:Icon-room_control.png]] in the control bar and select the Arrange Room button [[Image:Icon-edit_room.png]] in a room you own to configure the placement of furniture, toys, and doors.
+#Choose a furniture object by clicking on one in the room. Then use the actions and options described below.
+
+==== Moving and Stretching Furniture ====
+You can use the buttons on the Arranging Room panel to do the following actions in preset increments:
+*[[Image:Arranging_room_button_smaller.png]][[Image:Arranging_room_button_larger.png]] Makes the furniture smaller or larger.
+*[[Image:Arranging_room_button_down.png]][[Image:Arranging_room_button_up.png]] Moves the furniture down and up in relation to the floor.  This does not change how far forward or back in the room your furniture is placed.
+*[[Image:Arranging_room_button_counterclockwise.png]][[Image:Arranging_room_button_clockwise.png]] Rotates the furniture counter-clockwise or clockwise.
+*[[Image:Arranging_room_button_fliphorizontal.png]][[Image:Arranging_room_button_flipvertical.png]] Flips the furniture image horizontally or vertically.
+
+You can move furniture by clicking and dragging the image forward, back, and around the room.  To resize the furniture, click and drag the small square in the corner of the dashed line around the outside of the furniture.  To rotate the furniture, click and drag outside of the small square in the corner of the dashed line around the outside of the furniture.
+
+==== Other Actions ====
+You can also do the following actions to furniture:
+*''Put Away'': Removes the furniture from use in the room.
+*''Make Door'': The furniture can be made into a clickable [[door]] leading to another Whirled scene. This is also how you [[Room#Creating_a_New_Room|create a new room]].
+*''Make Link'': The furniture can be a clickable link to a web page.  Enter the desired address in the text field.
+
+==== Advanced Editing ====
+If you wish to use specific numerical values for location, scale, and rotation of the furniture, as well as altering the other available actions for furniture, click on the checkbox to use the advanced editing options.
+
+Checking the "Ignore mouse events" under "Object Actions" will allow you to click though furniture that visually obscures all or part of a room.
+
+=== Doors and Creating New Rooms ===
+{{main|Door}}
+
+[[Door]]s don't just lead to other rooms, they are also how you create new rooms.
+
+== [[Image:Icon-music.png|40px]] Music ==
+[[Image:Room-Currently playing music.png|frame|The song that is currently playing is bolded. Click on the song name to get a menu with: View music item info, [[Report]] music item, and [[Bleep]] music item. If the music is not available in the shop, you will not be able to view its information page. Hoovering over the song name will reveal a popup that indicates who added the song to the playlist. The blue rectangle and red X boxes in the playlist only show up if you are able to edit the room.]]Add an audio file to your room just like adding furniture or a backdrop. The song will be added to a playlist that continuously repeats each song in a row unless it is changed by the room owner or group room manager.
+#Choose '''Stuff &rarr; Music'''.
+#Check the '''Add to room''' box under the song you want to add to the room.
+[[Image:Me-song item.png|none]]
+
+Anyone may add a song to a room's playlist by default.  Room owners or managers of group rooms are able to remove music from rooms (red X box) and switch to playing a different song (blue rectangle box).  To make it so that only room managers may add songs to a room, edit the room and uncheck the 'Anyone can add songs to the playlist' checkbox at the top of the control panel. A maximum of 99 songs may be added to a room's playlist. 
+
+Players can click on the Room icon [[Image:Icon-room_control.png]] in the control bar and select the [[Image:Icon-song.png]] View room playlist option to view information about the song currently playing in the room and see the songs in the room's playlist.  The note does not appear if your volume was muted when you entered the room.  The information shown is taken from the mp3's embedded ID3 information, not from the information typed in when the song is uploaded to Whirled.
+
+=== Issues with Music in a Room ===
+If there are issues with a room due to the music, all you need to do is to mute your Whirled browser's volume.  With the volume muted, the browser does not load the mp3 at all.  You can then go into the room and remove the music if you can edit the room or you can get the room URL to send along with a description of the issue to the [[Agent]]s via the Help link's Contact Us option.
+
+== Adding Other Items ==
+Other items can also be added to your room in the same way you've added a backdrop, furniture, and music.  Just view your items in your Stuff and click on "Add to room." Then arrange it just like you did your furniture and toys. If you don't have something you want to add to your room, you can always use [[currency#Coins|coins]] or [[currency#Bars|bars]] to buy things you like in the [[shop]] or you can learn to [[Portal:Creators|create your own items]]!
+
+== Other Links ==
+*Learn more about [[room]]s
+
+[[Category:Tutorials]]

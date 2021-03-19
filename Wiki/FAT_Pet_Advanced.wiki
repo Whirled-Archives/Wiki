@@ -1,0 +1,125 @@
+{{TOCright}}
+[[Image:Icon-Flash.png|left]][[Image:Icon-highlighted-pet.png|left]]If you have never created a pet for Whirled, you probably want to look into our [[FAT Pet Tutorial]]. If you feel sufficiently experienced, feel free to move forward with the more advanced steps below.
+
+== Basic Settings ==
+You can configure your basic document properties under '''Modify -> Document...'''.
+*'''Dimensions''': A pet may be any size under the maximum of 450x500 pixels.
+*'''Frame rate''': All Whirled pets must be 30 frames per second.
+*'''Background color''': You can use any background color you like, but it won't appear in Whirled.
+
+== Pet Scenes ==
+A pet's behavior is all controlled by scenes and the names you give them.  There's no code involved - just use the right naming convention, and Whirled will automatically incorporate your scenes into the pet's routines.  Look at the examples in each category to see how scene naming defines what a scene does.
+
+=== Moods ===
+A pet's moods will change randomly, according to the whim of the pet.  For any mood there must be an idle scene, and all pets require a base "content" mood.
+
+Some example moods:
+*content_idle
+*hungry_idle
+*playful_idle
+
+=== Walking ===
+Walking scenes are triggered whenever your pet traverses space in the room.  You can associate walks with any moods you've created.  If a mood doesn't have an associated walk, your pet will just transition to "content" before moving.
+
+Some example walks:
+*content_walk
+*hungry_walk
+*playful_walk
+
+[[Image:transitions_example.swf|right|frame|]]
+=== Transitions ===
+Transitions are special scenes that smooth the change from one scene (mood or walk) to another.  They will be played through once before beginning the scene called.  For example, if the pet decides to start flying, Whirled will play content_to_flying once through before beginning flying_idle.<br>
+You don't need transitions for all or even any of your moods.  Just transition the ones you want.
+
+Some example transitions:
+*Transitioning to and from a walk:
+**content_towalk
+**content_fromwalk
+*Transitioning between two moods:
+**playful_to_content
+**content_to_hungry
+
+=== Incidentals ===
+Sometimes you want a mood to vary.  For instance, in an idle animation, you want the pet to yawn every so often.  These are called incidentals, and can be handled with scene naming, just like other animations.  Essentially, you split up the mood into multiple numbered versions (01, 02, 03...) and then assign each numbered version a percent probability (:05, :80, :66...) so that the versions' probabilities add up to 100.  When a given scene of a mood is finished, Whirled will randomly choose the next version of the mood to be played, based on these probabilities.
+
+Some example incidentals:
+*An occasional yawn in the content mood:
+**content_idle_01:95
+**content_idle_02:05
+*A mood that equally mixes three possible animations:
+**playful_idle_01:34
+**playful_idle_02:33
+**playful_idle_03:33
+
+== Pet Code ==
+Just as a typical Whirled pet is built in [[Adobe Flash CS3]], the code to handle pets is written in Flash's ActionScript.  Moving beyond the basic pet template doesn't require complex code writing.  Setting up new actions for your pet is usually as easy as cut and paste.
+#If you haven't yet, download the [[Whirled SDK]].
+
+[[Image:AS3_preferences.png|right|frame|Choose '''ActionScript''', then '''ActionScript 3.0 Settings...''']] 
+
+=== Required ActionScripts ===
+Whirled pets require some ActionScript to communicate with Whirled's servers and let each other know what's going on.  The basic code tells the pet which way it's facing and whether or not it's walking.  This pet foundation code is a combination of imported scripts from the [[Whirled SDK]] and a few lines of ActionScript in the main scene.  In the template we already did this for you.  If you make a pet from scratch, or open the source file for someone else's pet, you'll need a basic understanding of how to set it up yourself.
+
+==== Classpaths to Import Whirled's Server Code ====
+Setting a classpath in Flash's preferences means it will automatically import this code for all your future pets.  Once it's set up, all your avatars will export with the server code.
+#In Flash, choose '''Edit -> Preferences'''.
+#Under '''Category''', choose '''ActionScript'''.
+#Click the button labeled '''"ActionScript 3.0 Settings..."'''.
+#Add the base Whirled classpath:
+##Click the plus to add a new classpath.
+##Click the crosshairs to browse to your SDK folders.
+##Find and set the path to "...\whirled\src\as".
+#Add the pet classpath:
+##Click the plus to add a new classpath.
+##Click the crosshairs to browse to your SDK folders.
+##Find and set the path to "...\whirled\examples\pets\urpet\src".
+
+[[Image:AS3_settings_pet.png|none|frame|Set the classpaths to your local Whirled SDK directories.]]
+
+==== Basic ActionScript for the Main Scene ====
+The "main" scene of your pet file should contain all the code for handling pet behavior in Whirled.  For a basic pet, this is a simple copy and paste.
+#Select the scene '''"main"'''.  If this is a new file, double-click "Scene 1" to rename it "main".
+#Open the '''Actions''' window (F9).
+#Paste in this code:
+#:<actionscript>import com.whirled.PetControl;
+
+_ctrl = new PetControl(this);
+_body = new Body(_ctrl, this, w);
+_brain = new Brain(_ctrl, _body);
+
+addEventListener(Event.UNLOAD, handleUnload);
+
+function handleUnload (... ignored) :void
+{
+   _brain.shutdown();
+   _body.shutdown();
+}
+
+var _ctrl :PetControl;
+var _body :Body;
+var _brain :Brain;</actionscript>
+#Replace '''w''' with the width of your scene.
+
+[[Image:hotspot_info.png|right|frame|This pet's hotspot is at (100, 390).]]
+
+=== Hotspot ===
+The hotspot determines where the pet sits on the floor of a room.  The default hotspot is the center of the lowest point on the pet.
+<actionscript>	_ctrl.setHotSpot(x, y);</actionscript>
+#Add this line of ActionScript directly under your existing "_ctrl..." lines.
+#Click the '''Info''' tab.
+#Move your cursor over the point on the "floor" directly below your pet's center of gravity.
+#Note the coordinates of your cursor in the '''Info''' tab.
+#Replace the '''x''' and '''y''' in the script with the x and y coordinates of your newfound hotspot.
+
+=== Move Speed ===
+The move speed is the rate at which your pet will traverse a room at full size, in pixels per second.  The default move speed is 400.  Lower numbers are slower and higher numbers are faster.
+<actionscript>	_ctrl.setMoveSpeed (n);</actionscript>
+#Add this line of ActionScript directly under your existing "_ctrl..." lines.
+#Replace the '''n''' in the script with the speed you want for your pet.
+Upload to Whirled and check your walk speed in action.  Then go back to your source file and adjust up or down.
+
+*[http://bbs.coldhardflash.com/viewtopic.php?t=459 Tutorials From All Over courtesy of coldhardflash.com]
+*[http://www.phptr.com/articles/article.asp?p=30164&rl=1 Introdution to ActionScripting by Dan Livingston]
+*[http://www.sitepoint.com/article/actionscript-animation-flash Introduction to Actionscripting by James Rice]
+
+[[Category:Tutorials]]

@@ -1,0 +1,11 @@
+{{Portal:Artists/box-header|Featured articles|Portal:Artists/Featured article|}}
+{{Portal:Artists/Selected article/1}}{{clearleft}}
+<hr>
+{{Portal:Artists/Selected article/2}}{{clearleft}}
+<hr>
+{{Portal:Artists/Selected article/3}}{{clearleft}}
+<hr>
+{{Portal:Artists/Selected article/4}}{{clearleft}}
+<hr>
+{{Portal:Artists/Selected article/5}}{{clearleft}}
+{{Portal:Artists/box-footer|}}

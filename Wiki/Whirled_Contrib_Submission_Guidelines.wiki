@@ -1,0 +1,72 @@
+Herein lies the requirements for '''submitting code to the [[Whirled]] Contrib library''' ([http://www.whirled.com/code/contrib/asdocs/ com.whirled.contrib]).  This library is meant to be a general repository of code written by our players that serves some repetitive function that may be useful to other players.  Currently, all submissions are inspected by Three Rings staff to ensure that it follows these guidelines.  A submission may not be accepted if it is found to not follow these practices, or is too close to code that is already in place.
+
+Keep in mind that we're looking for new classes that may be useful to other programmers, but if you have bug fixes or additions to a class that already exists, these are quite welcome as well.  This is meant to be a collaborative endeavor, and we'll do our best to foster collaboration in whatever form we can.
+
+=== File Header ===
+We require all sources in the com.whirled.contrib library to be released under the [http://www.gnu.org/licenses/licenses.html LGPL license].  Part of that requirement is that you put this header at the top of your source files.  Make sure to replace <your name> at the bottom with your name. 
+<actionscript>
+// Whirled contrib library - tools for developing whirled games
+// http://www.whirled.com/code/contrib/asdocs
+//
+// This library is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Lesser General Public License for more details.
+//
+// You should have received a copy of the GNU Lesser General Public License
+// along with this library.  If not, see <http://www.gnu.org/licenses/>.
+//
+// Copyright 2008 <your name>
+//
+// $Id$
+</actionscript>
+
+=== Code Commenting ===
+This requirement is vital.  Function headers should be accompanied by appropriate documentation, explaining the purpose of the function, any function parameters, and the return value (if any).  Three Rings uses the [http://livedocs.adobe.com/flex/201/html/wwhelp/wwhimpl/common/html/wwhelp.htm?context=LiveDocs_Book_Parts&file=asdoc_127_1.html asdoc] tool that Adobe includes with the [http://labs.adobe.com/technologies/flex/ Flex] toolkit for generating documentation.  People familiar with Javadoc will recognize the format of these comments, as Asdoc works in a similar fashion.
+
+It is strongly recommended that you run your source through asdoc to see how the generated documentation looks before submitting it for review.
+
+Here's an example from com.whirled.contrib.UserCookie
+<actionscript>
+    /**
+     * Get a player's user cookie via GameControl.getUserCookie, wrapped in a UserCookie
+     * object.
+     * 
+     * @param wgc The GameControl of the current instance
+     * @param validCallback This function is called with a single UserCookie parameter when the
+     *                      cookie has been retrieved and validated.
+     * @param cookieDef An array of cookie parameters that define the format of the user cookie.  
+     *                  See the various get*Parameter() functions for more detail.
+     * @param enableDebugLogging Enable logging of some debug messages, including the values read
+     *                           out of the user cookie in the initial read.  Logging is done via
+     *                           com.threerings.util.Log.
+     * @param occId The player's id to fetch the cookie for.  Defaults to the current player.  If
+     *              a different player is specified, this UserCookie will be read-only - attempting
+     *              to set a value will generate an IllegalOperationError.
+     */
+</actionscript>
+
+=== Code Formatting ===
+The key here is to make sure that your source is easy to read and understand.  Any code submitted by Three Rings staff should follow Three Rings code formatting guidelines, so submitted code that follows these guidelines as well will be familiar to a wider body of people, but it is not strictly required.  Source files outside of the com.whirled.contrib package should be a good source of this coding style.  
+
+The key issues are:
+* Consistent indenting.  Three Rings uses a 4 space tab for each new level (descending into a class, into a function, into logical control blocks, etc)
+* Use spaces, not tabs.
+* Cluster logical pieces of code together, inserting blank lines between logic breaks in the function's flow.
+* Comment particularly dense code blocks, so that it is easy to determine what's going on at a glance without studying the code in detail
+** However, clear, easy to read code is King - comments tend to get out of date, and can then lead to general confusion.
+* Restrict your code lines to 100 columns.  This should be easy to do with most coding editors.
+
+=== Submission ===
+Three Rings does not yet have a mechanism in place for formal code submission.  There are two methods available at this time:
+* (Preferred) Post about your class(es) in the [http://www.whirled.com/#whirleds-d_65 Whirled API Contribs Whirled], if have the means to host the source somewhere, include a link to it there.
+* Send a Whirled mail to [http://www.whirled.com/#people-2 Zefyr], explaining the purpose of your code, and link to it.  
+
+If you do not have any web space available, contact [http://www.whirled.com/#people-2 Zefyr] for submission procedure.
+
+[[Category:Tutorials]]

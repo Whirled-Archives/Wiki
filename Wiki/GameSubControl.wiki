@@ -1,0 +1,81 @@
+The largest of the subcontrols, the '''[http://www.whirled.com/code/asdocs/com/whirled/game/GameSubControl.html GameSubControl]''' is mainly concerned with the life cycles of games: the beginning and ending of the game itself, of each separate round as well as player turns, for turn-based games. It's used to let Whirled know which players won, and with which scores, which in turn is used to calculate coin payouts for players using one of several distribution strategies.
+
+== Get the GameSubControl ==
+Never instantiate the GameSubcontrol directly, always access it via the [[GameControl]] object.  For convenience, you can create a local handle to the GameSubControl Object; 
+
+<actionscript>
+public class MyGame extends Sprite {
+    public MyGame () {
+        _ctrl = new GameControl(this);
+        _game = _ctrl.game; 
+
+    }
+
+    protected _ctrl :GameControl;
+    protected _game :GameSubControl; 
+}
+</actionscript>
+
+== Starting the Game Manually ==
+In order to start a game, each game client has to signal it's ready.  Usually, this is done automagically when the client instantiates a new GameControl Object.  However, it is possible to not send the signal until a later point.
+
+<actionscript>
+     //this sends the client ready signal automagically
+     _ctrl = new GameControl(this);
+</actionscript>
+
+<actionscript>
+     //this does not send the client ready signal
+     _ctrl = new GameControl(this, false);
+
+     .......
+
+     //at some later point, send the client is ready signal.
+     _ctrl.game.playerReady();  
+
+</actionscript>
+
+== Listening For Events == 
+The following are the events that you can listen for on the GameSubControl object.
+
+    StateChangedEvent.CONTROL_CHANGED
+    StateChangedEvent.GAME_ENDED
+    StateChangedEvent.GAME_STARTED
+    OccupantChangedEvent.OCCUPANT_ENTERED
+    OccupantChangedEvent.OCCUPANT_LEFT
+    StateChangedEvent.ROUND_ENDED
+    StateChangedEvent.ROUND_STARTED
+    StateChangedEvent.TURN_CHANGED
+    UserChatEvent.USER_CHAT 
+
+By listening to these events, you can trigger logic specific to your game.  These are especially important for multi-player games.  For example, if you want to give each player/game client a new card on a turn basis, you can do the following
+<actionscript>
+        
+    //added during the initalization 
+    _ctrl.game.addEventListener(
+            StateChangedEvent.TURN_CHANGED, handleTurnChanged);
+
+
+    protected function handleTurnChanged (event :StateChangedEvent) :void
+    {   
+       //Check to see if it is this game client's turn.
+        if (_ctrl.game.isMyTurn()]) {
+             handleOutNewCard(); 
+             //start the next turn
+            _ctrl.game.startNextTurn(); 
+        }
+    }
+</actionscript>
+
+== Adding And Selling Game Packs ==
+Game Creators can easily monetize their games by [[Create and sell game packs| selling game packs as part of their game]].  The game can access information about its item packs and level packs via the gameSubControl.  For player specific pack information, you should use the [[PlayerSubControl]].
+
+== Ending The Game And Awarding Payouts ==
+
+Coin payouts are also controlled via the GameSubControl.  You can read more about coin payouts [[awarding coins|here]].  Currently the coin payouts are tied to the endGame call, but that will change soon.
+
+== Other Links ==
+*[[GameControl]]
+*[http://www.whirled.com/code/asdocs/com/whirled/game/GameSubControl.html Whirled API Documentation for GameSubControl]
+
+[[Category:Subcontrols]][[Category:Coding terminology]]

@@ -1,0 +1,260 @@
+{{TOCright}}
+Read everything and still stuck? Try the [[AVRG FAQ|FAQ]].
+
+== What is an AVRG? ==
+
+Instead of a game that takes over the whole screen, AVRGs are games that take place in Whirled rooms.  Imagine playing hide n' seek inside a Whirled room, or a game that involves exploring the rooms of the whirled.  It's like an MMO in whirled. 
+
+Still don't get it?  Try playing some of the AVRGs that we've created.  (The links below will take you to the rooms the games are installed in, once there, just click the furniture associated with the game)
+* [http://www.whirled.com/#world-g5 Bella Bingo] ([[Bella Bingo|instructions]])
+* [http://www.whirled.com/#world-g57 Ghosthunters] ([[Ghosthunters|instructions]])
+* [http://www.whirled.com/#world-g83 Pookah Rainbow] ([[Pookah Rainbow|instructions]])
+
+=== Technical Explanation === 
+AVRG stands for "Alternative Virtual Reality Game". This is a play on words derived from "Alternative Reality Game" or ARG. This is a game that takes place in your "real life" via phone calls, physical clues etc. An AVRG takes place within the "real world" of whirled, which is virtual, hence the pun.
+
+Unlike a "lobbied" or "seated" game, an AVR game takes place in a room and players continue to see their avatars and other surroundings during the game. All user interface elements are shown as an overlay on top of the rest of the room. Because dealing with rooms and avatars is vastly more complicated than the relatively isolated user interface of a lobbied game, the AVR game API is much bigger. 
+
+Lobbied games do not require a [[server agent]] to work, whereas AVR games do. This is partially due to the benefit of hindsight: we learned from experience that when creating a client-only game, it was extremely complicated to cope with disconnections and nigh on impossible to manage latency. Using a server agent eliminates many intractable problems but also opens the door to other complexities.
+
+We are hoping some day to make AVR games even more full-featured, allowing them to control more aspects of the user experience such as the scale of the room and the user interface surrounding the main panel.
+
+== Examples ==
+
+Three Rings have produced three AVR games at the time of this writing, you can try them out in Whirled. You have to click on the furniture to play:
+* [http://www.whirled.com/#world-g5 Bingo] ([http://code.threerings.net/svn/whirled/trunk/projects/avrg/bingo Source Code])
+* [http://www.whirled.com/#world-g57 Ghosthunters] ([http://code.threerings.net/svn/whirled/trunk/projects/avrg/ghostbusters/ Source Code])
+* [http://www.whirled.com/#world-g83 Pookah Rainbow] ([http://code.threerings.net/svn/whirled/trunk/projects/avrg/pookahsimon Source Code])
+
+== Getting Started ==
+
+=== Create an empty project ===
+In order to start making an AVRG, you need to download the [[Whirled_SDK|SDK]] and create a new AVRG project. Run <code>newproject.bat</code> on Windows, or run <code>ant newproject</code> in the SDK root directory using a shell prompt (general documentation on how to set up your development environment can be found on the SDK page). You will be prompted for the name of your project, here's some sample output:
+<actionscript>
+Buildfile: build.xml
+
+prepare-flex:
+     [copy] Copying 1 file to /export/whirled/dist/sdk/whirled/etc
+     [copy] Copying 1 file to /export/whirled/dist/sdk/whirled/etc
+
+newproject:
+[newproject] What type of project would you like to create?
+[newproject] 1 - Avatar
+[newproject] 2 - Game
+[newproject] 3 - Pet
+[newproject] 4 - Furni
+[newproject] 5 - Toy
+[newproject] 6 - Backdrop
+[newproject] 7 - AVRG
+[newproject] Enter the number [1-7]?
+7
+[newproject] Please enter the name of your AVRG project.
+[newproject] For example, BestAVRGEver:
+MyFirstAVRG
+[newproject] Your main class will be called:
+[newproject]   MyFirstAVRG.as
+[newproject] Is this OK? [y/n]
+y
+[newproject]   Creating 'myfirstavrg/build.xml'.
+[newproject]   Creating 'myfirstavrg/build.bat'.
+[newproject]   Creating 'myfirstavrg/MyFirstAVRG.as'.
+[newproject]   Creating 'myfirstavrg/Server.as'.
+[newproject] Done! Your new project has been created in 'myfirstavrg'.
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+</actionscript>
+
+=== Build the project ===
+
+Then go into the new directory and build the game using <code>build.bat</code> on Windows or running <code>ant</code> from a shell prompt. If there are any errors, chances are it is due to errors in your dev environment configuration. Check the [[Whirled_SDK|SDK page]] for detailed instructions.
+
+If all goes you well, you should see two new files in the game directory. The .swf file is the client code and will be downloaded by a whirled user that chooses to play your AVR game. This is usually done by clicking a piece of furniture in a room that you create, though users can also buy a copy of your game and put it in other rooms. The .abc file contains your agent and will be downloaded and executed by the whirled server's action script interpreter.
+
+=== Upload to www.whirled.com ===
+
+Unlike lobbied games, there is no builtin test environment for AVRGs. So the next step is to upload an ''in developement'' version of your game. Details on using the game upload page can be found [[Uploading_games|here]]. For AVRGs, you must do the following:
+* Select "AVRG" in the "Game Type" menu
+* Upload your .abc file in the "Server Agent" file box
+* Type in your server class name if you are using a package or some other class name besides "Server". This step is not necessary for uploading a newly created AVRG project.
+
+Once the game is uploaded, go to a room that you own and place the game in your room using the "Stuff" tab above the flash window and clicking on games. Since you just created it, it should be at the beginning of the list. Click "Add to room" and close the stuff panel using the small "x" in the top right corner. You should now be able to click the new furniture icon in the room. Your avatar should get a game icon over its head and you should see a small version of the icon in the toolbar.
+
+== Developing your game ==
+
+=== Change, test, debug - the endless cycle ===
+
+After getting started with a new, empty project, its time to start developing! Make changes to the project code, graphics and sound and follow the above steps to re-upload new versions and test it. At some point, you may need to invite some friends to your room to help test it out.
+
+Debugging the server agent can be tricky. Just like for lobbied games, the server records all of your calls to the builtin actionscript "trace" function. However, AVRGs do not have the well-defined concept of a single "game". Therefore, the server stores the logs periodically. For an in-development the game, this is done every couple of minutes. So you can try something in your game, then visit the "Logs" tab on the game info page to see what the trace output was. See [[Server_agent#Checking_Your_Server_Agent.27s_Output_On_whirled.com|here]] to find your logs.
+
+=== Attach to a whirled and release ===
+
+AVR games are intrinsically tied to rooms. If you click on the big "PLAY" button for Bella Bingo for example, it takes you to the Bella hallway. Before releasing (i.e. listing) your game, you need to create a whirled to showcase the game and place your game furniture at various spots in the whirled. Once you've created the whirled, attach it to your game in the game editing page (same as the game upload page). Now when a user wants to "PLAY" your game, they will be directed to the main room of the whirled.
+
+Now the game is ready to list. It will then appear on the games page for everyone to see.
+
+=== Updating after a release ===
+
+You will almost certainly want to make changes to your game after it is released. In order to do this, you just re-list the current in-development version of the game. The biggest difference is that now your game is more publicly visible and therefore there may be some people enjoying the game when you want to replace the code. Whenever a game is changed, all current players will be abruptly evicted and the server agent will restart, so be careful.  (Yes, this is on our wish list of things to improve).
+
+== The API ==
+
+You can find the full API docs [http://www.whirled.com/code/asdocs/ here] on the whirled website.
+
+As mentioned before, AVR games require a server component and a client component. Therefore the API is split along those lines and there are two top level controls (as opposed to lobbied games which just have one top-level control and some special methods in various places).
+
+Your client-side .swf will instantiate [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRGameControl.html AVRGameControl] to communicate with the whirled client and server code. 
+
+Your server agent .abc file will instantiate [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRServerGameControl.html AVRServerGameControl] to communicate with the whirled server code and the clients of you game.
+
+=== Server-only and client-only functionality ===
+
+Some features and functionality in the API are available only to the server agent and others are available only to clients. To model this, the API representation of some of the controls are divided into 3 classes each. One base class for shared methods, a subclass for client-only methods and another subclass for server-only methods:
+
+{| style="border-style:solid" cellpadding="3"
+|-
+! Control
+! Shared Methods
+! Client-Only
+! Agent-Only
+|-
+! game
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/GameSubControlBase.html GameSubControlBase]
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/GameSubControlClient.html GameSubControlClient]
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/GameSubControlServer.html GameSubControlServer]
+|-
+! room
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/RoomSubControlBase.html RoomSubControlBase]
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/RoomSubControlClient.html RoomSubControlClient]
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/RoomSubControlServer.html RoomSubControlServer]
+|-
+! player
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/PlayerSubControlBase.html PlayerSubControlBase]
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/PlayerSubControlClient.html PlayerSubControlClient]
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/PlayerSubControlServer.html PlayerSubControlServer]
+|-
+! MOB
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/MobSubControlBase.html MobSubControlBase]
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/MobSubControlClient.html MobSubControlClient]
+| [http://www.whirled.com/code/asdocs/com/whirled/avrg/MobSubControlServer.html MobSubControlServer]
+|}
+
+=== Game control ===
+
+Client: [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRGameControl.html#game ctrl.game]
+
+Server: [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRServerGameControl.html#game ctrl.game]
+
+The <code>props</code> member allows the client and server to access the AVR game's own private [[#Property Spaces|property space]]. The client has read-only access the the server has read-write access.
+
+[[Create_and_sell_game_packs|Level and item packs]] are accessed through the <code>game</code> control. These are uploaded and assigned to a game just like they are for lobbied games.
+
+The server agent may
+[http://www.whirled.com/code/asdocs/com/whirled/avrg/GameSubControlServer.html#sendMessage() send messages]
+via the game control as well as listen for events when a player
+[http://www.whirled.com/code/asdocs/com/whirled/avrg/GameSubControlServer.html#event:playerJoinedGame joins]
+and
+[http://www.whirled.com/code/asdocs/com/whirled/avrg/GameSubControlServer.html#event:playerQuitGame leaves]
+the game. Unlike lobbied games, the game keeps right on going as players come and go. In fact, the server agent only shuts down if no one has been playing the game for a certain period of time.
+
+When the server agent sends a message, '''all''' players in the game will receive the message if they 
+[http://www.whirled.com/code/asdocs/com/whirled/avrg/GameSubControlBase.html#event:MsgReceived listen for the event]
+. Use game-wide messages with care.
+
+=== Player control ===
+
+Client: [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRGameControl.html#player ctrl.player]
+
+Server: [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRServerGameControl.html#getPlayer() ctrl.getPlayer(playerId)]
+
+Note that the client only has access to one player, the local player, while the server can access any player that's in the game. Trying to access any other player will result in an error.
+
+The <code>props</code> member allows the client and server to access the private [[#Property Spaces|property space]] of a player. Both client and server have write access.
+
+Using the methods in the player control, your game can detect the presence of a player trophy, access item packs and level packs and cause avatars to perform actions, change state or move to a new location.
+
+Use the
+[http://www.whirled.com/code/asdocs/com/whirled/avrg/PlayerSubControlBase.html#completeTask() completeTask]
+method to award coins to a player and the 
+[http://www.whirled.com/code/asdocs/com/whirled/avrg/PlayerSubControlBase.html#deactivateGame() deactivateGame]
+method when the player has finished playing, for example pressing the quit button in the UI.
+
+The server agent may also
+[http://www.whirled.com/code/asdocs/com/whirled/avrg/PlayerSubControlServer.html#sendMessage() send a private message]
+to a specific player. The client is notified of the message by listening for
+[http://www.whirled.com/code/asdocs/com/whirled/avrg/PlayerSubControlClient.html#event:MsgReceived message events]
+on the player control.
+
+=== Room control ===
+
+Client: [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRGameControl.html#room ctrl.room]
+
+Server: [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRServerGameControl.html#getRoom() ctrl.getRoom(roomId)]
+
+Note that clients only have access to the current room occupied by the local player, while server agents can access any room in the game. Any attempt to access a room not in the game results in an error.
+
+The <code>props</code> member allows the client and server to access the room's [[#Property Spaces|property space]] that is private to this game. Clients may read the properties and the server agent may read and write.
+
+The client and server use the room control to access the set of players that are in the room and listen for notifications when players enter and leave. The may also receive notifications when an avatar changes state or location or when a MOB has been spawned.
+
+The server agent may also use the room control to spawn and despawn MOBs and send messages to all the players in a room. Clients can receive the message by [http://www.whirled.com/code/asdocs/com/whirled/avrg/RoomSubControlClient.html#event:MsgReceived listening for the event] on the room control.
+
+=== MOB control ===
+
+Client: [http://www.whirled.com/code/asdocs/com/whirled/avrg/RoomSubControlClient.html#getMobSubControl() ctrl.room.getMobSubControl(id)]
+
+Server: [http://www.whirled.com/code/asdocs/com/whirled/avrg/RoomSubControlClient.html#getMobSubControl() ctrl.getRoom(roomId).getMobSubControl(id)]
+
+See [[Mobs]] for more information.
+
+The server agent can spawn and despawn mobs using the [[#Room_control]]. A record of the mob is stored on the whirled server and once the mob is created the control [http://www.whirled.com/code/asdocs/com/whirled/avrg/RoomSubControlBase.html#event:mobControlAvailable becomes available].
+
+Both the client and the server use the MOB control to detect [http://www.whirled.com/code/asdocs/com/whirled/avrg/MobSubControlBase.html#event:mobAppearanceChanged appearance changes].
+
+The server may also move the MOB to a new location.
+
+The client may access the underyling display object (that it creates via the [[#Local_control]]), set and remove a decoration or change the hot spot.
+
+=== Local control ===
+
+Client: [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRGameControl.html#local ctrl.local]
+
+Server: N/A
+
+The local control contains various methods that only make sense for the client. They are mostly to do with display objects and pixel coordinates.
+
+It is important that games using MOBs provide a callback for creating mob sprites using [http://www.whirled.com/code/asdocs/com/whirled/avrg/LocalSubControl.html#setMobSpriteExporter() setMobSpriteExporter].
+
+Game that use non-rectangular interfaces should also provide a callback for pixel hit tests using [http://www.whirled.com/code/asdocs/com/whirled/avrg/LocalSubControl.html#setHitPointTester() setHitPointTester] so that the room interface that appears behind the game can still intercept clicks.
+
+=== Agent control ===
+
+Client: [http://www.whirled.com/code/asdocs/com/whirled/avrg/AVRGameControl.html#agent ctrl.agent]
+
+Server: N/A
+
+The agent control allows the client to send messages to the server agent. The server agent received messages by [http://www.whirled.com/code/asdocs/com/whirled/avrg/GameSubControlBase.html#event:MsgReceived listening for the event] on the game control.
+
+=== Property Spaces ===
+
+All property spaces in the whirled API work the same way, allowing plain actionscript <code>Object</code> instances to be assigned to named slots and also providing <code>setAt</code> and <code>setIn</code> for optimally setting a single element in a container. Read-only access to a property space is provided by
+[http://www.whirled.com/code/asdocs/com/whirled/net/PropertyGetSubControl.html PropertyGetSubControl]
+and write access by
+[http://www.whirled.com/code/asdocs/com/whirled/net/PropertySubControl.html PropertySubControl]
+Any property reader can also listen for
+[http://www.whirled.com/code/asdocs/com/whirled/net/PropertyGetSubControl.html#event:PropChanged property changes]
+and
+[http://www.whirled.com/code/asdocs/com/whirled/net/PropertyGetSubControl.html#event:ElemChanged element changes]
+on the props control.
+
+In the AVRG API, properties are embedded in the object they represent using a <code>props</code> member. The type of the member determines whether the caller can read only or both read and write.
+
+== See Also ==
+
+*[[Coordinate systems]]
+*[[Mobs]]
+*[[List of AVRG Avatar States]]
+*[[AVRG FAQ]]
+
+[[Category:Terminology]]

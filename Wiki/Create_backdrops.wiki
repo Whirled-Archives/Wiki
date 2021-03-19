@@ -1,0 +1,20 @@
+{{TOCright}}
+[[Image:Icon-highlighted-backdrop.png|left]]Room backgrounds and dimensions are packaged up into ''backdrop items''.  Adding the room settings on upload means the end owner doesn't have to mess around and can just buy and go!
+{{clear}}
+== Creating a Background Image ==
+[[Image:Backdrop_scales.png|thumb|350px|Two backgrounds automatically rescaled by Whirled.  The left image was very tall, making the avatar small.  The right image was very small, making the avatar large.  You can see this effect at work in [http://www.whirled.com/#world-s29138 Rampage City].|right]]A backdrop image can be any image file or even a Flash swf.  There are a variety of [[List_of_useful_programs#Raster_Graphics|image editing programs]] you can use to resize or even create your image files to suit your room.
+
+=== Dimensions ===
+*Whirled backdrops display at '''500 pixels''' tall, and can be any width.
+*Images of any other height will be resized, along with everything and everyone in the room, to fit 500 pixels.
+**Taller images will display the room contents as small, including the avatars.
+**Shorter images will display the room contents as large, including the avatars.
+{{clearright}}
+
+== Upload! ==
+{{:Upload/Backdrop}}
+
+==Sell!==
+{{listing|backdrop|backdrops|Backdrops}}
+
+[[Category:Tutorials]]

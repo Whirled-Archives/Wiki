@@ -1,0 +1,45 @@
+This is a list of AVRG Avatar States that are needed if you want to create an [[avatar]] that is compatible with a specific [[AVR game]].
+
+== [[Exploration Explodation]] ==
+* Actions
+** Find Nothing
+** Find Scrap
+** Find Gem
+** Trigger Trap
+* States
+** Dance
+** Treasure Hunting
+
+Some examples include: [http://www.whirled.com/#shop-l_5_3641 Explorer] and [http://www.whirled.com/#shop-l_5_3580 The Archaeologist]
+
+== [[Ghosthunters]] ==
+* Actions
+** Reel
+**Retaliate  
+* States
+** Fight
+** Defeat
+
+Some examples include: [http://www.whirled.com/#shop-l_5_723 Rowena Livingston] and [http://www.whirled.com/#shop-l_5_3127 Ghostbusters - Hunter]
+
+== GObama ==
+* Actions
+** ???
+* States
+** ???
+
+== [[Pookah Rainbow]] ==
+* Actions
+** Jump
+* States
+** Dance
+
+== [[Vampire Whirled]] ==
+See the file in the SVN:
+*http://code.threerings.net/svn/whirled/trunk/projects/avrg/vampire/rsrc/source/vampire.fla
+*[http://www.whirled.com/#groups-t_13033 Forum discussion]
+
+== See Also ==
+*[[Land Sea Animals]]
+
+[[Category:Lists]]

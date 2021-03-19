@@ -1,0 +1,25 @@
+{{Infobox game
+|name=Bang! Heroes
+|genre=action
+|description=Shoot your way through this Western Steampunk sidescroller. Build up your characters' abilities alone, or play co-op with a pardner.
+|forumlink=http://www.whirled.com/#groups-d_5392
+|linknumber=1918
+|singleplayer=yes
+|multiplayer=no
+|version=
+|testing=no
+|testingspot=
+|development=yes
+|devteam=[http://www.whirled.com/#people-21 Roparzh], Atwork [http://www.whirled.com/#people-18 Blue]
+|screenshot=yes
+}}
+Play '''Bang! Heroes''' and shoot your way through this Western Steampunk sidescroller. Build up your characters' abilities alone, or play co-op with a pardner.
+
+== Instructions ==
+[[Image:Game-Bang!_Heroes-instructions1.png]]
+
+[[Image:Game-Bang!_Heroes-instructions2.png]]
+
+[[Image:Game-Bang!_Heroes-instructions3.png]]
+
+[[Image:Game-Bang!_Heroes-instructions4.png]]

@@ -1,0 +1,38 @@
+The '''[http://www.whirled.com/code/asdocs/com/whirled/game/SeatingSubControl.html SeatingSubControl]''' 
+is a subcontrol used by seated multiplayer [[game]]s to retrieve the status of the players in the seated game.
+
+== Initialization ==
+
+You should always access SeatingSubControl via the GameControl, don't try to instantiate the object directly.  
+
+<actionscript>
+public class MyGame extends Sprite {
+    public MyGame () {
+        _ctrl = new GameControl(this);
+
+        //you can either access the SeatingSubControl via a handle
+        //like this
+        _seating = _ctrl.game.seating; 
+        _myPos = _seating.getMyPosition(); 
+
+
+        //or like this directly via the control object.
+        _myPos = _ctrl.game.seating.getMyPosition();
+        
+
+    }
+
+    protected _ctrl :GameControl;
+    protected _seating : SeatingSubControl;
+    protected _myPos: int; 
+ 
+}
+</actionscript>
+
+== Other Links ==
+*[[GameControl]]
+*[http://www.whirled.com/code/asdocs/com/whirled/game/SeatingSubControl.html Whirled API Documentation for SeatingSubControl]
+
+{{stub}}
+[[Category:Coding terminology]]
+[[Category:Subcontrols]]

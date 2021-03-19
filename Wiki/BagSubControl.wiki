@@ -1,0 +1,3 @@
+See http://www.whirled.com/code/asdocs/com/whirled/game/BagsSubControl.html for documentation.
+{{stub}}
+[[Category:Coding terminology]]

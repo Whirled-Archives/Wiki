@@ -1,0 +1,194 @@
+[[Image:Block_in_chat.png|frame|right|You can get a menu of options by left clicking on a player's underlined name in chat.]]Players are able to '''chat''' with each other in various ways, sometimes dependent on their location. There are multiple modes of speaking, which affect how the text appears on screen. Each chat tab sends the message to a different group of people.
+
+To chat, simply type your message into the chat input box on the bottom left corner of your room screen and click the Send button or hit enter.  The message will be sent to whichever chat tab you have selected.  If you send too many messages too quickly, you will get a message of: "You're being too chatty. Wait a moment and try again."
+
+Clicking on a player's underlined name in chat will show a menu that includes [[block]] player, view their [[profile]], invite them to be your [[friend]], and [[report|complain]] about the user.
+
+== Chat Tabs ==
+[[Image:Chat tabs.png]]
+
+There are two types of chat, private and group.  Each chat that you are currently viewing will be shown across the top of your screen under the the larger main tabs.  When a new, unviewed message has been sent in a chat, the tab will glimmer. The currently selected tab will be highlighted while the others will be darkened.  Click on a tab to select it.
+
+When you close a Group chat tab, it will not reappear for the rest of your session unless you select it from Chat Options [[Image:Icon-chat options.png]] &rarr; Groups &rarr; <groupname>
+
+{| class="toccolours" cellpadding=3 style="float:center; margin:0 0 0.5em 1em; font-size:95%"
+|- style="background:#5491bd; color:#FFFFFF"
+! Chat Type
+! Tab Color
+! Chat Input Background
+! Message Color (To others/From others)
+! Message Shape
+|- 
+| Group chat in a room
+| Blue
+| White
+| White/White
+| Rounded rectangles/rectangles with concave sides for emotes
+|- 
+| Group chat for Groups
+| Bluish-gray
+| Bluish
+| Pink/Pink
+| Rectangles
+|- 
+| Private chat with other players
+| Orange
+| Orange
+| Blue/Purple
+| Rectangles
+|}
+
+== Login/Logout Messages ==
+You will receive whenever a [[friend]] logs in or out.  They show up in grey text on a list found at the lower right hand corner of your screen.  Click on the arrow to view the log of login/logout messages.
+
+Invitations to play multiplayer games with your friends or follow them (orange text) and friends' profile status messages changes also show up in this list (grey text).  When you add a new friend or get new mail, the message appears in blue.
+
+== Chat Commands ==
+Some commands can be run right from the chat window.  Typing /help will bring up a window with the most common commands.  Type /help <command> to get more information about the command or read about them in detail below.
+
+=== /action ===
+Sometimes you will find the need to trigger an action quickly, but you don't have enough time to click the avatar and click trigger action. The /action command triggers an action for your avatar, if it has any.  If there are no other actions that start with a j, instead of using "jump" you can just use "j".
+
+Usage:<br>
+<tt>/action <action> (/ac)</tt>
+
+Results:<br>
+[[Image:Chat-action.png]]
+
+=== /afk ===
+The /away command Sets you as being away from the keyboard by auto-responding to anyone sending you a private message and changing your name to yellow.  The default message of "I'm away from the keyboard." is used if you don't type one after the command.
+
+Usage:<br>
+<tt>/afk <message></tt>
+
+Results:<br>
+[[Image:Chat-afk.png]]
+
+=== /away ===
+The /away command Sets you as being away from the keyboard by auto-responding to anyone sending you a private message and changing your name to yellow.  The default message of "I'm away from the keyboard." is used if you don't type one after the command.
+
+Usage:<br>
+<tt>/away <message></tt>
+
+Results:<br>
+[[Image:Chat-afk.png]]
+
+=== /back ===
+The /back command removes your away (or afk) message and changes your name back to blue.
+
+Usage:<br>
+<tt>/back</tt>
+
+=== /bleepall ===
+The /bleepall command toggles [[bleep]]ing everything. Using the same command a second time unbleeps everything.  Items cannot be unbleeped singly when using bleepall.
+
+Usage:<br>
+<tt>/bleepall</tt>
+
+=== /broadcast ===
+[[Image:Broadcast-confirmation.png|300px|thumb|The broadcast confirmation window.|right]]
+The /broadcast command sends a message to everyone currently logged into Whirled. Broadcasts cost [[currency#Bars|bars]] and the price increases if other broadcasts have recently been made.  You will get a confirmation popup with an option to add a link to your room or your party (if you are in one) that also has the bar price of your broadcast.  You will be able to click on the orange button with the bar cost to purchase the broadcast after you agree to the [[Terms of Service]].
+
+If you are unable to broadcast, you have lost the privilege of being able to broadcast due to bad behavior. 
+
+Usage:<br>
+<tt>/broadcast <message></tt>
+
+Results:<br>
+[[Image:Broadcast.png]]
+
+==== Official Broadcasts ====
+'''Note: Official broadcasts by Three Rings staff have a different appearance.  Their broadcasts are pinkish red:'''<br>
+[[Image:Broadcast-official.png]]
+{{clearright}}
+
+=== /clear ===
+The /clear command clears your chat display and history for a specific tab.
+
+Usage:<br>
+<tt>/clear</tt>
+
+=== /emote ===
+The /emote command places your name in front of the text.
+
+Usage:<br>
+<tt>/emote <message> (/e, /em or /me)</tt>
+
+Results:<br>
+[[Image:Chat-emote.png]]
+
+[[Image:Chat-avatar-emote.png]]
+
+=== /help ===
+The /help command displays the usage message for a chat command.
+
+Usage:<br>
+<tt>/help <command></tt>
+
+=== /me ===
+The /me command places your name in front of the text, just like /emote.
+
+Usage:<br>
+<tt>/me <message></tt>
+
+Results:<br>
+[[Image:Chat-emote.png]]
+
+[[Image:Chat-avatar-emote.png]]
+
+=== /speak ===
+The /speak command delivers a message to the room.
+
+Usage:<br>
+<tt>/speak <message> (/sp)</tt>
+
+Results:<br>
+[[Image:Chat-speak.png]]
+
+[[Image:Chat-avatar-speak.png]]
+
+=== /state ===
+Sometimes you will find the need to trigger a state quickly, but you don't have enough time to click the avatar and click change state. You may also need to do this because an avatar has an invisible state which hides the name. The /state command changes your avatar to a different a state, if it has any.  If there are no other actions that start with a d, instead of using "dance" you can just use "d".
+
+Usage:<br>
+<tt>/state <state> (/st)</tt>
+
+Results:<br>
+[[Image:Chat-state.png]]
+
+=== /think ===
+The /think command shows a message in a thought bubble.
+
+Usage:<br>
+<tt>/think <message> (/th)</tt>
+
+Results:<br>
+[[Image:Chat-think.png]]
+
+[[Image:Chat-avatar-think.png]]
+
+== Chat Options ==
+[[Image:Icon-chat options.png]] Click on the chat options button to the left of your chat input on the bottom of your screen.
+
+[[Image:Chat options-popup.png|frame|right|Chat options.]] A popup will appear with various options.
+
+*Groups - Shows a list of your Groups. Clicking on a Group's name will open a new chat tab for that Group's chat. If you have already joined a Group chat, that Group's name will be gray.
+*Show/Hide occupants - For group chat tabs (room & Group), this will show a list of players currently viewing the chat.
+*Slide/Overlay chat - Slide chat appears in its own window with a black background.  Overlay chat shows the chat on the left side of your room window.
+*Hide chat history (F9) - This option is only available when overlay chat is selected.
+*Clear all chat - This option clears all the chat from all of your tabs.
+*Chat settings - Click on this and a window will pop-up with controls for text size, duration of the chat bubbles that appear by avatars, and chat filtering.
+{{clear}}
+[[Image:Chat preferences.png]]
+
+== Friends Online ==
+[[Image:Friends_Online.png|right|150px|thumb|Friends Online window.]][[Image:Icon-friend_list.png]] The "Friends" button is on the bottom of your window to the right of the chat tab. Clicking on this will show a popup list of friends online.  Clicking on their names will allow you to privately chat with them, view their [[profile]], or go to the [[room]] they are in.
+
+== See Also ==
+*[[Block]]
+*[[Community Standards]]
+*[[List of known filtered words]]
+*[[Report]]
+*[[Terms of Service]]
+
+[[Category:Terminology]]

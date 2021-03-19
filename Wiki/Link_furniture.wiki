@@ -1,0 +1,32 @@
+You can '''link furniture''' to URLs. Link furniture is highlighted in orange when you mouse over them or use the [[Image:Icon-clickable_furniture.png]] View clickable furniture button.
+__TOC__
+== Linking to Discussions, Wiki Pages or External Sites ==
+
+[[Image:Decorating room window.png|right|thumb|The Decorate Room Panel]]
+To make a link to a location other than a room, for example, a place in the discussions or an external site on the internet, the instructions are very similar for making a door, except that you need to use the Make Link button in Decorate mode.
+
+#Go to a room you already own.
+#You will need a piece of [[furniture]] to turn into link furniture.  If you do not already have furniture in the current room that you wish to use as a door to the new room, follow these steps:
+##Choose '''Stuff &rarr; Furniture'''.
+##Check the '''Add to room''' box next to any item you want to add to the room.
+#Click on the Room icon [[Image:Icon-room_control.png]] in the control bar and select the Decorate button [[Image:Icon-edit_room.png]].  If you added a piece of furniture to the room to use as link furniture, you will already be in Decorate mode.
+#Choose the furniture that you wish to turn into link furniture by clicking it in the room.
+#In the Decorate panel, there is a door icon labeled "Make Link."  Click on it.
+#A popup window will appear with two text areas.  The first if for your link starting with http:// and the second is for the tooltip text that will show up when you mouse over the link furniture.<br>[[Image:Decorating room-New website link.png]]
+#Click on the "OK" button and your furniture will be linked.
+{{clearright}}
+
+== Undoing Links ==
+[[Image:Decorating room window-Drop link.png|right|thumb|The Decorating Room Panel when link furniture object is selected.]]
+#Click on the Room icon [[Image:Icon-room_control.png]] in the control bar and select the Decorate Room button [[Image:Icon-edit_room.png]] to get into furniture arranging mode.
+#Choose the link furniture that you wish to undo by clicking it in the room.
+#Click on the "Drop Link" button in the Decorating Room window and your furniture will be a normal, non-linked piece of furniture again.
+{{clearright}}
+
+== See Also ==
+* [[Edit your room]]
+* [[Door]]
+* [[Furniture]]
+* [[Room]]
+
+[[Category:Tutorials]][[Category:Furniture tutorials]]

@@ -1,0 +1,9 @@
+The '''Game Developer Bonus Bling Pool''' is Whirled's way of rewarding game developers for creating awesome games!  
+
+Each month Three Rings sets aside a pool of money, currently set at '''$10,000'''.  This pool is divided up each day according to hours of gameplay a game gets on Whirled.  So, the more popular your game is, the more [[currency#Bling|bling]] you can earn.  Your game must be integrated with the Whirled API and award coins in order for it to qualify for the Bling Pool.
+
+[[Image:BlingPool.png|frame|none|A [[Currency#Viewing_Your_Transactions|transactions]] line from the Bling Pool Program.]]
+
+Don't forget that you can also monetize your game by selling game related avatars and [[Create and sell game packs|game packs]], by embedding your game out via our [[Affiliate|affiliate]] program, and by entering our [http://www.threerings.net/whirled/contest.html game developer contest]!
+
+[[Category:Terminology]]

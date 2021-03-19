@@ -1,0 +1,105 @@
+You can '''embed''' almost anything from Whirled in any websites that allow it.  Embedding on other websites also helps you to participate in the [[Affiliate Program]]
+
+== Rooms ==
+[[Image:Share_this_room-Embed_it.png|left|frame|Embed a room.]]{{main|Share this room}}
+
+You can share your [[room]] by clicking on the '''Share or embed this place''' button ([[Image:Icon-share or embed.png]]).  Select the Embed tab in the sharing window that pops up.
+This option gives you code to paste onto a website or blog that allows embedding code. Select the desired size of the embed before you copy the code. Some websites, such as Facebook and deviantART do not support this.  If you want to post on those websites, use one of the other methods mentioned in [[share this room]]. 
+
+{| width="400px"
+|-
+|{{Spoiler|manual=Example room embedding code
+|content=Example embedding code (make sure to get your own code in Whirled to correctly participate in the Affiliate Program):
+
+<nowiki><object width='100%' height='575' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://active.macromedia.com/flash7/cabs/swflash.cab#version=9,0,0,0' allowScriptAccess='always'><param name='movie' value='http://www.whirled.com/clients/world-client.swf'/><param name='wmode' value='opaque'/><param name='FlashVars' value='sceneId=49772&vec=e.whirled.rooms.49772&aff=16444'/><embed width='100%' height='575' flashvars='sceneId=49772&vec=e.whirled.rooms.49772&aff=16444' src='http://www.whirled.com/clients/world-client.swf' allowScriptAccess='always' wmode='opaque' pluginspace='http://www.macromedia.com/go/getflashplayer' ntype='application/x-shockwave-flash'></embed></object><br/><center><a href="http://www.whirled.com/welcome/16444/" target="_top">Launch the full version of Whirled</a></center></nowiki>}}
+|}
+{{clearleft}}
+== Games ==
+[[Image:Share_this_game-Embed_it.png|left|frame|Embed a game.]]While you are playing a game, you can use the '''Share or embed this place''' button ([[Image:Icon-share or embed.png]]) button to send a [[game]] to a friend or embed it on your website, blog, MySpace etc. If they join Whirled, they will be marked as your Affiliate.
+
+This option gives you code to paste onto a website or blog that allows embedding code. Select the desired size of the embed before you copy the code. Some websites, such as Facebook and deviantART do not support this.  If you want to post on those websites, use the "Grab the link" option.  
+
+If if you are the creator of a game you also have the option to "Get a SWF" which will allow you to download a Whirled-wrapped version of your game.  This SWF can then be distributed to Flash game portals.  All players who play your Whirled-wrapped game on other sites will be marked as your Affiliate.
+
+{| width="400px"
+|-
+|{{Spoiler|manual=Example game embedding code
+|content=Example embedding code (make sure to get your own code in Whirled to correctly participate in the Affiliate Program):
+
+<nowiki><object width='100%' height='575' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://active.macromedia.com/flash7/cabs/swflash.cab#version=9,0,0,0' allowScriptAccess='always'><param name='movie' value='http://www.whirled.com/clients/world-client.swf'/><param name='wmode' value='opaque'/><param name='FlashVars' value='gameLobby=827&vec=e.whirled.games.827&aff=16444'/><embed width='100%' height='575' flashvars='gameLobby=827&vec=e.whirled.games.827&aff=16444' src='http://www.whirled.com/clients/world-client.swf' allowScriptAccess='always' wmode='opaque' pluginspace='http://www.macromedia.com/go/getflashplayer' ntype='application/x-shockwave-flash'></embed></object><br/><center><a href="http://www.whirled.com/welcome/16444/" target="_top">Launch the full version of Whirled</a></center></nowiki>}}
+|}
+{{clearleft}}
+
+===MochiAds===
+[[Image:Share this game-Get a SWF.png|right|frame|Add MochiAds to your game, then share it on other websites.]]If you are the creator of a game on Whirled, you can also put MochiAds into your game when you share it on other websites.  MochiAds are advertisements that you can add to your game to earn money when people play it, both on Whirled and elsewhere.
+# Go to [http://www.mochiads.com/ MochiAds.com].
+# Register your game with Mochi, and get a Mochi ID for it.
+# Paste your game's Mochi ID into the textbox.
+# Click the "Download Mochi SWF" button to download the SWF that you can upload on other websites.
+{{clear}}
+
+== Avatars, Backdrops, Furniture, Pets, and Toys ==
+Just like room and game embeds on other sites, you can embed your creations on other sites as well. The embed will show the item just like if you were viewing them in the [[shop]]!
+
+=== Basic Coding ===
+Take a normal room embed, and paste it into your website HTML.  Then edit the "flashvars" section.  Replace everything in it with the following, as appropriate for your viewer.
+
+This is the typical code for a room embed, the text in red is what you'll replace with the information below:
+
+<nowiki><object width='100%' height='575' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://active.macromedia.com/flash7/cabs/swflash.cab#version=9,0,0,0' allowScriptAccess='always'><param name='movie' value='http://www.whirled.com/clients/world-client.swf'/><param name='wmode' value='opaque'/><param name='FlashVars' value='sceneId=49772&vec=e.whirled.rooms.49772&aff=16444'/><embed width='100%' height='575' flashvars='</nowiki><font color="red"><b>sceneId=49772&vec=e.whirled.rooms.49772&aff=16444</b></font><nowiki>' src='http://www.whirled.com/clients/world-client.swf' allowScriptAccess='always' wmode='opaque' pluginspace='http://www.macromedia.com/go/getflashplayer' ntype='application/x-shockwave-flash'></embed></object><br/><center><a href="http://www.whirled.com/welcome/16444/" target="_top">Launch the full version of Whirled</a></center></nowiki>
+
+=== Flashvars ===
+Remember to put a '''&''' between each of the variables you put in. (See the [[#Example|example section]] below)
+
+==== Mode ====
+
+This is for the type of viewer you'd like to create:
+
+{| class="toccolours" cellpadding=3 style="float:center; margin:0 0 0.5em 1em; font-size:95%"
+|- style="background:#5491bd; color:#FFFFFF"
+! Number
+! Description
+|- 
+| 100
+|[[Avatar]] Viewer
+|- 
+| 101
+|[[Pet]] Viewer
+|- 
+| 102
+|[[Furniture]] Viewer
+|- 
+| 103
+|[[Toy]] Viewer
+|- 
+| 104
+|[[Backdrop]] Viewer
+|}
+
+Usage: mode='''number'''
+
+==== Media ====
+
+This is the url to your media.  This can be the swf, image file or remixable zip file.  Unlike the example, please do not upload your media to the Whirled Wiki for hosting because it will probably be deleted.
+
+Usage: media='''<nowiki>http://www.yoururl.com/youritem.ext</nowiki>'''
+==== Scale ====
+
+If you leave this alone, it'll default to normal (1), but you can scale up or down by setting it to e.g. 2 or 0.5.
+
+Usage: scale='''number'''
+
+==== Name ====
+
+If showcasing an Avatar, the default name above the avatar is "Fester Bestertester".  If you'd like to change that, you can supply your own name with the "name" parameter.  Replace spaces with "%20"
+
+Usage: name='''Your%20Item%20Name'''
+
+=== Example ===
+
+The following example has the embed's width set to 700 and height set to 500 (shown in blue text), as well as setting the flashvars (shown in red text) to this:
+
+<object width='<font color="blue">700</font>' height='<font color="blue">500</font>' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='<nowiki>http://active.macromedia.com/flash7/cabs/swflash.cab#version=9,0,0,0</nowiki>' allowScriptAccess='always'><param name='movie' value='<nowiki>http://www.whirled.com/clients/world-client.swf</nowiki>'/><param name='wmode' value='opaque'/><param name='FlashVars' value='sceneId=1&aff=16444&vec=room&cre='/><embed width='<font color="blue">700</font>' height='<font color="blue">500</font>' flashvars='<font color="red"><b>mode=100&media=<nowiki>http://wiki.whirled.com/images/e/e0/Wndsurfer.swf</nowiki>&name=Windsurfer%20Dude&scale=0.5</b></font>' src='<nowiki>http://www.whirled.com/clients/world-client.swf</nowiki>' allowScriptAccess='always' wmode='opaque' pluginspace='<nowiki>http://www.macromedia.com/go/getflashplayer</nowiki>' ntype='application/x-shockwave-flash'></embed></object><nowiki><br/></nowiki><nowiki><center></nowiki><a href="<nowiki>http://whirled.com/</nowiki>" target="_top">Launch the full version of Whirled</a><nowiki></center></nowiki>
+
+{{viewer|http://wiki.whirled.com/images/e/e0/Wndsurfer.swf|scale=0.8|name=Wind Surfer}}
+[[Category:Tutorials]][[Category:Terminology]]

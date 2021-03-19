@@ -1,0 +1,20 @@
+Thank you for helping us with the beta test of Whirled! We're still in a developmental stage, so bugs are bound to pop up every now and then - we'll appreciate your bug reports and ideas.
+
+== Have questions? ==
+Please address your support inquiries to the following, depending on their nature:
+* To report violations of the [[Community Standards]] and the [[Terms of Service]], use the [[report|report system]].
+* For bug reports and technical issues, visit the [http://www.whirled.com/#whirleds-d_72 Bug Hunters] discussions.
+* For general discussion and how-tos, visit the [http://www.whirled.com/#whirleds-d_19 Brave New Whirled] discussion.
+* For [[ban]] appeals, email banned AT whirled DOT com.
+* For specific billing questions, email billing AT whirled DOT com.
+* For other questions use the [http://www.whirled.com/#support Whirled Support form].
+
+== Other useful links ==
+* Whirled's [[Terms of Service]]
+* The Whirled [[Community Standards]]
+* How to [[report]] players who break the Terms of Service and Community Standards
+* [[Account security]]
+* [[Technical issues FAQ]]
+* [[Billing FAQ]]
+
+[[Category:Help]]

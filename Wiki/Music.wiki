@@ -1,0 +1,35 @@
+{{TOCright}}
+[[Image:Icon-highlighted-music.png|left]]'''Music''' is one of the items that can be added to Whirled by players.  It needs to be in mp3 format to be usable.
+{{clearleft}}
+== Upload! ==
+#Choose '''Me &rarr; Music''' to see the music you own.
+#Scroll down to the "How do I get stuff?" section. [[Image:Stuff-Music-How_do_I_get_stuff.png|none|thumb|400px|Click "Upload" to bring up the interface.]]
+#Click the '''Upload...''' button to get the music uploading interface. [[Image:Stuff-Create audio.png|none|thumb|400px|The music uploading interface's Main tab.]]
+##Click on the '''Name''' field and enter a name to identify your music.
+##Click '''Browse''' in Audio Media and find the mp3 file for your music. Once the music is uploaded an icon will appear in the Audio Media rectangle.  You will not be able to Save your music until it is done uploading.
+##Click on the '''Description''' field and enter a description of your music. ''(optional)'' [[Image:Stuff-Create audio-Extras.png|none|thumb|400px|The music uploading interface's Extras tab.]]
+##Click '''Browse''' in Furniture Media and find the bitmap (png, jpg or gif) file representing your music. This determines what the clickable song looks like when a player encounters it in Whirled. ''(optional)''
+##Click '''Browse''' in Thumbnail Media and find the bitmap (png, jpg or gif) file for your music's icon. (max. 80x60) ''(optional)''
+#Click '''Save''' to put your song in your inventory for use.
+
+== Buying and Selling ==
+
+You can also browse the "Music" category in the [[Shop]] and buy what you like. Currently, there is no way to listen to the tracks before buying them.
+
+You can also [[list]] your music files for others to buy.
+
+'''Note''': Most commercially distributed music comes with restrictive copyright licenses. Please do not list such songs unless you own the rights to them.
+
+== Background Music in Rooms ==
+
+You can add background music to rooms just like you add [[furniture]].
+
+In the room, click the "Edit room" button, then "Add item" to bring up My Stuff from the Me tab. Select "Music", find the song you want, and click the little house icon that says "Add to room".
+
+[[Image:Me-song item.png]]
+
+For now, only one song per room is possible. Jukeboxes and playlists are in development.
+
+== See Also ==
+*[[Edit your room]]
+[[Category:Tutorials]]

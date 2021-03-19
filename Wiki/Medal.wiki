@@ -1,0 +1,18 @@
+'''Medals''' can be created and given out by Whirled [[group]] managers.  They can be viewed on a player's [[profile]] page with the medals' details shown in a section of the player's [[Passport]].
+
+== View a Group's Medals ==
+[[Image:Medal-group.png|right|350px|thumb|Group information as viewed by a group manager.  The row of links below "Read Charter" are not visible or usable by non-managers.]]
+To view medals associated with a group, go to the [[groups tab]] and click on the desired group.  On the group information page under the group name, click on the orange "View Medals" button.
+{{clearright}}
+[[Image:Medal-group-view medals.png|right|350px|thumb|Group medals information as viewed by a group manager.  The "add medals" and "Edit" links below the medal icons are not visible or usable by non-managers.]]
+The View Medals page shows all the medals associated with the group along with their descriptions and a list of all the players that have received the medals.
+{{clearright}}
+== Managing Medals ==
+{{:Medal/Managing}}
+
+== View a Player's Medals ==
+[[Image:Medal-profile.png|right|350px|frame|An example profile page.]]If you want to see someone's medals or even your own, go to that player's profile page.  Medals are listed after Passport Stamps.
+{{clearright}}
+[[Image:Medal-profile-view all.png|right|350px|frame|Detailed medal information.]]If you want to read more about the medals or find out when the medals were awarded, you can click on the "See All" link on the Profile page.  If you are viewing your own medals, you'll see the "Go for these new stamps!" above the medal information.
+
+[[Category:Terminology]]

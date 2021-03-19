@@ -1,0 +1,18 @@
+'''Mobs''' are display objects used in an AVRG that move around a [[room]] in the room's 3D coordinate space. For example, a mob can fly behind a piece of [[furniture]] or clip through player [[avatar]]s.
+
+Here are a couple of sample mobs from the test environment [http://code.threerings.net/svn/whirled/trunk/projects/avrg/probe AVRG Probe]. They are both positioned on the floor (y=0). Mob M1 is at about Z=0.4 and M2 is at about Z=0.6. The avatar is at Z=0.5, covers up M2 and is covered by M1.
+
+[[Image:MobClipping.png]]
+
+The [[server agent]] can perform three actions on mobs:
+* spawn
+* despawn
+* moveTo
+
+A server agent cannot create DisplayObject instances, so in order to display them clients must register a function with the API that will create a mob using the name given by the server agent ([http://www.whirled.com/code/asdocs/com/whirled/avrg/LocalSubControl.html#setMobSpriteExporter() setMobSpriteExporter()]).
+
+When a player enters a new room or when the server agent spawns a mob in the player's current room, all mobs that are currently spawned in that room will be created using the exporter. Therefore, if a mob sprite is handling any events, it should be sure and remove itself from all processing on REMOVE.
+
+Besides game specific behavior, clients can set the hot spot of a mob, which will control its placement and give the mob a decoration which appears above it.
+
+[[Category:Coding terminology]]

@@ -1,0 +1,88 @@
+This is a '''list of useful programs''' for creating things to be used in [[Whirled]].  
+
+== Graphics Editors ==
+=== Online Tools ===
+
+* [http://litha-paint.com/ Litha-paint] - Javascript vector drawing tool with API
+* [http://www.picnik.com/app Picnik] - Photoedity
+* [http://www.ratemydrawings.com/index.php Rate My Drawings] - create drawings online in your browser
+* [http://www.snap2objects.com/2007/06/06/85-killer-resources-every-designer-should-know/ Snap2objects' 85 resources every designer should know of]
+* [http://www.snap2objects.com/2007/07/20/45-best-freeware-design-programs/ Snap2objects' 45 best freeware design programs]
+* [http://www.splashup.com/ Splashup] - in-browser image editor that's quite usable
+* [http://www.sumopaint.com/app/ SUMO Paint] - online graphic editing app.
+* [http://www.techcrunch.com/2007/02/04/online-photo-editing-overview Techcrunch overview of web-based art tools]
+
+=== Raster Graphics ===
+[[Wikipedia:Raster graphics|Raster graphics]] programs
+
+* [http://www.adobe.com/products/fireworks/ Abobe Fireworks] - Raster graphics geared toward web usage.  Formerly owned by Macromedia.
+* [http://www.adobe.com/products/photoshop/ Adobe Photoshop] - 
+* [http://www.artrage.com/ ArtRage] - Each of the tools in ArtRage is designed to work like its real world counterpart (minus the smell of paint thinners, and that piece of glitter you just can’t get out of the carpet). Thick paint smears and blends, pencils and chalks smudge, and markers work just like they do in the real world. Many of the tools can be adjusted to give different effects. You can paint with thinned oils, use wet or dry markers, soften your pencil and control the hardness of the crayon, and much more! FREE
+* [http://blender.org/ Blender] - Open source 3D program. FREE
+* [http://www.corel.com/painterx/ Corel Painter]
+* [http://www.gimp.org/downloads/ GIMP (GNU Image Manipulation Program)] - a freely distributed piece of software suitable for such tasks as photo retouching, image composition, and image authoring. It is a powerful piece of software with capabilities not found in any other free software product. Note: You will need to download both GTK+ Runtime Environment and The Gimp installers. Install GTK+ before installing The Gimp. FREE
+* [http://www.gimpshop.com/ GIMPshop] - GIMPshop is a modification of the free/open source GNU Image Manipulation Program (GIMP), intended to replicate the feel of Adobe Photoshop. Its primary purpose is to make users of Photoshop feel comfortable using GIMP. FREE
+* [http://www.getpaint.net/ Paint.NET] - Paint.NET is free image editing and photo manipulation software designed to be used on computers that run Windows. It supports layers, unlimited undo, special effects, and a wide variety of useful and powerful tools. FREE
+* [http://cosmigo.com/promotion Pro Motion] Industry favourite Deluxe Paint style pixel animation.
+* [http://www.thebest3d.com/dogwaffle/ Project Dogwaffle] - This is a free program for the PC developed in VB by special fx artist, animator & novelist Dan Ritchie and made available for free downloading and use (but not for resale without express written permission - please contact Dan if you wish to include a copy of his software with your commercial products). Any non-commercial distribution is fine; that includes placing it on cover CDs with magazines and books.  Also has simple animation capabilities. FREE version available.
+* [http://www.anandavala.info/TASTMOTNOR/code/v5.1/ParticleDraw/SMNPD5_1.html SMN v5.1 ParticleDraw] - ParticleDraw is a novel windows drawing program powered by a state of the art general system simulation engine. The brushes are dynamic systems of particles with interesting behaviours, which you can completely customise. Each brush is intricately tuneable with many underlying physical parameters and one can construct arbitrary systems of particles and use these as brushes. FREE
+* [http://www.smoothdraw.com/ SmoothDraw] - SmoothDraw NX is an easy yet powerful freehand drawing tool. It’s a limited yet free version of SmoothDraw. It produces the most smooth and expressive stroke through your tablet. It also smoothes mouse input for who don’t have a tablet. FREE
+* [http://www.planetside.co.uk/terragen/ Terragen] - Terragen is a scenery generator, created with the goal of generating photorealistic landscape images and animations. It is available for Windows and the Mac OS. At this stage in its development, Terragen is free for personal, noncommercial use. Although Terragen is a continually evolving work-in-progress, it is already capable of near-photorealistic results for professional landscape visualisation, special effects, art and recreation. FREE
+
+=== Vector Graphics ===
+[[Wikipedia:Vector graphics|Vector graphics]] programs
+
+* [http://www.adobe.com/products/illustrator/ Adobe Illustrator] - 
+* [http://www.adobe.com/products/freehand/ Adobe Freehand] - Previously owned by Macromedia.
+* [http://autotrace.sourceforge.net/ AutoTrace] (free) - helps convert existing images to vector graphics
+* [http://www.freeserifsoftware.com/software/DrawPlus/default.asp DrawPlus 4] - Unleash your creativity with Serif’s powerful drawing and graphics software - at no cost! You’ll be amazed how easy it is to create high quality graphics and animations without having to spend hours designing or pay for expensive training. FREE version available.
+* [http://www.inkscape.org/ Inkscape] - Inkscape is an Open Source vector graphics editor, with capabilities similar to Illustrator, Freehand, CorelDraw, or Xara X using the W3C standard Scalable Vector Graphics (SVG) file format. Supported SVG features include shapes, paths, text, markers, clones, alpha blending, transforms, gradients, patterns, and grouping. Inkscape also supports Creative Commons meta-data, node editing, layers, complex path operations, bitmap tracing, text-on-path, flowed text, direct XML editing, and more. FREE
+* [http://www.osflash.org/open_source_flash_projects/ Open Source Flash] - A collection of Open Source Flash tools and projects. FREE
+
+=== Animation ===
+'''IMPORTANT:''' Unfortunately the only animation format that works in Whirled is Adobe Flash CS3 (aka Flash 9 with ActionScript 3). The programs listed below will get you familiar with animating and a Flash-like interface is available in LiveSwif Lite, but your final .swf's will not be compatible. (It only works with Flash Player 5.) If you are a student, there's a good chance your school or college has a lab with access to Flash. You can also check out the [http://www.download.com/Flash-Design-Tools/3150-6676_4-0.html?tag=dir Flash Tools] page on Download.com.
+
+* [http://www.animpixels.com/ AnimPixels 1.1] - AnimPixels is an animated movie software specialized in Isometric Pixel Art. Use your own movie components, or download them from the Web, to create a original pixelized animated movie. Download the free AnimPixels animation software. No evaluation period or limited feature. FREE
+* [http://animata.kibu.hu/ Animata] - Animata is an open source real-time animation software, designed to create animations, interactive background projections for concerts, theatre and dance performances.
+* [http://www.softpedia.com/get/Internet/WEB-Design/Flash/LiveSwif-Lite.shtml LiveSwif Lite 2] - LiveSwif Lite 2 is a free Flash maker that lets you create Flash movies, buttons, or banners quickly and easily. It provides several classic vector-drawing tools, including Freehand, Curve, Shape, Spline, Contour, and an in-place text editor. LiveSwif is a typical, keyframe-based animation system. Based on the capability of drawing tools, it provides a path-motion and transform-motion tool. In setting a new position, angle, size, or color in keyframes, LiveSwif will blend the in-between frames automatically. The setup package contains 500 library components. FREE
+* [http://www.synfig.com/ Synfig Studio] - Synfig Studio is a vector based 2D animation program. It is designed to be capable of producing feature-film quality animation. It eliminates the need for tweening, preventing the need to hand-draw each frame. Synfig Studio features spatial and temporal resolution independence (sharp and smooth at any resolution or framerate), high dynamic range images, and a flexible plugin system. FREE
+* [http://vectorian.com/downloads Vectorian Giotto] is a free and very basic Flash maker that is useful in creating banners or movies. The final .swf file can be uploaded into Whirled! FREE
+
+=== Image Utilities ===
+* [http://www.irfanview.com/ IrfanView] - IrfanView is a fast and compact image viewer/converter. It is trying to be simple for beginners and powerful for professionals. Many supported file formats and features. Features include: multi-language support, Thumbnail option, slideshow, toolbar skins, fast directory browsing, batch conversion/editing, multipage editing, file search, change color depth, scanning, cut/crop, IPTC edit, capturing, lossless JPG operations, effects (sharpen, blur, Adobe Photoshop filters), EXE/SCR creating, many hotkeys, command line options and plugins. FREE
+* [http://www.google.com/picasa/ Picasa] - Transfer, find, organize, edit, print, and share images, all with this easy-to-use product. Watch Picasa automatically organize all your pictures into elegant albums by date. Having all your photos in one place means no more time wasted searching for folders or files. The program works with JPEG, GIF, BMP, PSD, and movie files and is compatible with most digital cameras; it detects your USB driver and imports pictures into albums. Editing tools include cropping (standard or custom), removal of red-eye, and enhancing–even switching from color to black and white. Create slide shows set to your MP3s. Integration with Picasa’s free Hello instant picture-sharing software lets you share hundreds of photos in seconds and chat in real time. Limited web storage on the free version. FREE
+
+== Program Editors ==
+
+*[http://www.adobe.com/products/flash/flashpro/ Adobe Flash]
+*[http://www.gnu.org/software/emacs/ Emacs] with an [http://blog.pettomato.com/?p=22 ActionScript 3 major mode] FREE
+*[http://www.osflash.org/flashdevelop FlashDevelop] (free) - open source flash
+*[http://vim.org/ Vim] (with an ActionScript 3 syntax file) FREE
+*[http://www.eclipse.org/ Eclipse] with the Adobe Flex plug-in makes for a nice programming environment called [[Flex Builder]].
+
+== Music Tools ==
+
+* [http://www.jamglue.com/ Jamglue] - for remixing tunes
+* [http://audacity.sourceforge.net/ Audacity] - Open Source audio editing program, free and one of the best out there
+* [http://www.apple.com/ilife/garageband/ Garageband] - Free if you've got a mac. Create your own music from loops or real instruments
+
+== Libraries and Toolkits ==
+
+* [http://flare.prefuse.org/ Flare] - A collection of ActionScript 3 classes for building a wide variety of interactive visualizations.
+* [http://flintparticles.org/ Flint] - Particle system for AS3.
+
+
+== Subversion Clients ==
+There are programs called Subversion clients out there that provide easier to use user interfaces for Subversion.  They can be useful if you are using the [[SVN FAQ|Whirled SVN]] or player run SVNs such as the [[Community SVN]] and the [http://code.google.com/p/whirled-wyvern/ Whirled-Wyvern SVN].
+
+* [http://svnkit.com/ SVNKit]
+* [http://tortoisesvn.net/ TortoiseSVN]
+* A longer list of available Subversion clients can be found on [[Wikipedia:Comparison of Subversion clients|Wikipedia]].
+
+== See Also ==
+*[http://www.whirled.com/#whirleds-t_519 Image editor discussion in the Brave New Whirled]
+*[[:Category:Tutorials|Tutorials on the wiki]]
+* [http://mochiland.com/articles/free-and-open-source-software-for-flash-game-developers Free and Open Source Software for Flash Game Developers]
+*[[List of useful links]]
+
+[[Category:Lists|Useful programs]]

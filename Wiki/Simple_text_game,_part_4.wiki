@@ -1,0 +1,384 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Medium
+|description=Create a simple mulitplayer game.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=[[Simple text game, part 3]]
+}}
+
+
+
+And now the moment we've all been waiting for: awarding coins to the player! :-)
+
+User-created games can give out coins just as easily as the game we've created ourselves. Indeed, all games use the same mechanisms to reward players.
+
+The game is free to decide when to give out coins, and how much, within a certain limit. The award can happen at any point during the game, although the less often it happens, the more can be given out in one shot. For more details on this process, see [[awarding coins]].
+
+To award coins, simply pass the player's raw score to the server.  The server will determine the amount of coins to award.
+
+In our example game, let's set a timer so that every 30 seconds we grant coins based on the score, and then reset the score board!
+
+The first change is to write a function called by the timer to reward the player:
+
+<actionscript>
+    protected function tickHandler (event :TimerEvent) :void
+    {
+        // Award coins based on the score
+        var score : int  = getScore(_control.game.getMyId());
+        var playerIds :Array = [];
+        var scores :Array = [];
+        for each (var playerId :int in _control.game.getOccupantIds()) {
+                    playerIds.push(playerId);
+                    scores.push(score);
+        }
+        _control.game.endGameWithScores(playerIds, scores, GameSubControl.TO_EACH_THEIR_OWN);
+        
+        // Finally, clear out this player's score
+        resetScore();
+    }
+</actionscript>
+
+This function gets the player's score, then passes it to the server.  The server will compare this score to the scores of others who have played the game in the past, factor in the amount of time this player has been playing the game, and determine the amount of coins to grant.
+
+Now that we have a coins-granting routine, we also need to set up a timer to call it:
+
+<actionscript>
+    import flash.events.TimerEvent;
+    import flash.utils.Timer;
+
+    ....
+
+    public function HelloWhirled ()
+    {
+        // listen for an unload event
+        root.loaderInfo.addEventListener(Event.UNLOAD, handleUnload);
+
+        _control = new GameControl(this);
+        _timer = new Timer(30000); // every 30 seconds
+
+        load();
+    }
+
+
+    ...
+
+    /** Called from the game constructor. */
+    protected function load () :void
+    {
+        createUI();
+
+        // register for keypresses in the text box
+        _inputField.addEventListener(KeyboardEvent.KEY_DOWN, keyEventHandler);
+
+        // send property change notifications to the propertyChanged() method
+        _control.net.addEventListener(PropertyChangedEvent.PROPERTY_CHANGED, propertyChanged);
+
+        // send incoming message notifications to the messageReceived() method
+        _control.net.addEventListener(MessageReceivedEvent.MESSAGE_RECEIVED, messageReceived);
+
+        // set up the timer
+        _timer.addEventListener(TimerEvent.TIMER, tickHandler);
+        _timer.start();
+    }
+
+    /** This is called when your game is unloaded. */
+    protected function handleUnload (event :Event) :void
+    {
+        _timer.stop();
+        _timer.removeEventListener(TimerEvent.TIMER, tickHandler);
+
+        _inputField.removeEventListener(KeyboardEvent.KEY_DOWN, keyEventHandler);
+    }
+    ...
+
+    /** Timer. No, really. */
+    protected var _timer :Timer;
+</actionscript>
+
+
+In addition, I've refactored some of the scoring functionality we've seen in the last example. I won't go through it in details, since it's not really all that interesting. :-)  Instead, here's the complete up-to-date source:
+
+<actionscript>
+package {
+
+import flash.display.Graphics;
+import flash.display.Sprite;
+
+import flash.events.Event;
+import flash.events.KeyboardEvent;
+import flash.events.TimerEvent;
+
+import flash.text.TextField;
+import flash.text.TextFieldAutoSize;
+import flash.text.TextFieldType;
+import flash.text.TextFormat;
+
+import flash.utils.Timer;
+
+import com.whirled.game.GameControl;
+import com.whirled.game.GameSubControl;
+import com.whirled.net.MessageReceivedEvent;
+import com.whirled.net.PropertyChangedEvent;
+
+[SWF(width="350", height="200")]
+public class HelloWhirled extends Sprite
+{
+    /** Label for a score update message that will be sent to the controller. */
+    public static const ADD_SCORE :String = "Add Score";
+
+    /** Label for a score reset message that will be sent to the host. */
+    public static const RESET_SCORE :String = "Reset Score";
+
+    /** Name of the shared property that will hold everyone's scores. */
+    public static const SCORE_TABLE :String = "Score Table";
+
+
+    public function HelloWhirled ()
+    {
+        // listen for an unload event
+        root.loaderInfo.addEventListener(Event.UNLOAD, handleUnload);
+
+        _control = new GameControl(this);
+        _timer = new Timer(30000); // every 30 seconds
+
+        load();
+    }
+
+    /** Called from the game constructor. */
+    protected function load () :void
+    {
+        createUI();
+
+        // register for keypresses in the text box
+        _inputField.addEventListener(KeyboardEvent.KEY_DOWN, keyEventHandler);
+
+        // send property change notifications to the propertyChanged() method
+        _control.net.addEventListener(PropertyChangedEvent.PROPERTY_CHANGED, propertyChanged);
+
+        // send incoming message notifications to the messageReceived() method
+        _control.net.addEventListener(MessageReceivedEvent.MESSAGE_RECEIVED, messageReceived);
+
+        // set up the timer
+        _timer.addEventListener(TimerEvent.TIMER, tickHandler);
+        _timer.start();
+    }
+
+    /** This is called when your game is unloaded. */
+    protected function handleUnload (event :Event) :void
+    {
+        _timer.stop();
+        _timer.removeEventListener(TimerEvent.TIMER, tickHandler);
+
+        _inputField.removeEventListener(KeyboardEvent.KEY_DOWN, keyEventHandler);
+    }
+
+    protected function tickHandler (event :TimerEvent) :void
+    {
+        // Award coins based on the score
+        var score : int  = getScore(_control.game.getMyId());
+        var playerIds :Array = [];
+        var scores :Array = [];
+        for each (var playerId :int in _control.game.getOccupantIds()) {
+                    playerIds.push(playerId);
+                    scores.push(score);
+        }
+        _control.game.endGameWithScores(playerIds, scores, GameSubControl.TO_EACH_THEIR_OWN);
+        
+        // Finally, clear out this player's score
+        resetScore();
+    }
+
+    /** Called when the user presses a key inside the inputField control. */
+    protected function keyEventHandler (event :KeyboardEvent) :void
+    {
+        if (event.keyCode == 13) {  // user hit Enter
+            if (_control.services.isConnected()) {
+                _control.services.checkDictionaryWord(
+                    "en-us", null, _inputField.text, processWord);
+            } else {
+                _responseField.text = "Error: disconnected.";            
+            }
+            _inputField.text = "";
+        } else {
+            // any other key just clears the message box
+            _responseField.text = "";
+        }
+    }
+    
+    /** Processes results from the dictionary service, once they arrive. */
+    protected function processWord (word :String, isValid :Boolean) :void
+    {
+        // if it's a valid word, let's score it.
+        if (isValid) {
+            var points :int = word.length;
+            addScore(points);
+            _responseField.text = "Valid word! You earn " + points + " points!";
+        } else {
+            _responseField.text = "Not a valid word. Sorry.";
+        }
+    }
+
+    /** Record the score and share with others. */
+    protected function addScore (points :int) :void
+    {
+        // create a score array: [playerId, points]
+        var msg :Object = new Object;
+        msg[0] = _control.game.getMyId();
+        msg[1] = points;
+        _control.net.sendMessage(ADD_SCORE, msg);
+    }
+
+    /** Asks the host to reset this player's score. */
+    protected function resetScore () :void
+    {
+        // just send the bare player ID
+        _control.net.sendMessage (RESET_SCORE, _control.game.getMyId());
+    }
+
+    /** Score accessor. */
+    protected function getScore (id :int) :Number
+    {
+        // Get the current score object. We store all scores as a property set
+        // on this object. They map from player ID to current score.
+        var table :Object = _control.net.get(SCORE_TABLE);
+        return (table != null && table.hasOwnProperty(id)) ? Number(table[id]) : 0;
+    }
+
+    /** Score accessor. */
+    protected function setScore (id :int, value :Number) :void
+    {
+        // Get the current score object. We store all scores as a property set
+        // on this object. They map from player ID to current score.
+        var table :Object = _control.net.get(SCORE_TABLE);
+        if (table == null) {  // Nobody scored anything yet - create an empty table.
+            table = new Object();
+        }
+
+        table[id] = value;
+
+        // Now update the score object - this will also update everyone else's score boards
+        _control.net.set(SCORE_TABLE, table);
+    }
+        
+    /** Respond to messages from other clients. */
+    protected function messageReceived (event :MessageReceivedEvent) :void
+    {
+        if (!_control.game.amInControl()) {
+            return;
+        }
+
+        if (event.name == ADD_SCORE) {
+            // Convert the event value back to an object, and pop the info
+            var id :int = int(event.value[0]);
+            var points :Number = Number(event.value[1]);
+            setScore(id, getScore(id) + points);
+
+        } else if (event.name == RESET_SCORE) {
+            var i :int = int(event.value);
+            setScore(i, 0);
+
+        } else {
+        }
+    }
+
+    /** Responds to property changes. */
+    protected function propertyChanged (event :PropertyChangedEvent) :void
+    {
+        _control.local.feedback("Got property change: property " + event.name);
+        if (event.name == SCORE_TABLE) {
+            // The scores have changed - update the message field!
+            _scoreField.text = "";
+            var table :Object = event.newValue;
+            for (var key :String in table) {
+                // convert each string ID into a number
+                var id :Number = Number(key);   
+                if (id != 0) {
+                    var score :Number = Number(table[key]);  // get the score
+                    var name :String = _control.game.getOccupantName(id);
+                    _control.local.feedback("-> occupant #" + id + ", total score: " + score);
+                    _scoreField.appendText(name + ": " + score + " points\n");
+                }
+            }
+        }
+    }                    
+
+    /** Creates and lays out UI elements. */
+    protected function createUI () :void
+    {
+        // Create a background.
+        var bg :Sprite = new Sprite();
+        bg = new Sprite();
+        addChild(bg);
+
+        // Fill the new background with color, and add to display list
+        var g :Graphics = this.graphics;
+        g.beginFill(0xffeedd);
+        g.drawRoundRect(0, 0, 350, 200, 25);
+        g.endFill();
+
+        // Text format
+        var format :TextFormat = new TextFormat();
+        format.font = "Arial";
+        format.size = 12;
+        
+        // Input field
+        _inputField = new TextField();
+        _inputField.defaultTextFormat = format;
+        _inputField.text = "< type here >";
+        _inputField.x = 50;
+        _inputField.y = 50;
+        _inputField.width = 100;
+        _inputField.height = _inputField.textHeight + 2;
+        _inputField.type = TextFieldType.INPUT;
+        _inputField.border = true;
+        addChild(_inputField);
+
+        // Feedback field
+        _responseField = new TextField();
+        _responseField.defaultTextFormat = format;
+        _responseField.wordWrap = true;
+        _responseField.x = 50;
+        _responseField.y = 100;
+        _responseField.width = 100;
+        _responseField.height = 50;
+        _responseField.text = "Type your word above, and hit Enter!";
+        addChild(_responseField);
+
+        // Score field
+        _scoreField = new TextField();
+        _scoreField.defaultTextFormat = format;
+        _scoreField.multiline = true;
+        _scoreField.x = 200;
+        _scoreField.y = 50;
+        _scoreField.width = 150;
+        _scoreField.height = 200;
+        addChild(_scoreField);
+    }
+
+    /** Game control. */
+    protected var _control :GameControl;
+
+    /** Input field for typing. */
+    protected var _inputField :TextField;
+
+    /** Message field with system responses. */
+    protected var _responseField :TextField;
+
+    /** Score field. */
+    protected var _scoreField :TextField;
+
+    /** Timer. No, really. */
+    protected var _timer :Timer;
+}
+}
+</actionscript>
+
+And there you have it, a very simple multiplayer game that awards coins! :-)
+
+
+= Next Steps =
+
+* [[create games|Back to creating games]]
+
+
+[[Category:Tutorials]][[Category:Code tutorials]]

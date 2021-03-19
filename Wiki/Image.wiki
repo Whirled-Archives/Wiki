@@ -1,0 +1,17 @@
+{{TOCright}}
+[[Image:Icon-highlighted-image.png|left]]Players can '''images''' to place in [[room]]s, add to [[gallery|galleries]] or use in [[mail]] and [[Group]] discussion posts.
+{{clearleft}}
+== Image Formats & Graphics Editors ==
+
+Whirled accepts all internet friendly image types: GIF, JPG/JPEG, and PNG.
+
+The [[list of useful programs]] has links and descriptions for a variety of graphics editors that are either free or available for purchase.
+
+== Upload! ==
+
+{{:Upload/Image}}
+
+==Sell!==
+{{listing|image|images|Images|attribute}}
+
+[[Category:Tutorials]][[Category:Terminology]]

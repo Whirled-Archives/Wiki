@@ -1,0 +1,30 @@
+[[Image:Shop.png|400px|right]]
+The '''shop''' tab located at the top of your screen allows you to purchase items uploaded by other members of the community.  The main page displays popular selections from the various areas of the shop.
+
+If you really like an item, you can add it to your [[favorites]] list by clicking on the heart on its listing page.
+{{clear}}
+==Categories==
+[[Image:Shop-categories.png|left]]Items in the Shop are divided into categories describing their use.  Items can also be [[tag]]ged to further describe them for searching.
+{{bul}} [[Avatar]]s - visual representations of players used when they are in rooms<br>
+{{bul}} [[Furniture]] - objects used to decorate rooms<br>
+{{bul}} [[Backdrop]]s - backgrounds for rooms<br>
+{{bul}} [[Toy]]s - interactive objects<br>
+{{bul}} [[Pet]]s - interactive roaming objects<br>
+{{bul}} [[Game]]s - for playing and adding to rooms<br>
+{{bul}} [[Image]]s - for using in Whirled posts, [[remixable items]], and for decorating rooms<br>
+{{bul}} [[Music]] - for adding to rooms for background music<br>
+{{bul}} [[Video]]s - for adding to rooms
+{{clear}}
+
+==Purchases==
+[[Image:Shop-avatars.png|right|300px|thumb|Avatars in the shop.]]To purchase, choose a category and select the item you are interested in.  The list can be sorted by rating, high/low [[currency|price]], purchases, popularity and date it was added.
+{{clear}}
+[[Image:Shop-avatars-viewer.png|right|300px|thumb|Test an avatar out in the shop.]]You can test the different animations from the item page before purchasing.  You can also [[rating|rate]] items by clicking on the rating stars under the image and leave a [[comment]] by clicking on "Post Comment".  Ratings help determine which items show up on the main page of the Shop section.
+
+== See Also ==
+{{createnav}}
+
+*[[Terms of Service]]
+*[[Community Standards]]
+*[[Item deletion]]
+[[Category:Terminology]]

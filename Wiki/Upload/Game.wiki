@@ -1,0 +1,14 @@
+#Choose '''Games &rarr; My Games''' to see the games you have uploaded.
+#Click the '''Create''' button to get the game uploading interface. [[Image:Games-Create_Game.png|none|425px|thumb|The game uploading interface.]]
+##Select an appropriate ''[[options for games#Game Type|Game Type]]''.
+##Under ''Game Name'', type the name of your game.
+##Under ''Thumbnail Media'', click ''Browse...'', and select your image file. This thumbnail is used to represent the game in My Games.
+##Under ''Client Code'', click ''Browse...'', and select your '''.swf''' file in the file system browser that appears. When the file has finished uploading, you should see a SWF id show up (e.g. 031c99dbf403923daad884fb562bd7f0d83d555x.swf) in the Client Code section.
+##Confirm that you own the copyrights to the item or have authorization to upload it. 
+##Click on the ''Save'' button and your browser will switch to the Edit Game interface where you can configure your game.
+
+There is also an article describing the [[options for games]] in more detail.
+
+To test play your game to make sure the upload worked, click on it, and then click on ''Play''.
+
+Games can be deleted by editing them in Games &rarr; My Games.<noinclude>[[Category:Subpages]]</noinclude>

@@ -1,0 +1,21 @@
+[[Image:CorpseCraftGameShop.png|300px|thumb|For example, here is the game shop for Corpse Craft.]]
+'''Adding items to the game shop''' allows players to find items related to your game more easily.  
+
+A game developer can [[Create and sell game packs#Showing the Shop During Game Play|open the game shop]] anytime during the game to upsell an item.
+
+__TOC__
+{{clearright}}
+== Add Avatars, Backdrops, Toys, Pets, Images, Music and Videos to the Game Shop == 
+
+# [[List]] your object in the shop.<br>[[Image:CorpseCraftStreetWalker.png|350px]]
+# In the Edit Game->Extra tab of your game, create a "Shop Tag".  The tag can consist of letters, numbers and underscores.  In this case, we have added the Shop Tag of "corpsecraft" to the Corpse Craft game.<br>[[Image:CorpseCraftShopTag.png|350px]]
+#In the shop details page of your item, add the same tag.<br>[[Image:CorpseCraftAvatarAddTag.png|350px]]
+#Your object should now appear in your game shop.
+
+'''In order for this to work, the lister of the avatar, backdrop, toy, pet, image, music or video must be the SAME as the lister of the game.'''
+
+== Add Game/Level Packs to the Game Shop == 
+
+See this [[Create and sell game packs|tutorial]]. 
+
+[[Category:Tutorials]]

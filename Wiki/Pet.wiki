@@ -1,0 +1,31 @@
+[[Image:Icon-highlighted-pet.png|left]][[Image:Pet-brittney-pug.png|thumb|100px|Pet names are white.]]'''Pets''' are interactive roaming items.  They can be purchased from the [[shop]] for [[currency#Coins|coins]] or [[currency#Bars|bars]]. You can tell when something is a pet because its name is white.
+
+{{clearright}}
+== How to Get and Use a Pet ==
+[[Image:Pet-options.png|thumb|350px|Depending on where your pet is, there are different options: Add to room, Take from room, and Move to room.|none]]Pets can follow you around or live in your room and be there even when you aren't.
+
+# Choose '''[[Shop]] &rarr; Pet''' to find a cute new friend.
+# Click on one you like and buy it! If you don't have enough coins yet, play some games to earn enough.
+# To add your new pet to the room, choose '''Stuff &rarr; Pet''' and click the the little house next to "Add to room" to put it in the room.
+# Your pet will now follow you around from room to room.  You can only have one pet following you at a time.
+
+[[Image:Pet-menu.png|frame|right|The right click pet menu.]]Your pet has a few commands that appear if you click on it.
+*Order to stay - The pet will stop following you and remain in that room.
+*Order to follow - The pet will follow you from room to room.
+*Send home - The pet will go back to your home room.
+*Send to sleep - The pet will go back into your inventory until you click on add to room again.
+
+Pets can also have special actions such as repeating things you say. [[Portal:Creators|Creators]] generally mention any special actions in the pet's description in the shop.
+
+If you don't have enough to buy the pet you want in the shop, you can purchase bars or play [[game]]s for coins until you have enough.
+
+== How to Rename a Pet ==
+
+Pets can be renamed, by going into Stuff &rarr; Pets, selecting the pet you wish to rename, and clicking the rename button.
+
+[[Image:rename_pet_1.png]] [[Image:rename_pet_2.png]]
+
+== See Also ==
+*[[Create pets]]
+
+[[Category:Terminology]]

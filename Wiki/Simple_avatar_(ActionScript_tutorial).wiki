@@ -1,0 +1,402 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Beginner
+|description=Create a smiple avatar using AS3.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=Next tutorial: [[Avatar rotation (ActionScript tutorial)]]
+|item=avatar
+}}
+(Back to [[create avatars]] main page)
+
+[[Image:Icon-highlighted-avatar.png|left]]This tutorial uses AS3 to build an [[avatar]] for Whirled.  If you are interested in a less code oriented method using the Flash CS3 check out [[Advanced avatar (Flash tutorial)]].  For this tutorial, we are basically going to be re-creating the avatar that is named "imageflipper" under "examples/avatars" of your SDK install.
+{{clearleft}}
+
+== Prerequisites ==
+# [[Setting up your programming environment]]
+# [[Hello Whirled]]
+# This tutorial currently assumes you are familiar with programming and that you can learn by example.
+
+== Set-up your New Avatar Directory ==
+
+To create a new avatar, change to the whirled directory and run the ant newavatar task:
+
+  % cd whirled
+  % ant newavatar
+
+Windows users shoould double click the newproject.bat file instead of using the command line.
+
+If this is the first time you are using the SDK, it will ask you to configure the directory of your Flex SDK and your Flash Standalone Player. A dialog box will pop up allowing you to specify that information and then you will proceed to creating your new project.
+
+Next, you will be asked to name your project: 
+
+<actionscript>
+buildfile: build.xml
+
+prepare-flex:
+     [copy] Copying 1 file to /WhirledSDKs/0.31/whirled/etc
+
+newavatar:
+[newproject] Please enter the name of your Avatar project.
+[newproject] For example, BestAvatarEver:
+
+</actionscript>
+
+For this one, we are going to call it chicken. 
+
+<actionscript>
+
+[newproject] For example, BestAvatarEver:
+chicken
+[newproject] Your main class will be called:
+[newproject]   chicken.as
+[newproject] Is this OK? [y/n]
+y
+[newproject]   Creating 'chicken/build.xml'.
+[newproject]   Creating 'chicken/build.bat'.
+[newproject]   Creating 'chicken/chicken.as'.
+[newproject] Done! Your new project has been created in 'chicken'.
+
+BUILD SUCCESSFUL
+Total time: 1 minute 45 seconds
+
+</actionscript>
+
+== Generated Avatar AS File ==
+
+In a directory named chicken, the Ant task will have created for you a file named "chicken.as" 
+
+<actionscript>
+
+/
+// $Id$
+//
+// chicken - an avatar for Whirled
+
+package {
+
+import flash.display.Sprite;
+
+import flash.events.Event;
+
+import com.whirled.AvatarControl;
+import com.whirled.ControlEvent;
+
+[SWF(width="50", height="50")]
+public class chicken extends Sprite
+{
+    public function chicken ()
+    {
+        // listen for an unload event
+        root.loaderInfo.addEventListener(Event.UNLOAD, handleUnload);
+
+        _control = new AvatarControl(this);
+
+        // Uncomment this to be notified when your avatar changes orientation
+        // _control.addEventListener(ControlEvent.APPEARANCE_CHANGED, appearanceChanged);
+
+        // Uncomment this to be notified when the player speaks
+        // _control.addEventListener(ControlEvent.AVATAR_SPOKE, avatarSpoke);
+
+        // Uncomment this to export custom avatar actions
+        // _control.addEventListener(ControlEvent.ACTION_TRIGGERED, handleAction);
+        // _control.registerActions("Test action");
+
+        appearanceChanged();
+    }
+
+    /**
+     * This is called when your avatar's orientation changes or when it transitions from not
+     * walking to walking and vice versa.
+     */
+    protected function appearanceChanged (event :Object = null) :void
+    {
+        var orient :Number = _control.getOrientation();
+        var walking :Boolean = _control.isMoving();
+
+        // Draw your avatar here using the appropriate orientation and accounting for whether it is
+        // walking
+    }
+    
+    /**
+     * This is called when your avatar speaks.
+     */
+    protected function avatarSpoke (event :Object = null) :void
+    {
+    }
+    
+    /**
+     * This is called when the user selects a custom action exported on your avatar or when any
+     * other trigger event is received.
+     */
+    protected function handleAction (event :ControlEvent) :void
+    {
+    }
+    
+    /**
+     * This is called when your avatar is unloaded.
+     */
+    protected function handleUnload (event :Event) :void
+    {   
+        // stop any sounds, clean up any resources that need it.  This specifically includes
+        // unregistering listeners to any events - especially Event.ENTER_FRAME
+    }
+    
+    protected var _control :AvatarControl;
+}
+}
+</actionscript>
+
+== AS file breakdown ==
+
+Central to your Avatar script, you have an [http://www.whirled.com/code/asdocs/com/whirled/AvatarControl.html AvatarControl] object.  
+
+<actionscript>
+    protected var _control :AvatarControl;
+</actionscript>
+
+This is the object that is used to communicate with Whirled.  In order to make your avatar respond to actions, you need to register to listen to events,
+
+Next thing to note is the events that gets called for your avatar.  
+
+<actionscript>
+        root.loaderInfo.addEventListener(Event.UNLOAD, handleUnload);
+        ........
+
+        _control.addEventListener(ControlEvent.APPEARANCE_CHANGED, appearanceChanged);
+
+        ........        
+        _control.addEventListener(ControlEvent.AVATAR_SPOKE, avatarSpoke);
+
+</actionscript>
+
+You can find a list of all avatar related events [http://www.whirled.com/code/asdocs/com/whirled/AvatarControl.html here(under events)].   '''One event that you need to always listen for and handle is Event.UNLOAD.(  We've been noticing a lot of people do not correctly clean up their resources and unregister their listeners to events, especially Event.ENTER_FRAME, so please pay special attention to this. )'''
+
+== Cha-Cha-Changes ==
+
+The first thing we are going to change is the avatar image.  We are going to set the SWF size to 161 X 170 and embed our chicken picture.
+
+<actionscript>
+
+import flash.display.DisplayObject;
+..........
+
+[SWF(width="161", height="170")] // the size of our image + BOUNCE pixels in the y direction. (more on BOUNCE later)
+public class chicken extends Sprite
+{
+
+    public function chicken ()
+    {
+        _control = new AvatarControl(this);
+
+        // listen for an unload event
+        _control.addEventListener(Event.UNLOAD, handleUnload);
+
+        _image = (new IMAGE() as DisplayObject);
+        addChild(_image);
+
+
+        // Uncomment this to be notified when your avatar changes orientation
+        // _control.addEventListener(ControlEvent.APPEARANCE_CHANGED, appearanceChanged);
+
+        // Uncomment this to be notified when the player speaks
+        // _control.addEventListener(ControlEvent.AVATAR_SPOKE, avatarSpoke);
+
+        // Uncomment this to export custom avatar actions
+        // _control.addEventListener(ControlEvent.ACTION_TRIGGERED, handleAction);
+        // _control.registerActions("Test action");
+
+        appearanceChanged();
+    }
+
+    ............
+
+    // The image we are displaying
+    protected var _image :DisplayObject;
+
+    //The embedded image class 
+    [Embed(source="Rooster.png")]  
+    protected static const IMAGE :Class; 
+
+</actionscript>
+
+
+At this point, we have basically embedded an image into our chicken.as file, created a display object based on the image and added it to the display list.  Since these are AS3 specific programming concepts, we won't cover them here.  But the basic idea is that we are adding in the image and getting that image to display by calling addChild().  
+
+
+Next thing we are going to add is the code that gets called when the avatar is first loaded.
+
+Uncomment this
+<actionscript>
+
+        // Uncomment this to be notified when your avatar changes orientation
+         _control.addEventListener(ControlEvent.APPEARANCE_CHANGED, appearanceChanged);
+
+</actionscript>
+
+add a new method. 
+<actionscript>
+    protected function appearanceChanged (... ignored) :void
+    {
+        var orient :Number = _control.getOrientation();
+        var isMoving :Boolean = _control.isMoving();
+
+        // make sure we're oriented correctly
+        // (We discard nearly all the orientation information and only care if we're
+        // facing left or right.)
+        if (orient < 180) {
+            _image.x = _image.width;
+            _image.scaleX = -1;
+
+        } else {
+            _image.x = 0;
+            _image.scaleX = 1;
+        }
+
+        // if we're moving, make us bounce.
+        if (_bouncing != isMoving) {
+            _bouncing = isMoving;
+            if (_bouncing) {
+                _bounceBase = getTimer(); // note that time at which we start bouncing
+                addEventListener(Event.ENTER_FRAME, handleEnterFrame);
+
+            } else {
+                removeEventListener(Event.ENTER_FRAME, handleEnterFrame);
+                // stop bouncing: put us back on the ground
+                _image.y = BOUNCE;
+            }
+        }
+    }
+
+
+
+</actionscript>
+
+The first we check when appearanceChanged gets called is [http://first.whirled.com/code/asdocs/com/whirled/ActorControl.html#getOrientation() getOrientation] and [http://first.whirled.com/code/asdocs/com/whirled/ActorControl.html#isMoving() isMoving].  These two methods tell us a bit about the current state of our Avatar.  
+
+We have also registered to get notified when the ENTER_FRAME event happens and added a timer (using flash.utils) so we can calculate how often we should bounce. 
+
+Now we'll add the callback method to handle when the ENTER_FRAME event actually gets triggered.   It mostly handles the bouncing this avatar does.
+
+<actionscript>
+    protected function handleEnterFrame (... ignored) :void
+    {
+        var now :Number = getTimer();
+        var elapsed :Number = now - _bounceBase;
+        while (elapsed > BOUNCE_FREQUENCY) {
+            elapsed -= BOUNCE_FREQUENCY;
+            _bounceBase += BOUNCE_FREQUENCY; // give us less math to do next time..
+        }
+
+        var val :Number = elapsed * Math.PI / BOUNCE_FREQUENCY;
+        _image.y = BOUNCE - (Math.sin(val) * BOUNCE);
+    }
+</actionscript>
+
+Okay, we are almost done!  We just need to add the code here for the unload method.  '''This is super important!  Do not forget this else your code will be causing problems all over the place'''
+
+<actionscript>
+    protected function handleUnload (event :Event) :void
+    {
+        // stop any sounds, clean up any resources that need it.  This specifically includes 
+        // unregistering listeners to any events - especially Event.ENTER_FRAME
+        removeEventListener(Event.ENTER_FRAME, handleEnterFrame);
+
+    }
+</actionscript>
+
+Finally we have to make sure all the variables are declared.  These are all of them that you need for the tutorial, some of them might have been declared in a previous step, so make sure you don't have double.
+
+<actionscript>
+    /** How we communicate with whirled. */
+    protected var _control :AvatarControl;
+ 
+    /** The image we're flippin' and bouncin'. */
+    protected var _image :DisplayObject;
+ 
+    /** Are we currently bouncing? */
+    protected var _bouncing :Boolean = false;
+ 
+    /** The time at which the current bounce started. */
+    protected var _bounceBase :Number;
+ 
+    //-------------------------------------------------------
+ 
+    /** The height of our bounces. */
+    protected static const BOUNCE :int = 20;
+ 
+    /** The time to complete one bounce. */
+    protected static const BOUNCE_FREQUENCY :int = 400;
+ 
+    /** The image resource. */
+    //[Embed(source="rooster.jpg")]
+    [Embed(source="rooster.png")]
+    protected static const IMAGE :Class;
+
+</actionscript>
+
+That's it.  This is all the code you need for this simple avatar.  '''Here's a [[Simple avatar full ActionScript listing| full listing of what we did.]]  You can double check your code against it to make sure you didn't miss any of the steps.
+
+== Compiling And Uploading ==
+The next step is to actually compile your code and upload it to whirled.  You will need to the following steps.
+
+1.  Copy the Rooster.png at the bottom of this page into the chicken folder that was created.  
+
+2.  Build and test the new avatar using ant. ( Windows users can double click the build.bat file instead of using the command line.)
+
+<actionscript>
+bash-3.2$ cd chicken/
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ ant test
+Buildfile: build.xml
+
+prepare-flex:
+     [copy] Copying 1 file to /WhirledSDKs/0.32/whirled/etc
+
+build:
+     [java] Loading configuration file /WhirledSDKs/0.32/whirled/etc/whirled-config.xml
+     [java] chicken.swf (49645 bytes)
+
+build-server:
+
+zip:
+
+compile:
+
+test-only:
+
+test-avatar:
+     [copy] Copying 1 file to /WhirledSDKs/0.32/whirled/dist
+
+test:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+bash-3.2$ ls
+total 192
+-rw-r--r--   1 xxx  admin   1243 Jul 21 18:00 build.xml
+-rw-r--r--   1 xxx  admin    330 Jul 21 18:00 build.bat
+-rw-r--r--@  1 xxx  admin  28326 Jul 25 15:14 Rooster.png
+drwxr-xr-x   7 xxx  admin    238 Jul 25 15:14 .
+-rw-r--r--   1 xxx  admin   4404 Jul 25 16:38 chicken.as
+drwxr-xr-x  18 xxx  admin    612 Jul 25 16:41 ..
+-rw-r--r--   1 xxx  admin  49645 Jul 25 16:49 chicken.swf
+bash-3.2$ 
+
+</actionscript>
+
+You should now have a file name chicken.swf.  '''NOTE: In some of the older versions of the SDK (before 0.43), running the build.bat in Windows will give errors.  Please either update to the [[Whirled SDK|latest SDK]] or upload your SWF to Whirled to test it.'''
+
+Below is an embedded working version.
+
+{{viewer|http://media.whirled.com/c6b1975d5cacccddd7c6123d8dc2255d3b14ee94.swf|name=SDK Chicken}}
+
+<br>
+
+If you want, you can also [[Create_avatars#Upload.21|upload your own]] version.
+
+== Next steps ==
+Learn how to do things such as add custom actions with the [[Advanced avatar (ActionScript tutorial)|advanced AS3 avatar tutorial]].
+
+== Assets ==
+# a sample avatar image: [[Image:Rooster.png]]

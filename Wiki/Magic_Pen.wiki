@@ -1,0 +1,53 @@
+{{Infobox game
+|name=Magic Pen
+|genre=puzzle
+|description=Use the crayon to draw shapes and move the ball. Your goal is to roll the ball over the flag.
+|forumlink=
+|linknumber=599
+|singleplayer=yes
+|multiplayer=no
+|version=
+|testing=no
+|testingspot=
+|development=yes
+|devteam=AleGui
+|screenshot=yes
+}}
+'''Magic Pen''' is a game where you draw shapes with the crayon and try to get the ball to hit the red flag.  You can also use hinges and pins. The full instructions are at the beginning of the game.  
+
+There are coin payouts and trophies for all levels greater than 2.
+
+== Instructions ==
+
+=== The Goal ===
+[[Image:Game-Magic Pen-the goal.png|left]]Hit the flag using the little red ball to complete a level.
+{{clear}}
+
+=== Playing the Game ===
+[[Image:Game-Magic Pen-playing the game.png|left]]Move the red ball by pushing it around with the drawn objects and create objects for it to roll on.
+{{clear}}
+
+=== Drawing Shapes ===
+[[Image:Game-Magic Pen-drawing shapes.png|left]]Hold down the left mouse button while moving to draw a shape.
+
+{{clear}}
+[[Image:Game-Magic Pen-drawing shapes2.png|left]]You cannot draw inside other objects.
+{{clear}}
+
+=== Drawing Circles ===
+[[Image:Game-Magic Pen-drawing circles.png|left]]To draw a circle, hold the left mouse button down where you want the center to be. Let go of the button when the circle is the size you want.
+{{clear}}
+
+=== Pins and Hinges ===
+[[Image:Game-Magic Pen-pins and hinges.png|left]]Pins and hinges connect objects.  A pin fixes the two objects in place, and a hinge allows for rotation.  You can put them on the ball as well.
+{{clear}}
+
+[[Image:Game-Magic Pen-drawing pins.png|left]]To draw a pin, hold down "S" and click to place the pin; then draw an object on top of the pin.
+{{clear}}
+
+[[Image:Game-Magic Pen-drawing hinges.png|left]]To draw a hinge, hold down "D" and click to place the hinge; then draw an object on top of the hinge.
+{{clear}}
+
+=== Erasing ===
+[[Image:Game-Magic Pen-erasing.png|left]]To erase, hold down "A" and click inside an object, pin or hinge to erase it.
+{{clear}}

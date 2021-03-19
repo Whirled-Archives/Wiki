@@ -1,0 +1,5 @@
+A '''backdrop''' is the background used in [[Whirled]] rooms.  You can purchase it in the [[shop]] or you can [[create backdrops|create & upload]] your own!
+
+Before the update on June 18, 2008, it was known as 'decor'.
+
+[[Category:Terminology]]

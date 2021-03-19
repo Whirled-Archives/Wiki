@@ -1,0 +1,30 @@
+Defer questions of style to [[Wikipedia:Wikipedia:Style and How-to Directory|Style and How-to Directory]].
+
+== Article Names ==
+
+Here are some guidelines for general pages:
+*[[Wikipedia:Wikipedia:Naming conventions|Wikipedia's naming conventions]]
+*[[Wikipedia:Wikipedia:Disambiguation|Wikipedia's disambiguation page]]
+
+Since Whirled has various topics that require mixed case names, the Wikipedia guidelines will not always be appropriate.
+
+== File Names ==
+
+Uploaded files should be named clearly and plainly.  All images should have the appropriate [[Whirled:Image_tags|image tag]] included in the file description.  The preferred image format is PNG.  For images created by the Whirled community, please follow the following naming conventions:
+
+*'''Game-''puzzlename''-''filename''''' - used for game images.
+*'''Toy-''puzzlename''-''filename''''' - used for toy images.
+*'''Tutorial-''tutorialname''-''filename''''' - used for images illustrating tutorials.
+
+== Templates ==
+
+=== Infoboxes ===
+* {{tl|infobox game}} - For pages about games
+* {{tl|infobox game (defunct)}} - For pages about games which are no longer available in Whirled, but were available at one point. (kept for historical purposes)
+* {{tl|infobox toy}} - For pages about toys
+
+=== Table of Contents ===
+* {{tl|TOCright}} - For moving the TOC to the right
+* {{tl|CompactTOC}} - For an ABC type TOC to replace the standard type.  Used for alphabetical lists.
+
+[[Category:Wiki policy|Style guide]]

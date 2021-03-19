@@ -1,0 +1,10 @@
+[[image:as3_preferences.png|right]]
+[[image:browse_preferences.png|right]]
+Whirled needs a little code attachment to be able to communicate with your avatar, pet or toy.  Flash can automatically pack this code into all your Whirled avatar swf files on export.  All you need to do is tell it where to look.
+*Unzip the [[Whirled SDK]] in a folder for all your Whirled creations.
+*Go to your Flash preferences.
+*Choose ActionScript and click the "ActionScript 3.0 Settings" button.
+*Click the crosshairs to browse for the "whirled/src/as/" folder in the file tree you just unzipped.
+*Click all the "OK"s and you're all set!
+
+[[Category:Tutorials]]

@@ -1,0 +1,72 @@
+This page contains the words that Three Rings defines as curse words for the purposes of the Whirled [[chat]] filters.
+
+= Warning =
+
+The information here is provided for reference only.  Use of these words in public or via unwanted tells in the game can be [[report|reported]] to [[Agent|Agents]] and may lead to disciplinary action.  Misspelling the curse words to get around the filters is even more likely to get you in trouble.
+
+''If you want to test the filters, please do so in private (in a locked room) in order to not offend others.''
+
+=Final Warning=  
+'''This page contains words which could be considered obscene and/or offensive.'''
+The obscene words that are filtered by the game are shown in white, the replacement words are shown in black.
+
+If you do not want to see the potentially offensive curse words, DO NOT highlight the section below.
+  
+=Filtered words=
+
+==Curse words that are optionally filtered ==
+ 
+<sup>* indicates a wildcard. It will also change the suffix or prefix depending on where the "*" is placed </sup>
+
+These are the words that are the "curse words" referred to in the [[chat|chat filter options]].  
+
+*Drop chat messages with curse words. This removes the entire message if a curse word is found anywhere in the message.
+*Peas-make the whirling curse words.  This will replace curse words with the listed replacements.  
+*Comic-ify the !%#@ing curse words.  This will replace curse words with a random combination of !%@#$%&* as replacements.  
+
+{|
+{{Filtered word|ass|rear}}
+{{Filtered word|asshole*|server port*}}
+{{Filtered word|bitch*|tart*}}
+{{Filtered word|blowjob*|harmonica lesson}}
+{{Filtered word|clit|rosebud}}
+{{Filtered word|cock|pea}}
+{{Filtered word|cocksuck*|peasuck*}}
+{{Filtered word|cum|soymilk}}
+{{Filtered word|cunt*|shrew}}
+{{Filtered word|dildo*|tickler*}}
+{{Filtered word|fag|peanut}}
+{{Filtered word|*fuck*|*spoil*}}
+{{Filtered word|gay|happy}}
+{{Filtered word|muff|britches}}
+{{Filtered word|*penis*|*John Thomas*}}
+{{Filtered word|pussy*|kitty}}
+{{Filtered word|*shit*|*curd*}}
+{{Filtered word|slut|strumpet}}
+{{Filtered word|tits|bosom}}
+{{Filtered word|titty*|bosom}}
+{{Filtered word|twat|broken image}}
+{{Filtered word|whore*|trollop}}
+{{Filtered word|vagina|dainty}}
+|}
+
+== Curse words that are always filtered ==
+
+A few words are always filtered, no matter what filter options you have selected.  These words will make the entire message/line be dropped.
+
+{{Spoiler|manual=Drop words are hidden below
+|content=
+The following words are classified as dropwords:
+<table>
+<tr><td>*faggot*</td></tr>
+<tr><td>kike</td></tr>
+<tr><td>*nigger*</td></tr>
+<tr><td>rape</td></tr>
+<tr><td>rapes</td></tr>
+<tr><td>raped</td></tr>
+<tr><td>raping</td></tr>
+<tr><td>spic</td></tr>
+</table>
+}}
+
+[[Category:Lists|Known filtered words]]

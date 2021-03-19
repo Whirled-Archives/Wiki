@@ -1,0 +1,70 @@
+One of the many fun aspects of [[Whirled]] is that it allows [[Portal:Creators|creators]] to collaborate on items together, and to create items inspired by other Whirled creators' work.  While this is encouraged, Whirled also balances this with original content creators' desire to protect their works from unauthorized copying and the resulting loss of [[currency|profits]].
+
+When you use another creator's work and add some of your own work to it, your creation is considered to be a derivation of the original creator's basis item and should be [[attribution|attributed]] to the basis item.
+
+'''Unattributed ''derivations'' of another creator's work will be [[report|reported]] by other Whirled players and are subject to attribution by an [[Agent]] or [[item deletion|deletion]] without warning.'''  Repeat offenders will be [[ban|penalized]].
+
+'''Unauthorized ''copies'' of another creator's work are subject to deletion, and those who distribute them are subject to penalty ranging from a warning to a permanent [[ban]].'''
+
+==Whirled Creators' Content==
+If you make an item using work done by another Whirled creator, you must [[attribution|attribute]] the original work.  This ensures that proper credit will be given to the original creator, as well as to yourself for your derivation, and that the original creator will get a cut of the profits when you sell the item based on their work in the [[Shop]].  Fair is fair, after all!
+
+Currently, attribution only works for items of the same type (i.e., pet, toy, avatar, etc.).  If you wish to make a cross-type attribution, for example you've derived a pet from a basis item that is an avatar, you must attribute the "old fashioned" way, by giving credit to the creator of the basis item in your item's description. You may not use this fact to avoid sharing profits with the basis item creator.  For example, while it is ok to sell an image that uses an avatar base (with permission), it is not ok to sell an image that others can mail to you in exchange for an avatar.
+
+If you make an item ''inspired by'' another Whirled creator's work, but you made the item yourself ''from scratch'', it is up to you whether to attribute or not.  
+
+Do keep in mind that the Whirled community has grown quite skilled at being able to pick out items that are not made from scratch; you can assume that works not properly attributed will be [[report|reported]] as stolen content by other players.
+
+==SVN Example Code by Whirled Staff==
+Items derived from content found on the [[SVN FAQ|Example Code SVN]], created by [[Three Rings]], must also be [[attribution|attributed]] if used to create new items.  If the SVN item on which your derivation is based does not exist on the Whirled Shop and therefore cannot be attributed, you must credit Three Rings in the item's description.
+
+==Deriving from Non-Whirled Content==
+Whenever you upload or update an item to Whirled, you have to affirm by checking a checkbox that you either own or have permission to use the work you are uploading, so make sure that is true!  Otherwise the original creator can ask for your item to be deleted from Whirled.
+
+==FAQ==
+=== Can I report someone for using the same third-party content as me? ===
+No. If you have both legally gotten content from a third party for use on Whirled, neither person's listing takes precedence over the other.
+
+=== Is all Whirled content available for use in my own creations? ===
+You should not use other people's work unless you have their permission.  You should certainly never upload an exact copy, a screenshot, or a recoloring of another Whirled creator's work.  
+
+=== Exactly how different does my derived item need to be from the original item for me to list it? ===
+That depends on what kind of permission you have from the original creator, but you must have done significant work on an item to make it a viable derivative.  For example, tracing, recoloring or tinting a creator's work does not count as "significant work", nor does changing one pixel, nor does creating a small glitch in a base's animation.  
+
+In a dispute, the final say on what does and does not constitute "significant work" rests with Three Rings.  It is in a deriver's best interest, therefore, to make a derivative that distinctly displays evidence of significant work and which differs quite visibly from the base item.
+
+=== Can I get a Three Rings staff member to pre-approve my item? ===
+Sorry, but we can't do that--it isn't feasible, given the number of requests we would receive.  Three Rings has a policy of not actively monitoring uploads, but instead responding to player [[report|reports]] and [[DMCA Policy|DMCA takedown notices]].
+
+=== If I've derived an item from a derivative, what should I attribute? ===
+Currently, you cannot attribute a derivative to a derivative or make "attribution chains".  You must attribute the original work--the basis item.
+
+=== If my item is derived from more than one basis item, how should I attribute? ===
+You can do one of two things:
+* Upload, list, and attribute a copy of your item for each basis item used.  OR
+* Just go the old fashioned route of crediting the appropriate basis item creators in your item's description.
+
+Please note that while the attribution system does not cover cases like this well, this should never be used as a loophole to get around proper attribution.  Willful fraud will be penalized.
+
+=== Is it considered derivative work if I use code libraries released to the public, like LSA? ===
+It is not considered derivative work if you make your item compatible with other Whirled creators' creations by using [[LSA]] or other publicly released code libraries.  
+
+It is, however, a derivative work if you copy someone else's unreleased code, or if a basis creator's written terms of use state that in order to use their work, you must attribute them.
+
+=== Can I use derivative works in avatar lineups or in template rooms for my [[Create_Whirleds | Whirled]]? ===
+No payment is sent to the base item creator when items are distributed this way, so it is not allowed. 
+
+=== What if I list something that is content copied without permission? ===
+It will be removed from Whirled.  If listing copies or near-copies of other creators' content becomes a habit for you, disciplinary action will be taken up to and including the permanent banning of your account.  You will not be reimbursed or compensated for any deletion.  So please, err on the side of caution here!
+
+=== What should I do if I see my work being copied in Whirled? ===
+Companies wishing to report copying of their intellectual property should use [[DMCA Policy|DMCA takedown notices]].
+
+Players should use [[report|reports]] including a link to the original, hopefully dated content such as a Whirled shop URL, a deviantART gallery or a professional website with copyright or usage terms specified by the original creator.  It is best if the report comes from the original content creator.
+
+Posting a [[comment]] on the offending item in the Shop or the lister's [[profile]] does not count as an official report, as it doesn't send any notification to the [[Agent|Agents]].
+
+[[Category:Policy]][[Category:Frequently asked questions]][[Category:Game tutorials|*]][[Category:Avatar tutorials|*]][[Category:Pet tutorials|*]][[Category:Toy tutorials|*]][[Category:Furniture tutorials|*]][[Category:Backdrop tutorials|*]]
+
+=== May I upload my original work on an alternate account? ===
+We would prefer that you upload any copies of your original work on your primary account.  You may then use the mail system to send copies to your alternate account.

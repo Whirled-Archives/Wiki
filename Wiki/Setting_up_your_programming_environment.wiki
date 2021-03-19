@@ -1,0 +1,17 @@
+These following information will walk you through the steps of '''setting up your Whirled development environment''', and building your ActionScript code into a working Whirled game.
+
+== [[Image:Icon-Flash.png]] Adobe Flash CS3==
+If you are working in Adobe Flash CS3, please follow our tutorial for [[Simple game (Flash tutorial)|CS3]].
+
+== [[Image:Icon-Programming.png]] ActionScript 3.0 ==
+If you are working in AS3 directly, please follow these steps to set up your environment.  This is part of the [[Setting up your programming environment]] tutorial.
+
+You will need to follow these steps first:
+
+# [[Getting Java and Ant|Set up Java and Ant]]
+# [[Getting the Flex SDK|Set up the Flex SDK and the debug Flash player]]
+# [[Test the Whirled SDK|Download and test the Whirled SDK]]
+
+Now you are ready to build games in Whirled.  We suggest that you work through our [[Hello Whirled]] example as your first game.
+
+[[Category:Tutorials]]

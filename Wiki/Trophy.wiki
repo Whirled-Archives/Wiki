@@ -1,0 +1,8 @@
+'''Trophies''' are rewards given to players for certain actions in [[game]]s. Game creators can create trophies for their games to award players. Trophies for a particular game can be seen on the Trophies tab of the game info page. Note: Games can optionally hide the descriptions for certain trophies until the player has earned them.
+
+Game designers wishing to put trophies in games should check out [[awarding trophies]].
+
+== How to publish trophies on Facebook ==
+{{:Facebook Connect/Publish trophies}}
+
+[[Category:Terminology]]

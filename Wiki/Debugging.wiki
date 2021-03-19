@@ -1,0 +1,15 @@
+'''Debugging''' is the process in which errors are found and corrected in code.  There are different ways debugging ActionScript code:
+
+* Command line 
+* Flash Player
+
+Diagnosis and debugging of code can be accomplished using the error messages presented by the Flash Player.  If you see pop up messages like this:
+
+[[Image:Rooster_AS_error.png]]
+
+The first couple lines might point to code you've written for an avatar, toy or game.  The [[Debugging (ActionScript tutorial)]] details debugging some sample avatar bugs.
+
+* Flex Builder
+* ... more ...
+
+[[Category:Coding terminology]]

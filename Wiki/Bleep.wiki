@@ -1,0 +1,9 @@
+[[Image:Bleep avatar2.png|frame|right|Avatars can be bleeped from the normal menu that appears when you click on them.]][[Image:Bleep_avatar.png|thumb|right|frame|Right clicking on an item to bleep it.]][[Image:Bleeped.png|right|frame|How an item appears after it is bleeped.]]The '''bleep''' feature allows Whirled players to control what items they see in a Whirled room.  To bleep an item, right click on it and select the bleep option from the menu.  Bleeping an item causes it to change into a generic "broken image" graphic for the player who bleeped it.  This works for room backgrounds, avatars, pets, furniture, and photos.  Bleeping does not change an item's appearance for other players.  Some reasons for bleeping include:
+* Reducing lag caused by animated items
+* Getting rid of huge avatars that block the rest of the room
+* Avoiding content that is annoying but does not break Whirled's [[Community Standards]] or [[Terms of Service]], or is not offensive enough to [[report]]
+{{clear}}
+==See Also==
+* [[Mute]]
+* [[Boot]]
+[[Category:Terminology]]

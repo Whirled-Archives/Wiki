@@ -1,0 +1,85 @@
+{{Infobox tutorial
+|type=Flash
+|difficulty=Beginner
+|description=Create an avatar based on a downloaded avatar framework.
+|requirements=[[Image:Icon-Flash.png|20px]] [[Adobe Flash CS3]], Whirled SDK
+|other=Next tutorial: [[Advanced avatar (Flash tutorial)]]
+}}
+[[Image:Icon-highlighted-avatar.png|left]]Making your own Flash avatar gives you total control of the look and feel of your avatar.  With our template you just create, animate and save, and you're ready to upload!  No code required.
+{{clearleft}}
+
+== Download and open the template ==
+#Download the [[Whirled SDK]].  "SDK" stands for Software Development Kit, and it contains handy tools for Whirled creators.
+#[[Whirled_SDK#Install_and_Set-up_the_Whirled_SDK_in_Flash_CS3| Configure your Flash CS3 to use the Whirled SDK ]]
+#Open the Whirled Avatar Template, found in ...\whirled\templates\avatar.fla  (The location may vary between different versions of the SDK)
+
+Note: This tutorial assumes you'll be working right over the template file and saving in the same folder as the template. Otherwise you will need to manually set up the required code.<br>
+<small>See [[Advanced avatar (Flash tutorial)]] for setting up the base Whirled code from scratch (without template).</small>
+
+== Create ==
+=== Sketch in your avatar ===
+[[Image:avatar_scene_window.png|right|frame|Shift F2 brings up the Scene Window.]]
+# Avatars' various actions and animations are organized into "scenes" in the Flash file.  If you do not already have a Scene window, hit <b>Shift F2</b> (Window -> Other Panels -> Scene) to bring it up.
+# In the <b>Scene</b> window, click "state_Default" to create your avatar's standard view.  The "main" scene just holds the code, which we won't need to change.
+# Sketch a simple avatar (a body with two legs and two arms) facing left, with the feet as close to the bottom of the scene as possible without leaving the scene.  Center the sketch horizontally in the scene to make sure it flips properly when it faces the other way.
+[[Image:avatar_sketch.png|none|frame|Use a light color to sketch your avatar so you can clearly draw over it.]]
+
+<small>See [[Advanced avatar (Flash tutorial)]] for configuring the scene size, avatar size or the standing point.</small>
+
+[[Image:avatar_lock_insert_layers.png|right|frame|The dot in the lock column locks the layer. <br> The page icon creates a new layer.]][[Image:avatar_move_arm.png|right|frame|Move the arm art so the shoulder is under the crosshatch.]][[Image:avatar_move_symbol.png|right|frame|Move the arm symbol so the arm lines up with the sketch again.]]
+
+=== Draw your avatar parts ===
+#Click the dot in the <b>lock</b> column to lock the sketch layer so you don't mess it up while drawing in the clean version. 
+#Now you'll draw the separate parts of the avatar (body with head, right leg, left leg, right arm, left arm) on different layers, so that you can animate them.
+##Click the <b>page icon</b> to make a new layer and double-click its name to change it to "arm right".
+##Draw a clean version of your avatar's right arm, shoulder to fingertips, right over the sketch.
+##Select the entire arm drawing by hitting <b>CTRL-A</b>
+##Hit <b>F8</b> to turn the arm drawing into a "symbol" and name it "arm right".  Symbols are how Flash bundles up lines and fills into a single unit for animating.
+##Using the Selection Tool, double-click the new symbol to edit its contents.
+##Select all (CTRL-A) and move the arm so that the shoulder joint lines up over the crosshatch.  This is the rotation point for the symbol, so we want it to line up with the rotation we intend.  This will move the arm away from the sketch, but that's fine.
+##Click "state_Default" to back out of the symbol and return to the full scene.
+##Now move the "arm right" <i>symbol</i> so that it lines up over the sketch again.  This brings the arm <i>and its rotation point</i> back to where it belongs.
+##Repeat the above steps for "leg right", "body", "leg left", and "arm left".[[Image:avatar_clean.png|none|frame|All the parts of the avatar.]]
+#Click and drag to rearrange any layers that are out of order.[[Image:avatar_rearrange_layers.png|none|frame|His legs belong under his jacket.]]
+#Trash the sketch layer (Layer 1) now that you don't need it.
+<small>See [[Advanced avatar (Flash tutorial)]] for multiple and jointed limbs.</small>
+
+[[Image:avatar_scene_duplicate.png|right|frame|Duplicate the selected scene.]]
+
+== Animate ==
+
+=== Setup the scene and keyframes ===
+#Duplicate the "state_Default" scene and name the new one "state_Default_walking".  This creates and selects a new scene for our walk cycle.
+#Click the top layer at frame 20 and drag down to select the whole column of frames. [[Image:avatar_select_frames.png|none|frame|Click and drag to select the frames at 20.]]
+#Hit <b>F6</b> to make a keyframe at frame <b>20</b> for all the layers in the scene.  Even though nothing actually moves yet, you now have short animation.
+#Now set keyframes at frame <b>5</b>, <b>10</b> and <b>15</b> using the same technique.  These will be the points of action in our walk cycle. [[Image:avatar_keyframes.png|none|frame|Set periodic keyframes for a regular walk cycle.]]
+#Note, the walk described here inherits the standing pose for frames 1, 10, and 20.
+
+[[Image:avatar_rotate_limbs.png|right|frame|Rotate the legs and arms in opposite directions to set a walking pose.]] [[Image:avatar_rotate_limbs_opposite.png|right|frame|Swing the legs and arms to the other end of their cycles on frame 5.]]
+
+=== Pose the avatar in the keyframes ===
+#Since we're on Frame 15, we'll start animating here.
+##Hit <b>CTRL-A</b> to select all the parts at this frame.
+##Hit <b>SHIFT-Down Arrow</b> to move the whole avatar down a little on this frame.  This will be one point in the natural bob of the walk cycle.
+##Use the <b>Free Transform tool</b> [[Image:flash_free_transform.png]] and rotate the left leg symbol forward and the right leg symbol back, to give the avatar a stride.
+##Rotate the arms so that the <i>right</i> is forward and the <i>left</i> arm is back.  When you walk, you swing your arms in the opposite direction of your legs, to keep balance.
+#Click Frame 5 to pose the opposite end of the walk cycle.
+##Select all (<b>CTRL-A</b>) and hit <b>SHIFT-Down</b> to bob the avatar here too. 
+##Rotate all the limbs the opposite from before: left leg back, right leg forward, right arm back, left arm forward.
+#Flash can fill in all the frames between our keyframes automatically.  <b>Click and drag</b> to select all the active frames of all the layers. [[Image:avatar_select_all_frames.png|none|frame|Click and drag to select all the animation frames.]]
+#At the bottom of the screen under <b>Properties</b>, set "Tween" to "<b>Motion</b>".  This makes Flash automatically animate be<i>tween</i> the keyframes you just set. [[Image:flash_set_motion_tween.png|none|frame|Set "Tween" to "Motion".]]
+#Hit <b>Enter</b> to watch your animation.  Select and tweak any frames or symbols you think need improving.
+<small>See the [[list of Flash tutorials]] for more complex animation. 
+See [[Advanced avatar (Flash tutorial)]] for handling transitional, states, or random alternate animations.</small>
+
+== Save ==
+#<b>Save</b> your file with a convenient name.  This is your source file for creating this avatar. Make sure you save your file in the same folder as the template.
+#Choose <b>File -> Publish</b> to output a swf file of the avatar.  <b>This is the file you'll upload to Whirled.</b>
+#[[Create_avatars#Upload.21|Upload your avatar]]
+
+Ready for the next step? Try the [[Advanced avatar (Flash tutorial)]].
+
+== More Information ==
+* [[Avatar creation FAQ]]
+* {{groups|Whirled Builders|11}}
+* {{groups|Whirled Coders|79}}

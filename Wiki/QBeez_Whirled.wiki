@@ -1,0 +1,19 @@
+{{Infobox game
+|name=QBeez Whirled
+|genre=puzzle
+|description=Just get em together and then click, click, click! QBeez - the puzzle game with personality!
+|forumlink=http://www.whirled.com/#games-d_393_c
+|linknumber=393
+|singleplayer=yes
+|multiplayer=no
+|version=
+|testing=no
+|testingspot=
+|development=yes
+|devteam=[http://www.whirled.com/#people-355 Skunk Studios]
+|screenshot=yes
+}}
+'''QBeez Whirled''' is a game of puzzle action.  There are different level packs and the goal is to finish each level in time and remove as many QBeez as possible.  The faster you clear the board and the larger QBeez groups you clear, the higher your score.
+
+== Instructions ==
+[[Image:Game-QBeez Whirled-instructions.png|frame|left|Instructions from the game.]]

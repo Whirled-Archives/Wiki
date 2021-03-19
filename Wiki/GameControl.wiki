@@ -1,0 +1,68 @@
+Every game in Whirled starts with the '''GameControl''', it is your connection to the Whirled system and the Whirled server.
+
+== Initialization ==
+Every game will want to start by creating a GameControl.  
+<actionscript>
+public class MyGame extends Sprite {
+    public MyGame () {
+        _ctrl = new GameControl(this);
+    }
+
+    protected _ctrl :GameControl;
+}
+</actionscript>
+Here we didn't pass in a second argument to the constuctor, this will cause the game to default to autostart.  If you want to control when the game starts, you can pass in false as a second argument to the constructor, and at a later time call playerReady.
+
+<actionscript>
+        _ctrl = new GameControl(this, false);
+        .....
+        //at a later point in your game
+        _ctrl.game.playerReady();
+</actionscript>
+
+== Connectivity ==
+The [http://www.whirled.com/code/asdocs/com/whirled/AbstractControl.html#isConnected() GameControl.isConnected()] method lets you know whether or not your SWF is running in the Whirled environment and is connected to the servers or whether it is just being viewed standalone and has no access to the Whirled services.
+
+You can check isConnected() to see if your game is running in the Whirled environment or not and enable or disable multiplayer and Whirled-specific services if you are run from some other website or in the Flash viewer for example:
+
+<actionscript>
+    public MyGame () {
+        _ctrl = new GameControl(this);
+        if (!_ctrl.isConnected()) {
+            // zoiks! no Whirled
+            // display a splash screen and exit
+            return;
+        }
+        // initialize the rest of your game
+    }
+</actionscript>
+
+== UNLOAD Event ==
+The GameControl dispatches only one event [http://www.whirled.com/code/asdocs/com/whirled/AbstractControl.html#event:unload Event.UNLOAD] which lets you know when your game has been unloaded. You use the [http://www.whirled.com/code/asdocs/com/whirled/AbstractControl.html#addEventListener() addEventListener()] and [http://www.whirled.com/code/asdocs/com/whirled/AbstractControl.html#removeEventListener() removeEventListener()] methods to listen for the UNLOAD event and you should clean up after your game when UNLOAD is dispatched.
+
+<actionscript>
+    public MyGame () {
+        _ctrl = new GameControl(this);
+        _ctrl.addEventListener(Event.UNLOAD, onUnload);
+    }
+
+    protected function onUnload (event :Event) :void {
+        // shutdown timers, remove other event listeners, clean up
+    }
+</actionscript>
+
+== Subcontrols ==
+
+The GameControl contains only basic life-cycle management methods. All of the rest of the API is divided into subcontrols which are accessible as properties of the GameControl. Those subcontrols each have their own documentation pages:
+* [[LocalSubControl|GameControl.local]]
+* [[NetSubControl|GameControl.net]]
+* [[PlayerSubControl|GameControl.player]]
+* [[GameSubControl|GameControl.game]]
+* [[SeatingSubControl|GameControl.game.seating]]
+* [[ServicesSubControl|GameControl.services]]
+* [[BagSubControl|GameControl.services.bag]]
+
+== Other Links ==
+*[http://www.whirled.com/code/asdocs/com/whirled/game/GameControl.html Whirled API Documentation for GameControl]
+
+[[Category:Coding terminology]]

@@ -1,0 +1,92 @@
+{{FAQS}}
+{{TOCright}}
+
+==What is a Whirled?==
+
+A [[Whirled (themed)|Whirled]] is a themed group that allows the group managers to control what content (avatars, pets, etc.) is allowed in that group, what appears in the group's shop, and also allows some parts of the Whirled user interface to be changed.  
+
+== Visiting Whirleds ==
+
+===Where is all my stuff?===
+
+When you enter a Whirled, items that can't be used in it are hidden.  When you leave the Whirled again, you will be able to see everything you own in your inventory.
+
+===How can I leave a Whirled?===
+
+You can leave a Whirled by going to another room that is not part of that Whirled.  Your home room is usually a good place to visit.  You can find a link to it under the Me tab at the top of the screen, or in the list of options above the Go button at the bottom of the screen.  Keep in mind that closing the room you are in will not cause you to leave the Whirled you are visiting.
+
+===What if I don't have any avatars I can wear?===
+
+You will always be able to wear the default (tofu) or guest (ghost) avatars in any Whirled.  The Whirled might also be configured to offer you an avatar when you first enter.  You may pick one avatar from the list, and you may keep it even when you leave the Whirled.
+
+== Creating Whirleds ==
+
+===How do I make my group a Whirled?===
+{{main|Create Whirleds}}
+
+You or another manager will need to visit your group's main page.  Click on the link that says "Purchase Whirled" and then pay the fee.  The fee for purchasing a Whirled is currently 100 bars if you are a [[Club Whirled]] member, otherwise it costs 150 bars.  Your group is now a Whirled! 
+
+===Who can edit a Whirled? ===
+
+Any group manager can edit any part of the group's Whirled.
+
+===How do I skin the top bar of my Whirled?===
+{{main|Create Whirleds}}
+
+Once you have a Whirled, you can reskin the top bar by visiting the group main page and using the Edit Whirled link.  Upload the required image files, and enter hexadecimal code for the color as desired.
+
+===What's a hexadecimal color code?===
+Many graphics editors will tell you the [[Wikipedia:Web colors|hexadecimal code]] for the color you are using.  You can also find the codes for various colors on some websites such as this [http://www.mathsisfun.com/hexadecimal-decimal-colors.html color mixer] or from a chart such as [http://igotbored.freehostia.com/chart.php this one].
+
+While editing a Whirled, some of the configuration is done with these codes.  Enter in the letters and numbers of the code, without the beginning # that is sometimes included, in the appropriate box.
+
+===How do I mark an item for my Whirled?===
+{{main|Create Whirleds}}
+
+To mark an item, visit its shop listing and select the Whirled name from the Mark list.
+
+===Who can mark an item?===
+
+Group managers can mark items for their Whirled, no matter who listed or created it.
+
+===How do I give out free avatars? What is an avatar lineup? ===
+{{main|Create Whirleds}}
+
+The avatar lineup is a list of avatars that are available for free to visitors in your Whirled if they do not already own an avatar that can be used in your Whirled.  To add avatars, make sure they are listed by your brand and marked for your Whirled.  Then, visit the shop listing and add the avatar to the avatar lineup. You can view your lineup later from the link on your group's main page.
+
+===Can a Whirled give out any marked avatar for free?===
+
+No, a Whirled can only give out free avatars that are branded to the same group as the Whirled.  Only the avatar uploader can designate the brand, so only the avatar uploader can decide if a Whirled can give out their avatar for free.
+
+=== What is marking a room for? ===
+
+Marking a room means that only items and avatars marked for that theme may be used or worn in that room.  Players in that room will see restricted stuff and shop listings that only show marked items.
+
+===How do I mark a room to be part of a Whirled? ===
+
+View the comments of the room you wish to mark for the Whirled by clicking on the Room icon [[Image:Icon-room_control.png]] in the control bar (the row of icons to the right of your chat entry on bottom of your Whirled browser) and select the [[Image:Icon-room_comment.png]] Comment or rate option.  Use the dropdown to mark it for your Whirled.  Any players in the room will be temporarily removed to their home rooms and may then return.
+
+== Troubleshooting Whirleds ==
+
+===I've set up my whole Whirled, and I can't see any of my changes.===
+
+To see your Whirled, you must visit a room that is marked by that Whirled.  Once there, you should be able to see all your marked items, and the theme skin you have designed.  If you are already in a room marked by your Whirled and can't see changes you've made, try clearing your browser cache and re-entering the room.
+
+===I can't get out of this Whirled.===
+
+If you are a manager, you can press the blue x next to your logo to view the entire shop and all your stuff.  You will remain in the themed room, however.  
+
+If you are not a manager, you can click on the Me tab and use the [[Image:Icon-home.png]] home icon to return to your home room and leave the Whirled.
+
+===My avatar lineup's select avatar popup shows a red error box.===
+
+[[Image:Media loading error.png|left]]Currently there is a bug where the avatar is not able to be displayed if the avatar in the lineup was created by uploading an image.  The bug has been noted and will be fixed.
+{{clearleft}}
+
+===My "Upload" button seems to be missing from my stuff tab.===
+
+The Upload button is hidden when players are within a Whirled because all items in a themed Whirled need to be marked by a group manager to be allowed in that Whirled.
+
+===I have marked a shop listing and its creator can't wear the item.===
+
+Shop listings and the creator's original must be marked independently.  If the creator is not a Whirled manager, they can magic purchase a copy of their item to wear in the Whirled.  Otherwise, they can mark the original copy by viewing it on their stuff tab.

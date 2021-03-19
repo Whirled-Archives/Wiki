@@ -1,0 +1,72 @@
+{{Infobox game
+|name=Werewolf
+|genre=whirled
+|description=There are werewolves among us. You may be one of them. Attempt to survive day and night in this classic party game.
+|forumlink=http://www.whirled.com/#groups-d_11716
+|linknumber=2069
+|singleplayer=whirled
+|multiplayer=whirled
+|whirlednumber=11716
+|version=
+|testing=no
+|testingspot=
+|development=yes
+|devteam=[http://www.whirled.com/#people-151187 GamesOnTheSide]
+|screenshot=yes
+}}
+There are werewolves among us. You may be one of them. Attempt to survive day and night in this classic party game, '''Werewolf'''.
+
+== Instructions ==
+Slay Werewolves/Kill Villagers
+
+Requires minimally 6 people to play, and plays a lot better with 9+.
+
+=== Back Story ===
+Your village has been cursed with werewolves. They come out at night when everyone is sleeping and kill one villager. During the day you and the mob of angry villagers decide to lynch someone that you are sure is a werewolf. You have hope though. Your village has been blessed with a seer, who can divine if a villager is a werewolf or not. But how will you know who is the seer? Who will you believe?
+
+=== How to Play ===
+You need a minimum of six people to play and more are better.
+
+At the start of the game you will be assigned a role:
+
+* Werewolf
+** As a werewolf your goal is to conceal your identity and kill all the villagers.
+* Seer
+** As a seer you are a special villager with the ability to divine who is werewolf and who is not.
+* Villager
+** Villagers are the majority of players in the game.
+
+The rest of the game is played in night and day phases.
+
+=== Night Phase ===
+
+* Werewolves
+** While everyone is sleeping decide upon a victim with your fellow werewolves. You do this by clicking on the avatar you want to kill.
+* Seer
+** While everyone is sleeping divine the true identity of a villager. You do this by clicking on the avatar you want to know the true identity of. The answer is only given to you. What you do with the information is up to you.
+* Villager
+** A villager has nothing to do at night but wait for the morning.
+
+=== Day Phase ===
+At the beginning of this phase everyone wakes up to find someone has been killed and what that person's true identity was.
+
+Then, everyone votes on who they think is a werewolf. Other villagers will see who is voting for whom. Villagers can talk and say who they think is what.
+
+If you are killed, please do not try and ruin the game by participating in the discussion.
+
+=== Game End ===
+
+* If the werewolves are killed, the villagers win.
+* If the werewolves ever equal the number of villagers, the werewolves win.
+
+Trophies are awarded at the end of the game, so follow the action until it ends.
+
+=== How to Earn Coins ===
+All participants earn coins if they stay in until the game is over. Winners earn a tad more coins.
+
+=== Tips ===
+* Saying what role you are at the beginning of the game, especially if you are a seer or werewolf, if a sure fire way to get yourself killed. Decide wisely when you want to disclose what you are, if ever.
+* Use an avatar that allows users to see your name and doesn't take up an incredible amount of room.
+
+=== Background ===
+Online rules, history, and variants can be found at [http://www.eblong.com/zarf/werewolf.html Werewolf], many thanks to the author.

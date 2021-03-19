@@ -1,0 +1,79 @@
+{{Infobox tutorial
+|type=Flash
+|difficulty=Beginner
+|description=A step by step look at the lamp toy.  Includes some instruction on altering the item.
+|requirements=[[Image:Icon-Flash.png|20px]] [[Adobe Flash CS3]], [[Whirled SDK]]
+|other=Other tutorials: [[Plant Toy Tutorial]]
+|item=toy
+}}
+This is a tutorial that goes over Cherub's lamp toy with a clickable on/off state.
+{{stub}}
+
+== Before You Begin ==
+=== Download the Whirled SDK ===
+If you have already downloaded the SDK, check to see if a new version has come out.  If you have never downloaded the SDK, do so now.
+#Download the [[Whirled SDK]].  "SDK" stands for Software Development Kit, and it contains handy tools for Whirled creators.
+#Configure your copy of [[Whirled_SDK#Install_and_Set-up_the_Whirled_SDK_in_Flash_CS3|Flash CS3]] or [[Whirled_SDK#Install_and_Set-up_the_Whirled_SDK_in_Flash_CS4|Flash CS4]] to use the Whirled SDK by setting the classpaths.
+
+== Download the Example ==
+# Download the lamp example here: [[Media:Lamp.zip|lamp.zip]].
+# Extract the zip file contents and open the lamp.fla file in Flash. (This tutorial's screenshots will use CS3, but CS4 should be similar enough to figure it out.)
+
+== What's in the lamp.fla File? ==
+
+When you open lamp.fla in Flash, it should look something like this:
+
+[[Image:Lamp-Flash_CS3.png]]
+
+=== Scenes ===
+[[Image:Lamp-Flash_CS3-scene.png|frame|none]]
+
+As you can see in this particular file, there is one scene that is named Scene 1.  You can also view a list of the file's scenes by going to Window &rarr; Other Panels &rarr; Scene or by using Shift + F2.
+
+=== Layers ===
+
+[[Image:Lamp-Flash_CS3-layers.png|right|frame|If you don't see this on your screen, go to Windows &rarr; Timeline or use Ctrl+Alt+T or click on the movie film timeline symbol to the left of the scene name.]]
+Within Scene 1 there are some layers named Script();, HitBox, and Lamp.  Each layer serves a different purpose:
+* Script(); - This layer is where the code goes.  To view the code, go to Window &rarr; Actions or use F9.  You can learn more about the code [[Lamp toy (code tutorial)|here]].
+* HitBox - This layer defines the area where players can click to interact with your item.
+* Lamp - This layer is for the movieClip with all the visible parts of your item.
+
+There are a couple of icons in this section that represent various things or commands that will be useful to you in this tutorial:
+* [[Image:Flash-ShowHide.png]] -  Clicking on this for each layer will show (dot) or hide (X) the layer.  This is useful when you have a lot of layers and want to concentrate on only one or a few.
+* [[Image:Flash-Lock.png]] - Clicking on this for each layer will lock (lock icon) or unlock (dot) the layer.  This is useful when you have completed a layer and don't want to accidentally alter it.
+* [[Image:Flash-Outlines.png]] - Clicking on this for each layer will show the objects in full (colored in square w/ black outline) or outlined (color outlined square) form using the layer color.  This is useful if you have a lot of graphics and want to just clearly view the outlines.
+* [[Image:Flash-Editing.png]] - Shows you which layer you have selected/are editing. This symbol will have a red slash through it if the layer is hidden or locked because you cannot edit in those two states.
+* [[Image:Flash-NewLayer.png]] - Creates a new layer above the selected layer.
+* [[Image:Flash-Trash.png]] - Deletes the selected layer.
+
+=== Timeline ===
+[[Image:Flash-Timeline_zoom.png|left|frame|The zoom options are: tiny, small, normal, medium, and large.]]If the timeline, the part with the numbers across the top, is too squished together to be able to see things well, you can zoom in on it or zoom out if you want to see more of it.  Click on the icon at the end of the number bar and select the zoom size you want.
+{{clearleft}}
+
+== Examining the Lamp Layer ==
+[[Image:Flash-Select_lamp_movieclip.png|right|thumb|200px|The Lamp Movie Clip on the Lamp layer is selected.]]
+Within the Lamp layer, there is a Movie Clip.  Lock the HitBox layer and then click on any part of the lamp.  This will select the Lamp Movie Clip.  When selected, all Movie Clips are outlined in blue.
+{{clearright}}
+=== Lamp Movie Clip ===
+To examine the Lamp Movie Clip, double click on it.  You'll notice that in the window with the lamp image, the bar above now says [[Image:Flash-Scene.png]] Scene 1 and then [[Image:Flash-Movie_Clip.png]] Lamp.  That means you are viewing the Lamp Movie Clip included in Scene 1.  This is the area where you'll look to see what you are viewing whenever editing a Flash file.
+
+The Lamp Movie Clip is split into two labeled sections Off (frames 1-9) and On (frames 10-18).
+
+[[Image:Flash-Viewing_lamp_movieclip.png|frame|none|As you can see, Movie Clips can contain layers.  The Lamp Movie Clip has nine of them.]]
+
+==== Lamp Movie Clip Layers ====
+
+Because it can be easier to split something into separate layered parts for editing and animating, these are the nine layers present:
+
+* Script - This layer splits the Movie Clip into two labeled sections that you can see in the timeline, Off and On.  It contains the clicking sound mp3 for Off and On.  This layer could also be used for additional code in the Movie Clip.
+* Shade - This is the lamp shade at the top of the lamp. It's there in both the Off and On sections.
+* Glow - This is the glow coming from the shade.  It's only present in the On section.
+* String - This is the pull string tween animation that is used in both the Off and On sections.  The motion tween animation is indicated by the arrows in the timeline.
+* Shadows - This is the shadow at the top of the lamp pole.  It's darker in the Off section than it is in the On section.
+* Pole - This is the lamp pole. It's there in both the Off and On sections.
+* reflex - This is the shadow at the bottom of the lamp pole.  It's darker in the Off section than it is in the On section.
+* Base - This is the bottom of the lamp.  It's darker in the Off section than it is in the On section.
+* Light - This is the light coming down from the lamp.  It's only present in the On section.
+
+==== Off and On ====
+You can do a visual comparison of what the combined layers look like in the Off and On sections by clicking somewhere in the section in the timeline to view what the Movie Clip shows at that point.

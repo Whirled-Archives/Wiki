@@ -1,0 +1,58 @@
+{{Infobox game
+|name=Tree House Defense
+|genre=strategy
+|description=Strategy game.
+|forumlink=http://www.whirled.com/#groups-d_47
+|linknumber=107
+|singleplayer=yes
+|multiplayer=yes
+|version=
+|testing=no
+|testingspot=
+|development=yes
+|devteam=Code by Robert Zubek, Art by [http://www.whirled.com/#people-316 Bill Robinson]
+|screenshot=yes
+}}
+
+'''Tree House Defense''' is a tower-defense type game where you build stations to keep the bullies away from your tree house. Build complicated mazes to slow the bullies down and stay alive as long as possible. Also features a two-player mode where you can play against a friend!
+
+== Basics ==
+
+=== Goal ===
+After you click on the ''START'' button, enemies will enter your screen from the red flag on the left and work their way to your green flag near your tree house on the right. Place stations to destroy them or slow them down. You start out with a different amount of health and money depending on the game board, but when your health bar reaches zero the game is over.
+
+[[Image:THD_life.jpg|left|thumb|Player life meter]] This is your life meter. As enemies make it past your defenses and into your treehouse this meter will drop down. When it reaches empty you've lost the game.
+{{clearleft}}
+
+=== Boards ===
+The gameboard for THD is 17x22. You can place towers in any of these spaces, unless you are playing on a board with special spaces. (ie, you can not build towers on beach blankets, in streams, or on top of playground equipment.)
+
+The Default Level Pack that ships with Tree House Defense has five different boards: Field, Halloween, Beach, Winter, and Playground. Each board has unique towers, enemies, and obstacles to contend with. 
+
+=== Money ===
+You are rewarded with coins when an enemy is defeated. Harder enemies reward more coins, which can then be used to purchase better stations.
+
+=== Stations ===
+[[Image:THD_stations.jpg|left|thumb|Stations in Tree House Defense.]] 
+The most important window in THD is the Station Inventory. These are the stations that are available to you. Basic stations include the Shrub, Box, Sandbox, Trashcan, Wagon, Rock, and Tree. Each station fires a different weapon. When highlighted, the window display the towers' cost, damage, and range. The more damage cause, the higher the cost - choose wisely!  
+{{clearleft}}
+=== Enemies ===
+Enemies travel at different speeds and some have special abilities. Basic enemies include the skunk, fox, bully, girl, skater, and bird. Birds can attack by air, flying over any obstacle, and skaters move very quickly.
+
+=== Two-Player Mode ===
+Challenge a friend to a game! In two-player mode, you must fend off enemies, but also choose which ally to attack next. Keep in mind that tougher allies cost more money to use. If you run out of money, skunks are always free!
+
+=== Trophies ===
+Are you the best Tree House Defender around? Many trophies await you, awarded for things like high scores, games won, maze building, and enemies killed.
+
+== Remixing ==
+Tree House Defense will be completely remixable! This means you will be able to create your own level packs with different game boards, enemies, stations, etc. More information on this to come soon.
+
+== Known Bugs ==
+There are some issues where the game can get stuck at the ''Loading content packs...'' stage.  If you are using Firefox, try Internet Explorer.  If you are using Internet Explorer, try closing and restarting the browser.
+
+Occasionally one of the enemies gets stuck in single player mode.  If this happens, just continue your game by using the ''NEXT ENEMY'' button.
+
+There is also a bug where enemies walk through your defenses.  It is being worked on along with issues of lag.
+
+[[Category:Three Rings games]]

@@ -1,0 +1,192 @@
+= Prerequisites =
+# [[create avatars#Basic_Avatars|Setting up your flash environment]]
+# This tutorial currently assumes you that you can learn by example.
+
+== Walking Avatar ==
+
+This is an introduction to the basics of creating an avatar, and the base that all the code you will find below is derived from, each example assumes you stick with the default naming conventions set when creating a [[create avatars|basic avatar]].
+
+To start we need to create and animate five scenes (ignore anything after "//" as these are notes, for further explanation to the scenes, and should not be included in the name of the scenes).
+
+# Main ''//this is the scene where you shall add all the code talked about here onwards, there is no need for anything else to be added here.''
+# face_left
+# face_right
+# walk_left
+# walk_right
+
+<actionscript>
+import com.whirled.AvatarControl;
+import com.whirled.ControlEvent;
+
+var _ctrl :AvatarControl = new AvatarControl(this);
+_ctrl.addEventListener(ControlEvent.APPEARANCE_CHANGED, updateLook);
+
+updateLook();
+
+function updateLook (o :Object = null) :void
+{
+    var isMoving :Boolean = _ctrl.isMoving();
+    var orient :Number = _ctrl.getOrientation();
+    var scene :String = (isMoving ? "walk" : "face") + "_" + (orient < 180 ? "right" : "left");
+    gotoAndPlay(1, scene);
+}
+</actionscript>
+
+This will create a basic Avatar with only the walk and face animations for left and right, with no backwards facing or walking animations, to add a backwards facing and walking animation you need to change the:
+
+<actionscript>
+    var isMoving :Boolean = _ctrl.isMoving();
+    var orient :Number = _ctrl.getOrientation();
+    var scene :String = (isMoving ? "walk" : "face") + "_" + (orient < 180 ? "right" : "left");
+    gotoAndPlay(1, scene);
+}
+
+</actionscript>
+
+to
+
+<actionscript>
+    var isMoving :Boolean = _ctrl.isMoving();
+    var orient :Number = _ctrl.getOrientation();
+    var scene :String = (isMoving ? "walk" : "face") + "_" + (orient < 180 ? "right" : "left") + "_"  + (orient > 91 && orient < 269 ? "_back" : "");
+    gotoAndPlay(1, scene);
+}
+
+</actionscript>
+
+This also requires the creation of four more scenes to your basic avatar:
+* face_left_back
+* face_right_back
+* walk_left_back
+* walk_right_back
+
+with this slight change to the code, the avatar will now look for and play the scenes for walking backwards and facing backwards, depending on which direction, you are moving, or were previously moving in, this slight alteration, also applies to any custom animations that you wish to create later on, so you have the choice of forcing your avatar to face forward for your animations or to face the direction the actual avatar is facing.
+
+== Basic Custom Animation ==
+
+Now I am going to add to the code a basic custom animation, a dance, we now need to create and animate two more scenes for the avatar called:
+
+* dance_left
+* dance_right
+
+unlike the facing back scenes there require alot more additions to the code, as so:
+
+<actionscript>
+import com.whirled.AvatarControl;
+import com.whirled.ControlEvent;
+
+var _ctrl :AvatarControl = new AvatarControl(this);
+_ctrl.addEventListener(ControlEvent.APPEARANCE_CHANGED, updateLook);
+_ctrl.addEventListener(ControlEvent.STATE_CHANGED, updateLook);
+_ctrl.setHotSpot(150, 320);
+_ctrl.registerStates("Default", "Dance");
+
+updateLook();
+
+function updateLook (o :Object = null) :void
+{
+    var isMoving :Boolean = _ctrl.isMoving();
+    var orient :Number = _ctrl.getOrientation();
+	var scene :String = null;
+	
+	if (!isMoving) {
+		var state :String = _ctrl.getState();
+		if (state == "Dance") {
+		    scene = "dance" + "_" + (orient < 180 ? "right" : "left");
+    }
+	if (scene == null) {
+   		scene = (isMoving ? "walk" : "face") + "_" + (orient < 180 ? "right" : "left") + "_" + (orient > 91 && orient < 269 ? "_back" : "");
+    }
+    gotoAndPlay(1, scene);
+}
+</actionscript>
+
+This will now add to the avatar two drop down options when you click on your avatar, in game.
+
+* Default
+* Dance
+
+as defined by
+
+<actionscript>
+_ctrl.registerStates("Default", "Dance");pre>
+</actionscript>
+
+When Dance, is clicked the dance_left or dance_right scene will play, depending on which way your avatar is facing at the time. This will loop indefinatly until you stop the animation by resetting the avatars state my click default
+
+Once again it is very simple to add the back facing animations to these custom animations with the addition of a small amount of code:
+
+<actionscript>
+	if (!isMoving) {
+		var state :String = _ctrl.getState();
+		if (state == "Dance") {
+		    scene = "dance" + "_" + (orient < 180 ? "right" : "left");
+    }
+</actionscript>
+
+to
+
+<actionscript>
+  	if (!isMoving) {
+		var state :String = _ctrl.getState();
+		if (state == "Dance") {
+		    scene = "dance" + "_" + (orient < 180 ? "right" : "left") + "_"  + (orient > 91 && orient < 269 ? "_back" : "");
+    }
+</actionscript>
+
+and once again this requires the creation of two more scenes to your basic avatar:
+* dance_left_back
+* dance_right_back
+
+with this slight change to the code, the avatar will now look for and play the scenes for dancing backwards or forwards, depending on which direction the avatar was previously moving in.
+
+== Multiple Custom Animations ==
+
+Now we are going to add a secondary custom animation, to show how the code changes for multiple animations. For the sake of this example, I have named the secondary animation in this example "Shock" and am adding the backwards facing scenes straight from the start, there for we need to create four more scenes:
+
+* shock_left
+* shock_right
+* shock_left_back
+* shock_right_back
+
+and the code in the Main scene is once again edited:
+
+<actionscript>
+import com.whirled.AvatarControl;
+import com.whirled.ControlEvent;
+
+var _ctrl :AvatarControl = new AvatarControl(this);
+_ctrl.addEventListener(ControlEvent.APPEARANCE_CHANGED, updateLook);
+_ctrl.addEventListener(ControlEvent.STATE_CHANGED, updateLook);
+_ctrl.setHotSpot(150, 320);
+_ctrl.registerStates("Default", "Dance", "Shock");
+
+updateLook();
+
+function updateLook (o :Object = null) :void
+{
+    var isMoving :Boolean = _ctrl.isMoving();
+    var orient :Number = _ctrl.getOrientation();
+	var scene :String = null;
+	
+	if (!isMoving) {
+		var state :String = _ctrl.getState();
+		if (state == "Dance") {
+		    scene = "dance" + "_" + (orient < 180 ? "right" : "left") + "_" + (orient < 180 ? "right" : "left");;
+	    } else if (state == "Shock") {
+		    scene = "shock" + "_" + (orient < 180 ? "right" : "left") + "_" + (orient < 180 ? "right" : "left");;
+		}
+    }
+	if (scene == null) {  // if none of the above (not dancing, or is walking)
+   		scene = (isMoving ? "walk" : "face") + "_" + (orient < 180 ? "right" : "left");
+    }
+    gotoAndPlay(1, scene);
+}
+</actionscript>
+
+This will add a third option to the avatar's states menu: Shock. When selected, the shock_left or shock_right scene will play, depending on which way your avatar is facing at the time. This will loop indefinitely until the state is changed either by:
+
+# The Default State is clicked
+# The Dance State is clicked
+
+[[Category:Tutorials]][[Category:Code tutorials]]

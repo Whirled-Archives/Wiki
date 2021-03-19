@@ -1,0 +1,51 @@
+You can share your [[room]] by clicking on the '''Share or embed this place''' button ([[Image:Icon-share or embed.png]]).  The different options for sharing rooms are outlined below. ''Get a SWF'' is only available if you own the room or are a manager for the group that the room belongs to. Sharing Whirled also allows you to participate in the [[Affiliate Program]].
+
+There is a different process for you to [[Embed#Avatars.2C_Backdrops.2C_Furniture.2C_Pets.2C_and_Toys|embed your creation]]s that are not rooms.
+
+== Share by Email ==
+[[Image:Share_this_room-Email.png|left|frame|Fill this form out to send your friend an email with a link to the room.<br>'''Note: Email addresses entered into this form are not saved or used for any other purpose by Three Rings.''']]
+
+After you fill it out and click on ''Send'', Whirled will send an email (originating from threerings.net) that looks like this:
+{| class="toc" width="500px" style="border:2px solid #b2bcc5; color: #000; background-color: #e6f6ff; padding: 5px; padding-left: 5px; padding-right: 5px"
+|-
+||From: <YOUR_ACCOUNT EMAIL><br>
+To: <YOUR_FRIEND'S_EMAIL><br>
+Subject: <YOUR_CURRENT_DISPLAY_ NAME> wants you to see <ROOM_NAME>
+
+"<YOUR_MESSAGE>"
+
+Check out this room in Whirled called "<ROOM_NAME>":
+
+<nowiki>http://www.whirled.com/welcome/90/world-</nowiki><ROOMLOCATION>
+
+(If the link doesn't work, try copying and pasting it from this email into your browser's address bar.)
+
+Hope you like it!
+
+-- <YOUR_CURRENT_DISPLAY_NAME>
+|}
+{{clearleft}}
+
+== Grab the Link ==
+[[Image:Share_this_room-Grab_the_link.png|left|frame|This option gives you a link that you can paste anywhere.]]
+{{clearleft}}
+
+== Embed It ==
+[[Image:Share_this_room-Embed_it.png|left|frame|This option gives you code to paste onto a website or blog that allows embedding code.]]Many blogs and websites allow you to embed code in your posts or pages.  If it doesn't work, make sure you are not using a WYSIWYG or "compose mode" editor and try again.  Some websites, such as Facebook and deviantART do not support this.  If you want to post on those websites, use the SWF method below. 
+
+[[Image:Share_this_room_Embed_it-Blogspot.png|thumb|300px|left|This is what an embedded room looks like on a site such as Blogspot.]]
+{| class="toc" width="450px" style="border:2px solid #b2bcc5; color: #000; background-color: #e6f6ff; padding: 5px; padding-left: 5px; padding-right: 5px"
+|-
+||'''This is an example of what the embed code looks like:'''<br>
+<nowiki><object width='100%' height='575' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://active.macromedia.com/flash7/cabs/swflash.cab#version=10,0,0,0' allowScriptAccess='always'><param name='movie' value='http://www.whirled.com/clients/world-client.swf'/><param name='wmode' value='opaque'/><param name='FlashVars' value='sceneId=31646&vec=e.whirled.rooms.31646&aff=16444'/><embed width='100%' height='575' flashvars='sceneId=31646&vec=e.whirled.rooms.31646&aff=16444' src='http://www.whirled.com/clients/world-client.swf' allowScriptAccess='always' wmode='opaque' pluginspace='http://www.macromedia.com/go/getflashplayer' ntype='application/x-shockwave-flash'></embed></object><br/><center><a href="http://www.whirled.com/welcome/16444/" target="_top">Launch the full version of Whirled</a></center></nowiki>
+|}
+{{clear}}
+
+== Get a SWF ==
+[[Image:Share_this_room-Get_a_SWF.png|left|frame|This option is only available if you are the owner of the room or manager of the group that the room belongs to.]]Clicking on "Download SWF" will take you to a browse screen where you can choose the name of the file and where to save it on your computer.  Then you can upload your SWF file to sites such as deviantART or use it on a website.
+{{clearleft}}
+
+== See Also ==
+You can also embed items such as [[avatar]]s using Whirled's embedding code.  Learn about it by reading [[Embed#Avatars.2C_Backdrops.2C_Furniture.2C_Pets.2C_and_Toys|embed your creation]].
+
+[[Category:Terminology]]

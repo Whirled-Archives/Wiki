@@ -1,0 +1,4 @@
+{{category}}
+These are all tutorials dealing with pet items.
+
+[[Category:Tutorials]]

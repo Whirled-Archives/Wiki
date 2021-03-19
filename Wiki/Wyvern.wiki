@@ -1,0 +1,143 @@
+{{Infobox game
+|name=Wyvern
+|genre=adventure
+|description=A Whirled MMOAVRRPG where you level up and collect leet lewt.
+|forumlink=http://www.whirled.com/#groups-d_3464
+|linknumber=1254
+|singleplayer=yes
+|multiplayer=yes
+|version=
+|testing=no
+|testingspot=
+|development=yes
+|devteam=[http://www.whirled.com/#people-878 Aduros]
+|screenshot=yes
+}}
+
+'''Wyvern''' is a Whirled MMOAVRRPG where you level up, collect loot from monsters and other players, and build dungeons filled with monsters.
+
+You choose your class at the beginning and are supplied an avatar according to your choice. The three classes are basically the same, but the equipment that gives them the best bonuses varies. Other copies/classes can be purchased in the shop as avatars. The classes are as "Warrior", "Bandit", and "Arcanist."
+
+'''Tip''': The fun in this game isn't solely from the avatar battling system. You can also make tons of coins from creating dungeons filled with monsters for players to play in! This is further explained below.
+
+== Gameplay ==
+
+Movement is controlled with the Whirled client and relies solely on your avatar. You move around and use the character avatars just as you would any other avatar. Different [[#Combat States|actions and states]] grant access to your character controls, such as how you attack and open your [[#Items|inventory]].
+
+===Display===
+[[Image:WyvernPlayer.PNG‎|left]]
+{{bul}} The green bar above your character is the health bar that keep track of your hp, when it runs out your avatar will "die."<br>
+{{bul}} The blue bar above your character is the mana bar.  It is still being implemented.<br>
+{{bul}} Underneath your avatar is the level that your character is currently on. Whenever you advance a level your avatar will glow yellow and the number will change.
+{{clearleft}}
+
+===Combat===
+Kill monsters or other players to level up and get equipment.
+
+'''Tip:'''The player who deals the finishing blow on either a player or a monster is the one who is credited for the kill. Don't let someone steal your kill!
+
+====Combat States====
+Your character avatar has 3 states: [[#Attack|Attack]], [[#Counter|Counter]], and [[#Heal|Heal]].
+
+=====Attack=====
+This is the state you use to attack people. All you have to do is stand near an opponent to attack them.
+*''Face to Face:''This is a head on battle with no strings attached. You attack him he attacks you.
+[[Image:Wyvern-Regular hit.png|150px]]
+*''Front to Back:''This is a sneak attack. Landing a hit like this will grant you a critical hit, dealing twice the damage!
+[[Image:Wyvern-Crit hit.png|150px]]
+
+=====Heal=====
+This state recovers your hp. While you are in this state you take more damage from players/monsters.
+*''Face to Face:''When someone attacks you head on while you heal you will take twice the damage.
+[[Image:Wyvern-Heal hit.PNG|150px]]
+*''Front to Back:''This is a sneak attack. Getting hit like this will land a critical hit, dealing six times the damage!
+[[Image:Wyvern-Heal crit.PNG|150px]]
+
+=====Counter=====
+''This feature will be changed in a future update!''
+
+The counter state reflects your opponent's damage back at them while they inflict very little damage to you. There is currently no limit to how many attacks you can counter; however, countering will hurt you and you will lose "Focus", or health, while you counter.
+I'm not adding screenshots since this will be changed.
+
+====Combat Styles====
+=====PVE=====
+Player Vs. Enemy combat is between a whirled player and the Wyvern [[#monsters|monsters]]. There are no restrictions on this form of combat, players of any level can attack and be attacked by monsters of any level. Drops and EXP are rewarded according to the level of the killed monster.
+
+=====PVP=====
+Player Vs. Player combat is between two or more Whirled players. To enable PVP combat you must have a [[#PVP Totems (Flags)|PVP Totems (Flags)]] in the room.
+
+=====EVE=====
+Everyone Vs. Everyone (Environment Vs. Environment) is a bloodbath among monsters. It requires a [[#PVP Totems (Flags)|PVP Totems (Flags)]] and [[#monsters|monsters]]. It has absolutely no positive influence on your game; however, it is fun to watch.
+
+===Dungeons===
+Every time someone kills your pets([[#monsters|monsters]]) you are credited by the game. When you open(log on) to the game, you are awarded [[coins]] according to how many people have killed your pets. The best way to take advantage of this is to create a "Dungeon". A Dungeon is just a room or group of rooms that are full of monsters and allow players to have a fun time leveling and fighting, while you get coins! There are many accessories that you can buy to make your dungeon more appealing, and if you do end up making a popular dungeon you could see yourself making way more than you invest.
+
+See also: [http://www.whirled.com/#games-d_1254_i Graphical instructions from the game].
+
+== Items ==
+[[Image:Wyvern-popup_inventory.png]]
+
+[[Image:Wyvern-inventory-delete.png|frame|An example of a piece of clothing viewed in your inventory in the format of: name [base damage]+ random bonus modifier<br>(class). Click and drag the item to the bin at the upper right to delete it.]]Every time you kill an enemy you will get an item added to the next open spot in your inventory. The power/rarity of the items dropped by each enemy is proportionate to their level, you also get rarer items from defeating other players.
+
+Item information displayed in your inventory when you mouseover the item:
+
+*Name: Name of the item.
+*Base Damage: A number from 1-10 that varies with each item.
+*Random Bonus: A random number from 0-3 added to each item.
+*Class: Heavy (Warrior), Light (Bandit), Arcane (Arcanist).
+{{clearright}}
+
+==Dungeons==
+Dungeons are player-made rooms whereas other players come and try to kill the Owner's pet. To make a Dungeon, simply go into one of your room and insert Wyvern Pets into the room.
+[[Image:Order_to_stay.PNG]]
+
+== Additional Content ==
+
+===PVP Totems (Flags)===
+These special [[toys]] are also found in the shop. When added to a room, all monsters and players within a specified level range (set in the [[Remixable_item|Remix]] option) will be able to attack each other. Drops and experience work the same as monster combat.
+
+===Traps===
+Originally created by [http://www.whirled.com/#people-1855 Nordenx], traps are toys that can be added to any room to interact with players/monsters. When a player/monster in the game stops on top of one of these traps it is activated, damaging the player or monster that triggered it. Traps normally remain hidden from players or disguised as other toys or furniture items, however, room owners or managers usually are able to see semi-transparent trap markers that show where and what type trap is laid down. Trap markers often have different symbols & colors, while the trap itself varies in animation, graphics, range, and damage strengths indicated by its assigned level. Some traps have added random effects such as backfiring, healing targets, effects affecting single or multiple people or monsters, and/or on rare occasions they even give out items. Traps originally were not part of the actual game itself, but they add an extra level of interaction and variety to player made dungeons and the game.
+
+===Shrines===
+When you "die", you must find a "Shrine" that will "resurrect" or revive you. Shrines are toys available in the whirled shop that players can add to their rooms. Resurrection Shrines are a part of the actual game and are essential to the game play, they are the main means for you to bring your character back from the dead.
+
+Other types of shrines created by Nordenx will heal part of your health and others that helps you damage monsters. These were not part of the original game, but they add interesting effects and strategies to arenas & dungeons.
+
+===Wyvern Pets===
+The game uses the Whirled [[pets]] interface for the majority of the combat.
+
+====Monsters====
+These pets were first made by Aduros as a part of gameplay. Monsters are needed to make a Dungeon and, if you are in the game, you are awarded [[coins]] for killing them.
+
+====Medic====
+The [http://www.whirled.com/#world-s228212 Medic] pet was created by Beaver to help players for a price. The medic pet can heal its owner and revive anyone/everyone in the room.
+
+====Death====
+The [http://www.whirled.com/#shop-l_6_1839 Death] pet was created by Beaver to add a new twist to PVP. Death will randomly swoop down to deal full damage to a player; however, if the player is able to doge they will be fully healed.
+
+===Treasure Chests===
+Originally created by [http://www.whirled.com/#people-1358 The Cosmic Cheese], Chest opens if all Wyvern monsters in room are dead and someone steps next to the chest. When chest opens it awards every Wyvern player in the room a prize.
+
+==FAQ/Bug Fixes==
+
+Q. My character's level/items have been reset to level 1, what should I do?<br>
+A. See this thread: http://www.whirled.com/#groups-t_7435
+
+Q. I've been trying forever, how do I get my 10+3 cloak?<br>
+A. You don't, the best one is 2+3.
+
+Q. Can I have more than one character?<br>
+A. YES! You can have as many characters as you want! They are available for purchase in the [http://www.whirled.com/#shop-5_7_swyvern shop].
+
+Q. All of my items are 10+3, but my stats are still bad. What gives?<br>
+A. As stated in the [[Wyvern#items|items]] section, all equipment has a class that it gives bonuses to.
+:*Warrior gets a boost from heavy and a penalty for arcane.
+:*Bandits get a boost from light and a penalty from heavy.
+:*Arcaneists get a boost from arcane and a penalty from heavy.
+:*Some items have no class. They award no bonus or penalty to all all 3 classes.(things like cloaks)
+
+Q. I'm making a dungeon with a lot of enemies and shrines but I lag too much. How can I fix this?<br>
+A. Try adding [http://www.whirled.com/#people-60346 deThbaTe's] [http://www.whirled.com/#shop-l_3_19619 Qmod] to your room. It will make flash run on low quality, reducing lag and making the Wyvern avatars even look better!
+
+[[Category:Adventure and RPG games]]

@@ -1,0 +1,10 @@
+'''[http://www.whirled.com/code/asdocs/com/whirled/game/PlayerSubControl.html PlayerSubControl]''' handles methods that are related to the state of the player in the game.  It handles methods for awarding prizes and trophies to players, tells you which item packs they own, and allows for the reading and writing of persistent per-player state which we call cookies.
+
+It is also the source of CoinsAwardedEvent.COINS_AWARDED events that let your game know precisely how many [[currency#Coins|coins]] a player received due to a [[awarding coins|payout]] you initiated.
+
+{{stub}}
+== Other Links ==
+*[[GameControl]]
+*[http://www.whirled.com/code/asdocs/com/whirled/game/PlayerSubControl.html Whirled API Documentation for PlayerSubControl]
+
+[[Category:Subcontrols]][[Category:Coding terminology]]

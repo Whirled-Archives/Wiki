@@ -1,0 +1,42 @@
+'''[http://www.whirled.com/code/asdocs/com/whirled/game/LocalSubControl.html LocalSubControl]''' contains methods and events for communicating not with the Whirled server, but the local Flash environment, e.g. finding the available size, in pixels, of the area on which the game can draw; outputting feedback to the players in the chat area; retrieving avatar headshots for the players.
+
+== Initialization ==
+
+You should always access localSubControl via the gameControl, don't try to instantiate the object directly.  
+
+<actionscript>
+public class MyGame extends Sprite {
+    public MyGame () {
+        _ctrl = new GameControl(this);
+
+        //you can either access the localSubControl via a handle
+        //like this
+        _local = _ctrl.local; 
+        _local.feedback("hello, this is a message"); 
+
+
+        //or like this directly via the control object.
+        _ctrl.local.feedback("hello, this is a message");
+        
+
+    }
+
+    protected _ctrl :GameControl;
+    protected _local : LocalSubControl; 
+}
+</actionscript>
+
+== Noteable Methods ==
+
+Two popular methods on the LocalSubControl are:
+
+*ShowGameShop
+*SetStageQuality
+
+== Other Links ==
+*[[GameControl]]
+*[http://www.whirled.com/code/asdocs/com/whirled/game/LocalSubControl.html Whirled API Documentation for LocalSubControl]
+
+{{stub}}
+
+[[Category:Subcontrols]][[Category:Coding terminology]]

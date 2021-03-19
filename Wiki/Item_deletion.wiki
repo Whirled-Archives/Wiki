@@ -1,0 +1,40 @@
+'''Item deletion''' occurs when an item in Whirled is found to break Whirled's [[Terms of Service]] or [[Community Standards]].  [[Report]]s of suspicious items are reviewed by [[Agent|Agents]] and if the item breaks the rules, the Agent will delete all copies of that item from Whirled.
+
+Continually uploading items that break Whirled's Terms of Service or Community Standards may lead to being [[ban|banned]] from Whirled.
+
+If you see an item that you think is breaking Whirled's Terms of Service or Community Standards, you should [[report]] it.
+
+== What Happens When an Item is Deleted? ==
+All copies of the item are removed from Whirled.  This includes the original uploaded item, any copies of it purchased from the [[Shop]], and any copies of it given out by the person who uploaded it.  If the item has been placed in a room, it will be deleted from the room as well.  A [[mail]] message is sent to anyone who had the original or a copy in their [[Stuff tab]] at the time of deletion.  
+
+Here's an example of the mail message received when an item has been deleted due to it containing swearing:
+
+{| class="toc" width="500px" style="border:2px solid #b2bcc5; color: #000; background-color: #e6f6ff; padding: 5px; padding-left: 5px; padding-right: 5px"
+|-
+||Subject: Item Deleted
+The item "<ITEM_NAME>" has been deleted by the game administrators. Where possible, all account credits and debits associated with the purchase of the item have been reverted. This item has been removed from the shop as it contains swear words.  Swear words should not be used within Whirled - please see the community standards at <nowiki>http://wiki.whirled.com/Community_Standards</nowiki>.  We apologize for any inconvenience - where possible all coin/bar transactions have been refunded.
+|}
+
+== Common Reasons for Item Deletion ==
+Items are most often deleted because they:
+
+* contain swear words or offensive language
+* contain pornography, graphic violence, or other offensive imagery
+* are being used to scam other players by claiming to do something they do not actually do, such as give free [[currency]]
+* are being used to lag or crash other players' browsers, or otherwise disrupt Whirled for other players
+* are stolen work used without permission from the original creator
+
+== Refunds==
+''When possible'', people who purchased the deleted item from the Shop are refunded in coins.  However, refunds are not always possible, and so the best way to prevent having to deal with this unpleasant situation is to be cautious about what you buy.
+
+To see if you received a refund, you can [[Transactions#Viewing_Your_Transactions|check your transactions]].
+
+[[Image:Transactions-Item deletion.png|400px|thumb|none|What an item refund looks like in your transactions.  It is not always possible to get a refund.]]
+
+== How to Avoid Items that Might Get Deleted ==
+It's best not to buy the following types of items:
+* Items that break Whirled's Community Standards
+* Items that appear to be exact copies, or very close copies, of another creator's work
+* Anything with an item description like "It's just like <nowiki>[another item in Whirled]</nowiki> but cheaper!"
+
+[[Category:Policy]][[Category:Terminology]]

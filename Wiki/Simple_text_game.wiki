@@ -1,0 +1,189 @@
+{{Infobox tutorial
+|type=ActionScript
+|difficulty=Medium
+|description=Create a simple mulitplayer game.
+|requirements=[[Image:Icon-Programming.png|20px]] [[ActionScript 3.0]], Whirled SDK
+|other=
+}}
+
+
+;Please note: 
+:The following is a tutorial in using multiplayer functionality in the Whirled. It is not a general Flash tutorial, and does not cover graphics, event handling, or any other general Flash material. I'm assuming that the reader is coming in with at least a basic understanding of Flash and ActionScript, and wants to learn more about our multiplayer libraries.
+
+----
+
+In the following pages, we will create a simple text game. And when I say simple, I mean really, staggeringly, terrifyingly simple. :-)
+
+The game is as follows. Players type words into a text box, and every time they type in a valid word, they get as many points as there are letters in the word. Words and scores will be shared over the network with all other participants, and every 30 seconds they will be converted to coins, and awarded to the players' accounts.
+
+This is ''horrible'' game design, of course. The game is just about speed-typing, and not all that interesting. But it will serve to illustrate the following functionality:
+* Writing a simple multiplayer game
+* Sending messages to other players
+* Sharing data with other players
+* Using server-side services, such as dictionary lookup
+* Awarding coins
+
+While perusing the code, please feel free to browse http://www.whirled.com/code/asdocs, with special emphasis on the GameControl class and its subcomponents. This is the class your game uses to communicate with the server.
+
+==== Game Skeleton ====
+
+The skeleton of the game will just accept *any* input as valid. We'll fix it up later. :-)
+
+Edit your '''HelloWhirled''' example to look as follows.
+
+<actionscript>
+package {
+
+import flash.display.Graphics;
+import flash.display.Sprite;
+import flash.events.Event;
+import flash.events.KeyboardEvent;
+import flash.text.TextField;
+import flash.text.TextFieldAutoSize;
+import flash.text.TextFieldType;
+import flash.text.TextFormat;
+
+import com.whirled.game.GameControl;
+
+[SWF(width="350", height="200")]
+public class HelloWhirled extends Sprite
+{
+    public function HelloWhirled ()
+    {
+        // listen for an unload event
+        root.loaderInfo.addEventListener(Event.UNLOAD, handleUnload);
+
+        _control = new GameControl(this);
+
+        load ();
+    }
+
+    /** Called from the game constructor. */
+    protected function load () :void
+    {
+        createUI();
+
+        // register for keypresses in the text box
+        _inputField.addEventListener(KeyboardEvent.KEY_DOWN, keyEventHandler);
+    }
+
+    /** This is called when your game is unloaded. */
+    protected function handleUnload (event :Event) :void
+    {
+        _inputField.removeEventListener(KeyboardEvent.KEY_DOWN, keyEventHandler);
+    }
+
+    /** Called when the user presses a key inside the inputField control. */
+    protected function keyEventHandler (event :KeyboardEvent) :void
+    {
+        if (event.keyCode == 13) {  // user hit Enter
+            // TODO: we'll fix this later
+            processWord (_inputField.text, true);
+            _inputField.text = "";
+        } else {
+            // any other key just clears the message box
+            _responseField.text = "";
+        }
+    }
+        
+    /** Processes results from the dictionary service, once they arrive. */
+    protected function processWord (word :String, isValid :Boolean) :void
+    {
+        // if it's a valid word, let's score it.
+        if (isValid) {
+            var points :Number = word.length;
+            addScore(points);
+            _responseField.text = "Valid word! You earn " + points + " points!";
+        } else {
+            _responseField.text = "Not a valid word. Sorry.";
+        }
+    }
+
+    /** Record the score and share with others. */
+    protected function addScore (points :Number) :void
+    {
+        // TODO: we'll fill this in later
+    }
+
+    /** Creates and lays out UI elements. */
+    protected function createUI () :void
+    {
+        // Create a background.
+        var bg :Sprite = new Sprite();
+        bg = new Sprite();
+        addChild(bg);
+
+        // Fill the new background with color, and add to display list
+        var g :Graphics = this.graphics;
+        g.beginFill(0xffeedd);
+        g.drawRoundRect(0, 0, 350, 200, 25);
+        g.endFill();
+
+        // Text format
+        var format :TextFormat = new TextFormat();
+        format.font = "Arial";
+        format.size = 12;
+        
+        // Input field
+        _inputField = new TextField();
+        _inputField.defaultTextFormat = format;
+        _inputField.text = "< type here >";
+        _inputField.x = 50;
+        _inputField.y = 50;
+        _inputField.width = 100;
+        _inputField.height = _inputField.textHeight + 2;
+        _inputField.type = TextFieldType.INPUT;
+        _inputField.border = true;
+        addChild(_inputField);
+
+        // Feedback field
+        _responseField = new TextField();
+        _responseField.defaultTextFormat = format;
+        _responseField.wordWrap = true;
+        _responseField.x = 50;
+        _responseField.y = 100;
+        _responseField.width = 100;
+        _responseField.height = 50;
+        _responseField.text = "Type your word above, and hit Enter!";
+        addChild(_responseField);
+
+        // Score field
+        _scoreField = new TextField();
+        _scoreField.defaultTextFormat = format;
+        _scoreField.multiline = true;
+        _scoreField.x = 200;
+        _scoreField.y = 50;
+        _scoreField.width = 150;
+        _scoreField.height = 200;
+        addChild(_scoreField);
+    }
+
+    /** Game control. */
+    protected var _control :GameControl;
+
+    /** Input field for typing. */
+    protected var _inputField :TextField;
+
+    /** Message field with system responses. */
+    protected var _responseField :TextField;
+
+    /** Score field. */
+    protected var _scoreField :TextField;
+}
+}
+</actionscript>
+
+Now compile it using either '''ant test''' or '''build.bat'''.
+
+This will run your game and display something like the following:
+
+[[Image:Hello_whirled_shot2.png]]
+
+How exciting. Trivial and silly, but exciting. :-)
+
+= Next Steps =
+
+* [[Simple text game, part 2]]
+* [[Create games|Back to Creating Games]]
+
+[[Category:Tutorials]][[Category:Code tutorials]]

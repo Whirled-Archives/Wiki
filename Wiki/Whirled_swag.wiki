@@ -1,0 +1,9 @@
+'''[[Whirled]] swag''' is given out as [[:Category:Events|contest]] prizes.  Currently this includes t-shirts, mugs, and stickers.
+{|
+|- valign="top"
+||[[Image:Whirled mug.png|thumb|300px|left|Large mug with the Whirled logo. (4.5" tall)]]
+||[[Image:Whirled stickers.png|thumb|300px|left|Shiny clear plastic stickers with variations of the Whirled logo. (9"x6")]]
+||[[Image:Whirled t-shirt.png|thumb|300px|left|Navy blue tee shirt with light blue Whirled logo. (Comes in standard U.S. shirt sizes)]]
+|}
+
+[[Category:Terminology]]

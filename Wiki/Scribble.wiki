@@ -1,0 +1,40 @@
+{{Infobox game
+|name=Scribble
+|genre=whirled
+|description=The Pictionary-like drawing game and world of collaborative art.
+|forumlink=http://www.whirled.com/#groups-d_10585
+|linknumber=1994
+|singleplayer=whirled
+|multiplayer=whirled
+|whirlednumber=10585
+|version=
+|testing=no
+|testingspot=
+|development=yes
+|devteam=[http://www.whirled.com/#people-878 Aduros]
+|screenshot=yes
+|awards=yes
+|awardstext=
+|GDC=winner
+|GDCdate=April_2009
+}}
+'''Scribble''' is a fun Pictionary-like drawing game and world of collaborative art.
+
+== Instructions ==
+
+Scribble is a collection of drawing games. Currently, there are two game types: Wordsketch and Doodling.
+
+=== Wordsketch ===
+
+* Win coins by drawing pictures! When it's your turn, a secret word will appear for you to draw. The other players are trying to be the first one to guess your word!
+* The sooner another player guesses your word, the more points you both get. Use the different colors and the eraser to convey your word quickly and carefully.
+* Guess words that others are drawing by simply typing them into chat.
+
+=== Doodling ===
+
+* Freestyle drawing! Doodle on your friends or style your room just by drawing on it.
+* Leave messages and drawings in other people's rooms, and create collaborative art with other players.
+
+=== Thanks ===
+
+A very special thanks to Silk, who did all of the trophy artwork. For game developers, the complete Scribble source code is available.

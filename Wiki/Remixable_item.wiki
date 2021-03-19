@@ -1,0 +1,43 @@
+[[Image:Icon-remixable.png]] '''Remixable items''' are shop items with code that allows players to customize them in [[Whirled]] without having to do any coding or purchase [[Adobe Flash CS3]].
+
+== Finding Remixable Items ==
+Remixable items have the remixible icon ([[Image:Icon-remixable.png]]) in their information in the shop and in your inventory.
+
+[[Image:Shop-avatar icons.png|frame|left|If you would like to try using a remixable avatar for free, you can test remix items in the shop. There a simple remixable avatar available for testing in the shop [http://www.whirled.com/#shop-l_5_1609 here].]]
+{{clear}}
+
+== Using Remixable Items ==
+You can try out any remixable item by clicking the button labeled "Test remix."
+[[Image:Shop-avatars-remixable avatar.png|thumb|425px|left|A remixable avatar.]]
+{{clear}}
+
+Clicking on the "Test remix" button will get you to the remixing options screen.
+[[Image:Stuff-avatars-remixable options.png|425px|left|thumb|Remixing options screen.]]
+{{clear}}
+
+== Changing the Image Used by the Remixable Avatar ==
+[[Image:Stuff-avatars-remixable image editing options.png|350px|right]]Click on View/Edit button in the image section and a popup will appear with your options.
+*Use one of the images you have already uploaded to Your Stuff.
+*Upload a new image
+*Create an image in the Whirled image editor
+*Use a file from the remix (this is used only for remixable avatars with multiple remixable images)
+
+[[Image:Stuff-avatars-remixable choose an image.png|thumb|425px|left|If you choose to select an image that you have already uploaded, there is also the option to upload an image for selection.]]
+{{clear}}
+
+=== Whirled Image Editor ===
+After you have selected a new image or opted to create an image, the [[Whirled image editor]] will open up.  The image editor has basic functions.
+
+[[Image:Stuff-avatars-remixable image editing.png]]
+{{clear}}
+
+== Remixed Avatar & Reverting ==
+If you have remixed an item that you purchased, you can save your remix.  Once you have successfully saved your remix, your avatar screen will look like this.  If you wish to revert the avatar to the original as seen in the store, click on the Revert button.  A popup will remind you that all your changes will be lost and you cannot undo reverting the avatar.
+[[Image:Stuff-avatars-remixable avatar remixed.png|thumb|425px|Remixed and ready for wearing!]]
+
+== See Also ==
+* [[Remixable avatar (Flash tutorial)]]
+* [[Remix Avatar Tutorial]]
+* [http://www.whirled.com/#whirleds-f_491 Remix!] Whirled
+
+[[Category:Terminology]]

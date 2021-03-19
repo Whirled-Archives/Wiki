@@ -1,0 +1,64 @@
+You can earn virtual ([[currency#Coins|coins]] & [[currency#Bars|bars]]) and real ([[currency#Bling|bling]]) money by referring new players to Whirled via the '''Whirled Affiliate Program'''.  
+* For every new player you refer, you will earn 30% of their lifetime net spending &#8211; coins ''and'' bars &#8211; within Whirled.  In other words, you get 30% of whatever they spend within Whirled for as long as they remain a player.  That's a long time!  
+* Also, when they reach [[level]] 10 with a [[validation|validated]] account, you get a free bar!
+
+To refer players under the Whirled Affiliate Program, you can either use any of Whirled's many content sharing and distribution features described below or simply build Affiliate-coded URLs into your own games, websites, blogs, and/or social networking activities. There is no cap on how much you can earn and no time limits or deadlines by which you must refer new players. Additionally, you have complete freedom to add and remove Affiliate links as you like so long as the links are not used in a fraudulent or misleading manner.
+
+There is no application process. By signing up for a free account on Whirled, you are immediately eligible to begin using the Affiliate Program. To check your Affiliate balance, log on to your Whirled account and click on Me &rarr; My Transactions. You are free to spend your accrued earnings in the [[shop]] or [[Currency#Cashing_Out|cash them out]].
+
+'''Example Affiliate Transaction'''
+[[Image:Affiliate_Program-transaction.png|frame|none|A [[Currency#Viewing_Your_Transactions|transactions]] line from the Affiliate Program.]]
+
+==Ways to Get Affiliates==
+There are lots of different ways to get affiliates and start making coins, bars, and bling.  Here's the rundown:
+
+=== Add Whirled Buttons and Banners to Your Site=== 
+
+[[Share Whirled]] by putting a Whirled button or banner graphic on your website or blog.  Anyone who clicks your button or banner and then makes a Whirled account will be marked as your Affiliate.  Whirled buttons and banners can be found [http://www.whirled.com/#people-invites_links here], or by using the "Share Whirled" link on your [[Me tab]].
+
+=== Invite Your Friends via Email ===
+
+[[Image:Icon-invite_friends.png]] When you send email invites via the [http://www.whirled.com/#people-invites Invite Friends] page, they will be marked as your Affiliate when they click your invitation link and make a Whirled account.
+
+=== Share a Room ===
+
+You can [[Share this room|share any room]] on Whirled by using the [[Image:Icon-share or embed.png]] button located in the navigation panel at the bottom of the page.  Using that button you can:
+
+* Embed the entire room on your blog or MySpace page
+* Share a link to your room on Facebook
+* Email or IM the link to your friends
+* Link to your room from any site
+
+Anyone who clicks your shared link and then makes a Whirled account will be marked as your Affiliate.
+
+=== Share a Game === 
+
+While you are playing a game, you can use the [[Image:Icon-share or embed.png]] button to send a [[game]] to a friend or embed it on your Web site, blog, MySpace etc. Anyone who clicks your shared link will be marked as your Affiliate.
+
+=== Invite Your Friends to a Game ===
+
+When you create a multi-player game, use the URL offered to invite your friends via IM or Twitter. Anyone who clicks your game invitation link and makes a Whirled account will be marked as your Affiliate.
+
+=== Make Your Own Affiliate Link === 
+
+If you just want to refer players to the Whirled homepage, all you need is a single link which can be copied from the "Send a URL" section of [http://www.whirled.com/#people-invites this] page.  This is known as your Base Affiliate URL and your Whirled Affiliate ID is the number at the end of the URL.
+
+However, you can also create Affiliate links that point to ''any unique piece of content on Whirled''.  This type of deep linking can be useful for doing things like creating a "More Games" link to point to the Whirled games catalog.  Or you can use it for linking to a specific game, room, avatar, or shop item.  To create content-specific links, simply navigate to that item in your browser, copy the full URL, and replace "<nowiki>http://www.whirled.com/#</nowiki>" with your Base Affiliate URL.  For example, the game Bang! Heroes non-Affiliate URL:
+
+<nowiki>http://www.whirled.com/#games-d_1918</nowiki>
+
+Is turned into an Affiliate tagged URL where "yourID" is your Whirled Affiliate ID:
+
+<nowiki>http://www.whirled.com/welcome/yourID/games-d_1918</nowiki>
+
+That's it!  You're now ready to start tagging content, referring players, and earning virtual and real world money.
+
+=== Distribute Your Game to Flash Portals ===
+
+Game developers have a particularly powerful way of referring large numbers of players by distributing their games in a [[Embed#Games|Whirled game wrapper]] to any of the thousands of Flash game sites on the web, such as Newgrounds, Kongregate, and Flash Game License. Anyone who plays your Whirled wrapped game will be marked as your Affiliate.  While ads are not often used on Whirled, the Whirled game wrapper does support the inclusion of [[Embed#MochiAds|advertising as an option]].
+
+== Which Currency did I Earn? ==
+
+Whirled has several currencies.  A full explanation of how each works and how it affects your Affiliate earnings can be found [[currency|here]]. 
+
+[[Category:Terminology]]

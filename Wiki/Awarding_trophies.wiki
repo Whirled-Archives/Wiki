@@ -1,0 +1,42 @@
+This tutorial will guide you through the process of '''awarding and activating [[trophies]]''' for your game. 
+
+== Coding the Trophies ==
+
+In order to award trophies, you will first need to make the appropriate Trophy award calls in your code.  In this example, we are awarding 3 trophies.  Of course, in your code, you would be awarding trophies as appropriate and most likely not all together. 
+
+<actionscript>
+//Where _control is an instace of the GameControl Object
+//And the string argument (i.e. "bronze") is the identifier for the trophy and not the name. 
+
+_control.player.awardTrophy("bronze")
+
+_control.player.awardTrophy("silver")
+
+_control.player.awardTrophy("gold")
+</actionscript>
+
+== Uploading the Trophies ==
+
+After you have listed your game with the trophy calls, you should then upload your trophies.  Click on the original copy of the game in your inventory and select the tab named "Trophy Sources" [[Image:Award_trophy_01.png|none|frame]]
+
+Click on the Upload button at the bottom of the screen to display the trophy information page. Each trophy will have its own page. Fill the form out as desired.  but make special note of the field called "Identifier". This identifier links the trophy to the source code of the game. We also recommend you do not use the word "Trophy" as part of the name since that is usually automatically appended by Whirled.  
+[[Image:Award_trophy_02.png|none|frame]]
+
+Once all the desired trophies have been uploaded, the trophies should be shown on the Trophy Sources page. '''The trophies are not yet active at this point.''' 
+
+[[Image:Award_trophy_03.png|none|frame]]
+
+== Activating the Trophies ==
+
+To activate the trophies, you will need to click on the "List.." button for each trophy to upload it to the Shop.
+
+If completed successfully, the game information page will be similar to this:
+
+[[Image:Award_trophy_04.png|none|frame]]
+
+'''Please Note:''' Once a player has earned a trophy for their profile page, it cannot be removed. Furthermore, the artwork for the trophy on their profile page will not change even if the source artwork for the trophy is updated at a later date. Make sure you are comfortable with the artwork and the conditions for earning the trophy before activating them. 
+
+== Testing the Trophies ==
+That's it!  You are done.  Whirled will take care of automatically incorporating your trophy artwork into your game wherever you have called awardTrohpy().  Once you have fully incorporated trophies into your game.  Please play your game and make sure the trophies are being awarded at the correct time. 
+
+[[Category:Tutorials]]

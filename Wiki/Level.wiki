@@ -1,0 +1,7 @@
+[[Image:Coins_bars_level_mail_logout_bar.png|right|frame|Agent Equinox has 2 mail, 15,536 Coins, 0 Bars and Level 36.]]
+
+'''Levels''' are an indication of time spent in the games. The current Level is shown on the upper right of the screen adjacent to the blue star. New players start at level 1. In order to become a [[Me_tab#Friendly_People|Friendly Person]], you must be at least Level 10 and have more than 20 friends.
+
+The level is calculated from total [[currency#Coins|Coins]] earnings. On higher levels you will need more and more Coins to advance a level.
+
+[[Category:Terminology]]

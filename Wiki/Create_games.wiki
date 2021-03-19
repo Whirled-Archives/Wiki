@@ -1,0 +1,94 @@
+{{TOCright}}
+[[Image:Icon-highlighted-game.png|left]]Whirled games are developed in ActionScript 3 (AS3) either using the standalone compiler or the Flash 9 Authoring Tool. This documentation assumes a working knowledge of these technologies, but resources are listed below to learn more about Flash and ActionScript.
+{{clearleft}}
+== Getting Started ==
+For the basics of integrating a single player game with Whirled, start here:
+* [[Porting a single player game (ActionScript tutorial)]]
+
+For the all the juicy details, check out our API overview:
+* '''[[GameControl|Whirled Games API Overview]]'''
+
+Then check out more detailed documentation and tutorials below.
+
+{|
+|-
+|valign="top" width="50%" style="padding-right: 10px"|
+== Documentation ==
+<b>Whirled APIs</b>
+* '''[[GameControl|Whirled Games API Overview]]'''
+* [http://www.whirled.com/code/asdocs/ Whirled ASdocs] and docs to [http://www.whirled.com/code/contrib/asdocs/ helpful game APIs ] in our contrib section
+* [http://www.whirled.com/code/GameControl.html Handy index] for GameControl
+* '''[[Whirled game creation FAQ | Whirled game creation FAQ]]'''
+
+<b>AS3</b>
+* http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/
+* http://labs.adobe.com/wiki/index.php/ActionScript_3
+
+There are also [http://www.amazon.com/s?url=search-alias%3Daps&field-keywords=actionscript&x=0&y=0 numerous paper books] available on the subject.
+
+|valign="top"|
+== Tutorials ==
+
+* [[Simple game (Flash tutorial)|Using Adobe Flash CS3 to build games]]
+* [[Setting up your programming environment]]
+* [[Hello Whirled|Hello Whirled: making your first program in AS3]]
+* How to build a ''multiplayer'' text game: [[Simple text game (ActionScript tutorial)|part 1]], [[Simple text game, part 2|part 2]], [[Simple text game, part 3|part 3]], [[Simple text game, part 4|part 4]]
+* [[Multiplayer server based game (ActionScript tutorial)|How to write a multiplayer server based game]]
+* Already have a single player AS3 game? [[Porting a single player game (ActionScript tutorial)| Port it to Whirled]].
+* [[Create and sell game packs]].
+* [[Persisting data]] - If you need to save information about your game.
+* [[Awarding coins]] - add virtual currency payouts to your game.
+* [[Awarding prizes]] - incorporate prizes into your game for better payout and gameplay.
+* [[Awarding trophies]] - incorporate trophies into your game for better payout and gameplay.
+* [[Uploading games|Upload your game]] and [[options for games]] - includes information on how to sell your game's launcher & publish your game to the public
+* [[Prevent cheats]] - how players easily cheat, and some basic prevention
+|}
+
+== Code Examples ==
+Learning by example is the easiest way, so make sure to check out our many game examples on our [http://code.threerings.net/viewvc/whirled/trunk/projects/games/ SVN server].  Please note that in order to reduce the size of the SDK download, some of our bigger games, such as [http://dpw.threerings.net/viewvc/underwhirleddrift/ UnderWhirledDrift] and [http://dpw.threerings.net/viewvc/defense/ treehouse defense], sit under a different directory.
+
+== Development Tools ==
+
+{| cellspacing="10" cellpadding="0"
+|-
+||{{extnavimg|xsize=100|ysize=100|image=From-flashcs3-gamescreen.png|link=http://wiki.whirled.com/Simple_game_(Flash_tutorial)}}
+||'''[[Image:Icon-Flash.png]]  Adobe Flash CS'''<br/>
+[[Adobe Flash CS3]] is the tool our art department uses to make games. ([http://www.adobe.com/products/flash/ Adobe's Flash page])<br/>
+[[Simple game (Flash tutorial)| Flash CS3 Game Tutorial]]
+||{{extnavimg|xsize=100|ysize=100|image=HelloWhirled.png|link=http://wiki.whirled.com/Hello_Whirled}}
+||'''[[Image:Icon-Programming.png]] AS3'''<br/>
+Standalone [[AS3]] is targeted more at programmers. AS3 is totally FREE!<br/>
+[[Hello Whirled | Hello Whirled Tutorial]]
+|}
+
+Note that while Whirled uses the free Flex SDK and the optional Flex Builder as an IDE, Whirled does not support Flex components or MXML.
+
+== Writing a Server class for your game ==
+
+Starting with SDK 0.33, Whirled supports the running of ActionScript [[server agent]]s for your game. This is more complex to code, but benefits include:
+* Consolidation of logic for multi-player games
+* Lower latency
+* More robust in the face of unreliable browsers
+
+You can follow [[Multiplayer server based game (ActionScript tutorial)|this tutorial]] to make your first server based game.
+
+== AVR games ==
+{{main|AVR game}}
+AVRGs are games that take place in Whirled rooms.
+
+== Feedback ==
+
+Have you created/ported a game for Whirled? We would love to get [http://www.surveymonkey.com/s.aspx?sm=1y3HELW2tsVfsPtlo7wAhA_3d_3d your feedback] on your experience.
+
+== Media Resources ==
+* http://www.flashkit.com/soundfx/
+* http://www.stonewashed.net/4.html
+* http://freesound.iua.upf.edu/
+
+== Other Links ==
+* [[:Category:Game tutorials|Game tutorials]]
+* [[Non-exclusive license games]]
+* [[Whirled Contrib Submission Guidelines]]
+*[[Embed#Games|Embed Whirled games on websites]]
+
+[[Category:Tutorials]][[Category:Game tutorials|*]]

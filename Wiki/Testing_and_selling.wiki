@@ -1,0 +1,25 @@
+The following describes the process we've developed for '''testing and selling objects'''. Please note that we're open to changing the process to help content creators - comments on the forums would be appreciated. :)
+
+== Shop and inventory objects ==
+
+=== Inventory ===
+
+When you first upload your file - whether it's a [[game]], [[avatar]], or a piece of [[furniture]] - it will first show up in your inventory. In there, you have one instance that you can place anywhere in the Whirled. Games are slightly different than other items, for more information check [[uploading games]].
+
+When you update a copy in your inventory, the instance you placed in the Whirled will change automatically.
+
+=== Shop ===
+
+Once you're happy with your object, you can list it in the [[Shop]]. Listing an item enables others to purchase it using [[currency#Coins|coins]] or [[currency#Bars|bars]].  The creator earns a percentage from sales of the object, currently {{profit}}.  You can learn more about bars, coins and your sale percentages on the [[currency]] page. 
+
+'''Please make sure your item functions appropriately before you list it!'''  If it is a game, it should load and be playable.  If it is a toy, it should have interactive features and not just be a static image.  Non-functioning games and toys are subject to delisting from the Shop by [[Agent|Agents]], as are any items that break the [[Community Standards]] or [[Terms of Service]].
+
+== The ''Upload-Edit-Publish'' cycle ==
+
+Given this setup, here is the cycle we recommend (and use ourselves) for object authoring:
+
+# While making and testing the game, we recommend uploading it to the inventory only, and placing one instance somewhere in the world where it can be found and tested. If this object is built for a club or a brand (e.g. Underwhirled Drift), you can place the instance inside the club house. You can also place an instance in your room. Or if it's something like an avatar, you don't have to place it anywhere. :-)
+# As the object is being debugged and altered, it should stay in your inventory. This way, every time you update it, the instance placed in the Whirled will be updated as well and you can work with it until you are ready to publish it.
+# When the object is ready to be published, list it in the shop and select a [[List#Listing_Options|pricing strategy]]. Once you do that, you will be able to update the item from your Inventory.
+
+[[Category:Terminology]]

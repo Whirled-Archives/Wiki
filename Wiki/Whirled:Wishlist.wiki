@@ -1,0 +1,13 @@
+==Wiki Technical Wishlist==
+These are things that should be done by Three Rings to the Whirled Wiki MediaWiki installation.
+
+*Replace http://wiki.whirled.com/skins/monobook/headbg.jpg with something that doesn't clash with the logo
+
+==Article and Tutorial Wishlist==
+This is a list of articles and tutorials in need of authors.
+
+* Messages -- Sending messages between instances of an object.
+* Persistent memory -- Building objects that remember state between loads.
+
+
+You can also look at the [[Special:Wantedpages]] and [[Special:Wantedcategories]] pages for ideas about entries that the Wiki needs.  There is a [http://www.whirled.com/#whirleds-t_531 discussion thread] for things that people would like to see on the wiki.
